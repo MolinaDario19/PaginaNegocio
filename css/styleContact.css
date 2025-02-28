@@ -38,10 +38,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/main_contact.jpg');
+    height: 90%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/img_main.jpeg');
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 70% 95%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 75%, 0 80%);
     z-index: -1;
 }
 
@@ -191,12 +191,9 @@ input::placeholder, textarea::placeholder{
 }
 
 @media(max-width:991px){
-    body{
-        padding: 30px;
-    }
 
     .contact form{
-        padding: 50px 30px;
+        padding: 5px 3px;
         width: 100%;
     }
 
@@ -209,11 +206,12 @@ input::placeholder, textarea::placeholder{
 
 .share {
     position: fixed;
-    bottom: 20px; 
-    right: 20px; 
+    bottom: 5px; 
+    right: 5px; 
     display: flex;
     justify-content: center; 
-    align-items: center;      
+    align-items: center;
+    z-index: 1;      
 }
 
 .menu{
@@ -227,8 +225,8 @@ input::placeholder, textarea::placeholder{
 
 .menu .toggle{
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     box-shadow: 0 25px 15px rgba(0,0,0,0.25),
@@ -239,7 +237,7 @@ input::placeholder, textarea::placeholder{
     align-items: center;
     cursor: pointer;
     font-size: 3em;
-    color: rgb(3, 163, 226);;
+    color: rgb(3, 163, 226);
     z-index: 10000;
 }
 
@@ -319,35 +317,38 @@ input::placeholder, textarea::placeholder{
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
 }
 
-/* check */
-input .check{
-    display: none;
-}
-
-
 /* Footer */
 
 .footer{
     background-color: #1D293F;
+    
 }
 
 .footer__title{
-    font-weight: 300;
+    font-weight: lighter;
     font-size: 2rem;
     margin-bottom: 30px;
+    padding: 0;
+    margin: 0;
 }
 
 .footer__title, .footer__newsletter{
-    color: #fff;
+    color: #ffffff;
+    padding-bottom: 5px;
 }
 
 
 .footer__container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 60px;
+    border-bottom: 1px solid #a23131;
+    padding-bottom: 5px;
+    padding: 20px;
+}
+
+.footer__container.container{
+    text-align: center;
 }
 
 .nav--footer{
@@ -365,41 +366,11 @@ input .check{
     flex-wrap: wrap;
 }
 
-.footer__inputs{
-    margin-top: 10px;
-    display: flex;
-    overflow: hidden;
-}
-
-.footer__input{
-    background-color: #fff;
-    height: 50px;
-    display: block;
-    padding-left: 10px;
-    border-radius: 6px;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    margin-right: 16px;
-}
-
-.footer__submit{
-    margin-left: auto;
-    display: inline-block;
-    height: 50px;
-    padding: 0 20px ;
-    background-color: #2091F9;
-    border: none;
-    font-size: 1rem;
-    color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
 .footer__copy{
     --padding-container: 30px 0;
     text-align: center;
     color: #fff;
+    padding: 20px;
 }
 
 .footer__copyright{
@@ -423,11 +394,11 @@ input .check{
 
     .nav__link--menu{
         position: fixed;
-        background-color: #000;
+        background-color: #1D293F;
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -439,9 +410,11 @@ input .check{
     }
 
     .nav__link--show{
+        display: flex;
         --show: block;
-        opacity:1 ;
+        opacity:0.95 ;
         pointer-events: unset;
+        border-radius: 10px;
     }
 
     .nav__close{
@@ -483,12 +456,23 @@ input .check{
 }
 
 @media (max-width:600px){
+    .hero{
+        min-height: 450px;
+        max-height: 100px;
+        position: relative;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        color: #fff;
+
+    }
     .hero__title{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin: 10px;
     }
 
     .hero__paragraph{
         font-size: 1rem;
+        margin: 10px;
     }
 
     .subtitle{
@@ -527,5 +511,27 @@ input .check{
         margin:0;
         width: 100%;
         */
+    }
+
+    .menu .toggle{
+        width: 50px;
+        height: 50px;
+    }
+    .menu li a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu.active li{
+        scale: 1;
+        
+    }
+    .menu{
+        width: 140px;
+        height: 140px; 
+    }
+
+    .menu li {
+        transform-origin: 70px;
     }
 }
