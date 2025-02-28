@@ -1,8 +1,11 @@
 {
+{
   "rewrites": [
     { "source": "/inicio", "destination": "/index.html" },
     { "source": "/contacto", "destination": "/Contact.html" },
     { "source": "/productos", "destination": "/products.html" },
-    { "source": "/oluciones", "destination": "/Soluciones.html" }
-  ]
+    { "source": "/soluciones", "destination": "/Soluciones.html" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
