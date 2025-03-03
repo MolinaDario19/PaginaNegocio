@@ -66,8 +66,6 @@ body {
     align-items: center;
     background-color: #ffffff;
     opacity: 0.96;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     position: fixed;
     z-index: 1000;
 }
@@ -88,6 +86,10 @@ body {
     grid-auto-columns: max-content;
     gap: 2em;
     
+}
+.nav__links:hover {
+    background-color: #303231;
+    border-radius: 10px;
 }
 
 .nav__items {
@@ -449,15 +451,16 @@ body {
     .nav__menu{
         display: block;
         padding-right: 4%;
+        
     }
 
     .nav__link--menu{
         position: fixed;
         background-color: #1D293F;
         top: 0;
-        left: 0;
-        height: 50%;
-        width: 50%;
+        left: 20vw;
+        height: 40%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -466,7 +469,9 @@ body {
         opacity: 0;
         pointer-events: none;
         transition: .7s opacity;
+        border-left: 8px solid rgb(255, 255, 255);
     }
+
 
     .nav__link--show{
         display: flex;
@@ -474,13 +479,14 @@ body {
         opacity:1 ;
         pointer-events: unset;
         border-radius: 10px;
+        
     }
 
     .nav__close{
         position: absolute;
-        top: 30px;
-        right: 30px;
-        width: 30px;
+        top: 3px;
+        right: 3px;
+        width: 35px;
         cursor: pointer;
     }
 
