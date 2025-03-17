@@ -109,28 +109,40 @@
         </div>
 
         <script>
-            // Obtener elementos
-            var modal = document.getElementById("myModal");
-            var openModalBtn = document.getElementById("openModal");
-            var closeModalBtn = document.getElementsByClassName("close")[0];
-
-            // Abrir la ventana emergente al hacer clic en el enlace
-            openModalBtn.onclick = function(event) {
-                event.preventDefault(); // Evita que el enlace recargue la página
-                modal.style.display = "block";
-            };
-
-            // Cerrar la ventana emergente al hacer clic en la "X"
-            closeModalBtn.onclick = function() {
-                modal.style.display = "none";
-            };
-
-            // Cerrar la ventana emergente si se hace clic fuera del contenido
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
+            document.querySelector("form").addEventListener("submit", function(event) {
+                var checkbox = document.getElementById("termsCheckbox");
+                if (!checkbox.checked) {
+                    event.preventDefault(); // Evita el envío del formulario
+                    alert("Debe aceptar las políticas de privacidad y términos y condiciones antes de enviar el formulario.");
                 }
-            };
+            });
+        </script>
+
+        <script>
+            // Esperar a que el DOM cargue completamente
+            document.addEventListener("DOMContentLoaded", function () {
+                var modal = document.getElementById("myModal");
+                var openModalBtn = document.getElementById("openModal");
+                var closeModalBtn = document.getElementsByClassName("close")[0];
+
+                // Abrir la ventana emergente solo cuando se haga clic en el enlace
+                openModalBtn.addEventListener("click", function (event) {
+                    event.preventDefault(); // Evita que el enlace recargue la página
+                    modal.style.display = "block";
+                });
+
+                // Cerrar la ventana emergente al hacer clic en la "X"
+                closeModalBtn.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+
+                // Cerrar la ventana emergente si se hace clic fuera del contenido
+                window.addEventListener("click", function (event) {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            });
         </script>
 
         <section class="share">
