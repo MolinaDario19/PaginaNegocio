@@ -169,8 +169,11 @@ body {
     display: flex;
     flex-direction: column; 
     justify-content: center;
+    align-content: center;
     align-items: center;
     gap: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 
@@ -198,6 +201,7 @@ body {
 .searchBtn:hover {
     background-color: #283141; 
 }
+
 
 .searchInput{
     color: #1D293F;

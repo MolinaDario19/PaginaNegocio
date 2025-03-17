@@ -164,6 +164,10 @@ body {
 }
 
 /* Form */
+.contact{
+    padding: 5vh;
+    padding-top: 0vh;
+}
 
 .contact form{
     padding: 50px 55px;
@@ -190,9 +194,9 @@ body {
     padding: 17px 25px;
     border-radius: 25px;
     margin-bottom: 20px;
-    background-color: #EDFFF0;
-    border: 2px solid #F0FAF1;
-    color: #283629;
+    background-color: #1d293f;
+    border: 2px solid #f0faf1d0;
+    color: #ffffff;
     outline: none;
 }
 
@@ -208,7 +212,8 @@ input::placeholder, textarea::placeholder{
 }
 
 .form-text a{
-    color: #76b28e;
+    
+    color: #d4dfd8;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -227,17 +232,7 @@ input::placeholder, textarea::placeholder{
     background-color: #50E04B;
 }
 
-@media(max-width:991px){
 
-    .contact form{
-        padding: 5px 3px;
-        width: 100%;
-    }
-
-    .contact input{
-        padding: 15px;
-    }
-}
 
 /* share */
 
@@ -352,6 +347,38 @@ input::placeholder, textarea::placeholder{
     border-radius: 50%;
     transform: rotate(calc(360deg / -5 * var(--i)));
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+}
+
+/*Politicas*/
+
+.modal {
+    display: flex;
+    justify-content: center;;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-bottom: 5vh;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-height: 80vh; /* Altura máxima de la ventana modal */
+    overflow-y: auto; /* Activa el scroll vertical si el contenido es largo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* Footer */
