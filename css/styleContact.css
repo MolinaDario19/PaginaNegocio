@@ -11,11 +11,10 @@ body {
     margin: 0;
 }
 
+
 .container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 90%;
+    position: relative;
+    width: 80%;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -165,13 +164,20 @@ body {
 
 /* Form */
 .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5vh;
-    padding-top: 0vh;
+    padding-top: 1vh;
+}
+
+.contact p{
+    text-align: justify;
 }
 
 .contact form{
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
     border-radius: 20px;
     text-align: center;
     width: 340px;
@@ -213,7 +219,7 @@ input::placeholder, textarea::placeholder{
 
 .form-text a{
     
-    color: #d4dfd8;
+    color: #05c74c;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -352,7 +358,7 @@ input::placeholder, textarea::placeholder{
 /*Politicas*/
 
 .modal {
-    display: flex;
+    display: none;
     justify-content: center;;
     position: fixed;
     z-index: 1000;
@@ -362,9 +368,16 @@ input::placeholder, textarea::placeholder{
     height: 90vh;
     background-color: rgba(0, 0, 0, 0.01);
     padding-bottom: 5vh;
+    
 }
 
+
 .modal-content {
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
     background-color: rgba(255, 255, 255, 0.9);
     margin: 10% auto;
     padding: 20px;
@@ -375,9 +388,10 @@ input::placeholder, textarea::placeholder{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+
 .close {
     float: right;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -449,6 +463,8 @@ input::placeholder, textarea::placeholder{
 .footer__img{
     width: 30px;
 }
+
+
 
 /* Media queries */
 

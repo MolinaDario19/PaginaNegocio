@@ -47,7 +47,7 @@
         <section class="contact container">
             <form action="https://formsubmit.co/digitalelectronicscalic@gmail.com" method="POST">
                 <h2>Contáctenos Vía Email</h2>
-                <p>Envíenos sus datos con sus comentarios, sus opiniones son muy importantes para el mejoramiento de nuestros procesos.</p>
+                <p>Queremos escucharle. Envíenos sus datos y háganos saber sus requerimientos o sugerencias.</p>
     
                 <div class="input-group">
                     <label for="name">Nombre</label>
@@ -72,8 +72,9 @@
     
                     <input type="submit" class="btn" value="Enviar">
     
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/Contact.html">
+                    <input id="enviado" type="hidden" name="_next" value="https://digitalelectronics.vercel.app/" >
                     <input type="hidden" name="_captcha" value="false">
+                    
                 </div>
             </form>
         
@@ -117,6 +118,10 @@
                 }
             });
         </script>
+
+
+
+        
 
         <script>
             // Esperar a que el DOM cargue completamente
