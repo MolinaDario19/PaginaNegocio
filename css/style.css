@@ -13,7 +13,7 @@ body {
 
 .container {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -85,7 +85,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
-    gap: 2em; 
+    gap: 2em;
 }
 
 .nav__links:hover {
@@ -642,8 +642,6 @@ body {
 .footer__img{
     width: 30px;
 }
-/* Media queries */
-
 @media (max-width:800px){
     
     
@@ -841,10 +839,24 @@ body {
 
     .nav--footer{
         padding-bottom: 60px;
+        
+    }
+    .nav--footer .footer__title{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        
     }
 
     .nav__link--footer{
         justify-content: space-between;
+        gap: 0;
+        margin: 1vw;
+        flex-wrap: nowrap;
+    }
+
+    .nav__link--footer a{
+        padding: 0;
     }
 
     .footer__inputs{
@@ -866,6 +878,11 @@ body {
         margin:0;
         width: 100%;
         */
+    }
+
+    .footer__container{
+        
+        margin: 0;
     }
 
     .menu .toggle{

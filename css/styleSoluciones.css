@@ -520,10 +520,24 @@ body {
 
     .nav--footer{
         padding-bottom: 60px;
+        
+    }
+    .nav--footer .footer__title{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        
     }
 
     .nav__link--footer{
         justify-content: space-between;
+        gap: 0;
+        margin: 1vw;
+        flex-wrap: nowrap;
+    }
+
+    .nav__link--footer a{
+        padding: 0;
     }
 
     .footer__inputs{

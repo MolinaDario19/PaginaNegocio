@@ -14,11 +14,12 @@ body {
 
 .container {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
 }
+
 
 .hero {
     width: 100%;
@@ -44,7 +45,6 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 75%, 0 80%);
     z-index: -1;
 }
-
 
 /* Nav */
 
@@ -167,8 +167,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vh;
+    width: 90vw;
+    padding: 4vh;
     padding-top: 1vh;
+    margin: 0;
 }
 
 .contact p{
@@ -465,7 +467,6 @@ input::placeholder, textarea::placeholder{
 }
 
 
-
 /* Media queries */
 
 @media (max-width:800px){
@@ -561,6 +562,10 @@ input::placeholder, textarea::placeholder{
         margin: 10px;
     }
 
+    .contact form{
+        width: 80vw;
+    }
+
     .subtitle{
         font-size: 1.8rem;
     }
@@ -572,10 +577,24 @@ input::placeholder, textarea::placeholder{
 
     .nav--footer{
         padding-bottom: 60px;
+        
+    }
+    .nav--footer .footer__title{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        
     }
 
     .nav__link--footer{
         justify-content: space-between;
+        gap: 0;
+        margin: 1vw;
+        flex-wrap: nowrap;
+    }
+
+    .nav__link--footer a{
+        padding: 0;
     }
 
     .footer__inputs{
