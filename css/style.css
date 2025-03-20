@@ -324,7 +324,7 @@ body {
 
 .testimony{
     background-color: #e5e5f7;
-    min-width: 500px;
+    
 }
 
 .testimony__container{
@@ -373,7 +373,7 @@ body {
 }
 
 .testimony__course{
-    background-color: royalblue;
+    background-color: rgb(5, 14, 41);
     color: #fff;
     display: inline-block;
     padding: 5px;
@@ -792,9 +792,16 @@ body {
         font-size: 1.8rem;
     }
 
+    .about__main {
+        
+        padding: 1vw;
+        
+        
+    }
 
     .testimony{
         --padding-container: 60px 0;
+        
     }
 
     .testimony__container{
@@ -802,7 +809,8 @@ body {
         grid-template-columns: 50px 1fr 50px;
         gap: 0.5em;
         align-items: center;
-        padding: 1vh;
+        padding: 0;
+        margin: 0;
     }
     
 
