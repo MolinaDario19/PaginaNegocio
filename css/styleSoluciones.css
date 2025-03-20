@@ -384,13 +384,14 @@ body {
     gap: 1em;
     grid-auto-flow: row;
     height: 100%;
+    color: white;
 }
 
 .nav__link--footer{
-    display: flex;
     margin: 0;
     margin-right: 20px;
     flex-wrap: wrap;
+    
 }
 
 .footer__copy{
