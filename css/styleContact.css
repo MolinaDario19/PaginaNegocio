@@ -14,7 +14,7 @@ body {
 
 .container {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -168,7 +168,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 90vw;
-    padding: 4vh;
+    padding: 2vw;
     padding-top: 1vh;
     margin: 0;
 }
