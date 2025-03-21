@@ -208,7 +208,11 @@ body {
     box-shadow: 0 0 5px 5px rgba(0, 3, 43, 0.5);
     color: white;
 }
-
+.about__icons ion-icon{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+}
 .about__icon {
     width: 40px;
     padding: 20px;
