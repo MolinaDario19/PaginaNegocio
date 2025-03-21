@@ -519,6 +519,8 @@ body {
     }
 
     .nav--footer{
+        display: flex;
+        align-items: center;
         padding-bottom: 60px;
         
     }
@@ -559,6 +561,40 @@ body {
         margin:0;
         width: 100%;
         */
+    }
+
+    .footer__container .nav--footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .footer__container .nav--footer .footer__title{
+        width: max-content;
+    }
+
+
+    .menu .toggle{
+        width: 50px;
+        height: 50px;
+    }
+    .menu li a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu.active li{
+        scale: 1;
+        
+    }
+    .menu{
+        width: 140px;
+        height: 140px; 
+    }
+
+    .menu li {
+        transform-origin: 70px;
     }
     .menu .toggle{
         width: 50px;

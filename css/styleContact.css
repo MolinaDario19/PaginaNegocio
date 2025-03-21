@@ -167,7 +167,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
     padding: 2vw;
     padding-top: 1vh;
     margin: 0;
@@ -562,6 +562,10 @@ input::placeholder, textarea::placeholder{
         margin: 10px;
     }
 
+    .contact{
+        width: 93vw;
+    } 
+
     .contact form{
         width: 80vw;
     }
@@ -576,6 +580,8 @@ input::placeholder, textarea::placeholder{
     }
 
     .nav--footer{
+        display: flex;
+        align-items: center;
         padding-bottom: 60px;
         
     }
@@ -617,6 +623,18 @@ input::placeholder, textarea::placeholder{
         width: 100%;
         */
     }
+
+    .footer__container .nav--footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .footer__container .nav--footer .footer__title{
+        width: max-content;
+    }
+
 
     .menu .toggle{
         width: 50px;

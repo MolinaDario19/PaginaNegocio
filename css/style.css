@@ -136,7 +136,7 @@ body {
     gap: 1em;
     padding: 0;
     text-align: center;
-    top: 5.5vh; /* Alinea el contenedor con la parte superior de la página */
+    top: 0.5vh; /* Alinea el contenedor con la parte superior de la página */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
     
 }
@@ -845,6 +845,8 @@ body {
     }
 
     .nav--footer{
+        display: flex;
+        align-items: center;
         padding-bottom: 60px;
         
     }
@@ -887,9 +889,38 @@ body {
         */
     }
 
-    .footer__container{
+    .footer__container .nav--footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         
-        margin: 0;
+    }
+
+    .footer__container .nav--footer .footer__title{
+        width: max-content;
+    }
+
+
+    .menu .toggle{
+        width: 50px;
+        height: 50px;
+    }
+    .menu li a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu.active li{
+        scale: 1;
+        
+    }
+    .menu{
+        width: 140px;
+        height: 140px; 
+    }
+
+    .menu li {
+        transform-origin: 70px;
     }
 
     .menu .toggle{
