@@ -714,7 +714,7 @@ body {
     }
 
     .testimony__container{
-        grid-template-columns: 30px 1fr 30px;
+        grid-template-columns: 50px 1fr 50px;
     }
 
     .testimony__body{
@@ -749,6 +749,8 @@ body {
         justify-content: space-evenly;
         margin: 0;
     }
+
+
 
     .footer__form{
         width: 100%;
@@ -813,10 +815,11 @@ body {
     .testimony__container{
         display: grid;
         grid-template-columns: 50px 1fr 50px;
-        gap: 0.5em;
+        gap: 0.1em;
         align-items: center;
         padding: 0;
-        margin: 0;
+        margin: 0; 
+        
     }
     
 
@@ -828,9 +831,13 @@ body {
         margin-top: 15px;
     }
 
+    .testimony__picture{
+        margin: 0;
+    }
+
     .testimony__img{
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
     
 
