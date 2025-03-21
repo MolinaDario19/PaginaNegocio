@@ -99,10 +99,11 @@ body {
 }
 
 .nav__links {
-    color: rgba(79,129,189,255);
+    color: #001A49; /* rgba(79,129,189,255);*/
     text-decoration:none;
-    font-style:italic;
-    font-size: 1.8vh;
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-size: 2.2vh;
     padding: 20px;
 }
 
@@ -501,6 +502,12 @@ input::placeholder, textarea::placeholder{
         pointer-events: none;
         transition: .7s opacity;
         border-left: 8px solid rgb(255, 255, 255);
+    }
+
+    .nav__items a{
+        color: #ffffff;
+        font-family: Verdana, sans-serif;
+        font-style: normal;
     }
 
 
