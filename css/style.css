@@ -167,6 +167,7 @@ body {
 .about {
     text-align: center;
     padding: 5vh;
+    
 }
 
 .subtitle {
@@ -179,6 +180,7 @@ body {
 .about__paragraph {
     line-height: 1.7;
     text-align: justify;
+    
 }
 
 .about__main {
@@ -189,6 +191,7 @@ body {
     gap: 1em;
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    
 }
 
 
@@ -199,13 +202,25 @@ body {
     width: 260px;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 2px;
-    box-shadow: 0 0 5px 5px rgba(0, 3, 43, 0.2);
+    border-radius: 5%;
+    background-color: black;
+    box-shadow: 0 0 5px 5px rgba(0, 3, 43, 0.5);
+    color: white;
 }
 
 .about__icon {
     width: 40px;
-    padding: 40px;
+    padding: 20px;
+    
+}
+
+.about__title{
+    margin: 0;
+}
+
+.about__paragrah{
+    text-align: center;
+    margin: 0;
 }
 
 /* coverage */
