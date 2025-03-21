@@ -14,7 +14,7 @@ body {
 
 .container {
     position: relative;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -277,7 +277,7 @@ input::placeholder, textarea::placeholder{
     align-items: center;
     cursor: pointer;
     font-size: 3em;
-    color: rgb(3, 163, 226);
+    color: #25D366;
     z-index: 10000;
 }
 
@@ -582,7 +582,7 @@ input::placeholder, textarea::placeholder{
     .nav--footer{
         display: flex;
         align-items: center;
-        padding-bottom: 60px;
+        padding-bottom: 5px;
         
     }
     .nav--footer .footer__title{
