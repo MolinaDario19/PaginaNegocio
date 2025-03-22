@@ -39,7 +39,7 @@
         <section class="hero__container container">
             <h1 class="hero__title">Nuestras soluciones</h1>
             <p class="hero__paragraph">Soluciones a tu medida, diseñadas para adaptarse a tus necesidades.</p>
-            <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
+            <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
         </section>
     </header>
     <main>
@@ -79,6 +79,52 @@
             </div>
 
         </section>
+
+
+         <!-- Ventana emergente (wha) -->
+         <div id="myWha" class="wha">
+            <div class="wha-content">
+                <div class="wha-header">
+                    <div class="perfil">
+                        <img src="./images/perfil.jpeg" alt="">
+                    </div>
+                    <h4>Especialista de DigitalElectronics</h4>
+                    <span class="closeWha">&times;</span>
+                </div>
+
+                <div class="wha-text">
+                    <p>¿Necesitas ayuda? Contacta a nuestros expertos.</p>
+                    <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Esperar a que el DOM cargue completamente
+            document.addEventListener("DOMContentLoaded", function () {
+                var wha = document.getElementById("myWha");
+                var openWhaBtn = document.getElementById("openWha");
+                var closeWhaBtn = document.getElementsByClassName("closeWha")[0];
+
+                // Abrir la ventana emergente solo cuando se haga clic en el enlace
+                openWhaBtn.addEventListener("click", function (event) {
+                    event.preventDefault(); // Evita que el enlace recargue la página
+                    wha.style.display = "block";
+                });
+
+                // Cerrar la ventana emergente al hacer clic en la "X"
+                closeWhaBtn.addEventListener("click", function () {
+                    wha.style.display = "none";
+                });
+
+                // Cerrar la ventana emergente si se hace clic fuera del contenido
+                window.addEventListener("click", function (event) {
+                    if (event.target === wha) {
+                        wha.style.display = "none";
+                    }
+                });
+            });
+        </script>
 
 
         <section class="share">
