@@ -388,22 +388,29 @@ body {
     cursor: pointer;
     margin-right: 2vw;
 }
-.wha-header{
-    display: flex;
-    
-    
-}
+
 
 .wha-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-evenly;
     background-color: #25d366;
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
     text-align: left;
+}
+
+.perfil-nombre{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 90%;   
+}
+
+.enLinea{
+    font-size: 0.9em;
 }
 
 .lista-header {
