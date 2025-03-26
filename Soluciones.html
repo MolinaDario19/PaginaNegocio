@@ -101,7 +101,32 @@
                 
 
                 <div class="wha-text">
-                    <p>¿Necesitas ayuda? Contacta a nuestros expertos.</p>
+
+                    
+                    <div class="message">
+                        <div class="message-text">
+                            ¿Necesitas ayuda? Contacta a nuestros expertos. 👋
+                        </div>
+                        <div id="hora" class="message-time"></div>
+                    </div>
+                    
+                
+                    <script>
+                        function actualizarHora() {
+                            const horaElemento = document.getElementById('hora');
+                            const ahora = new Date();
+                            const horas = ahora.getHours().toString().padStart(2, '0');
+                            const minutos = ahora.getMinutes().toString().padStart(2, '0');
+                            horaElemento.textContent = `${horas}:${minutos}`;
+                        }
+                
+                        // Actualizar hora inmediatamente
+                        actualizarHora();
+                
+                        // Actualizar cada segundo
+                        setInterval(actualizarHora, 1000);
+                    </script>
+
                     <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
                 </div>
             </div>

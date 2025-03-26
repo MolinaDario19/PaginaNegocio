@@ -373,7 +373,7 @@ body {
     margin: 10% auto;
     padding: 0;
     border-radius: 10px;
-    border: 2px solid #08ec8c;;
+    border: 2px solid #25d366;;
     width: 50%;
     max-width: 400px;
     max-height: 80vh; /* Altura máxima de la ventana modal */
@@ -436,6 +436,40 @@ body {
 .wha-text .cta{
     color: black;
     margin: 10px;
+}
+
+
+.message {
+    background-color: #262924;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 90%;
+    position: relative;
+    clear: both;
+    float: left;
+    
+}
+.message::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #262924; /*DCF8C6*/
+    border-left: 15px solid transparent;
+}
+.message-text {
+    word-wrap: break-word;
+}
+.message-time {
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.45);
+    text-align: right;
+    margin-top: 5px;
 }
 
 /* Footer */
