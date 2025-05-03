@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Electronics</title>
     <link rel="shortcut icon" href="./images/LOGO DG.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styleSoftwareTv.css">
+    <link rel="stylesheet" href="./css/styleSoluciones.css">
 </head>
+
+<!-- Añadir Firebase SDK -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
+  
+    // Configuración de Firebase
+    const firebaseConfig = {
+        apiKey: process.env.FIREBASE_API_KEY,
+        authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+        appId: process.env.FIREBASE_APP_ID,
+        measurementId: process.env.FIREBASE_MEASUREMENT_ID
+};
+  
+    // Inicializar Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+
+    // Función para obtener los datos del documento
+    async function fetchData() {
+      try {
+        // Referencia al documento en Firestore
+        const docRef = doc(db, "KALLEY", "aZ1ovukJZb4Ouyr8xdZi");
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          
+          // Mostrar los datos en el HTML
+          document.getElementById("androidTV").textContent = data["ANDROID TV"].join(", ");
+          document.getElementById("googleTV").textContent = data["GOOGLE TV"].join(", ");
+        } else {
+          console.log("No se encontró el documento");
+        }
+      } catch (error) {
+        console.error("Error al obtener el documento: ", error);
+      }
+    }
+
+    // Llamar a la función para obtener los datos al cargar la página
+    fetchData();
+  </script>
+
+
 <body>
     <header class="hero">
         <nav class="nav container">
@@ -47,42 +96,11 @@
         </section>
     </header>
     <main>
-
-        <section class="solutions">
-
-            <h3> Consulta MODO DE SERVICIO por referencia de MainBoard</h3>
-            <div class="contInputButton">
-                <input class="searchInput" type="text" id="searchInput">
-                <button class="searchBtn" id="searchBtn">Buscar</button>
-            </div>
-
-            <h3>Consulta software disponibles</h3>
-            <div class="contInputButton">
-                <label for="dropdown">Marca:</label>
-                <select class="searchInput" type="text" id="dropdown" name="dropdown" size="1">
-                    <option value="opcion1">HYUNDAI</option>
-                    <option value="opcion2">CHALLENGER</option>
-                    <option value="opcion3">KALLEY</option>
-                    <option value="opcion4">JVC</option>
-                    <option value="opcion5">SANKEY</option>
-                    <option value="opcion6">SIMPLY</option>
-                    <option value="opcion7">IBG</option>
-                    <option value="opcion8">KAIWI</option>
-                    <option value="opcion9">VISIVO</option>
-                    <option value="opcion10">CAIXUN</option>
-                    <option value="opcion11">EXCLUSIV</option>
-                    <option value="opcion12">INDUCOL</option>
-                    <option value="opcion13">INTEC</option>
-                    <option value="opcion14">RCA</option>
-                    <option value="opcion15">WESTINHOUSE</option>
-                    <option value="opcion16">OLIMPO</option>
-                    <option value="opcion17">SMARTVISION</option>
-                    
-                </select>
-                <button class="searchBtn" id="searchBtn">Buscar</button>
-            </div>
-
-        </section>
+        <h1>Elementos de ANDROID TV</h1>
+        <p id="androidTV">Cargando...</p>
+        
+        <h1>Elementos de GOOGLE TV</h1>
+        <p id="googleTV">Cargando...</p>
 
 
          <!-- Ventana emergente (wha) -->
