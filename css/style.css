@@ -633,13 +633,22 @@ ul li:hover a:before{
     
 }
 
-.footer__title{
+/* .footer__title{
     font-weight: lighter;
     font-size: 2rem;
     margin-bottom: 30px;
     padding: 0;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+} */
+
+.footer__title {
+    font-weight: lighter;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 .footer__title, .footer__newsletter{
@@ -802,34 +811,6 @@ ul li:hover a:before{
     .questions__copy{
         width: 100%;
     }
-
-    .footer__container{
-        flex-wrap: wrap;
-    }
-
-    .nav--footer{
-        width: 100%;
-        justify-items: center;
-    }
-
-    .nav__link--footer{
-        width: 100%;
-        justify-content: space-evenly;
-        margin: 0;
-    }
-
-
-
-    .footer__form{
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .footer__input{
-        flex: 1;
-    }
-
-
 }
 
 @media (max-width:600px){
@@ -914,65 +895,31 @@ ul li:hover a:before{
         font-size: 1rem;
     }
 
-    .footer__title{
-        justify-self: start;
-        margin-bottom: 15px;
-    }
-
-    .nav--footer{
-        display: flex;
-        align-items: center;
-        padding-bottom: 5px;
-        
-    }
-    .nav--footer .footer__title{
-        width: 90vw;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .nav__link--footer{
-        justify-content: space-between;
-        gap: 0;
-        margin: 1vw;
-        flex-wrap: nowrap;
-    }
-
-    .nav__link--footer a{
-        padding: 0;
-    }
-
-    .footer__inputs{
-        flex-wrap: wrap;
-    }
-
-    .footer__input{
-        flex-basis: 100%;
-        margin: 0;
-        margin-bottom: 16px;
-    }
-
-    .footer__submit{
-        margin-right: auto;
-        margin-left: 0;
-        
-
-        /* 
-        margin:0;
-        width: 100%;
-        */
-    }
-
-    .footer__container .nav--footer{
-        display: flex;
-        justify-content: center;
+    .footer__container {
         flex-direction: column;
-        
+        padding: 40px 20px; /* más espacio vertical */
+        gap: 20px;
     }
 
-    .footer__container .nav--footer .footer__title{
-        width: max-content;
+    .nav--footer {
+        padding-bottom: 30px;
+        gap: 1.5em; /* más separación entre ítems */
+    }
+
+    .nav__link--footer {
+        display: flex;
+        flex-direction: column;   /* cambia de fila a columna */
+        align-items: center;      /* centra los links */
+        gap: 10px;                /* espacio vertical entre links */
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        overflow-wrap: break-word;
+    }
+
+    .nav__link--footer a {
+        font-size: 2.5vh;
+        margin: 5px 0;
     }
 
 
