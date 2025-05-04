@@ -1,3 +1,5 @@
+// api/firebaseConfig.js
+
 module.exports = (req, res) => {
   res.status(200).json({
     apiKey: process.env.FIREBASE_API_KEY,
