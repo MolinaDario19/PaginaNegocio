@@ -1,17 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "builds": [
-    {
-      "src": "api/firebaseConfig.js",
-      "use": "@vercel/node"
-    }
-  ],
   "rewrites": [
     { "source": "/inicio", "destination": "/index.html" },
     { "source": "/contacto", "destination": "/Contact.html" },
     { "source": "/productos", "destination": "/products.html" },
-    { "source": "/soluciones", "destination": "/Soluciones.html" },
-    { "source": "/softwaretv", "destination": "/SoftwareTv.html" }
+    { "source": "/soluciones", "destination": "/Soluciones.html" }
   ],
   "cleanUrls": true,
   "trailingSlash": false
