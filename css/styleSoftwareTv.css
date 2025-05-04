@@ -194,6 +194,30 @@ ul li:hover a:before{
     border-radius: 32px;
 }
 
+/* title-marcas */
+
+.title-marcas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-height: max-content;
+    background: #ffffff;
+    padding: 0.1vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title-marcas h3{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: #001A49;;
+    font-size: 1.5rem;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    font-style:inherit;
+    text-transform: uppercase;
+}
 
 /* cards */
 
