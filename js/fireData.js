@@ -25,16 +25,27 @@ import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.
             // Limpiar "Cargando..."
             androidContainer.textContent = '';
             googleContainer.textContent = '';
+            
+
 
             // Función para crear y agregar cuadros
             function crearCuadros(datos, contenedor) {
               datos.forEach(item => {
                 const div = document.createElement("div");
                 div.className = "cuadro";
-                div.textContent = item;
+            
+                const icon = document.createElement("i");
+                icon.className = "fas fa-folder icono-carpeta";
+            
+                const texto = document.createElement("span");
+                texto.textContent = item;
+            
+                div.appendChild(icon);
+                div.appendChild(texto);
                 contenedor.appendChild(div);
               });
             }
+            
 
             crearCuadros(androidTV, androidContainer);
             crearCuadros(googleTV, googleContainer);
