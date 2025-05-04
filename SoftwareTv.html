@@ -56,23 +56,60 @@
 
         <section class="cards-marcas container">
             <div class="cont-card">
-                <div class="card" style="--clr:#000000;">KALLEY</div>
-                <div class="card" style="--clr:#180e9f;">HYUNDAI</div>
-                <div class="card" style="--clr:#050505;">CHALLENGER</div>
-                <div class="card" style="--clr:#ef1400;">JVC</div>
-                <div class="card" style="--clr:#080808;">OLIMPO</div>
-                <div class="card" style="--clr:#ef1400;">SANKEY</div>
-                <div class="card" style="--clr:#cc132a;">CAIXUN</div>
-                <div class="card" style="--clr:#0e0e0d;">EXCLUSIV</div>
-                <div class="card" style="--clr:#597e8c;">RECCO</div>
-                <div class="card" style="--clr:#ff0101;">TCL</div>
-                <div class="card" style="--clr:#33acab;">HISENSE</div>
-                <div class="card" style="--clr:#184aca;">IBG</div>
-                <div class="card" style="--clr:#050505;">SIMPLY</div>
-                <div class="card" style="--clr:#961208;">VISIVO</div>
-                <div class="card" style="--clr:#050505;">CHALLENGER</div>
-                <div class="card" style="--clr:#050505;">KAIWI</div>
-                <div class="card" style="--clr:#0a4084;">INDUCOL</div>
+                <div class="card" style="--clr: #040c90; --clb: #ffffff;">
+                    <img src="/images/Kalley.jpg" alt="logo kalley">
+                </div>
+                <div class="card" style="--clr:#000000; --clb: #ffffff;">
+                    <img src="/images/Hyundai.png" alt="logo hyundai">
+                </div>
+                <div class="card" style="--clr:#ffffff; --clb: #000000;">
+                    <img src="/images/logo_challenger.png" alt="logo challenger">
+                </div>
+                <div class="card" style="--clr:#ef1400; --clb: #000000;">
+                    <img src="/images/logo-jvc.jpg" alt="logo jvc">
+                </div>
+                <div class="card" style="--clr:#080808;">
+                    <img src="/images/logos olimpo.png" alt="logo olimpo">
+                </div>
+                <div class="card" style="--clr:#ef1400;">
+                    <img src="/images/logo_sankey.png" alt="logo sankey">
+                </div>
+                <div class="card" style="--clr:#cc132a;">
+                    <img src="/images/logo caixun.png" alt="logo caixun">
+                </div>
+                <div class="card" style="--clr:#0e0e0d; --clb:#ffffff;">
+                    <img src="/images/exclusiv.jpg" alt="logo exclusiv">
+                </div>
+                <div class="card" style="--clr:#597e8c;">
+                    <img src="/images/recco_logo.jpg" alt="logo recco">
+                </div>
+                <div class="card" style="--clr:#ff0101;">
+                    <img src="/images/TCL_logo.png" alt="logo tcl">
+                </div>
+                <div class="card" style="--clr:#ffffff; --clb: #00a293;">
+                    <img src="/images/Hisense-Logo.jpg" alt="logo hisense">
+                </div>
+                <div class="card" style="--clr:#29166f;">
+                    <img src="/images/IBG.jpg" alt="logo ibg" style="width: 80%; height: 80%; object-fit: contain;">
+                </div>
+                <div class="card" style="--clr:#050505;">
+                    <img src="/images/Simply logo.webp" alt="logo simply">
+                </div>
+                <div class="card" style="--clr:#961208;">
+                    <img src="/images/visivo logo.png" alt="logo visivo">
+                </div>
+                <div class="card" style="--clr:#ffffff; --clb: #000000;">
+                    <img src="/images/rca logo.png" alt="logo rca">
+                </div>
+                <div class="card" style="--clr:#050505;">
+                    <img src="/images/westinghouse-logo.png" alt="logo westinhouse">
+                </div>
+                <div class="card" style="--clr:#050505;">
+                    <img src="/images/LOGO_KAIWI.jpg" alt="logo KAIWI">
+                </div>
+                <div class="card" style="--clr:#0a4084;">
+                    <img src="/images/Logo_INDUCOL.png" alt="logo INDUCOL">
+                </div>
                 <div class="card" style="--clr:#147cc4;">VINCHI</div>
             </div>
 
@@ -83,12 +120,15 @@
                         let y =e.offsetY;
                         let cardWidth = card.clientWidth;
                         let cardHeight = card.clientHeight;
-                        let transX = (x - cardHeight/2);
-                        let transY = (y - cardHeight/2);
+                        let transX = (x - cardHeight/2)/2;
+                        let transY = (y - cardHeight/2)/2;
                         let clr = getComputedStyle(card).getPropertyValue('--clr').trim();
+                        let clb = getComputedStyle(card).getPropertyValue('--clb').trim();
+
                         card.style.transform = `translateX(${transX}px)
                         translateY(${transY}px)`;
                         card.style.boxShadow = `${transX/-1}px ${transY/-1}px 0 ${clr}`;
+                        
                     })
                     card.addEventListener('mouseout', (e) => {
                         card.style.transform = ``;

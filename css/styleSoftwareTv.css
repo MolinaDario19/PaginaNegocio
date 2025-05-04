@@ -235,9 +235,16 @@ ul li:hover a:before{
     font-weight: 700;
     cursor: pointer;
     color: var(--clr);
+    background-color: var(--clb);
     transition: 0.25s;
     text-wrap: balance;
 }
+
+.cont-card .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* evita recortes */
+  }
 
 /*search*/
 .solutions {
