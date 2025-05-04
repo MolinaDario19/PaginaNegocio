@@ -13,8 +13,32 @@ import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.
   
           if (docSnap.exists()) {
             const data = docSnap.data();
-            document.getElementById("androidTV").textContent = data["ANDROID TV"].join(",** ");
-            document.getElementById("googleTV").textContent = data["GOOGLE TV"].join(",*** ");
+            // document.getElementById("androidTV").textContent = data["ANDROID TV"].join(",");
+            // document.getElementById("googleTV").textContent = data["GOOGLE TV"].join(",");
+
+            const androidTV = data["ANDROID TV"];
+            const googleTV = data["GOOGLE TV"];
+
+            const androidContainer = document.getElementById("androidTV");
+            const googleContainer = document.getElementById("googleTV");
+
+            // Limpiar "Cargando..."
+            androidContainer.textContent = '';
+            googleContainer.textContent = '';
+
+            // Función para crear y agregar cuadros
+            function crearCuadros(datos, contenedor) {
+              datos.forEach(item => {
+                const div = document.createElement("div");
+                div.className = "cuadro";
+                div.textContent = item;
+                contenedor.appendChild(div);
+              });
+            }
+
+            crearCuadros(androidTV, androidContainer);
+            crearCuadros(googleTV, googleContainer);
+
           } else {
             console.log("No se encontró el documento");
           }
