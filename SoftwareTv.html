@@ -13,22 +13,22 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
     import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
-  
+
     // Obtener configuración de Firebase desde el backend
-    fetch('/API/firebaseConfig.js')
+    fetch('/api/firebaseConfig')  
       .then(res => res.json())
       .then(async (firebaseConfig) => {
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
         const db = getFirestore(app);
-  
+
         try {
           const docRef = doc(db, "KALLEY", "aZ1ovukJZb4Ouyr8xdZi");
           const docSnap = await getDoc(docRef);
-  
+
           if (docSnap.exists()) {
             const data = docSnap.data();
-  
+
             // Mostrar los datos en el HTML
             document.getElementById("androidTV").textContent = data["ANDROID TV"].join(", ");
             document.getElementById("googleTV").textContent = data["GOOGLE TV"].join(", ");
@@ -42,7 +42,8 @@
       .catch(error => {
         console.error("Error al cargar la configuración de Firebase:", error);
       });
-  </script>
+</script>
+
 
 
 <body>
