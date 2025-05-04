@@ -53,12 +53,41 @@
         </section>
     </header>
     <main>
-        <h1>Elementos de ANDROID TV</h1>
+
+        <SEction class="cards-marcas container">
+            <div class="cont-card">
+                <div class="card" style="--clr:#000000;">KALLEY</div>
+                <div class="card" style="--clr:#180e9f;">HYUNDAI</div>
+                <div class="card" style="--clr:#ef1400;">JVC</div>
+                <div class="card" style="--clr:#080808;">OLIMPO</div>
+                <div class="card" style="--clr:#050505;">CHALLENGER</div>
+            </div>
+
+            <script>
+                let cards =document.querySelectorAll('.card').forEach(card => {
+                    card.addEventListener('mousemove', (e) =>{
+                        let x =e.offsetX;
+                        let y =e.offsetY;
+                        let cardWidth = card.clientWidth;
+                        let cardHeight = card.clientHeight;
+                        let transX = (x - cardHeight/2);
+                        let transY = (y - cardHeight/2);
+                        card.style.transform = `translateX(${transX}px)
+                        translateY(${transY}px)`;
+                        card.style.boxShadow = `${transX/-1}px ${transY/-1}px 0 #136986`;
+                    })
+                    card.addEventListener('mouseout', (e) => {
+                        card.style.transform = ``;
+                        card.style.boxShadow = ``;
+                    })
+                })
+            </script>
+        </SEction>
+        <h1>ANDROID TV</h1>
         <p id="androidTV">Cargando...</p>
         
-        <h1>Elementos de GOOGLE TV</h1>
+        <h1>GOOGLE TV</h1>
         <p id="googleTV">Cargando...</p>
-
 
          <!-- Ventana emergente (wha) -->
          <div id="myWha" class="wha ">

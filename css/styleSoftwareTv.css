@@ -195,6 +195,50 @@ ul li:hover a:before{
 }
 
 
+/* cards */
+
+.cards-marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    max-height: 100vh;
+    background: #ffffff;
+    padding: 5vh;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.cont-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    
+}
+
+.cont-card .card {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 120px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #111;
+    border-radius: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--clr);
+    transition: 0.25s;
+    text-wrap: balance;
+}
+
 /*search*/
 .solutions {
     padding: 0;
