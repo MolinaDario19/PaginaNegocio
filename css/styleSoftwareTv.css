@@ -202,10 +202,10 @@ ul li:hover a:before{
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    max-height: 100vh;
+    max-height: max-content;
     background: #ffffff;
     padding: 5vh;
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -214,7 +214,7 @@ ul li:hover a:before{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 3vh;
     
 }
 
@@ -231,7 +231,7 @@ ul li:hover a:before{
     align-items: center;
     border: 2px solid #111;
     border-radius: 20px;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 700;
     cursor: pointer;
     color: var(--clr);
