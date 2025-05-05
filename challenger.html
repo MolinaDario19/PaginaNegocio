@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Electronics</title>
     <link rel="shortcut icon" href="./images/LOGO DG.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styleProduct.css">
+    <link rel="stylesheet" href="./css/styleKalley.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
     <header class="hero">
         <nav class="nav container">
@@ -41,90 +44,40 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">Nuestros productos</h1>
-            <p class="hero__paragraph">Calidad y eficiencia a tu alcance. ¡Obtén la mejor solución hoy!</p>
+            <h1 class="hero__title">Nuestras soluciones</h1>
+            <p class="hero__paragraph">Soluciones a tu medida, diseñadas para adaptarse a tus necesidades.</p>
             <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
         </section>
     </header>
     <main>
-        
-        <section class="products container">
 
-            <div class="containercard">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/IBG.jpg" alt="">
-                        <p>software original IBG</p>
-                    </div>
-                    <div class="content">
-                        <h2>$ 70.000 COP</h2>
-                        <h4>$ 80.000 COP</h4>
-                        <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" class="cta">Comprar ahora</a>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/Hyundai.png" alt="">
-                        <p>software original HYUNDAI</p>
-                    </div>
-                    <div class="content">
-                        <h2>$ 75.000 COP</h2>
-                        <h4>$ 85.000 COP</h4>
-                        <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" class="cta">Comprar ahora</a>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/RCA.png" alt="">
-                        <p>software original RCA</p>
-                    </div>
-                    <div class="content">
-                        <h2>$ 80.000 COP</h2>
-                        <h4>$ 90.000 COP</h4>
-                        <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" class="cta">Comprar ahora</a>
-                    </div>
-                </div>
+        <section class="solutions">
 
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/Kalley.jpg" alt="">
-                        <p>software original KALLEY</p>
-                    </div>
-                    <div class="content">
-                        <h2>$ 80.000 COP</h2>
-                        <h4>$ 90.000 COP</h4>
-                        <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" class="cta">Comprar ahora</a>
-                    </div>
-                </div>
+            
+            <h3>ANDROID T2</h3>
+            <div id="androidT2" class="contenedor-directorio">Cargando...</div>
 
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/Sankey.png" alt="">
-                        <p>software original sankey</p>
-                    </div>
-                    <div class="content">
-                        <h2>$ 80.000 COP</h2>
-                        <h4>$ 90.000 COP</h4>
-                        <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" class="cta">Comprar ahora</a>
-                    </div>
-                </div>
+            <h3>NETFLIX T2</h3>
+            <div id="netflixT2" class="contenedor-directorio">Cargando...</div>
 
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="./images/exclusiv.jpg" alt="">
-                        <p>software original EXCLUSIV</p>
-                    </div>
-                    <div class="content">
-                        <h2>$ 80.000 COP</h2>
-                        <h4>$ 90.000 COP</h4>
-                        <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" class="cta">Comprar ahora</a>
-                    </div>
-                </div>
-        
-            </div>
+            <h3>SERIES S30</h3>
+            <div id="seriess30" class="contenedor-directorio">Cargando...</div>
+
+            <h3>SMART</h3>
+            <div id="smart" class="contenedor-directorio">Cargando...</div>
+
+            <script type="module">
+                import { cargarColeccion } from './js/fireModulo.js';
+            
+                cargarColeccion("CHALLENGER", "23pfwWqhYASthWjcop9t", {
+                  "ANDROID T2": "androidT2",
+                  "NETFLIX T2": "netflixT2",
+                  "SERIES S30": "seriess30",
+                  "SMART": "smart"
+                });
+              </script>
         </section>
+
 
          <!-- Ventana emergente (wha) -->
          <div id="myWha" class="wha ">
@@ -145,17 +98,21 @@
                 </div>
                 
 
-                <div class="wha-text"> 
+                <div class="wha-text">
+
+                    
                     <div class="message">
                         <div class="message-text">
                             ¿Necesitas ayuda? Contacta a nuestros expertos. 👋
                         </div>
                         <div id="hora" class="message-time"></div>
                     </div>
+                    
                     <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
                 </div>
             </div>
         </div>
+
 
         <section class="share">
             <div class="menu">
@@ -180,14 +137,13 @@
                     <a target="_blank" href="https://www.tiktok.com/@digitalelectronicscali?_t=ZS-8usXSfJnBJw&_r=1"><ion-icon name="logo-tiktok"></ion-icon></a>
                 </li>
 
-        
                 <div class="toggle">
                     <ion-icon name="logo-whatsapp"></ion-icon>
                     <!--<ion-icon name="share-social-outline"></ion-icon>-->
                     <ion-icon name="close-outline"></ion-icon>
                 </div>
             </div>
-        
+
             <script>
                 let toggle = document.querySelector('.toggle')
                 let menu = document.querySelector('.menu')
@@ -223,12 +179,8 @@
                         <a href="./Contact.html" class="nav__links">Contacto</a>
                     </li>
                     
-                    <img src="./images/close.svg" class="nav__close">
                 </ul>
-
-                
             </nav>
-
         </section>
 
         <section class="footer__copy container">
@@ -241,17 +193,10 @@
             <h4 class="footer__copyright">2025 ©DigitalElectronics. Todos los derechos reservados</h4>
         </section>
     </footer>
-
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelectorAll(".card"), {
-            max: 25,
-            speed: 400,
-            glare:true,
-            "max-glare":1
-        });
-    </script>
     <script src="./js/menu.js"></script>
     <script type="module" src="/js/whatsapp.js"></script>
+    <!--Firebase SDK -->
+    <script type="module" src="/js/fireData.js"></script>
+
 </body>
 </html>

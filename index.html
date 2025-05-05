@@ -55,7 +55,7 @@
             <h1 class="hero__title">¡Nos complace saludarte!</h1>
             <p class="hero__paragraph">Somos una empresa especializada en Tecnología de la Información (TI), ofreciendo soluciones 
                 técnicas y de ingeniería.</p>
-            <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" class="cta">Contactar ahora</a>
+                <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
         </section>
     </header>
 
@@ -332,6 +332,37 @@
             </section>
         </section>
 
+         <!-- Ventana emergente (wha) -->
+         <div id="myWha" class="wha ">
+            <div class="wha-content">
+                <div class="wha-header">
+                    <div class="perfil-nombre">
+                        <div class="perfil">
+                            <img src="./images/perfil.jpeg" alt="">
+                        </div>
+                        <ul class="lista-header">
+                            <li><h4>DigitalElectronics</h4></li>
+                            <li class="enLinea">En linea</li>
+                          </ul>
+                        <!-- <h4>DigitalElectronics</h4> -->
+                        <!-- <p>En linea</p> -->
+                    </div>
+                    <span class="closeWha">&times;</span>  
+                </div>
+                
+
+                <div class="wha-text"> 
+                    <div class="message">
+                        <div class="message-text">
+                            ¿Necesitas ayuda? Contacta a nuestros expertos. 👋
+                        </div>
+                        <div id="hora" class="message-time"></div>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
         <section class="share">
             <div class="menu">
             
@@ -416,6 +447,7 @@
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
+    <script type="module" src="/js/whatsapp.js"></script>
 
     
 </body>
