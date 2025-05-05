@@ -28,9 +28,12 @@ import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.
             
 
 
-            // Función para crear y agregar cuadros
             function crearCuadros(datos, contenedor) {
               datos.forEach(item => {
+                const a = document.createElement("a");
+                a.className = "link_to";
+                a.href = `./${item}.html`; // usar "item" directamente
+            
                 const div = document.createElement("div");
                 div.className = "cuadro";
             
@@ -40,9 +43,15 @@ import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.
                 const texto = document.createElement("span");
                 texto.textContent = item;
             
+                // Agregar ícono y texto al div
                 div.appendChild(icon);
                 div.appendChild(texto);
-                contenedor.appendChild(div);
+            
+                // Agregar div dentro del <a>
+                a.appendChild(div);
+            
+                // Agregar <a> al contenedor
+                contenedor.appendChild(a);
               });
             }
             

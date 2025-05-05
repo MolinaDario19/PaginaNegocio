@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Electronics</title>
+    <link rel="shortcut icon" href="./images/LOGO DG.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styleSoluciones.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">DigitalElectronics</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./products.html" class="nav__links">Productos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./SoftwareTv.html" class="nav__links">Software TV</a>
+                </li>
+                <li class="nav__items">
+                    <a id="nav_sol" href="./Soluciones.html" class="nav__links">Soluciones</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./Contact.html" class="nav__links">Contacto</a>
+                </li>
+                
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu4.png" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Nuestras soluciones</h1>
+            <p class="hero__paragraph">Soluciones a tu medida, diseñadas para adaptarse a tus necesidades.</p>
+            <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
+        </section>
+    </header>
+    <main>
+
+        <section class="solutions">
+
+            <div>
+                <h3>Aqui proximamente encontrara la información del producto</h3>
+            </div>
+
+        </section>
+
+
+         <!-- Ventana emergente (wha) -->
+         <div id="myWha" class="wha ">
+            <div class="wha-content">
+                <div class="wha-header">
+                    <div class="perfil-nombre">
+                        <div class="perfil">
+                            <img src="./images/perfil.jpeg" alt="">
+                        </div>
+                        <ul class="lista-header">
+                            <li><h4>DigitalElectronics</h4></li>
+                            <li class="enLinea">En linea</li>
+                          </ul>
+                        <!-- <h4>DigitalElectronics</h4> -->
+                        <!-- <p>En linea</p> -->
+                    </div>
+                    <span class="closeWha">&times;</span>  
+                </div>
+                
+
+                <div class="wha-text">
+
+                    
+                    <div class="message">
+                        <div class="message-text">
+                            ¿Necesitas ayuda? Contacta a nuestros expertos. 👋
+                        </div>
+                        <div id="hora" class="message-time"></div>
+                    </div>
+                    
+                
+                    <script>
+                        function actualizarHora() {
+                            const horaElemento = document.getElementById('hora');
+                            const ahora = new Date();
+                            const horas = ahora.getHours().toString().padStart(2, '0');
+                            const minutos = ahora.getMinutes().toString().padStart(2, '0');
+                            horaElemento.textContent = `${horas}:${minutos}`;
+                        }
+                
+                        // Actualizar hora inmediatamente
+                        actualizarHora();
+                
+                        // Actualizar cada segundo
+                        setInterval(actualizarHora, 1000);
+                    </script>
+
+                    <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Esperar a que el DOM cargue completamente
+            document.addEventListener("DOMContentLoaded", function () {
+                var wha = document.getElementById("myWha");
+                var openWhaBtn = document.getElementById("openWha");
+                var closeWhaBtn = document.getElementsByClassName("closeWha")[0];
+
+                // Abrir la ventana emergente solo cuando se haga clic en el enlace
+                openWhaBtn.addEventListener("click", function (event) {
+                    event.preventDefault(); // Evita que el enlace recargue la página
+                    wha.style.display = "block";
+                });
+
+                // Cerrar la ventana emergente al hacer clic en la "X"
+                closeWhaBtn.addEventListener("click", function () {
+                    wha.style.display = "none";
+                });
+
+                // Cerrar la ventana emergente si se hace clic fuera del contenido
+                window.addEventListener("click", function (event) {
+                    if (event.target === wha) {
+                        wha.style.display = "none";
+                    }
+                });
+            });
+        </script>
+
+
+        <section class="share">
+            <div class="menu">
+            
+                <li style="--i:1;--clr:#25d366;">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20*DigitalElectronics*%20%F0%9F%92%BB%2C%20vengo%20de%20la%20pagina%20web%20y%20estoy%20interesado%20en%20reparar%20mi%20televisor%20"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </li>
+        
+                <li style="--i:2;--clr:#1877f2;">
+                    <a target="_blank" href="https://www.facebook.com/share/14HaRv1WTf/"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+        
+                <li style="--i:3;--clr:#ea4c89;">
+                    <a target="_blank" href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+        
+                <li style="--i:4;--clr:#ff0000;">
+                    <a target="_blank" href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79"><ion-icon name="logo-youtube"></ion-icon></a>
+                </li>
+                
+                <li style="--i:5;--clr:#000000;">
+                    <a target="_blank" href="https://www.tiktok.com/@digitalelectronicscali?_t=ZS-8usXSfJnBJw&_r=1"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </li>
+
+                <div class="toggle">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <!--<ion-icon name="share-social-outline"></ion-icon>-->
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+
+            <script>
+                let toggle = document.querySelector('.toggle')
+                let menu = document.querySelector('.menu')
+                toggle.onclick = function(){
+                    menu.classList.toggle('active');
+                }
+            </script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav--footer">
+                <h2 class="footer__title">DigitalElectronics</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="./index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./products.html" class="nav__links">Productos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./SoftwareTv.html" class="nav__links">Software TV</a>
+                    </li>
+                    <li class="nav__items">
+                        <a id="nav_sol" href="./Soluciones.html" class="nav__links">Soluciones</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./Contact.html" class="nav__links">Contacto</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/share/14HaRv1WTf/" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ==" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+                <a href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h4 class="footer__copyright">2025 ©DigitalElectronics. Todos los derechos reservados</h4>
+        </section>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
