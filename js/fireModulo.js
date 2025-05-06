@@ -18,12 +18,13 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
 
     const data = docSnap.data();
 
-    // info.json
+    // Cargar info.json
     const infoRes = await fetch('/info.json');
     const infoData = await infoRes.json();
 
+    // Crear cuadros en el contenedor
     function crearCuadros(datos, contenedor) {
-      contenedor.textContent = '';
+      contenedor.textContent = '';  // Limpiar el contenedor antes de agregar nuevos elementos
       datos.forEach(item => {
         const a = document.createElement("a");
         a.className = "modelo-link";
@@ -43,11 +44,9 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
         div.appendChild(texto);
         a.appendChild(div);
         contenedor.appendChild(a);
-      });
 
-      // infoData 
-      document.querySelectorAll('.modelo-link').forEach(link => {
-        link.addEventListener('click', (e) => {
+        // Añadir el listener al enlace creado
+        a.addEventListener('click', (e) => {
           e.preventDefault();
           const modelo = e.currentTarget.dataset.modelo;
           const info = infoData[modelo];
@@ -65,9 +64,11 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
       });
     }
 
+    // Asegúrate de que el contenedor existe antes de intentar crear los cuadros
     for (const campo in contenedores) {
-      if (data[campo]) {
-        crearCuadros(data[campo], document.getElementById(contenedores[campo]));
+      const contenedor = document.getElementById(contenedores[campo]);
+      if (contenedor && data[campo]) {
+        crearCuadros(data[campo], contenedor);
       }
     }
 
@@ -75,3 +76,4 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
     console.error("Error general: ", error);
   }
 }
+
