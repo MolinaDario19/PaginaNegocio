@@ -1,40 +1,33 @@
-let data;
-
-// Cargar el archivo JSON
 fetch('/info.json')  // Ajusta la ruta si es necesario
   .then(res => res.json())
   .then(json => {
     data = json;
-    
+    console.log(data);  // Verifica que los datos están correctos
 
-    // Agregar eventos a los enlaces
     document.querySelectorAll('.modelo-link').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();  // Prevenir la acción por defecto del enlace
-        
-        // Usar 'e.target' para acceder al atributo 'data-modelo' del <a>
-        const modelo = e.target.closest('.modelo-link').dataset.modelo; 
+
+        const modelo = e.currentTarget.dataset.modelo; 
         const info = data[modelo];
 
+        console.log(info);  // Verifica los datos del modelo
+
         if (info) {
-          // Actualizar los elementos del modal con la información
           document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
           document.getElementById('modalVersion').textContent = info.version;
           document.getElementById('modalFecha').textContent = info.fecha;
           document.getElementById('modalDescripcion').textContent = info.descripcion;
 
-          // Mostrar el modal
-          document.getElementById('modal').style.display = 'block';
+          document.getElementById('modal').style.display = 'flex';  // Cambiar 'block' a 'flex'
         } else {
           alert('Información no disponible para este modelo.');
         }
       });
     });
-    console.log(info);
 
-    // Botón para cerrar el modal
     document.getElementById('cerrarModal').onclick = () => {
-      document.getElementById('modal').style.display = 'none';
+      document.getElementById('modal').style.display = 'none';  // Ocultar el modal
     };
   })
   .catch(error => {
