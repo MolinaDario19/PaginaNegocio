@@ -10,9 +10,6 @@
 
 </head>
 
-<!--Firebase SDK -->
-<script type="module" src="/js/fireData.js"></script>
-
 <body>
     <header class="hero">
         <nav class="nav container">
@@ -54,13 +51,24 @@
     </header>
     <main>
 
-        <section class="solutions">
+
+        <section class="solutions">   
+
             <h3>ANDROID TV</h3>
             <div id="androidTV" class="contenedor-directorio">Cargando...</div>
 
             <h3>GOOGLE TV</h3>
             <div id="googleTV" class="contenedor-directorio">Cargando...</div>
 
+
+            <script type="module">
+                import { cargarColeccion } from './js/fireModulo.js';
+                
+                cargarColeccion("KALLEY", "aZ1ovukJZb4Ouyr8xdZi", {
+                  "ANDROID TV2": "androidTV",
+                  "GOOGLE TV": "googleTV"
+                });
+              </script>
         </section>
 
 

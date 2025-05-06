@@ -51,20 +51,19 @@
     </header>
     <main>
 
-        <section class="solutions">
-
-            
+        <section class="solutions">           
             <h3>ANDROID T2</h3>
             <div id="androidT2" class="contenedor-directorio">Cargando...</div>
 
             <h3>NETFLIX T2</h3>
             <div id="netflixT2" class="contenedor-directorio">Cargando...</div>
 
+            <h3>SMART</h3>
+            <div id="smart" class="contenedor-directorio">Cargando...</div>
+
             <h3>SERIES S30</h3>
             <div id="seriess30" class="contenedor-directorio">Cargando...</div>
 
-            <h3>SMART</h3>
-            <div id="smart" class="contenedor-directorio">Cargando...</div>
 
             <script type="module">
                 import { cargarColeccion } from './js/fireModulo.js';
@@ -72,8 +71,8 @@
                 cargarColeccion("CHALLENGER", "23pfwWqhYASthWjcop9t", {
                   "ANDROID T2": "androidT2",
                   "NETFLIX T2": "netflixT2",
-                  "SERIES S30": "seriess30",
-                  "SMART": "smart"
+                  "SMART": "smart",
+                  "SERIES S30": "seriess30"
                 });
               </script>
         </section>
@@ -195,8 +194,5 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script type="module" src="/js/whatsapp.js"></script>
-    <!--Firebase SDK -->
-    <script type="module" src="/js/fireData.js"></script>
-
 </body>
 </html>
