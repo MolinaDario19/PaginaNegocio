@@ -1,7 +1,7 @@
 let data;
 
 // Cargar el archivo JSON
-fetch('info.json')  // Ajusta la ruta si es necesario
+fetch('/info.json')  // Ajusta la ruta si es necesario
   .then(res => res.json())
   .then(json => {
     data = json;
