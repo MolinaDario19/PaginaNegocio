@@ -56,6 +56,16 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
             document.getElementById('modalVersion').textContent = info.version || 'No disponible';
             document.getElementById('modalFecha').textContent = info.fecha || 'No disponible';
             document.getElementById('modalDescripcion').textContent = info.descripcion || 'No disponible';
+          
+            // 👉 Mostrar PDF si existe
+            if (info.pdf) {
+              document.getElementById('pdfViewer').src = info.pdf;
+              document.getElementById('modalPdfContainer').style.display = 'block';
+            } else {
+              document.getElementById('pdfViewer').src = '';
+              document.getElementById('modalPdfContainer').style.display = 'none';
+            }
+          
             document.getElementById('modal').style.display = 'block';
           } else {
             alert('Información no disponible para este modelo.');

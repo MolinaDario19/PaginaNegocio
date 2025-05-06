@@ -4,7 +4,7 @@
     "version": "install.img",
     "fecha": "2025-05-06",
     "descripcion": "Software probado ",
-    "pdf": "manuales/Paginaweb.pdf"
+    "pdf": "/manuales/Paginaweb.pdf"
   },
   "K-ATV32HDE": {
     "modelo": "K-ATV32HDE",
