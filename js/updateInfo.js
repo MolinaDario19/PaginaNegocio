@@ -1,7 +1,7 @@
 let data;
 
 // Cargar el archivo JSON
-fetch('/info.json')  
+fetch('info.json')  // Ajusta la ruta si es necesario
   .then(res => res.json())
   .then(json => {
     data = json;
@@ -10,7 +10,9 @@ fetch('/info.json')
     document.querySelectorAll('.modelo-link').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();  // Prevenir la acción por defecto del enlace
-        const modelo = e.target.closest('.modelo-link').dataset.modelo;
+        
+        // Usar 'e.target' para acceder al atributo 'data-modelo' del <a>
+        const modelo = e.target.closest('.modelo-link').dataset.modelo; 
         const info = data[modelo];
 
         if (info) {
