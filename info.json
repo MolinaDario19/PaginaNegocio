@@ -11,21 +11,19 @@
     "version": "install.img",
     "fecha": "2025-05-05",
     "descripcion": "Software no probado",
-    "pdf": "https://mega.nz/file/tPYQXYyL#ZSY3EDKuw8g1aXbAHcwxrGsOG9ys0f_dhOqxV_F6SL0"
+    "instrucciones":"1. Formatee una memoria USB de 4 o 8 Gigabytes, esta debe quedar totalmente en blanco (FAT32 por defecto). 2. Descargue el archivo llamado install.img y cópielo solamente en la memoria USB formateada ( no grabe más archivos allí)."
   },
   "K-ATV32HDS": {
     "modelo": "K-ATV32HDS",
     "version": "install.img",
     "fecha": "2025-05-05",
-    "descripcion": "Probado",
-    "pdf": "https://drive.google.com/uc?export=download&id=15SAe9mHPRQz1AsSZLcja1sHysIeD8-cp"
+    "descripcion": "1. Formatee una memoria USB de 4 o 8 Gigabytes, esta debe quedar totalmente en blanco (FAT32 por defecto). 2. Descargue el archivo llamado install.img y cópielo solamente en la memoria USB formateada ( no grabe más archivos allí)."
   },
   "K-ATV32HDW": {
     "modelo": "K-ATV32HDW",
     "version": "",
     "fecha": "",
-    "descripcion": "",
-    "pdf": "https://drive.google.com/uc?export=download&id=1LKa1O1cJq0NJQt5HYeTPjcpmZA4VsSZK"
+    "descripcion": ""
   },
   "K-ATV39HDB": {
     "modelo": "K-ATV39HDB",
