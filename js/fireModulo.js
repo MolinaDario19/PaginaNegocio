@@ -18,14 +18,17 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
 
     const data = docSnap.data();
 
+    // info.json
+    const infoRes = await fetch('/info.json');
+    const infoData = await infoRes.json();
+
     function crearCuadros(datos, contenedor) {
-      contenedor.textContent = ''; // limpia "Cargando..." o contenido previo
+      contenedor.textContent = '';
       datos.forEach(item => {
         const a = document.createElement("a");
         a.className = "modelo-link";
-        a.href = `#`;
+        a.href = "#";
         a.dataset.modelo = item;
-
 
         const div = document.createElement("div");
         div.className = "cuadro";
@@ -41,9 +44,27 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
         a.appendChild(div);
         contenedor.appendChild(a);
       });
+
+      // infoData 
+      document.querySelectorAll('.modelo-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const modelo = e.currentTarget.dataset.modelo;
+          const info = infoData[modelo];
+
+          if (info) {
+            document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
+            document.getElementById('modalVersion').textContent = info.version || 'No disponible';
+            document.getElementById('modalFecha').textContent = info.fecha || 'No disponible';
+            document.getElementById('modalDescripcion').textContent = info.descripcion || 'No disponible';
+            document.getElementById('modal').style.display = 'block';
+          } else {
+            alert('Información no disponible para este modelo.');
+          }
+        });
+      });
     }
 
-    // Procesar cada campo y contenedor
     for (const campo in contenedores) {
       if (data[campo]) {
         crearCuadros(data[campo], document.getElementById(contenedores[campo]));
