@@ -22,7 +22,7 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
       contenedor.textContent = ''; // limpia "Cargando..." o contenido previo
       datos.forEach(item => {
         const a = document.createElement("a");
-        a.className = "link_to";
+        a.className = "modelo-link";
         a.href = `#`;
         a.dataset.modelo = item;
 
