@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
-async function cargarColeccion(coleccion, documentoID, contenedores = {}) {
+export async function cargarColeccion(coleccion, documentoID, contenedores = {}) {
   try {
     const res = await fetch('/api/firebaseConfig');
     const firebaseConfig = await res.json();
