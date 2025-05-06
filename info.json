@@ -3,7 +3,8 @@
     "modelo": "K-ATV32HD",
     "version": "install.img",
     "fecha": "2025-05-06",
-    "descripcion": "Software probado "
+    "descripcion": "Software probado ",
+    "pdf": "/manuales/Pagina web.pdf"
   },
   "K-ATV32HDE": {
     "modelo": "K-ATV32HDE",

@@ -1,7 +1,7 @@
 let data;
 
 // Cargar el archivo JSON
-fetch('/info.json')  // Asegúrate de que la ruta sea correcta
+fetch('/info.json')
   .then(res => {
     if (!res.ok) {
       throw new Error('Error al cargar el archivo JSON');
@@ -11,28 +11,30 @@ fetch('/info.json')  // Asegúrate de que la ruta sea correcta
   .then(json => {
     data = json;
 
-    // Asegurémonos de que los enlaces se están seleccionando correctamente
     const enlaces = document.querySelectorAll('.modelo-link');
     console.log('Enlaces encontrados:', enlaces);
 
-    // Agregar eventos a los enlaces
     enlaces.forEach(link => {
       link.addEventListener('click', (e) => {
-        e.preventDefault();  // Prevenir la acción por defecto del enlace
-        console.log('Enlace clickeado', e.target.closest('.modelo-link')); // Log cuando se hace clic
+        e.preventDefault();
 
-        // Obtener el 'data-modelo' del enlace
-        const modelo = e.target.closest('.modelo-link').dataset.modelo;
-        const info = data[modelo];  // Buscar el modelo en el JSON
+        const modelo = e.currentTarget.dataset.modelo;
+        const info = data[modelo]; // CORRECTO
 
         if (info) {
-          // Mostrar la información en el modal
           document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
           document.getElementById('modalVersion').textContent = info.version || 'No disponible';
           document.getElementById('modalFecha').textContent = info.fecha || 'No disponible';
           document.getElementById('modalDescripcion').textContent = info.descripcion || 'No disponible';
 
-          // Mostrar el modal
+          if (info.pdf) {
+            document.getElementById('pdfViewer').src = info.pdf;
+            document.getElementById('modalPdfContainer').style.display = 'block';
+          } else {
+            document.getElementById('pdfViewer').src = '';
+            document.getElementById('modalPdfContainer').style.display = 'none';
+          }
+
           document.getElementById('modal').style.display = 'block';
         } else {
           alert('Información no disponible para este modelo.');
