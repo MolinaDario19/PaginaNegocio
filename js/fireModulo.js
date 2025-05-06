@@ -23,7 +23,9 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
       datos.forEach(item => {
         const a = document.createElement("a");
         a.className = "link_to";
-        a.href = `./${item}.html`;
+        a.href = `#`;
+        a.dataset.modelo = item;
+
 
         const div = document.createElement("div");
         div.className = "cuadro";
