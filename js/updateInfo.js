@@ -28,7 +28,10 @@ fetch('/info.json')
           document.getElementById('modalDescripcion').textContent = info.descripcion || 'No disponible';
 
           if (info.pdf) {
-            document.getElementById('pdfViewer').src = info.pdf;
+            console.log("Cargando PDF desde:", info.pdf); // Agrega este log para verificar
+            const pdfViewer = document.getElementById('pdfViewer');
+            pdfViewer.src = ''; // Limpia primero
+            pdfViewer.src = info.pdf; // Asigna el nuevo PDF
             document.getElementById('modalPdfContainer').style.display = 'block';
           } else {
             document.getElementById('pdfViewer').src = '';
