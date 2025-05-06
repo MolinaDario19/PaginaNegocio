@@ -1,3 +1,5 @@
+let data;
+
 fetch('/info.json')  // Ajusta la ruta si es necesario
   .then(res => res.json())
   .then(json => {
