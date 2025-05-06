@@ -5,6 +5,7 @@ fetch('/info.json')  // Ajusta la ruta si es necesario
   .then(res => res.json())
   .then(json => {
     data = json;
+    
 
     // Agregar eventos a los enlaces
     document.querySelectorAll('.modelo-link').forEach(link => {
@@ -29,6 +30,7 @@ fetch('/info.json')  // Ajusta la ruta si es necesario
         }
       });
     });
+    console.log(info);
 
     // Botón para cerrar el modal
     document.getElementById('cerrarModal').onclick = () => {
