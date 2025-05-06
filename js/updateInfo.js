@@ -11,8 +11,12 @@ fetch('/info.json')  // Asegúrate de que la ruta sea correcta
   .then(json => {
     data = json;
 
+    // Asegurémonos de que los enlaces se están seleccionando correctamente
+    const enlaces = document.querySelectorAll('.modelo-link');
+    console.log('Enlaces encontrados:', enlaces);
+
     // Agregar eventos a los enlaces
-    document.querySelectorAll('.modelo-link').forEach(link => {
+    enlaces.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();  // Prevenir la acción por defecto del enlace
         console.log('Enlace clickeado', e.target.closest('.modelo-link')); // Log cuando se hace clic
