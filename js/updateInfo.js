@@ -1,7 +1,7 @@
 let data;
 
 // Cargar el archivo JSON
-fetch('./info.json') 
+fetch('/info.json') 
   .then(res => res.json())
   .then(json => {
     data = json;
