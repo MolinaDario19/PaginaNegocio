@@ -70,13 +70,63 @@ body {
     z-index: 1000;
 }
 
+.nav .nav__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+/* .nav .nav__logo img{
+    height: clamp(3rem, 2vw, 3rem);
+    padding: 0;
+    border: 0;
+    transition: calc(0.5s);
+} */
+
+.nav .nav__logo img {
+    height: clamp(3rem, 2vw, 3rem);
+    padding: 0;
+    border: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover: agrandar un poco */
+.nav .nav__logo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* .nav__title {
+    font-weight: 20px;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: rgba(79,129,189,255);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 1.5rem;
+    gap: 0px;
+} */
+
 .nav__title {
     font-weight: 20px;
     font-size: clamp(1.5rem, 2vw, 2rem);
     color: rgba(79,129,189,255);
     font-family: 'Times New Roman', Times, serif;
-    padding: 20px;
-    gap: 10px;
+    padding-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease-out 0.1s; /* empieza un poco después */
 }
 
 .nav__link {
