@@ -1079,8 +1079,8 @@ ul li:hover a:before{
         gap: 30px;
     }
 
-    .questions__padding .container{
-        width: 100%;
+    .questions__padding{
+        width: 98%;
     }
 
     .nav--footer {
