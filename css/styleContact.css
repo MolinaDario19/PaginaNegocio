@@ -136,8 +136,9 @@ body {
     margin: -4px;
     padding-bottom: 0.5rem;
     font-size: 11px;
-    padding-left: 80px;
-    animation: fadeInUp 0.6s ease-out 0.1s;
+    text-align: right;
+    padding-right: 0.3rem;
+    animation: fadeInUp 0.6s ease-out 0.1s;   
 }
 
 .nav__link {
