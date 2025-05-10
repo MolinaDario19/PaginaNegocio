@@ -1076,7 +1076,11 @@ ul li:hover a:before{
     .footer__container {
         flex-direction: column;
         padding: 40px 20px; /* más espacio vertical */
-        gap: 20px;
+        gap: 30px;
+    }
+
+    .questions__padding{
+        width: 100%;
     }
 
     .nav--footer {
