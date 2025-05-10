@@ -803,7 +803,6 @@ ul li:hover a:before{
     margin-top: 5px;
 }
 
-
 /* Footer */
 
 .footer{
@@ -1147,6 +1146,10 @@ ul li:hover a:before{
 
     .menu li {
         transform-origin: 70px;
+    }
+
+    .wha-content {
+        width: 90%;
     }
 
 }

@@ -893,4 +893,7 @@ ul li:hover a:before{
     .menu li {
         transform-origin: 70px;
     }
+    .wha-content {
+        width: 90%;
+    }
 }

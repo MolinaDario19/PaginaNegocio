@@ -824,4 +824,8 @@ input::placeholder, textarea::placeholder{
     .menu li {
         transform-origin: 70px;
     }
+
+    .wha-content {
+        width: 90%;
+    }
 }
