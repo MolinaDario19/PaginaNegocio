@@ -256,33 +256,7 @@ ul li:hover a:before{
 }
 
 
-/* Directorio
-
-
-.contenedor-directorio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .cuadro {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid #0f0f0f;
-    font-family: sans-serif;
-    font-size: 14px;
-    gap: 8px;
-    margin: 5px;
-  }
-  
-  .icono-carpeta {
-    color: #ffe79c;
-  } */
-
+/* Directorio*/
 /**//* contenedor  modelos*/
 .solutions {
     padding: 0;
@@ -311,6 +285,7 @@ ul li:hover a:before{
   display: grid;
   width: 85%;
   max-width: 90%;
+  margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 16px;
   padding: 20px;

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Electronics</title>
     <link rel="shortcut icon" href="./images/LOGO DG.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styleSoftwareTv.css">
-    
+    <link rel="stylesheet" href="./css/styleKalley.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -47,120 +48,28 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">Software para Televisores</h1>
-            <p class="hero__paragraph">Ofrecemos software original y soporte técnico especializado para múltiples marcas y modelos.</p>
+            <h1 class="hero__title">HYUNDAI</h1>
+            <p class="hero__paragraph">Consulta aquí la disponibilidad de software para tu televisor HYUNDAI. 
+                Si necesitas ayuda con el sistema operativo de tu TV, contáctanos y elige confiabilidad.</p>
             <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
         </section>
-        
     </header>
     <main>
 
-        <section class="title-marcas container">
-            <div>
-                <h3>Seleccione la marca que desee consultar 
-                    disponibilidad de software o documentación:</h3>
-            </div>
-        </section>
-        
-        <section class="cards-marcas container">
+        <section class="solutions">           
+            <h3>HYUNDAY</h3>
+            <div id="hyundaisw" class="contenedor-directorio">Cargando...</div>
+
+
+            <script type="module">
+                import { cargarColeccion } from './js/fireModulo.js';
             
-            <div class="cont-card">
-                <a href="/kalley.html">
-                    <div class="card" style="--clr: #040c90; --clb: #ffffff;">
-                        <img src="/images/Kalley.jpg" alt="logo kalley">
-                    </div>
-                </a>
-                
-                <a href="/Hyundai.html">
-                    <div class="card" style="--clr:#000000; --clb: #ffffff;">
-                        <img src="/images/Hyundai.png" alt="logo hyundai">
-                    </div>
-                </a>
-                
-
-                <a href="/challenger.html">
-                    <div class="card" style="--clr:#ffffff; --clb: #000000;">
-                        <img src="/images/logo_challenger.png" alt="logo challenger">
-                    </div>
-                </a>
-                
-                <div class="card" style="--clr:#ef1400; --clb: #000000;">
-                    <img src="/images/logo-jvc.jpg" alt="logo jvc">
-                </div>
-                <div class="card" style="--clr:#080808;">
-                    <img src="/images/logos olimpo.png" alt="logo olimpo">
-                </div>
-                <div class="card" style="--clr:#ef1400;">
-                    <img src="/images/logo_sankey.png" alt="logo sankey">
-                </div>
-                <div class="card" style="--clr:#cc132a;">
-                    <img src="/images/logo caixun.png" alt="logo caixun">
-                </div>
-                <div class="card" style="--clr:#0e0e0d; --clb:#ffffff;">
-                    <img src="/images/exclusiv.jpg" alt="logo exclusiv">
-                </div>
-                <div class="card" style="--clr:#597e8c;">
-                    <img src="/images/recco_logo.jpg" alt="logo recco">
-                </div>
-                
-                <a href="/tcl.html">
-                    <div class="card" style="--clr:#ff0101;">
-                        <img src="/images/TCL_logo.png" alt="logo tcl">
-                    </div>
-                </a>
-                
-
-                <div class="card" style="--clr:#ffffff; --clb: #00a293;">
-                    <img src="/images/Hisense-Logo.jpg" alt="logo hisense">
-                </div>
-                <div class="card" style="--clr:#29166f;">
-                    <img src="/images/IBG.jpg" alt="logo ibg" style="width: 80%; height: 80%; object-fit: contain;">
-                </div>
-                <div class="card" style="--clr:#050505;">
-                    <img src="/images/Simply logo.webp" alt="logo simply">
-                </div>
-                <div class="card" style="--clr:#961208;">
-                    <img src="/images/visivo logo.png" alt="logo visivo">
-                </div>
-                <div class="card" style="--clr:#ffffff; --clb: #000000;">
-                    <img src="/images/rca logo.png" alt="logo rca">
-                </div>
-                <div class="card" style="--clr:#050505;">
-                    <img src="/images/westinghouse-logo.png" alt="logo westinhouse">
-                </div>
-                <div class="card" style="--clr:#050505;">
-                    <img src="/images/LOGO_KAIWI.jpg" alt="logo KAIWI">
-                </div>
-                <div class="card" style="--clr:#0a4084;">
-                    <img src="/images/Logo_INDUCOL.png" alt="logo INDUCOL">
-                </div>
-                <div class="card" style="--clr:#147cc4;">VINCHI</div>
-            </div>
-
-            <script>
-                let cards =document.querySelectorAll('.card').forEach(card => {
-                    card.addEventListener('mousemove', (e) =>{
-                        let x =e.offsetX;
-                        let y =e.offsetY;
-                        let cardWidth = card.clientWidth;
-                        let cardHeight = card.clientHeight;
-                        let transX = (x - cardHeight/2)/2;
-                        let transY = (y - cardHeight/2)/2;
-                        let clr = getComputedStyle(card).getPropertyValue('--clr').trim();
-                        let clb = getComputedStyle(card).getPropertyValue('--clb').trim();
-
-                        card.style.transform = `translateX(${transX}px)
-                        translateY(${transY}px)`;
-                        card.style.boxShadow = `${transX/-1}px ${transY/-1}px 0 ${clr}`;
-                        
-                    })
-                    card.addEventListener('mouseout', (e) => {
-                        card.style.transform = ``;
-                        card.style.boxShadow = ``;
-                    })
-                })
-            </script>
+                cargarColeccion("HYUNDAI", "aZ1ovukJZb4Ouyr8xdZi", {
+                  "HYUNDAI SW": "hyundaisw"
+                });
+              </script>
         </section>
+
 
          <!-- Ventana emergente (wha) -->
          <div id="myWha" class="wha ">
@@ -191,54 +100,10 @@
                         <div id="hora" class="message-time"></div>
                     </div>
                     
-                
-                    <script>
-                        function actualizarHora() {
-                            const horaElemento = document.getElementById('hora');
-                            const ahora = new Date();
-                            const horas = ahora.getHours().toString().padStart(2, '0');
-                            const minutos = ahora.getMinutes().toString().padStart(2, '0');
-                            horaElemento.textContent = `${horas}:${minutos}`;
-                        }
-                
-                        // Actualizar hora inmediatamente
-                        actualizarHora();
-                
-                        // Actualizar cada segundo
-                        setInterval(actualizarHora, 1000);
-                    </script>
-
                     <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
                 </div>
             </div>
         </div>
-
-        <script>
-            // Esperar a que el DOM cargue completamente
-            document.addEventListener("DOMContentLoaded", function () {
-                var wha = document.getElementById("myWha");
-                var openWhaBtn = document.getElementById("openWha");
-                var closeWhaBtn = document.getElementsByClassName("closeWha")[0];
-
-                // Abrir la ventana emergente solo cuando se haga clic en el enlace
-                openWhaBtn.addEventListener("click", function (event) {
-                    event.preventDefault(); // Evita que el enlace recargue la página
-                    wha.style.display = "block";
-                });
-
-                // Cerrar la ventana emergente al hacer clic en la "X"
-                closeWhaBtn.addEventListener("click", function () {
-                    wha.style.display = "none";
-                });
-
-                // Cerrar la ventana emergente si se hace clic fuera del contenido
-                window.addEventListener("click", function (event) {
-                    if (event.target === wha) {
-                        wha.style.display = "none";
-                    }
-                });
-            });
-        </script>
 
 
         <section class="share">
@@ -321,7 +186,6 @@
         </section>
     </footer>
     <script src="./js/menu.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1549739524053715"
-     crossorigin="anonymous"></script>
+    <script type="module" src="/js/whatsapp.js"></script>
 </body>
 </html>
