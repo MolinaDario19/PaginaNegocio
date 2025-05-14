@@ -305,7 +305,47 @@ ul li:hover a:before{
     color: #ffe79c;
   }
 
-/**/
+/**//* contenedor  modelos*/
+
+#androidTV {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.modelo-link {
+  text-decoration: none;
+}
+
+.cuadro {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cuadro:hover {
+  background-color: #e0e0e0;
+}
+
+.icono-carpeta {
+  font-size: 24px;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.cuadro span {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+
 
 
 /* share */

@@ -280,10 +280,7 @@ ul li:hover a:before{
     text-transform: uppercase;
 }
 
-.contenedor-directorio{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 /* cards */
 
