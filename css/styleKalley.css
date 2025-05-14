@@ -256,7 +256,7 @@ ul li:hover a:before{
 }
 
 
-/*Directorio*/
+/* Directorio
 .solutions {
     padding: 0;
     display: flex;
@@ -303,12 +303,14 @@ ul li:hover a:before{
   
   .icono-carpeta {
     color: #ffe79c;
-  }
+  } */
 
 /**//* contenedor  modelos*/
 
 .contenedor-directorio {
   display: grid;
+  width: 85%;
+  max-width: 90%;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 16px;
   padding: 20px;
