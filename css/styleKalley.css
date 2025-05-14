@@ -307,9 +307,9 @@ ul li:hover a:before{
 
 /**//* contenedor  modelos*/
 
-#androidTV {
+.contenedor-directorio {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 6fr));
   gap: 16px;
   padding: 20px;
 }
