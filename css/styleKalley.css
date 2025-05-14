@@ -257,29 +257,7 @@ ul li:hover a:before{
 
 
 /* Directorio
-.solutions {
-    padding: 0;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
 
-.solutions h3{
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    color: #001A49;;
-    font-size: 1.5rem;
-    font-weight: 700;
-    align-items: center;
-    text-align: center;
-    font-style:inherit;
-    
-}
 
 .contenedor-directorio {
     display: flex;
@@ -306,7 +284,29 @@ ul li:hover a:before{
   } */
 
 /**//* contenedor  modelos*/
+.solutions {
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
 
+.solutions h3{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: #001A49;;
+    font-size: 1.5rem;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    font-style:inherit;
+    
+}
 .contenedor-directorio {
   display: grid;
   width: 85%;
@@ -326,7 +326,7 @@ ul li:hover a:before{
   padding: 12px;
   text-align: center;
   transition: background-color 0.2s;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .cuadro:hover {
@@ -343,7 +343,7 @@ ul li:hover a:before{
 .cuadro span {
   display: block;
   font-size: 14px;
-  color: #333;
+  color: #001A49;
   font-weight: bold;
 }
 
