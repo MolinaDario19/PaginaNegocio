@@ -41,7 +41,7 @@ fetch('/info.json')
             document.getElementById('modalPdfContainer').style.display = 'none';
           }
 
-          document.getElementById('modal').style.display = 'block';
+          document.getElementById('modal').style.display = 'flex';
         } else {
           alert('Información no disponible para este modelo.');
         }
