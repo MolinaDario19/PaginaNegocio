@@ -53,9 +53,11 @@ export async function cargarColeccion(coleccion, documentoID, contenedores = {})
 
           if (info) {
             document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
-            document.getElementById('modalVersion').textContent = info.version || 'No disponible';
-            document.getElementById('modalFecha').textContent = info.fecha || 'No disponible';
-            document.getElementById('modalDescripcion').textContent = info.descripcion || 'No disponible';
+            document.getElementById('modalSoftware').textContent = info.software || 'No disponible';
+            document.getElementById('modalMain').textContent = info.main || 'No disponible';
+            document.getElementById('modalEstado').textContent = info.estado || 'No disponible';
+            document.getElementById('modalPrecio').textContent = info.precio || 'No disponible';
+            document.getElementById('modalInstrucciones').textContent = info.instrucciones || 'No disponible';
           
             // 👉 Mostrar PDF si existe
             if (info.pdf) {
