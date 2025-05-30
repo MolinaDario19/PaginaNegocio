@@ -1,7 +1,7 @@
 {
   "K-ATV32HD": {
     "modelo": "K-ATV32HD",
-    "software": "install.img",
+    "software": "V8-T841TNF-LF1V851-CTS.img",
     "main": "V8-T841TNF-LF1V808, V8-T841TNF-LF1V851",
     "estado": "Disponible",
     "precio": "Software probado ",
@@ -10,7 +10,7 @@
   },
   "K-ATV32HDE": {
     "modelo": "K-ATV32HDE",
-    "software": "install.img",
+    "software": "V8-T841AGL-0000871-CTS.img",
     "main": "V8-T841AGL-0000136",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -19,7 +19,7 @@
   },
   "K-ATV32HDS": {
     "modelo": "K-ATV32HDS",
-    "software": "",
+    "software": "V8-T841TNF-LF1V851-CTS.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -28,7 +28,7 @@
   },
   "K-ATV32HDW": {
     "modelo": "K-ATV32HDW",
-    "software": "",
+    "software": "V8-T841AGL-0000871-CTS.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -37,7 +37,7 @@
   },
   "K-ATV39HDB": {
     "modelo": "K-ATV39HDB",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -46,7 +46,7 @@
   },
   "K-ATV40FHD": {
     "modelo": "K-ATV40FHD",
-    "software": "",
+    "software": "V8-T841TNF-LF1V785-CTS.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
