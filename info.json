@@ -349,7 +349,864 @@
     "instrucciones": "",
     "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
+
+
+  "K-GTV32FHD": {
+    "modelo": "K-GTV32FHD",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-GTV40FHD": {
+    "modelo": "K-GTV40FHD",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-GTV43FHD": {
+    "modelo": "K-GTV43FHD",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-GTV43UHDQ": {
+    "modelo": "K-GTV43UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-GTV43UHDQV": {
+    "modelo": "K-GTV43UHDQV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-GTV50UHDQ": {
+    "modelo": "K-GTV50UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "2243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV50UHDQV": {
+    "modelo": "K-GTV50UHDQV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV50UHDQV2": {
+    "modelo": "K-GTV50UHDQV2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-TV50G305": {
+    "modelo": "K-TV50G305",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-TV50GQ405": {
+    "modelo": "K-TV50GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV55UHDQ": {
+    "modelo": "K-GTV55UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV55UHDQV": {
+    "modelo": "K-GTV55UHDQV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV55UHDQV2": {
+    "modelo": "K-GTV55UHDQV2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-55GM405": {
+    "modelo": "K-55GM405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-55GQ405": {
+    "modelo": "K-55GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV58UHDQ": {
+    "modelo": "K-GTV58UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-58GQ405": {
+    "modelo": "K-58GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-60G300": {
+    "modelo": "K-60G300",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV65UHDQ": {
+    "modelo": "K-GTV65UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-GTV70UHDQ": {
+    "modelo": "K-GTV70UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
+  },
+  "K-70GQ405": {
+    "modelo": "K-70GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
+  },
+  "K-GTV75UHDQ": {
+    "modelo": "K-GTV75UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
+  },
+  "K-75GQ405": {
+    "modelo": "K-75GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
+  },
+  "K-GTV85UHDQ": {
+    "modelo": "K-GTV85UHDQ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
+  },
+  "K-GTV98UHDQV": {
+    "modelo": "K-GTV98UHDQV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
+  },
+  "K-GTV98UHDQV2": {
+    "modelo": "K-GTV98UHDQV2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
+  },
+
+
+  
+  "K-LED28HDST2": {
+    "modelo": "K-LED28HDST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDRST2": {
+    "modelo": "K-LED32HDRST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSDT2": {
+    "modelo": "K-LED32HDSDT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSFBT": {
+    "modelo": "K-LED32HDSFBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSFT2": {
+    "modelo": "K-LED32HDSFT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSNBT": {
+    "modelo": "K-LED32HDSNBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSNT2": {
+    "modelo": "K-LED32HDSNT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSPT2": {
+    "modelo": "K-LED32HDSPT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSQT2": {
+    "modelo": "K-LED32HDSQT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDST2": {
+    "modelo": "K-LED32HDST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDSZT2": {
+    "modelo": "K-LED32HDSZT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDF2": {
+    "modelo": "K-LED32HDF2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED32HDT": {
+    "modelo": "K-LED32HDT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED40FHDS1T2": {
+    "modelo": "K-LED40FHDS1T2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED40FHDSFBT": {
+    "modelo": "K-LED40FHDSFBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED40FHDSPT2": {
+    "modelo": "K-LED40FHDSPT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED40FHDSQT2": {
+    "modelo": "K-LED40FHDSQT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED40FHDST2": {
+    "modelo": "K-LED40FHDST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED40FHDSZT2": {
+    "modelo": "K-LED40FHDSZT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDRST2": {
+    "modelo": "K-LED43FHDRST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDSF2BT": {
+    "modelo": "K-LED43FHDSF2BT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDSFBT": {
+    "modelo": "K-LED43FHDSFBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDSN": {
+    "modelo": "K-LED43FHDSN",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDSNBT": {
+    "modelo": "K-LED43FHDSNBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDSPT2": {
+    "modelo": "K-LED43FHDSPT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDSQT2": {
+    "modelo": "K-LED43FHDSQT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDST2": {
+    "modelo": "K-LED43FHDST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43FHDSZT2": {
+    "modelo": "K-LED43FHDSZT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43UHDSMT2": {
+    "modelo": "K-LED43UHDSMT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED43UHDSPK": {
+    "modelo": "K-LED43UHDSPK",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-STV43FHDT": {
+    "modelo": "K-STV43FHDT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-STV43UHDN": {
+    "modelo": "K-STV43UHDN",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED49FHDSN": {
+    "modelo": "K-LED49FHDSN",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED49FHDSPT2": {
+    "modelo": "K-LED49FHDSPT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED49FHDSQT2": {
+    "modelo": "K-LED49FHDSQT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED49FHDSZT2": {
+    "modelo": "K-LED49FHDSZT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED49UHDSMT2": {
+    "modelo": "K-LED49UHDSMT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
+  },
+  "K-LED50UHDSAAT2": {
+    "modelo": "K-LED50UHDSAAT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED50UHDSFBT": {
+    "modelo": "K-LED50UHDSFBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED50UHDSNBT": {
+    "modelo": "K-LED50UHDSNBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED50UHDSNT2": {
+    "modelo": "K-LED50UHDSNT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55FHDSFBT": {
+    "modelo": "K-LED55FHDSFBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55FHDSPBT2": {
+    "modelo": "K-LED55FHDSPBT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55FHDSPT2": {
+    "modelo": "K-LED55FHDSPT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55FHDSQT2": {
+    "modelo": "K-LED55FHDSQT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55FHDXRST2": {
+    "modelo": "K-LED55FHDXRST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55FHDXST2": {
+    "modelo": "K-LED55FHDXST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55UHDCST2": {
+    "modelo": "K-LED55UHDCST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55UHDSFBT": {
+    "modelo": "K-LED55UHDSFBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55UHDSMT2": {
+    "modelo": "K-LED55UHDSMT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55UHDSPK": {
+    "modelo": "K-LED55UHDSPK",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55UHDSST2": {
+    "modelo": "K-LED55UHDSST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED55UHDSVT2": {
+    "modelo": "K-LED55UHDSVT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-STV55UHDT": {
+    "modelo": "K-STV55UHDT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED65UHDSFBT": {
+    "modelo": "K-LED65UHDSFBT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED65UHDSMT2": {
+    "modelo": "K-LED65UHDSMT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED65UHDSST2": {
+    "modelo": "K-LED65UHDSST2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-LED65UHDSVT2": {
+    "modelo": "K-LED65UHDSVT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  "K-STV65UHDT": {
+    "modelo": "K-STV65UHDT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
+  },
+  
  
+
   "43D3200S": {
     "modelo": "43D3200S",
     "software": "V8-NT563LA-LF1V424",
