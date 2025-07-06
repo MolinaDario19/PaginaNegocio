@@ -6,8 +6,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": "V8-T841AGL-0000136",
-    "preference_id": ""
+    "instrucciones": "",
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV32HDE": {
     "modelo": "K-ATV32HDE",
@@ -17,7 +17,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV32HDS": {
     "modelo": "K-ATV32HDS",
@@ -25,9 +25,9 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
-    "pdf": "hola",
+    "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV32HDW": {
     "modelo": "K-ATV32HDW",
@@ -37,7 +37,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV39HDB": {
     "modelo": "K-ATV39HDB",
@@ -47,7 +47,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV40FHD": {
     "modelo": "K-ATV40FHD",
@@ -57,7 +57,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV40FHDE": {
     "modelo": "K-ATV40FHDE",
@@ -67,7 +67,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV40FHDW": {
     "modelo": "K-ATV40FHDW",
@@ -77,7 +77,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV42FHDE": {
     "modelo": "K-ATV42FHDE",
@@ -87,7 +87,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV43FHDB": {
     "modelo": "K-ATV43FHDB",
@@ -97,7 +97,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV43FHDE": {
     "modelo": "K-ATV43FHDE",
@@ -107,7 +107,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV43FHDS": {
     "modelo": "K-ATV43FHDS",
@@ -117,7 +117,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV43UHD": {
     "modelo": "K-ATV43UHD",
@@ -127,7 +127,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV43UHDQW": {
     "modelo": "K-ATV43UHDQW",
@@ -137,7 +137,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV43UHDW": {
     "modelo": "K-ATV43UHDW",
@@ -147,7 +147,7 @@
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50"
   },
   "K-ATV50UHD": {
     "modelo": "K-ATV50UHD",
@@ -157,7 +157,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV50UHDQW": {
     "modelo": "K-ATV50UHDQW",
@@ -167,7 +167,7 @@
     "precio": "78.000 COPP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV50UHDS": {
     "modelo": "K-ATV50UHDS",
@@ -177,7 +177,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV50UHDW": {
     "modelo": "K-ATV50UHDW",
@@ -187,7 +187,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV55UHD": {
     "modelo": "K-ATV55UHD",
@@ -197,7 +197,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV55UHDQW": {
     "modelo": "K-ATV55UHDQW",
@@ -207,7 +207,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV55UHDS": {
     "modelo": "K-ATV55UHDS",
@@ -217,7 +217,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV55UHDW": {
     "modelo": "K-ATV55UHDW",
@@ -227,7 +227,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV58UHD": {
     "modelo": "K-ATV58UHD",
@@ -237,7 +237,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV65UHDB": {
     "modelo": "K-ATV65UHDB",
@@ -247,7 +247,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV65UHDS": {
     "modelo": "K-ATV65UHDS",
@@ -257,7 +257,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV65UHDSQV": {
     "modelo": "K-ATV65UHDSQV",
@@ -267,7 +267,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV65UHDW": {
     "modelo": "K-ATV65UHDW",
@@ -277,7 +277,7 @@
     "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68"
   },
   "K-ATV70UHDB": {
     "modelo": "K-ATV70UHDB",
@@ -287,7 +287,7 @@
     "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
   "K-ATV70UHDE": {
     "modelo": "K-ATV70UHDE",
@@ -297,7 +297,7 @@
     "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
   "K-ATV70UHDF": {
     "modelo": "K-ATV70UHDF",
@@ -307,7 +307,7 @@
     "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
   "K-ATV70UHDSQV": {
     "modelo": "K-ATV70UHDSQV",
@@ -317,7 +317,7 @@
     "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
   "K-ATV75UHDQW": {
     "modelo": "K-ATV75UHDQW",
@@ -327,7 +327,7 @@
     "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
   "K-ATV75UHDSQV": {
     "modelo": "K-ATV75UHDSQV",
@@ -337,7 +337,7 @@
     "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
   "K-ATV86UHDS": {
     "modelo": "K-ATV86UHDS",
@@ -347,7 +347,7 @@
     "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": ""
+    "preference_id": "243767526-451c0835-529a-4407-88c9-e900619c08d3"
   },
  
   "43D3200S": {
