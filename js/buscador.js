@@ -1,7 +1,17 @@
 
 document.getElementById('buscador').addEventListener('input', function () {
     const filtro = this.value.toLowerCase();
-    const modelos = document.querySelectorAll('#hyundaisw .modelo-link, #androidTV .modelo-link, #googleTV .modelo-link, #linuxTV .modelo-link');
+    const modelos = document.querySelectorAll(`
+    #hyundaisw .modelo-link,
+    #androidT2 .modelo-link,
+    #googleTV .modelo-link,
+    #netflixT2 .modelo-link,
+    #smart .modelo-link,
+    #seriess30 .modelo-link,
+    #androidTV .modelo-link,
+    #linuxTV .modelo-link
+    `);
+
 
     modelos.forEach(modelo => {
         const texto = modelo.dataset.modelo.toLowerCase();

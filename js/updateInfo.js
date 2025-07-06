@@ -24,10 +24,10 @@ fetch('/info.json')
         if (info) {
 
           document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
-          document.getElementById('modalSoftware').textContent = info.software || 'No disponible';
-          document.getElementById('modalMain').textContent = info.main || 'No disponible';
-          document.getElementById('modalEstado').textContent = info.estado || 'No disponible';
-          document.getElementById('modalPrecio').textContent = info.precio || 'No disponible';
+          document.getElementById('modalSoftware').textContent = info.software || '...';
+          document.getElementById('modalMain').textContent = info.main || '...';
+          document.getElementById('modalEstado').textContent = info.estado || '...';
+          document.getElementById('modalPrecio').textContent = info.precio || '...';
           // document.getElementById('modalInstrucciones').textContent = info.instrucciones || 'No disponible';
 
 
@@ -43,7 +43,7 @@ fetch('/info.json')
           } else {
             mpButtonContainer.innerHTML = '<p>Este producto no está disponible para pago en línea.</p>';
           }
-          
+
           if (info.pdf) {
             console.log("Cargando PDF desde:", info.pdf); // Agrega este log para verificar
             const pdfViewer = document.getElementById('pdfViewer');
