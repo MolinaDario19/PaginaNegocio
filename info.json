@@ -6,7 +6,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": "V8-T841AGL-0000136"
+    "instrucciones": "V8-T841AGL-0000136",
+    "preference_id": ""
   },
   "K-ATV32HDE": {
     "modelo": "K-ATV32HDE",
@@ -15,7 +16,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV32HDS": {
     "modelo": "K-ATV32HDS",
@@ -24,7 +26,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "hola",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV32HDW": {
     "modelo": "K-ATV32HDW",
@@ -33,7 +36,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV39HDB": {
     "modelo": "K-ATV39HDB",
@@ -42,7 +46,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV40FHD": {
     "modelo": "K-ATV40FHD",
@@ -51,7 +56,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV40FHDE": {
     "modelo": "K-ATV40FHDE",
@@ -60,7 +66,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV40FHDW": {
     "modelo": "K-ATV40FHDW",
@@ -69,7 +76,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV42FHDE": {
     "modelo": "K-ATV42FHDE",
@@ -78,7 +86,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV43FHDB": {
     "modelo": "K-ATV43FHDB",
@@ -87,7 +96,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV43FHDE": {
     "modelo": "K-ATV43FHDE",
@@ -96,7 +106,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV43FHDS": {
     "modelo": "K-ATV43FHDS",
@@ -105,7 +116,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV43UHD": {
     "modelo": "K-ATV43UHD",
@@ -114,7 +126,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV43UHDQW": {
     "modelo": "K-ATV43UHDQW",
@@ -123,7 +136,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV43UHDW": {
     "modelo": "K-ATV43UHDW",
@@ -132,7 +146,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV50UHD": {
     "modelo": "K-ATV50UHD",
@@ -141,7 +156,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV50UHDQW": {
     "modelo": "K-ATV50UHDQW",
@@ -150,7 +166,8 @@
     "estado": "Disponible",
     "precio": "78.000 COPP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV50UHDS": {
     "modelo": "K-ATV50UHDS",
@@ -159,7 +176,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV50UHDW": {
     "modelo": "K-ATV50UHDW",
@@ -168,7 +186,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV55UHD": {
     "modelo": "K-ATV55UHD",
@@ -177,7 +196,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV55UHDQW": {
     "modelo": "K-ATV55UHDQW",
@@ -186,7 +206,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV55UHDS": {
     "modelo": "K-ATV55UHDS",
@@ -195,7 +216,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV55UHDW": {
     "modelo": "K-ATV55UHDW",
@@ -204,7 +226,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV58UHD": {
     "modelo": "K-ATV58UHD",
@@ -213,7 +236,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV65UHDB": {
     "modelo": "K-ATV65UHDB",
@@ -222,7 +246,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV65UHDS": {
     "modelo": "K-ATV65UHDS",
@@ -231,7 +256,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV65UHDSQV": {
     "modelo": "K-ATV65UHDSQV",
@@ -240,7 +266,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV65UHDW": {
     "modelo": "K-ATV65UHDW",
@@ -249,7 +276,8 @@
     "estado": "Disponible",
     "precio": "78.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV70UHDB": {
     "modelo": "K-ATV70UHDB",
@@ -258,7 +286,8 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV70UHDE": {
     "modelo": "K-ATV70UHDE",
@@ -267,7 +296,8 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV70UHDF": {
     "modelo": "K-ATV70UHDF",
@@ -276,7 +306,8 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV70UHDSQV": {
     "modelo": "K-ATV70UHDSQV",
@@ -285,7 +316,8 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV75UHDQW": {
     "modelo": "K-ATV75UHDQW",
@@ -294,7 +326,8 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV75UHDSQV": {
     "modelo": "K-ATV75UHDSQV",
@@ -303,7 +336,8 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
   "K-ATV86UHDS": {
     "modelo": "K-ATV86UHDS",
@@ -312,7 +346,8 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": ""
   },
  
   "43D3200S": {
