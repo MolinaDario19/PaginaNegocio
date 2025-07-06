@@ -2030,6 +2030,858 @@
     "pdf": "",
     "instrucciones": "",
     "preference_id": "243767526-f62c8943-c26c-4140-9ae3-da42e117b17b"
+  },
+
+
+  "HYLED39INT": {
+    "modelo": "HYLED39INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED55INT2": {
+    "modelo": "HYLED55INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED58INT2": {
+    "modelo": "HYLED58INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED322INT": {
+    "modelo": "HYLED322INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED323INT": {
+    "modelo": "HYLED323INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED326INT": {
+    "modelo": "HYLED326INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED328INT2": {
+    "modelo": "HYLED328INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED399AIM": {
+    "modelo": "HYLED399AIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED401INT": {
+    "modelo": "HYLED401INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED402INT": {
+    "modelo": "HYLED402INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED407INT2": {
+    "modelo": "HYLED407INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED408INT2": {
+    "modelo": "HYLED408INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED422INT": {
+    "modelo": "HYLED422INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED425AIM": {
+    "modelo": "HYLED425AIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED427GIM": {
+    "modelo": "HYLED427GIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED431INTC": {
+    "modelo": "HYLED431INTC",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED432INT2": {
+    "modelo": "HYLED432INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED434INT2": {
+    "modelo": "HYLED434INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED436INT4K": {
+    "modelo": "HYLED436INT4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED438INT4K": {
+    "modelo": "HYLED438INT4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED472INT": {
+    "modelo": "HYLED472INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED481INT2": {
+    "modelo": "HYLED481INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED483INTM": {
+    "modelo": "HYLED483INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED491iC": {
+    "modelo": "HYLED491iC",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED495INTC": {
+    "modelo": "HYLED495INTC",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED496INT4K": {
+    "modelo": "HYLED496INT4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED498INT4K": {
+    "modelo": "HYLED498INT4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED501INT": {
+    "modelo": "HYLED501INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED506INT2": {
+    "modelo": "HYLED506INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED551INTC4K": {
+    "modelo": "HYLED551INTC4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED558INT4K": {
+    "modelo": "HYLED558INT4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED3210INT2": {
+    "modelo": "HYLED3210INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3211INT2": {
+    "modelo": "HYLED3211INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3212INT": {
+    "modelo": "HYLED3212INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3213INTC": {
+    "modelo": "HYLED3213INTC",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3215INT2": {
+    "modelo": "HYLED3215INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3216INTC": {
+    "modelo": "HYLED3216INTC",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3237INTM": {
+    "modelo": "HYLED3237INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3237INTMG": {
+    "modelo": "HYLED3237INTMG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3239INTM": {
+    "modelo": "HYLED3239INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3240NIM": {
+    "modelo": "HYLED3240NIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3243NIM": {
+    "modelo": "HYLED3243NIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3245INT": {
+    "modelo": "HYLED3245INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3248AIM": {
+    "modelo": "HYLED3248AIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED3251AIM": {
+    "modelo": "HYLED3251AIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4010INT2": {
+    "modelo": "HYLED4010INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4013INT": {
+    "modelo": "HYLED4013INT",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4019INTM": {
+    "modelo": "HYLED4019INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4022AIM": {
+    "modelo": "HYLED4022AIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4024HIM": {
+    "modelo": "HYLED4024HIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4313INTM": {
+    "modelo": "HYLED4313INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4314IM4K": {
+    "modelo": "HYLED4314IM4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4315INT2": {
+    "modelo": "HYLED4315INT2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4317INTM": {
+    "modelo": "HYLED4317INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4318NIM": {
+    "modelo": "HYLED4318NIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4321AIM": {
+    "modelo": "HYLED4321AIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4322GIM": {
+    "modelo": "HYLED4322GIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4322NIM": {
+    "modelo": "HYLED4322NIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4501INTM": {
+    "modelo": "HYLED4501INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4914C4K": {
+    "modelo": "HYLED4914C4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4917C4K": {
+    "modelo": "HYLED4917C4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED4917N4KM": {
+    "modelo": "HYLED4917N4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
+  },
+  "HYLED5012N4KM": {
+    "modelo": "HYLED5012N4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5013INTM": {
+    "modelo": "HYLED5013INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5014N4KM": {
+    "modelo": "HYLED5014N4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5015A4KM": {
+    "modelo": "HYLED5015A4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5016INTM": {
+    "modelo": "HYLED5016INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5020G4KM": {
+    "modelo": "HYLED5020G4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5514IM4K": {
+    "modelo": "HYLED5514IM4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5514K": {
+    "modelo": "HYLED5514K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5516IM4K": {
+    "modelo": "HYLED5516IM4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5517N4KM": {
+    "modelo": "HYLED5517N4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5518INTM": {
+    "modelo": "HYLED5518INTM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5519N4KM": {
+    "modelo": "HYLED5519N4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5520A4KM": {
+    "modelo": "HYLED5520A4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5523QA4KM": {
+    "modelo": "HYLED5523QA4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5524G4KM": {
+    "modelo": "HYLED5524G4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5803IM4K": {
+    "modelo": "HYLED5803IM4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5804N4KM": {
+    "modelo": "HYLED5804N4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5805N4KM": {
+    "modelo": "HYLED5805N4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED5806A4KM": {
+    "modelo": "HYLED5806A4KM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED6505INT4K": {
+    "modelo": "HYLED6505INT4K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED50104K": {
+    "modelo": "HYLED50104K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED50114K": {
+    "modelo": "HYLED50114K",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
+  },
+  "HYLED3255HIM": {
+    "modelo": "HYLED3255HIM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8"
   }
 
 }
