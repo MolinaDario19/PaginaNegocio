@@ -266,6 +266,13 @@ ul li:hover a:before{
     margin: .5em;
 }
 /* Directorio*/
+
+/* Buscador*/
+#buscador {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 /**//* contenedor  modelos*/
 .solutions {
     padding: 0;
