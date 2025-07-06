@@ -1,10 +1,4 @@
 let data;
-let preferenceIdGlobal = ""; // Asegúrate de declarar esto aquí
-
-const preferenceMap = {
-  MPHY70: "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8",
-  MPHY75: "243767526-de42f10f-0932-41c2-bc61-6f5e09090398"
-};
 
 // Cargar el archivo JSON
 fetch('/info.json')
@@ -36,19 +30,14 @@ fetch('/info.json')
           document.getElementById('modalPrecio').textContent = info.precio || '...';
           // document.getElementById('modalInstrucciones').textContent = info.instrucciones || 'No disponible';
 
-          
+
           const mpButtonContainer = document.getElementById('mp-button');
           mpButtonContainer.innerHTML = ''; // Limpia el contenedor
 
-          // Obtener el valor real desde el mapa
-          const realPreferenceId = preferenceMap[info.preference_id];
-
-          if (realPreferenceId) {
-            preferenceIdGlobal = realPreferenceId;
-
+          if (info.preference_id) {
             const script = document.createElement('script');
             script.src = "https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js";
-            script.setAttribute("data-preference-id", realPreferenceId);
+            script.setAttribute("data-preference-id", info.preference_id);
             script.setAttribute("data-source", "button");
             mpButtonContainer.appendChild(script);
           } else {
