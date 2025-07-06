@@ -28,7 +28,7 @@ fetch('/info.json')
           document.getElementById('modalMain').textContent = info.main || 'No disponible';
           document.getElementById('modalEstado').textContent = info.estado || 'No disponible';
           document.getElementById('modalPrecio').textContent = info.precio || 'No disponible';
-          document.getElementById('modalInstrucciones').textContent = info.instrucciones || 'No disponible';
+          // document.getElementById('modalInstrucciones').textContent = info.instrucciones || 'No disponible';
 
           if (info.pdf) {
             console.log("Cargando PDF desde:", info.pdf); // Agrega este log para verificar

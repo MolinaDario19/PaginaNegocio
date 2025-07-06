@@ -265,6 +265,14 @@ ul li:hover a:before{
     border-radius: 32px;
     margin: .5em;
 }
+
+.Buttons_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+}
 /* Directorio*/
 
 /* Buscador*/
