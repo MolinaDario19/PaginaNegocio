@@ -4,8 +4,8 @@
     "software": "V8-T841TNF-LF1V851-CTS.img",
     "main": "V8-T841TNF-LF1V808, V8-T841TNF-LF1V851",
     "estado": "Disponible",
-    "precio": "Software probado ",
-    "pdf": "/manuales/Paginaweb.pdf",
+    "precio": "75.000 COP",
+    "pdf": "",
     "instrucciones": "V8-T841AGL-0000136"
   },
   "K-ATV32HDE": {
@@ -14,7 +14,7 @@
     "main": "V8-T841AGL-0000136",
     "estado": "Disponible",
     "precio": "75.000 COP",
-    "pdf": "/manuales/Paginaweb.pdf",
+    "pdf": "",
     "instrucciones": ""
   },
   "K-ATV32HDS": {
