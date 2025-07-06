@@ -358,6 +358,78 @@ ul li:hover a:before{
     text-align: justify;
 }
 
+/*Galery*/
+.Titulo_sol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Titulo_sol h3{
+    font-size: 2rem;
+    color: #2e2c2e;
+    line-height: 1;
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  
+}
+
+button {
+  background: #d8d2d266;
+  border: none;
+  color: rgb(6, 29, 98);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 50%;
+  height: 400px;
+  position: relative;
+}
+
+.carousel img {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s;
+  box-shadow: 0 0 20px rgba(0,0,0,0);
+  
+}
+
+.carousel img.active {
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1);
+  border-radius: 5%;
+}
+
+.carousel img.prev {
+  opacity: 0.5;
+  transform: translateX(-320px) scale(0.7);
+  z-index: 1;
+}
+
+.carousel img.next {
+  opacity: 0.5;
+  transform: translateX(320px) scale(0.7);
+  z-index: 1;
+}
+
 /* share */
 
 .share {

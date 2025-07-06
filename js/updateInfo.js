@@ -1,5 +1,5 @@
 let data;
-let preferenceIdGlobal = ""; // Asegúrate de declarar esto aquí
+let preferenceIdGlobal = ""; 
 
 const preferenceMap = {
   MPHY70: "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8",
