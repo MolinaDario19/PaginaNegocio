@@ -270,9 +270,9 @@ ul li:hover a:before{
 /* Buscador*/
 #buscador {
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(79, 129, 189);
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.9);
   z-index: 1;
   position: relative;
 }
