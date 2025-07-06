@@ -316,8 +316,8 @@
   },
   "43D3200S": {
     "modelo": "43D3200S",
-    "software": "",
-    "main": "",
+    "software": "V8-NT563LA-LF1V424",
+    "main": "NT563LA",
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
@@ -325,12 +325,114 @@
   },
   "43D2930": {
     "modelo": "43D2930",
-    "software": "",
-    "main": "",
+    "software": "MS08GP_MAIN.bin",
+    "main": "MS08GP",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "40D2930": {
+    "modelo": "40D2930",
+    "software": "MS08GP_MAIN.bin",
+    "main": "MS08GP",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  
+  "32D3200S": {
+    "modelo": "32D3200S",
+    "software": "V8-NT63CLA-LF1V596.bin",
+    "main": "NT63CLA",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "55S8800": {
+    "modelo": "55S8800",
+    "software": "V8-MS88ACO-LF1V015.bin",
+    "main": "MS88ACO",
+    "estado": "Disponible",
+    "precio": "77.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "L40D2700MS08GP": {
+    "modelo": "L40D2700MS08GP",
+    "software": "MS08GP_MAIN.bin",
+    "main": "MS08GP",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "32D2200S": {
+    "modelo": "32D2200S",
+    "software": "V8-NT63CLA-LF1V596",
+    "main": "MS08GP",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "32D2930": {
+    "modelo": "32D2930",
+    "software": "MS08GP_MAIN.bin",
+    "main": "MS08GP",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "42D2180": {
+    "modelo": "42D2180",
+    "software": "MS08GP_MAIN.bin",
+    "main": "MS08GP",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "OLED322W": {
+    "modelo": "OLED322W",
+    "software": "MstarUpgrade.bin",
+    "main": "TP.MS608_P82C",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "OLED323W": {
+    "modelo": "OLED323W",
+    "software": "MstarUpgrade.bin",
+    "main": "TP.MS608_P82C",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "OLED403W": {
+    "modelo": "OLED403W",
+    "software": "MstarUpgrade.bin",
+    "main": "TP.MS608_P82C",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": ""
+  },
+  "OLED5020W": {
+    "modelo": "OLED5020W",
+    "software": "MstarUpgrade.bin",
+    "main": "TP.MS608_P82C",
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": ""
   }
 }
+
+
 
