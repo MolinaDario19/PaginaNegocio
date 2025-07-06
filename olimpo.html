@@ -143,7 +143,29 @@
               </script> -->
         </section>
 
+        <!-- Ventana emergente (modal) -->
+        <div id="modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <!-- Botón para cerrar modal -->
+                <span id="cerrarModal" style="cursor:pointer;">&times;</span>
+                <!-- Contenido del modal -->
+                <h2 id="modalTitulo"></h2>
+                <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
+                <p><strong>Main Board:</strong> <span id="modalMain"></span></p>
+                <p><strong>Estado:</strong> <span id="modalEstado"></span></p>
+                <p><strong>Precio:</strong> <span id="modalPrecio"></span></p>
+                <p><strong>Instrucciones:</strong> <span id="modalInstrucciones"></span></p>
+                
 
+                <!-- PDF Embed -->
+                
+                <div id="modalPdfContainer" style="display: none; margin-top: 20px;">
+                    <iframe id="pdfViewer" width="100%" height="400px" style="border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+
+        
          <!-- Ventana emergente (wha) -->
          <div id="myWha" class="wha ">
             <div class="wha-content">
