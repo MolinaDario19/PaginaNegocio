@@ -152,8 +152,9 @@
         <!-- Ventana emergente (modal) -->
         <div id="modal" class="modal" style="display:none;">
             <div class="modal-content">
-                <!-- Botón para cerrar modal -->
-                <span id="cerrarModal" style="cursor:pointer;">&times;</span>
+                <!-- Botón para cerrar el modal -->
+                <span id="cerrarModal" role="button" aria-label="Cerrar modal" style="cursor:pointer; font-size: 2em; float:right;">&times;</span>
+
                 <!-- Contenido del modal -->
                 <h2 id="modalTitulo"></h2>
                 <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
@@ -161,7 +162,8 @@
                 <p><strong>Estado:</strong> <span id="modalEstado"></span></p>
                 <p><strong>Precio:</strong> <span id="modalPrecio"></span></p>
                 <p><strong>Instrucciones:</strong> <span id="modalInstrucciones"></span></p>
-                
+                <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta_Buy">Comprar</a>
+                <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar un asesor</a>
 
                 <!-- PDF Embed -->
                 

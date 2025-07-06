@@ -255,7 +255,16 @@ ul li:hover a:before{
     border-radius: 32px;
 }
 
-
+.cta_Buy  {
+    display: inline-block;
+    background-color: #066bd0;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    margin: .5em;
+}
 /* Directorio*/
 /**//* contenedor  modelos*/
 .solutions {
@@ -570,28 +579,36 @@ ul li:hover a:before{
 
 /*Modal*/
 
-.modal {
+  .modal {
     display: none; /* Estará oculto por defecto */
     position: fixed;
-    top: 5vh;
-    left: 0;
+    top: 50%; /* Centra el modal verticalmente */
+    left: 50%; /* Centra el modal horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el modal */
     width: 80%;
     height: 70%;
-    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente */
-    z-index: 1003; 
+    background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente, mejor para ver el contenido */
+    z-index: 1003;
+    display: flex; /* Usa Flexbox para centrar contenido dentro del modal */
     justify-content: center;
     align-items: center;
     margin: 10px;
-  }
+}
   
   .modal-content {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px; /* Mantén solo uno */
     width: 300px;
     max-width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+    border: 2px solid #195cd8; /* Ajusté el grosor y color del borde */
+}
+
+ .modal-content #modalEstado{
+    color: #25d366;
+    font-size: 20px;
+}
   
 
 /* Footer */
