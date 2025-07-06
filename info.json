@@ -322,7 +322,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "43D2930": {
     "modelo": "43D2930",
@@ -331,7 +332,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "40D2930": {
     "modelo": "40D2930",
@@ -340,7 +342,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   
   "32D3200S": {
@@ -350,16 +353,18 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "55S8800": {
     "modelo": "55S8800",
     "software": "V8-MS88ACO-LF1V015.bin",
     "main": "MS88ACO",
     "estado": "Disponible",
-    "precio": "77.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "L40D2700MS08GP": {
     "modelo": "L40D2700MS08GP",
@@ -368,7 +373,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "32D2200S": {
     "modelo": "32D2200S",
@@ -377,7 +383,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "32D2930": {
     "modelo": "32D2930",
@@ -386,7 +393,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "42D2180": {
     "modelo": "42D2180",
@@ -395,7 +403,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   },
   "OLED322W": {
     "modelo": "OLED322W",
@@ -404,7 +413,8 @@
     "estado": "Disponible",
     "precio": "70.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-ca0d1eec-9cc1-4d12-a9b1-66c7ca6499b1"
   },
   "OLED323W": {
     "modelo": "OLED323W",
@@ -413,7 +423,8 @@
     "estado": "Disponible",
     "precio": "70.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-ca0d1eec-9cc1-4d12-a9b1-66c7ca6499b1"
   },
   "OLED403W": {
     "modelo": "OLED403W",
@@ -422,7 +433,8 @@
     "estado": "Disponible",
     "precio": "70.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-ca0d1eec-9cc1-4d12-a9b1-66c7ca6499b1"
   },
   "OLED5020W": {
     "modelo": "OLED5020W",
@@ -431,7 +443,8 @@
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
-    "instrucciones": ""
+    "instrucciones": "",
+    "preference_id": "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e"
   }
 }
 

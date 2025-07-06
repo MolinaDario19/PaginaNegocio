@@ -30,6 +30,20 @@ fetch('/info.json')
           document.getElementById('modalPrecio').textContent = info.precio || 'No disponible';
           // document.getElementById('modalInstrucciones').textContent = info.instrucciones || 'No disponible';
 
+
+          const mpButtonContainer = document.getElementById('mp-button');
+          mpButtonContainer.innerHTML = ''; // Limpia el contenedor
+
+          if (info.preference_id) {
+            const script = document.createElement('script');
+            script.src = "https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js";
+            script.setAttribute("data-preference-id", info.preference_id);
+            script.setAttribute("data-source", "button");
+            mpButtonContainer.appendChild(script);
+          } else {
+            mpButtonContainer.innerHTML = '<p>Este producto no está disponible para pago en línea.</p>';
+          }
+          
           if (info.pdf) {
             console.log("Cargando PDF desde:", info.pdf); // Agrega este log para verificar
             const pdfViewer = document.getElementById('pdfViewer');
