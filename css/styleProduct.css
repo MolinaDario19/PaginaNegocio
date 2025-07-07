@@ -344,15 +344,24 @@ ul li:hover a:before{
 .containercard .card .content h4{
     text-decoration: line-through;
     color: #858484;
-
 }
 
+.containercard .card .content p{
+    text-decoration: none;
+    color: #0e4bcd;
+}
 .containercard .card:hover .content{
     visibility: visible;
     opacity: 1;
     transform: translateY(-40px) scale(1);
     font-size: 1.1rem;
     z-index: 1;
+}
+
+.ex2{
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
 }
 
 /* share */
