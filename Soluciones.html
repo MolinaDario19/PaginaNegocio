@@ -171,10 +171,71 @@
         </section>
 
         <section>
+            <div class="Titulo_sol">
+                <h3>Procedimientos</h3>
+            </div>
+
+            <div class="procedimiento-container">
+                <div class="procedimiento" id="procedimiento">
+                <div class="proc1 procedimiento-btn">Formatear USB</div>
+                <div class="proc2 procedimiento-btn">Copiar Software</div>
+                <div class="proc3 procedimiento-btn">Descargar Software</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-detalle">
+            <!-- Secciones ocultas -->
+            <section id="proc1-section" class="detalle oculto">
+                <h4>Formatear USB</h4>
+                <p>Instrucciones detalladas para formatear una USB correctamente...</p>
+                <ol>
+                    <li>
+                    Click derecho sobre la USB y seleccione la opción 
+                    <strong class="instr">Formatear.</strong>
+                    <br>
+                    <img class="detalle-img" src="./images/Paso1.JPG" alt="Formato USB">
+                    </li>
+                    <li>
+                    En sistema de archivo seleccione FAT32 luego 
+                    <strong class="instr">Iniciar.</strong>
+                    <br>
+                    <img class="detalle-img" src="./images/Paso2.JPG" alt="Formato USB">
+                    </li>
+                    <li>
+                    Se borrarán todos los datos de la USB, si está de acuerdo seleccione 
+                    <strong class="instr">Aceptar.</strong>
+                    <br>
+                    <img class="detalle-img" src="./images/Paso3.JPG" alt="Formato USB">
+                    </li>
+                    <li>
+                    Seleccione <strong class="instr">Aceptar</strong> para finalizar.
+                    <br>
+                    <img class="detalle-img" src="./images/Paso4.JPG" alt="Formato USB">
+                    </li>
+                </ol>
+            </section>
+
+
+            <section id="proc2-section" class="detalle oculto">
+                <h4>Copiar Software</h4>
+                <p>Paso a paso para copiar el software a tu dispositivo...</p>
+                
+            </section>
+
+            <section id="proc3-section" class="detalle oculto">
+                <h4>Descargar Software</h4>
+                <p>Cómo descargar el software desde el sitio oficial...</p>
+            </section>
+        </div>
+        
+
+        <section>
             <div>
                 <p></p>
             </div>
         </section>
+
          <!-- Ventana emergente (wha) -->
          <div id="myWha" class="wha ">
             <div class="wha-content">
@@ -287,6 +348,7 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script type="module" src="/js/whatsapp.js"></script>
+    <script type="module" src="/js/update_instruccion.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1549739524053715"
      crossorigin="anonymous"></script>
 </body>
