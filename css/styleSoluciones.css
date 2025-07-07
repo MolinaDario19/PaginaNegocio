@@ -375,7 +375,7 @@ ul li:hover a:before{
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 10px;
+  gap: 5px;
   
 }
 
@@ -394,7 +394,7 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 50%;
+  width: 85%;
   height: 400px;
   position: relative;
 }
@@ -907,4 +907,18 @@ button {
         width: 90%;
     }
     
+}
+
+@media (max-width:400px){
+    .carousel img {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s;
+    box-shadow: 0 0 20px rgba(0,0,0,0);
+    
+    }
 }

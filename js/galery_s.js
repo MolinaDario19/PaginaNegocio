@@ -1,5 +1,5 @@
 const images = [];
-const total = 57; // Puedes usar 100 o más
+const total = 71; // Puedes usar 100 o más
 
 for (let i = 1; i <= total; i++) {
   images.push(`../img_sol/soft${i}.jpeg`);
