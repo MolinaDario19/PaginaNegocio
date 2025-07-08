@@ -353,7 +353,7 @@
 
   "K-GTV32FHD": {
     "modelo": "K-GTV32FHD",
-    "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX",
+    "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
     "main": "TPD.RT2841A.PB782",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -363,8 +363,18 @@
   },
   "K-GTV40FHD": {
     "modelo": "K-GTV40FHD",
-    "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX",
+    "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
     "main": "TPD.RT2841A.PB782",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "K-TV40G200": {
+    "modelo": "K-TV40G200",
+    "software": "3 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
+    "main": "...",
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
@@ -373,7 +383,7 @@
   },
   "K-GTV43FHD": {
     "modelo": "K-GTV43FHD",
-    "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX",
+    "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
     "main": "TPD.RT2841A.PB782",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -453,7 +463,7 @@
   },
   "K-GTV55UHDQ": {
     "modelo": "K-GTV55UHDQ",
-    "software": "3 Versiones - V8-GT51MGL-00XXXXX.XXXX",
+    "software": "3 Versiones - V8-GT51MGL-00XXXXX.XXXX.img",
     "main": "TD.RT2851M.783",
     "estado": "Disponible",
     "precio": "78.000 COP",
@@ -1242,6 +1252,16 @@
     "modelo": "32D3200S",
     "software": "V8-NT63CLA-LF1V596.bin",
     "main": "NT63CLA",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPOL75"
+  },
+  "50U3200S": {
+    "modelo": "50U3200S",
+    "software": "V8-NT671LA-LF1V670",
+    "main": "NT671LA",
     "estado": "Disponible",
     "precio": "75.000 COP",
     "pdf": "",
