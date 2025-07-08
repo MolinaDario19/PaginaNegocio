@@ -3,6 +3,7 @@ const jsonLd = {
     "@type": "LocalBusiness",
     "name": "Digital Electronics",
     "image": "https://digitalelectronics.vercel.app/images/img_main.jpeg",
+    "description": "Servicio técnico especializado y distribución de software para televisores. Soluciones a fallas comunes como el bloqueo en el logo.",
     "url": "https://digitalelectronics.vercel.app/",
     "telephone": "+57 3103841388",
     "address": {
