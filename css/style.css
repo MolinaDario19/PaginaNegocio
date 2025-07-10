@@ -561,6 +561,9 @@ ul li:hover a:before{
 
 .questions__show{
     text-align: left;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     height: 0;
     transition: height .3s;
 }

@@ -617,11 +617,16 @@ ul li:hover a:before{
   .modal-content {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 15px; /* Mantén solo uno */
+    border-radius: 15px; 
     width: 300px;
     max-width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px solid #195cd8; /* Ajusté el grosor y color del borde */
+}
+.modal-content p{
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
  .modal-content #modalEstado{
