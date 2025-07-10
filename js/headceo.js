@@ -2,9 +2,9 @@ const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Digital Electronics",
-    "image": "https://digitalelectronics.vercel.app/images/img_main.jpeg",
+    "image": "https://digitalelectronics.com.co/images/img_main.jpeg",
     "description": "Servicio técnico especializado y distribución de software para televisores. Soluciones a fallas comunes como el bloqueo en el logo.",
-    "url": "https://digitalelectronics.vercel.app/",
+    "url": "https://digitalelectronics.com.co/",
     "telephone": "+57 3103841388",
     "address": {
       "@type": "PostalAddress",
@@ -12,7 +12,7 @@ const jsonLd = {
       "addressRegion": "Valle del Cauca",
       "addressCountry": "CO"
     },
-    "email": "digitalelectronicscslic@gmail.com",
+    "email": "soporte@digitalelectronics.com.co",
     "sameAs": [
         "https://www.facebook.com/digielec",
         "https://www.instagram.com/digitalelectronics_cali",
