@@ -822,9 +822,9 @@ ul li:hover a:before{
 }
 
 /* Footer */
-
+/* color #1D293F */
 .footer{
-    background-color: #1D293F;
+    background-color: rgb(0, 0, 0);
     
 }
 
@@ -848,7 +848,8 @@ ul li:hover a:before{
 
 .footer__title, .footer__newsletter{
     color: #ffffff;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
+    margin: 0;
 }
 
 
@@ -863,15 +864,18 @@ ul li:hover a:before{
 
 .footer__container.container{
     text-align: center;
+    padding: 20px;
 }
 
 .nav--footer{
-    padding-bottom: 20px;
+    padding-bottom: 2px;
     display: grid;
     gap: 1em;
     grid-auto-flow: row;
     height: 100%;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__link--footer{
