@@ -1237,6 +1237,19 @@
     "instrucciones": "",
     "preference_id": "MPOL75"
   },
+
+  
+ "L43D1420/MS08GP": {
+    "modelo": "L43D1420/MS08GP",
+    "software": "MS08GP_MAIN.bin",
+    "main": "40-MS08GP-MAB2HG",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPOL75"
+  },
+
   "40D2930": {
     "modelo": "40D2930",
     "software": "MS08GP_MAIN.bin",
