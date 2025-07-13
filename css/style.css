@@ -27,8 +27,7 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-    color: #fff;
-    
+    color: #fff;   
 }
 
 .hero::before {
@@ -926,7 +925,7 @@ ul li:hover a:before{
         background-color: #1D293F;
         top: 0;
         left: 20vw;
-        height: 40%;
+        height: max-content;
         width: 60%;
         display: flex;
         flex-direction: column;

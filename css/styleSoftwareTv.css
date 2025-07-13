@@ -27,8 +27,7 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-    color: #fff;
-    
+    color: #fff; 
 }
 
 .hero::before {
@@ -69,6 +68,8 @@ body {
     position: fixed;
     z-index: 1000;
 }
+
+
 
 .nav .nav__logo{
     display: flex;
