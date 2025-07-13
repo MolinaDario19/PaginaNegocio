@@ -741,8 +741,8 @@ ul li:hover a:before{
         background-color: #1D293F;
         top: 0;
         left: 20vw;
-        height: 40%;
         height: max-content;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -753,7 +753,6 @@ ul li:hover a:before{
         transition: .7s opacity;
         border-left: 8px solid rgb(255, 255, 255);
     }
-
     .nav__items a{
         color: #ffffff;
         font-family: Verdana, sans-serif;
