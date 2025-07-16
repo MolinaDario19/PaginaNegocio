@@ -319,17 +319,18 @@ input::placeholder, textarea::placeholder{
     text-decoration: none;
 }
 
-.contact .btn{
+.contact .btn {
     font-size: 16px;
-    color: #FFFFFF;
-    border: 0;
+    color: #1d293f;
+    border: 1.5px solid #1d293f;
     border-radius: 25px;
-    background-color: #51D94C;
-    box-shadow: 0 0 20px rgba(25,254,0,0.4);
+    background-color: #ffffff; /* #51D94C */
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.4);
 }
 
 .btn:hover{
-    background-color: #50E04B;
+    color: #ffffff;
+    background-color: #1d293f;
 }
 
 
