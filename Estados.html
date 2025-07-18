@@ -13,22 +13,24 @@
 
     .estado-container {
         display: flex;
-        gap: 15px;
+        gap: 9px;
         overflow-x: auto;
         padding-bottom: 10px;
+        
     }
 
     .estado {
-        width: 100px;
-        height: 180px;
-        background-color: #ddd;
+        flex: 0 0 calc(6% - 2px); /* Muestra 4 por fila por defecto */
+        height: auto;
+        aspect-ratio: 9 / 16;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
-        flex-shrink: 0;
         position: relative;
         transition: transform 0.2s;
+        background-color: #ddd;
     }
+
 
     .estado:hover {
         transform: scale(1.03);
@@ -102,8 +104,7 @@
     /* RESPONSIVE AJUSTES */
     @media (max-width: 768px) {
         .estado {
-        width: 80px;
-        height: 140px;
+            flex: 0 0 calc(33.33% - 10px); /* Muestra 3 por fila en tablet/celular */
         }
 
         .perfil {
@@ -127,8 +128,7 @@
 
     @media (max-width: 480px) {
         .estado {
-        width: 70px;
-        height: 120px;
+            flex: 0 0 calc(50% - 10px); /* Solo 2 por fila en móviles muy pequeños */
         }
 
         .modal iframe {
