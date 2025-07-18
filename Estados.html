@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vistas tipo Estados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .estado-container {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+    }
+
+    .estado {
+      width: 100px;
+      height: 180px;
+      background-color: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .estado img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal iframe {
+      width: 90%;
+      height: 70%;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="estado-container">
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft1.jpeg" alt="Instructivo 1">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft2.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft42.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft43.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft19.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft18.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft17.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft16.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft15.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft14.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft32.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft12.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft29.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft28.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft27.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft26.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft25.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft24.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft23.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft22.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft21.jpeg" alt="Instructivo 2">
+  </div>
+  <div class="estado" onclick="abrirVideo('1102561652')">
+    <img src="/img_sol/soft20.jpeg" alt="Instructivo 2">
+  </div>
+  <!-- Puedes agregar más estados aquí -->
+</div>
+
+<!-- Modal del video -->
+<div class="modal" id="videoModal">
+  <span class="close-btn" onclick="cerrarVideo()">&times;</span>
+  <iframe id="vimeoIframe" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<script>
+  function abrirVideo(videoId) {
+    const iframe = document.getElementById('vimeoIframe');
+    iframe.src = `https://player.vimeo.com/video/${videoId}?autoplay=1&muted=1&title=0&byline=0&portrait=0`;
+    document.getElementById('videoModal').style.display = 'flex';
+  }
+
+  function cerrarVideo() {
+    const iframe = document.getElementById('vimeoIframe');
+    iframe.src = ''; // Limpiar para detener reproducción
+    document.getElementById('videoModal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
