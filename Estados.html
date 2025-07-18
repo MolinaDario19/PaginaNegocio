@@ -13,24 +13,22 @@
 
     .estado-container {
         display: flex;
-        gap: 10px;
         overflow-x: auto;
         overflow-y: hidden;
+        gap: 10px;
         padding-bottom: 10px;
-        scroll-snap-type: x mandatory;     /* para scroll suave */
-        -webkit-overflow-scrolling: touch; /* para suavidad en iOS */
-        scrollbar-width: none;             /* oculta scrollbar en Firefox */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: auto; /* visible en PC */
     }
 
-    .estado-container::-webkit-scrollbar {
-        display: none;                     /* oculta scrollbar en Chrome */
-    }
+    
 
     .estado {
         flex: 0 0 auto;                    /* evita que se estiren */
         scroll-snap-align: start;         /* ancla el scroll */
         width: 100px;
-        max-width: 22vw;
+        max-width: 15vw;
         aspect-ratio: 9 / 16;
         border-radius: 10px;
         overflow: hidden;
@@ -98,13 +96,13 @@
 
     .close-btn {
         position: absolute;
-        top: -5px;
-        right: -5px;
-        background: rgba(255, 255, 255, 0.4);
+        top: -15px;
+        right: -15px;
+        background: rgba(255, 255, 255, 0.8);
         color: #000;
         padding: 5px 10px;
         border-radius: 50%;
-        font-size: 10px;
+        font-size: 20px;
         cursor: pointer;
         z-index: 9999;
         box-shadow: 0 2px 6px rgba(0,0,0,0.3);
@@ -113,31 +111,59 @@
     /* RESPONSIVE AJUSTES */
     @media (max-width: 768px) {
         .estado {
-            width: 30vw;     /* 3 estados visibles */
+            flex: 0 0 auto;                    /* evita que se estiren */
+            scroll-snap-align: start;         /* ancla el scroll */
+            width: 100px;
+            max-width: 20vw;
+            aspect-ratio: 9 / 16;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #ddd;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.2s;
+        }
+
+        .estado-container::-webkit-scrollbar {
+            display: none;                     /* oculta scrollbar en Chrome */
         }
 
         .perfil {
-        width: 18px;
-        height: 18px;
-        top: 6px;
-        left: 6px;
+            width: 18px;
+            height: 18px;
+            top: 6px;
+            left: 6px;
         }
 
         .modal iframe {
-        width: 100%;
-        height: 60%;
+            width: 100%;
+            height: 60%;
         }
 
         .close-btn {
-        top: 15px;
-        right: 15px;
-        font-size: 24px;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
         }
     }
 
     @media (max-width: 480px) {
         .estado {
-            width: 45vw;     /* 3 estados visibles */
+            flex: 0 0 auto;                    /* evita que se estiren */
+            scroll-snap-align: start;         /* ancla el scroll */
+            width: 100px;
+            max-width: 20vw;
+            aspect-ratio: 9 / 16;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #ddd;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.2s;
+        }
+
+        .estado-container::-webkit-scrollbar {
+            display: none;                     /* oculta scrollbar en Chrome */
         }
 
         .modal iframe {
