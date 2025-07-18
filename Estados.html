@@ -13,22 +13,31 @@
 
     .estado-container {
         display: flex;
-        gap: 9px;
+        gap: 10px;
         overflow-x: auto;
+        overflow-y: hidden;
         padding-bottom: 10px;
-        
+        scroll-snap-type: x mandatory;     /* para scroll suave */
+        -webkit-overflow-scrolling: touch; /* para suavidad en iOS */
+        scrollbar-width: none;             /* oculta scrollbar en Firefox */
+    }
+
+    .estado-container::-webkit-scrollbar {
+        display: none;                     /* oculta scrollbar en Chrome */
     }
 
     .estado {
-        flex: 0 0 calc(6% - 2px); /* Muestra 4 por fila por defecto */
-        height: auto;
+        flex: 0 0 auto;                    /* evita que se estiren */
+        scroll-snap-align: start;         /* ancla el scroll */
+        width: 100px;
+        max-width: 22vw;
         aspect-ratio: 9 / 16;
         border-radius: 10px;
         overflow: hidden;
+        background-color: #ddd;
         cursor: pointer;
         position: relative;
         transition: transform 0.2s;
-        background-color: #ddd;
     }
 
 
@@ -104,7 +113,7 @@
     /* RESPONSIVE AJUSTES */
     @media (max-width: 768px) {
         .estado {
-            flex: 0 0 calc(33.33% - 10px); /* Muestra 3 por fila en tablet/celular */
+            width: 30vw;     /* 3 estados visibles */
         }
 
         .perfil {
@@ -128,7 +137,7 @@
 
     @media (max-width: 480px) {
         .estado {
-            flex: 0 0 calc(50% - 10px); /* Solo 2 por fila en móviles muy pequeños */
+            width: 45vw;     /* 3 estados visibles */
         }
 
         .modal iframe {
