@@ -25,17 +25,17 @@
     
 
     .estado {
-        flex: 0 0 auto;                    /* evita que se estiren */
-        scroll-snap-align: start;         /* ancla el scroll */
-        width: 100px;
-        max-width: 15vw;
-        aspect-ratio: 9 / 16;
-        border-radius: 10px;
-        overflow: hidden;
-        background-color: #ddd;
-        cursor: pointer;
-        position: relative;
-        transition: transform 0.2s;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      width: 5vw;        /* Ocupará ~4.5 estados en pantalla */
+      max-width: none;    /* Elimina el tope */
+      aspect-ratio: 9 / 16;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #ddd;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.2s;
     }
 
 
@@ -111,17 +111,7 @@
     /* RESPONSIVE AJUSTES */
     @media (max-width: 768px) {
         .estado {
-            flex: 0 0 auto;                    /* evita que se estiren */
-            scroll-snap-align: start;         /* ancla el scroll */
-            width: 100px;
-            max-width: 20vw;
-            aspect-ratio: 9 / 16;
-            border-radius: 10px;
-            overflow: hidden;
-            background-color: #ddd;
-            cursor: pointer;
-            position: relative;
-            transition: transform 0.2s;
+          width: 40vw;      /* se verán ~3.3 en pantalla */
         }
 
         .estado-container::-webkit-scrollbar {
@@ -149,17 +139,7 @@
 
     @media (max-width: 480px) {
         .estado {
-            flex: 0 0 auto;                    /* evita que se estiren */
-            scroll-snap-align: start;         /* ancla el scroll */
-            width: 100px;
-            max-width: 20vw;
-            aspect-ratio: 9 / 16;
-            border-radius: 10px;
-            overflow: hidden;
-            background-color: #ddd;
-            cursor: pointer;
-            position: relative;
-            transition: transform 0.2s;
+          width: 30vw; 
         }
 
         .estado-container::-webkit-scrollbar {
