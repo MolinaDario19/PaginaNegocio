@@ -27,8 +27,8 @@
     .estado {
       flex: 0 0 auto;
       scroll-snap-align: start;
-      width: 5vw;        /* Ocupará ~4.5 estados en pantalla */
-      max-width: none;    /* Elimina el tope */
+      width: 10vw;         /* 10% del ancho de pantalla: ~10 visibles */
+      max-width: 70px;    /* Evita que se vean enormes en pantallas grandes */
       aspect-ratio: 9 / 16;
       border-radius: 10px;
       overflow: hidden;
@@ -111,7 +111,8 @@
     /* RESPONSIVE AJUSTES */
     @media (max-width: 768px) {
         .estado {
-          width: 40vw;      /* se verán ~3.3 en pantalla */
+          width: 25vw;       /* ~4 visibles */
+          max-width: none;
         }
 
         .estado-container::-webkit-scrollbar {
@@ -139,7 +140,8 @@
 
     @media (max-width: 480px) {
         .estado {
-          width: 30vw; 
+          width: 33vw;       /* ~3 visibles */
+          max-width: none;
         }
 
         .estado-container::-webkit-scrollbar {
