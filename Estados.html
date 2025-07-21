@@ -27,8 +27,7 @@
     .estado {
       flex: 0 0 auto;
       scroll-snap-align: start;
-      width: 10vw;         /* 10% del ancho de pantalla: ~10 visibles */
-      max-width: 70px;    /* Evita que se vean enormes en pantallas grandes */
+      width: clamp(60px, 25vw, 80px); /* nunca menos de 100px ni más de 120px */
       aspect-ratio: 9 / 16;
       border-radius: 10px;
       overflow: hidden;
@@ -140,8 +139,7 @@
 
     @media (max-width: 480px) {
         .estado {
-          width: 33vw;       /* ~3 visibles */
-          max-width: none;
+          width: clamp(130px, 45vw, 160px); /* muestra 2 o 2.5 */
         }
 
         .estado-container::-webkit-scrollbar {
