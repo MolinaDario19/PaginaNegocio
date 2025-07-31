@@ -2217,6 +2217,26 @@
     "instrucciones": "",
     "preference_id": "MPHY70"
   },
+  "HYLED428GIM": {
+    "modelo": "HYLED428GIM",
+    "software": " CH_R_GTV_2K_upgrade_image_no_tvcertificate.pkg",
+    "main": "JUC7.820.00292577",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY70"
+  },
+  "HYLED5809G4KM": {
+    "modelo": "HYLED5809G4KM",
+    "software": " install.img",
+    "main": "MB-RT2851A-W-DS-0221 - CH",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY75"
+  },
   "HYLED431INTC": {
     "modelo": "HYLED431INTC",
     "software": "MstarUpgrade.bin -",
