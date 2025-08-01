@@ -633,6 +633,32 @@ ul li:hover a:before{
     color: #25d366;
     font-size: 20px;
 }
+
+.usb-requirements {
+    border: 1px solid #ccc;
+    border-left: 5px solid #195cd8; /* azul profesional */
+    padding: 15px 20px;
+    margin: 20px 0;
+    background-color: #ffffff67;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.usb-requirements p {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.usb-requirements ul {
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+}
+
+.usb-requirements li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
   
 
 /* Footer */
