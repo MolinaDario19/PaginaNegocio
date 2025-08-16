@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Electronics</title>
+    <link rel="shortcut icon" href="./images/LOGO_DG.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<!--Start of Tawk.to Script con idioma español-->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {};
+Tawk_API.lang = 'es'; // <- Forzar idioma a español
+var Tawk_LoadStart = new Date();
+(function(){
+  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = 'https://embed.tawk.to/689ff8adf6c01119265927c1/1j2oe6pae';
+  s1.charset = 'UTF-8';
+  s1.setAttribute('crossorigin', '*');
+  s0.parentNode.insertBefore(s1, s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="/images/LOGO CP.png" alt="DigitalElectronics">
+                <div class="nav_titles">
+                    <h2 class="nav__title">DigitalElectronics</h2>
+                    <p>Líder en tecnología</p>
+                </div>  
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./products.html" class="nav__links">Productos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./SoftwareTv.html" class="nav__links">Software TV</a>
+                </li>
+                <li class="nav__items">
+                    <a id="nav_sol" href="./Soluciones.html" class="nav__links">Soluciones</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./Contact.html" class="nav__links">Contacto</a>
+                </li>
+                
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu4.png" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">PAYMENT</h1>
+            <p class="hero__paragraph">
+            Agradecemos tu compra. Para continuar con la entrega del servicio adquirido, completa el siguiente formulario.
+            </p>
+
+            <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
+        </section>
+    </header>
+    <main>
+
+        <section class="payment">
+
+            <div class="containerForm">
+                <h3>Confirmar Pago</h3>
+
+                <div class="input-group">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" /><br>
+
+                <label>Correo Electrónico: *</label>
+                <input type="email" id="correo" placeholder="Ingresa tu correo electrónico" /><br>
+
+                <label>Referencia de Pago: *</label>
+                <input type="text" id="referencia" placeholder="Ej: 121270177819" /><br>
+
+                <label>Modelo TV: *</label>
+                <input type="text" id="modelo" placeholder="Ej: HYLED4322GIM, K-ATV43FHDE..." /><br>
+
+                <label>Número de Serie:</label>
+                <input type="text" id="serie" placeholder="Ej: IDE971532B-03168, 241105-01152" /><br>
+
+
+                <button class=".btn" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+                </div>
+
+                <script>
+                function enviarWhatsApp() {
+                const nombre = document.getElementById("nombre").value.trim();
+                const correo = document.getElementById("correo").value.trim();
+                const referencia = document.getElementById("referencia").value.trim();
+                const modelo = document.getElementById("modelo").value.trim();
+                const serie = document.getElementById("serie").value.trim();
+
+                if (!correo || !referencia || !modelo) {
+                    alert("Por favor llena todos los campos.");
+                    return;
+                }
+
+                const mensaje = `Hola, confirmo que he realizado el pago.\n\n *Nombre:* ${nombre}\n *Correo:* ${correo}\n *Referencia de pago:* ${referencia}\n *Modelo TV:* ${modelo}\n *Número de serie TV:* ${serie}`;
+
+                // Número de destino (WhatsApp) con código de país
+                const numeroDestino = "573103841388";
+                const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensaje)}`;
+
+                window.open(url, "_blank");
+                }
+                </script>
+            </div>
+
+            
+        </section><br>
+
+        <!-- Ventana emergente (modal) -->
+        <div id="modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <!-- Botón para cerrar el modal -->
+                <span id="cerrarModal" role="button" aria-label="Cerrar modal" style="cursor:pointer; font-size: 2em; float:right;">&times;</span>
+
+                <!-- Contenido del modal -->
+                <h2 id="modalTitulo"></h2>
+                <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
+                <p><strong>Main Board:</strong> <span id="modalMain"></span></p>
+                <p><strong>Estado:</strong> <span id="modalEstado"></span></p>
+                <p><strong>Precio:</strong> <span id="modalPrecio"></span></p>
+                <!-- <p><strong>Instrucciones:</strong> <span id="modalInstrucciones"></span></p> -->
+                 <div class="Buttons_modal">
+                    <div id="mp-button"></div>
+                    <!-- <script src="https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="243767526-f6dbf13c-0a53-4e32-9048-2e800978264e" data-source="button">
+                    </script> -->
+                    <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar un asesor</a>
+                 </div>
+                
+                 <div class="usb-requirements">
+                    <p><strong>Importante:</strong> Tener disponibilidad de <strong>USB</strong> con las siguientes características:</p>
+                    <ul>
+                        <li>Capacidad: 4 o 8 GB</li>
+                        <li>Puerto: 2.0</li>
+                        <li>Formato: FAT32</li>
+                    </ul>
+                </div>
+                <!-- PDF Embed -->
+                
+                <div id="modalPdfContainer" style="display: none; margin-top: 20px;">
+                    <iframe id="pdfViewer" width="100%" height="400px" style="border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+         <!-- Ventana emergente (wha) -->
+         <div id="myWha" class="wha ">
+            <div class="wha-content">
+                <div class="wha-header">
+                    <div class="perfil-nombre">
+                        <div class="perfil">
+                            <img src="./images/perfil.jpeg" alt="">
+                        </div>
+                        <ul class="lista-header">
+                            <li><h4>DigitalElectronics</h4></li>
+                            <li class="enLinea">En linea</li>
+                          </ul>
+                        <!-- <h4>DigitalElectronics</h4> -->
+                        <!-- <p>En linea</p> -->
+                    </div>
+                    <span class="closeWha">&times;</span>  
+                </div>
+                
+
+                <div class="wha-text">
+
+                    
+                    <div class="message">
+                        <div class="message-text">
+                            ¿Necesitas ayuda? Contacta a nuestros expertos. 👋
+                        </div>
+                        <div id="hora" class="message-time"></div>
+                    </div>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="share">
+            <div class="menu">
+            
+                <li style="--i:1;--clr:#25d366;">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20*DigitalElectronics*%20%F0%9F%92%BB%2C%20vengo%20de%20la%20pagina%20web%20y%20estoy%20interesado%20en%20reparar%20mi%20televisor%20"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </li>
+        
+                <li style="--i:2;--clr:#1877f2;">
+                    <a target="_blank" href="https://www.facebook.com/share/14HaRv1WTf/"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+        
+                <li style="--i:3;--clr:#ea4c89;">
+                    <a target="_blank" href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+        
+                <li style="--i:4;--clr:#ff0000;">
+                    <a target="_blank" href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79"><ion-icon name="logo-youtube"></ion-icon></a>
+                </li>
+                
+                <li style="--i:5;--clr:#000000;">
+                    <a target="_blank" href="https://www.tiktok.com/@digitalelectronicscali?_t=ZS-8usXSfJnBJw&_r=1"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </li>
+
+                <div class="toggle">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <!--<ion-icon name="share-social-outline"></ion-icon>-->
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+
+            <script>
+                let toggle = document.querySelector('.toggle')
+                let menu = document.querySelector('.menu')
+                toggle.onclick = function(){
+                    menu.classList.toggle('active');
+                }
+            </script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav--footer">
+                <h2 class="footer__title">DigitalElectronics</h2>
+
+                <!-- <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="./index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./products.html" class="nav__links">Productos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./SoftwareTv.html" class="nav__links">Software TV</a>
+                    </li>
+                    <li class="nav__items">
+                        <a id="nav_sol" href="./Soluciones.html" class="nav__links">Soluciones</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./Contact.html" class="nav__links">Contacto</a>
+                    </li>
+                    
+                </ul> -->
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/share/14HaRv1WTf/" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ==" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+                <a href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+            <h4 class="footer__copyright">soporte@digitalelectronics.com.co</h4>
+            <h4 class="footer__copyright">2025 ©DigitalElectronics. Todos los derechos reservados</h4>
+        </section>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script type="module" src="/js/whatsapp.js"></script>
+    <script type="module" src="/js/updateInfo.js"></script>
+    <script type="module" src="/js/buscador.js"></script>
+</body>
+</html>
