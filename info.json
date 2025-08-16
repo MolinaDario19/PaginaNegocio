@@ -1494,9 +1494,19 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
+  "LED 32KG84 BT T2": {
+    "modelo": "LED 32KG84 BT T2",
+    "software": "install.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
   "LED 43KG84 BT T2": {
     "modelo": "LED 43KG84 BT T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1507,6 +1517,16 @@
   "LED 40TG79 BT GOOGLE TV T2": {
     "modelo": "LED 40TG79 BT GOOGLE TV T2",
     "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+  "LED 43TG79 BT GOOGLE TV T2": {
+    "modelo": "LED 43TG79 BT GOOGLE TV T2",
+    "software": "V8-GT41AGL-0012433.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
