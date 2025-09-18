@@ -1657,7 +1657,7 @@
   },
   "LED 32S51 SMART T2": {
     "modelo": "LED 32S51 SMART T2",
-    "software": "",
+    "software": "MstarUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1667,7 +1667,7 @@
   },
   "LED 40S51 SMART T2": {
     "modelo": "LED 40S51 SMART T2",
-    "software": "",
+    "software": "MstarUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1677,7 +1677,7 @@
   },
   "UHD 50L24 ANDROID T2": {
     "modelo": "UHD 50L24 ANDROID T2",
-    "software": "",
+    "software": "658_DVBT_8G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1687,7 +1687,7 @@
   },
   "UHD 55L24 ANDROID T2": {
     "modelo": "UHD 55L24 ANDROID T2",
-    "software": "",
+    "software": "658_DVBT_8G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1697,7 +1697,7 @@
   },
   "UHD 55B23 BT ANDROID T2": {
     "modelo": "UHD 55B23 BT ANDROID T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1707,7 +1707,7 @@
   },
   "UHD 65B23 BT ANDROID T2": {
     "modelo": "UHD 65B23 BT ANDROID T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1717,7 +1717,7 @@
   },
   "LED HD 32S22 BT ANDROID TV": {
     "modelo": "LED HD 32S22 BT ANDROID TV",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1727,7 +1727,7 @@
   },
   "LED 32T18 ANDROID T2": {
     "modelo": "LED 32T18 ANDROID T2",
-    "software": "",
+    "software": "V8-T56FT04-LF1V095.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1737,7 +1737,7 @@
   },
   "LED 43T18 ANDROID T2": {
     "modelo": "LED 43T18 ANDROID T2",
-    "software": "",
+    "software": "V8-T56FT04-LF1V095.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1747,7 +1747,7 @@
   },
   "LED 32T20 ANDROID T2": {
     "modelo": "LED 32T20 ANDROID T2",
-    "software": "",
+    "software": "allupgrade_msd338_4G_1G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1757,7 +1757,7 @@
   },
   "LED 40T20 ANDROID T2": {
     "modelo": "LED 40T20 ANDROID T2",
-    "software": "",
+    "software": "allupgrade_msd338_4G_1G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1767,7 +1767,7 @@
   },
   "LED 43T20 ANDROID T2": {
     "modelo": "LED 43T20 ANDROID T2",
-    "software": "",
+    "software": "allupgrade_msd338_4G_1G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1797,7 +1797,7 @@
   },
   "LED 32T21 BT ANDROID T2": {
     "modelo": "LED 32T21 BT ANDROID T2",
-    "software": "",
+    "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1807,7 +1807,7 @@
   },
   "LED 43T21 BT ANDROID T2": {
     "modelo": "LED 43T21 BT ANDROID T2",
-    "software": "",
+    "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1817,7 +1817,7 @@
   },
   "LED 40T21 BT ANDROID T2": {
     "modelo": "LED 40T21 BT ANDROID T2",
-    "software": "",
+    "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1827,7 +1827,7 @@
   },
   "LED 55T21 BT ANDROID T2": {
     "modelo": "LED 55T21 BT ANDROID T2",
-    "software": "",
+    "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1837,7 +1837,7 @@
   },
   "LED 32T22 BT ANDROID T2": {
     "modelo": "LED 32T22 BT ANDROID T2",
-    "software": "",
+    "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1847,7 +1847,7 @@
   },
   "LED 40T22 BT ANDROID T2": {
     "modelo": "LED 40T22 BT ANDROID T2",
-    "software": "",
+    "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1857,7 +1857,7 @@
   },
   "LED 43T22 BT ANDROID T2": {
     "modelo": "LED 43T22 BT ANDROID T2",
-    "software": "",
+    "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1867,7 +1867,7 @@
   },
   "TV UHD 43T23 BT ANDROID T2": {
     "modelo": "TV UHD 43T23 BT ANDROID T2",
-    "software": "",
+    "software": "MstarUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1877,7 +1877,7 @@
   },
   "TV UHD 49T23 BT ANDROID T2": {
     "modelo": "TV UHD 49T23 BT ANDROID T2",
-    "software": "",
+    "software": "MstarUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1887,7 +1887,7 @@
   },
   "TV UHD 55T23 BT ANDROID T2": {
     "modelo": "TV UHD 55T23 BT ANDROID T2",
-    "software": "",
+    "software": "MstarUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1897,7 +1897,7 @@
   },
   "UHD 43K53 ANDROID T2 NG": {
     "modelo": "UHD 43K53 ANDROID T2 NG",
-    "software": "",
+    "software": "MonetUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1907,7 +1907,7 @@
   },
   "UHD 49K53 ANDROID T2": {
     "modelo": "UHD 49K53 ANDROID T2",
-    "software": "",
+    "software": "MonetUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1917,7 +1917,7 @@
   },
   "UHD 55K53 ANDROID T2 NG": {
     "modelo": "UHD 55K53 ANDROID T2 NG",
-    "software": "",
+    "software": "MonetUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1927,7 +1927,7 @@
   },
   "LED 55E67 UHD3D SMART": {
     "modelo": "LED 55E67 UHD3D SMART",
-    "software": "",
+    "software": "MbootUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1937,7 +1937,7 @@
   },
   "LED 32LL48 NETFLIXT2": {
     "modelo": "LED 32LL48 NETFLIXT2",
-    "software": "",
+    "software": "6683L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1947,7 +1947,7 @@
   },
   "LED 42LL30 BT NETFLIX T2": {
     "modelo": "LED 42LL30 BT NETFLIX T2",
-    "software": "",
+    "software": "6683L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1957,7 +1957,7 @@
   },
   "LED 40LL49 BT NETFLIX FHD T2": {
     "modelo": "LED 40LL49 BT NETFLIX FHD T2",
-    "software": "",
+    "software": "6683L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1967,7 +1967,7 @@
   },
   "LED 43LL49 NETFLIX TV T2": {
     "modelo": "LED 43LL49 NETFLIX TV T2",
-    "software": "",
+    "software": "6683L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1977,7 +1977,7 @@
   },
   "LED 43LL30 BT NETFLIX T2": {
     "modelo": "LED 43LL30 BT NETFLIX T2",
-    "software": "",
+    "software": "6683L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1997,7 +1997,7 @@
   },
   "UHD 50LL51 BT NETFLIX T2": {
     "modelo": "UHD 50LL51 BT NETFLIX T2",
-    "software": "",
+    "software": "6886L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -2007,7 +2007,7 @@
   },
   "UHD 55LL51 BT NETFLIX T2": {
     "modelo": "UHD 55LL51 BT NETFLIX T2",
-    "software": "",
+    "software": "6886L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -2017,7 +2017,7 @@
   },
   "UHD 65LL51 BT NETFLIX T2": {
     "modelo": "UHD 65LL51 BT NETFLIX T2",
-    "software": "",
+    "software": "6886L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -2027,7 +2027,7 @@
   },
   "LED 55LL50 NETFLIX T2": {
     "modelo": "LED 55LL50 NETFLIX T2",
-    "software": "",
+    "software": "6886L_DVBT_4G.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -2037,7 +2037,7 @@
   },
   "LED 32TL48 NETFLIX TV HD T2": {
     "modelo": "LED 32TL48 NETFLIX TV HD T2",
-    "software": "",
+    "software": "V8-NT563LA-LF1V386.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -2047,7 +2047,7 @@
   },
   "FHD 43TL49 SMART TV": {
     "modelo": "FHD 43TL49 SMART TV",
-    "software": "",
+    "software": "update.zip",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -2057,7 +2057,7 @@
   },
   "FHD 49TL49 SMART TV": {
     "modelo": "FHD 49TL49 SMART TV",
-    "software": "",
+    "software": "update.zip",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -2077,7 +2077,7 @@
   },
   "UHD 55TL50 SMART TV": {
     "modelo": "UHD 55TL50 SMART TV",
-    "software": "",
+    "software": "V8-MS86MCO-LF1V086.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -2087,7 +2087,7 @@
   },
   "UHD 65TL50 SMART TV": {
     "modelo": "UHD 65TL50 SMART TV",
-    "software": "",
+    "software": "V8-MS86MCO-LF1V086.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -2097,7 +2097,7 @@
   },
   "SERIES S30": {
     "modelo": "SERIES S30",
-    "software": "",
+    "software": "MstarUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
