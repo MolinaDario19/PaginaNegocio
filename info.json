@@ -1376,7 +1376,7 @@
   
   "24H2 T2": {
     "modelo": "24H2 T2",
-    "software": "",
+    "software": "MSD3663W_8M_OB3353_XX.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1386,7 +1386,7 @@
   },
   "32H2 T2": {
     "modelo": "32H2 T2",
-    "software": "",
+    "software": "MSD3663W_8M_OB3353_XX.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
@@ -1396,7 +1396,7 @@
   },
   "LED 32LO68 BT ANDROID T2 C": {
     "modelo": "LED 32LO68 BT ANDROID T2 C",
-    "software": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1406,7 +1406,7 @@
   },
   "LED 43LO68 BT ANDROID T2": {
     "modelo": "LED 43LO68 BT ANDROID T2",
-    "software": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1416,7 +1416,7 @@
   },
   "LED 43LO69 BT ANDROID T2 S": {
     "modelo": "LED 43LO69 BT ANDROID T2 S",
-    "software": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1426,7 +1426,7 @@
   },
   "LED 43TO61 BT ANDROID T2": {
     "modelo": "LED 43TO61 BT ANDROID T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1436,7 +1436,7 @@
   },
   "LED 32TO65 BT ANDROID T2": {
     "modelo": "LED 32TO65 BT ANDROID T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1446,7 +1446,7 @@
   },
   "LED 40TO65 BT ANDROID T2": {
     "modelo": "LED 40TO65 BT ANDROID T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1456,7 +1456,7 @@
   },
   "LED 32LO69 BT ANDROID T2 S": {
     "modelo": "LED 32LO69 BT ANDROID T2 S",
-    "software": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1466,7 +1466,7 @@
   },
   "LED 32TO59 BT ANDROID T2": {
     "modelo": "LED 32TO59 BT ANDROID T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1476,7 +1476,7 @@
   },
   "LED 43TO59 BT ANDROID T2": {
     "modelo": "LED 43TO59 BT ANDROID T2",
-    "software": "",
+    "software": "install.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1486,7 +1486,7 @@
   },
   "UHD 50TO60 BT ANDROIDTV": {
     "modelo": "UHD 50TO60 BT ANDROIDTV",
-    "software": "",
+    "software": "install2851.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1516,7 +1516,7 @@
   },
   "LED 40TG79 BT GOOGLE TV T2": {
     "modelo": "LED 40TG79 BT GOOGLE TV T2",
-    "software": "",
+    "software": "V8-GT41AGL-00124XX.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1526,7 +1526,7 @@
   },
   "LED 43TG79 BT GOOGLE TV T2": {
     "modelo": "LED 43TG79 BT GOOGLE TV T2",
-    "software": "V8-GT41AGL-0012433.img",
+    "software": "V8-GT41AGL-00124XX.img",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1537,7 +1537,7 @@
   
   "UHD 65KG85 BT GOOGLE T2": {
     "modelo": "UHD 65KG85 BT GOOGLE T2",
-    "software": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "78.000 COP",
@@ -1547,7 +1547,7 @@
   },
   "UHD 50LO70 BT ANDROID T2": {
     "modelo": "UHD 50LO70 BT ANDROID T2",
-    "software": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1557,7 +1557,17 @@
   },
   "UHD 58LO70 BT ANDROID T2": {
     "modelo": "UHD 58LO70 BT ANDROID T2",
-    "software": "",
+    "software": "upgrade_image.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+  "UHD 55HO60 BT ANDROID T2": {
+    "modelo": "UHD 55HO60 BT ANDROID T2",
+    "software": "upgrade_no_tvcertificate_RCA_4K_ATV_PA.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1567,7 +1577,7 @@
   },
   "UHD 65LO70 BT ANDROID T2": {
     "modelo": "UHD 65LO70 BT ANDROID T2",
-    "software": "",
+    "software": "upgrade_image.pkg",
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -1577,7 +1587,7 @@
   },
   "LED 32L51 T2": {
     "modelo": "LED 32L51 T2",
-    "software": "",
+    "software": "MstarUpgrade.bin",
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
