@@ -2808,6 +2808,16 @@
     "instrucciones": "",
     "preference_id": "MPHY75"
   },
+  "HYLED5021QG4KM": {
+    "modelo": "HYLED5021QG4KM",
+    "software": "install.img",
+    "main": "P150-2851AV9.7",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY75"
+  },
   "HYLED5514IM4K": {
     "modelo": "HYLED5514IM4K",
     "software": "MacanUpgrade.bin",
