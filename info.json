@@ -2987,7 +2987,958 @@
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPHY70"
+  },
+  
+
+
+  "C32T1HV": {
+    "modelo": "C32T1HV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32V1HN": {
+    "modelo": "C32V1HN",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32V1HV": {
+    "modelo": "C32V1HV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32VAHG": {
+    "modelo": "C32VAHG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32VAHV": {
+    "modelo": "C32VAHV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32VAHW": {
+    "modelo": "C32VAHW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32VBHG": {
+    "modelo": "C32VBHG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32VJHW": {
+    "modelo": "C32VJHW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C32VJHZ": {
+    "modelo": "C32VJHZ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40T1FN": {
+    "modelo": "C40T1FN",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40V1FN": {
+    "modelo": "C40V1FN",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40V1FV": {
+    "modelo": "C40V1FV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40V2FV": {
+    "modelo": "C40V2FV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40VAFG": {
+    "modelo": "C40VAFG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40VAFV": {
+    "modelo": "C40VAFV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40VAFW": {
+    "modelo": "C40VAFW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40VBFG": {
+    "modelo": "C40VBFG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+
+  
+  "C40VJFW": {
+    "modelo": "C40VJFW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C40VJFZ": {
+    "modelo": "C40VJFZ",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43T1UA": {
+    "modelo": "C43T1UA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43V1FN": {
+    "modelo": "C43V1FN",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43V1FV": {
+    "modelo": "C43V1FV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43V1UA": {
+    "modelo": "C43V1UA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43VAFG": {
+    "modelo": "C43VAFG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43VAFW": {
+    "modelo": "C43VAFW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43VAUA": {
+    "modelo": "C43VAUA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43VAUG": {
+    "modelo": "C43VAUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C43VAUW": {
+    "modelo": "C43VAUW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50V1UA": {
+    "modelo": "C50V1UA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50V2UV": {
+    "modelo": "C50V2UV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50V3QA": {
+    "modelo": "C50V3QA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50VAUA": {
+    "modelo": "C50VAUA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50VAUG": {
+    "modelo": "C50VAUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50VAUV": {
+    "modelo": "C50VAUV",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50VAUW": {
+    "modelo": "C50VAUW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C50VSUG": {
+    "modelo": "C50VSUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+
+  "C55V1UA": {
+    "modelo": "C55V1UA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C55V3QA": {
+    "modelo": "C55V3QA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C55VAUA": {
+    "modelo": "C55VAUA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C55VAUG": {
+    "modelo": "C55VAUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C55VAUW": {
+    "modelo": "C55VAUW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C55VSUG": {
+    "modelo": "C55VSUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C58T1UA": {
+    "modelo": "C58T1UA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C65V1UA": {
+    "modelo": "C65V1UA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C65V3QA": {
+    "modelo": "C65V3QA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C65VAUA": {
+    "modelo": "C65VAUA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C65VAUG": {
+    "modelo": "C65VAUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C65VAUW": {
+    "modelo": "C65VAUW",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C65VSUG": {
+    "modelo": "C65VSUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C75T1UA": {
+    "modelo": "C75T1UA",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "C75VAUG": {
+    "modelo": "C75VAUG",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX2219D": {
+    "modelo": "CX2219D",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX24N1": {
+    "modelo": "CX24N1",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX24P28": {
+    "modelo": "CX24P28",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX24T1": {
+    "modelo": "CX24T1",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+
+  
+  "CX32F1": {
+    "modelo": "CX32F1",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32F1SM": {
+    "modelo": "CX32F1SM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32F2SM": {
+    "modelo": "CX32F2SM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32F3": {
+    "modelo": "CX32F3",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32K1": {
+    "modelo": "CX32K1",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32N3": {
+    "modelo": "CX32N3",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32P28": {
+    "modelo": "CX32P28",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32P28SM": {
+    "modelo": "CX32P28SM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX32S1SM": {
+    "modelo": "CX32S1SM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX40N1FSM": {
+    "modelo": "CX40N1FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX40N3FSM": {
+    "modelo": "CX40N3FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX40P28": {
+    "modelo": "CX40P28",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX40P28FSM": {
+    "modelo": "CX40P28FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX40P28SM": {
+    "modelo": "CX40P28SM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX40Z1FSM": {
+    "modelo": "CX40Z1FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX43F2FSM": {
+    "modelo": "CX43F2FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX43F2USM": {
+    "modelo": "CX43F2USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX43P28FSM": {
+    "modelo": "CX43P28FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX43P28USM": {
+    "modelo": "CX43P28USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX43S1FSM": {
+    "modelo": "CX43S1FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX43S1USM": {
+    "modelo": "CX43S1USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX43Z1": {
+    "modelo": "CX43Z1",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+
+  "CX50F2USM": {
+    "modelo": "CX50F2USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX50P28FSM": {
+    "modelo": "CX50P28FSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX50P28USM": {
+    "modelo": "CX50P28USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX50S1USM": {
+    "modelo": "CX50S1USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX55F2USM": {
+    "modelo": "CX55F2USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX55F3USM": {
+    "modelo": "CX55F3USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX55S1USM": {
+    "modelo": "CX55S1USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX5819NUSM": {
+    "modelo": "CX5819NUSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX58F3USM": {
+    "modelo": "CX58F3USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX58N3USM": {
+    "modelo": "CX58N3USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX6519NUSM": {
+    "modelo": "CX6519NUSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX65E1USM": {
+    "modelo": "CX65E1USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX65F3USM": {
+    "modelo": "CX65F3USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX65N3USM": {
+    "modelo": "CX65N3USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX75A8MUSM": {
+    "modelo": "CX75A8MUSM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX75E1USM": {
+    "modelo": "CX75E1USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  "CX75N3USM": {
+    "modelo": "CX75N3USM",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
   }
+
+
 
 }
 

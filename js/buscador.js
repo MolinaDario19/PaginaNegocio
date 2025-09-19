@@ -9,7 +9,8 @@ document.getElementById('buscador').addEventListener('input', function () {
     #smart .modelo-link,
     #seriess30 .modelo-link,
     #androidTV .modelo-link,
-    #linuxTV .modelo-link
+    #linuxTV .modelo-link,
+    #caixunsw .modelo-link
     `);
 
 
