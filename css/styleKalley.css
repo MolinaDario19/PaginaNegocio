@@ -325,6 +325,8 @@ ul li:hover a:before{
 
 .cuadro {
   background-color: #f5f5f5;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #25d366 50%, #1071f1 50%) 1;
   border-radius: 8px;
   padding: 12px;
   text-align: center;
