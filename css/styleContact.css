@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 :root {
     --padding-container: 100px 0;
@@ -18,6 +19,13 @@ body {
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
+}
+
+.subtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-family: Oswald;
 }
 
 
@@ -275,6 +283,11 @@ ul li:hover a:before{
     border-radius: 20px;
     text-align: center;
     width: 340px;
+    
+}
+
+.contact form h2{
+    font-family: Oswald;
 }
 
 .input-group{
@@ -288,7 +301,9 @@ ul li:hover a:before{
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
+    
 }
+
 
 .contact input, textarea{
     padding: 17px 25px;

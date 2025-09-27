@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 :root {
     --padding-container: 100px 0;
@@ -909,9 +910,13 @@ button:hover{
         margin: 10px;
     }
 
-    .subtitle{
-        font-size: 1.8rem;
-    }
+
+    .subtitle {
+    color: var(--color-title);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-family: Oswald;
+}
 
     .footer__container {
         flex-direction: column;
