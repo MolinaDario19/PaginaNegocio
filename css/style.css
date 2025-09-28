@@ -841,7 +841,7 @@ ul li:hover a:before{
       font-family: Oswald;
       font-weight: bold;
       margin-bottom: 40px;
-      color: #222;
+      color:var(--color-title);
 }
 
 .steps-container {
@@ -853,7 +853,7 @@ ul li:hover a:before{
 
 .step-box {
       background-color: #fff;
-      border: 2px solid #25d366;
+      border: 1px solid #5454D4;
       border-radius: 10px;
       padding: 20px;
       flex: 1 1 250px;
@@ -864,22 +864,23 @@ ul li:hover a:before{
 }
 
 .step-box:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .step-number {
       font-size: 18px;
       font-weight: bold;
-      color: #25d366;
+      color:var(--color-title);
       margin-bottom: 10px;
+      font-size: 23px;
 }
 
 .step-title {
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 10px;
-      color: #333;
+      color: #5454D4;
 }
 
 .step-description {
@@ -887,6 +888,15 @@ ul li:hover a:before{
       color: #555;
       line-height: 1.5;
 }
+
+.numero-hover {
+  font-family: oswald;
+  font-size: 25px;
+  color: #5454D4;
+  font-weight: 700;
+  transition: font-weight 0.2s ease, transform 0.2s ease;
+}
+
       
 /* Footer */
 /* color #1D293F */
