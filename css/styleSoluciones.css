@@ -335,6 +335,20 @@ ul li:hover a:before{
     background-color: #fff;
 }
 
+.video-container h3{
+    font-family: Oswald;
+    color:var(--color-title);
+    text-align: center;
+    font-size: 28px;
+}
+
+.video-container h4{
+    font-family: Oswald;
+    color:var(--color-title);
+    text-align: center;
+    font-size: 25px;
+}
+
 .video-responsive {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -355,11 +369,94 @@ ul li:hover a:before{
 
 .video-description {
     margin-top: 12px;
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.4;
     text-align: justify;
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
 }
+.marcas{
+    font-family: Oswald;
+}
+
+/*Lista*/
+
+.video-container ul {
+    list-style: none;
+}
+
+.video-container li {
+    background: linear-gradient(135deg, #fff 0%, #fff 100%);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    }
+
+.video-container li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #3664e2 0%, #0f84e4a4 100%);
+    transition: width 0.3s ease;
+}
+
+
+.video-container .icon {
+    min-width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #3664e246 0%, #13ec5b23 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.video-container li:hover .icon {
+    transform: rotate(360deg);
+}
+
+.video-container .text {
+    font-weight: 500;
+    flex: 1;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-container li {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.video-container li:nth-child(1) { animation-delay: 0.1s; }
+.video-container li:nth-child(2) { animation-delay: 0.2s; }
+.video-container li:nth-child(3) { animation-delay: 0.3s; }
+.video-container li:nth-child(4) { animation-delay: 0.4s; }
+
+
 /*
 Roboto
 
@@ -384,6 +481,9 @@ Lato
     color: #2e2c2e;
     line-height: 1;
     font-family: Oswald;
+    color:var(--color-title);
+    text-align: center;
+    
 }
 .carousel-container {
   display: flex;
@@ -1045,6 +1145,14 @@ html {
 
     .wha-content {
         width: 90%;
+    }
+
+    li {
+        padding: 20px;
+    }
+
+    .text {
+        font-size: 1em;
     }
     
 }
