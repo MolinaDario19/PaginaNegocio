@@ -306,16 +306,24 @@ ul li:hover a:before{
     width: 260px;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 5%;
-    background-color: #1D293F;
-    box-shadow: 0 0 5px 5px rgba(0, 3, 43, 0.5);
-    color: white;
+    border-radius: 10px;;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: rgb(119, 116, 116);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.about__icons:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      border: 1px solid #5454D4;
+}
+
 .about__icons ion-icon{
-    color: #fff;
+    color: #11113d;
     width: 50px;
     height: 50px;
-    background-image: radial-gradient(#494c90 0.5px, transparent 0.5px), radial-gradient(#00ff11 0.1px, #1D293F 30px);
+    background-image: radial-gradient(#494c90 0.5px, transparent 0.5px), radial-gradient(#00ff11 0.1px, #ffffff 30px);
 }
 .about__icon {
     width: 40px;
@@ -325,11 +333,19 @@ ul li:hover a:before{
 
 .about__title{
     margin: 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: Oswald;
+    font-weight: bold;
+    color:var(--color-title);
 }
 
 .about__paragrah{
     text-align: center;
     margin: 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* coverage */
@@ -853,7 +869,7 @@ ul li:hover a:before{
 
 .step-box {
       background-color: #fff;
-      border: 1px solid #5454D4;
+      
       border-radius: 10px;
       padding: 20px;
       flex: 1 1 250px;
@@ -866,6 +882,7 @@ ul li:hover a:before{
 .step-box:hover {
       transform: translateY(-10px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      border: 1px solid #5454D4;
 }
 
 .step-number {
