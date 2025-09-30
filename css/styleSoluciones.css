@@ -1147,13 +1147,11 @@ html {
         width: 90%;
     }
 
-    li {
+    .video-container li {
         padding: 20px;
     }
 
-    .text {
-        font-size: 1em;
-    }
+    
     
 }
 
