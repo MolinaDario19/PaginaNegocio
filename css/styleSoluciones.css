@@ -386,9 +386,9 @@ ul li:hover a:before{
 }
 
 .video-container li {
-    background: linear-gradient(135deg, #fff 0%, #fff 100%);
-    margin-bottom: 20px;
-    padding: 10px 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #fff 100%);
+    margin-bottom: 15px;
+    padding: 0px 0px;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -406,33 +406,39 @@ ul li:hover a:before{
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg, #3664e2 0%, #0f84e4a4 100%);
+    background: #5a6ac5;
     transition: width 0.3s ease;
+    padding: 0px;
 }
 
-
+/*linear-gradient(135deg, #3664e246 0%, #13ec5b23 100%);*/
 .video-container .icon {
     min-width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #3664e246 0%, #13ec5b23 100%);
+    background: #fff;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     transition: transform 0.3s ease;
+    border: 2px solid #5a6ac5;
 }
 
 .video-container li:hover .icon {
     transform: rotate(360deg);
 }
 
+
 .video-container .text {
-    font-weight: 500;
+    font-weight: 100;
     flex: 1;
     font-size: 16px;
+    font-family: Oswald;
     color: #555;
     line-height: 1.5;
+    text-align: left;
+    text-decoration:double;
 }
 
 @keyframes fadeInUp {
@@ -1148,8 +1154,9 @@ html {
     }
 
     .video-container li {
-        padding: 20px;
+        padding: 0px 0px;
     }
+    
 
     
     
