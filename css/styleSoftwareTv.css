@@ -257,6 +257,102 @@ ul li:hover a:before{
     border-radius: 32px;
 }
 
+/**/
+
+/* Contenedor principal */
+.sistemas-operativos {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #faf7f7;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+/* Botones de pestañas 
+.sistemas-tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+} */
+
+.sistemas-tabs-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+}
+
+/* Botones en columna vertical */
+.sistemas-tab-buttons {
+  display: flex;
+  flex-direction: column; /* 👉 Esto los coloca en columna */
+  gap: 10px;
+  min-width: 200px;
+}
+
+/* Contenido de las pestañas */
+.sistemas-tab-content {
+  flex: 1; /* Toma el espacio restante */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sistemas-tab-button {
+  background-color: #ffffff;
+  border: 2px solid #0c76c2;
+  color: #1365a8;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.sistemas-tab-button:hover {
+  background-color: #25D366;
+  color: #ffffff;
+}
+
+.sistemas-tab-button.software_active {
+  background-color: #25D366;
+  color: #ffffff;
+}
+
+/* Contenido de las pestañas 
+.sistemas-tab-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}*/
+
+.sistemas-tab-pane {
+  display: none;
+}
+
+.sistemas-tab-pane.software_active {
+  display: block;
+}
+
+.sistemas-tab-pane h3 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+.sistemas-tab-pane p {
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+
 /* title-marcas */
 
 .title-marcas{
@@ -737,6 +833,9 @@ ul li:hover a:before{
 /* Media queries */
 
 @media (max-width:800px){
+
+   
+
     .nav__menu{
         display: block;
         padding-right: 4%;
