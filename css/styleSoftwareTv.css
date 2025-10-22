@@ -324,13 +324,7 @@ ul li:hover a:before{
   color: #ffffff;
 }
 
-/* Contenido de las pestañas 
-.sistemas-tab-content {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}*/
+
 
 .sistemas-tab-pane {
   display: none;
@@ -350,7 +344,7 @@ ul li:hover a:before{
   color: #333;
 }
 
-
+/**/
 
 
 /* title-marcas */
@@ -987,5 +981,20 @@ ul li:hover a:before{
     .wha-content {
         width: 90%;
     }
+    .sistemas-tab-buttons {
+    flex-direction: row; /* Los pone en fila */
+    flex-wrap: wrap; /* Permite que salten a otra línea si no caben */
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+    gap: 10px;
+    min-width: 100%; /* Se ajusta al ancho del contenedor */
+  }
+
+  .sistemas-tab-button {
+    flex: 1 1 45%; /* Cada botón ocupa casi la mitad del ancho */
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
     
 }
