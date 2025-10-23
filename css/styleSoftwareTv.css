@@ -296,13 +296,16 @@ ul li:hover a:before{
 
 /* Contenido de las pestañas */
 .sistemas-tab-content {
-  flex: 1; /* Toma el espacio restante */
-  background-color: #ffffff;
+    display: none;
+  flex: 1;
+  background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   text-align: justify;
 }
+
+
 /*25D366*/
 .sistemas-tab-button {
   background-color: #ffffff;
@@ -324,7 +327,6 @@ ul li:hover a:before{
   background: linear-gradient(200deg, #06badf, #0077b6);
   color: #ffffff;
 }
-
 
 
 .sistemas-tab-pane {
