@@ -301,8 +301,9 @@ ul li:hover a:before{
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: justify;
 }
-
+/*25D366*/
 .sistemas-tab-button {
   background-color: #ffffff;
   border: 2px solid #0c76c2;
@@ -315,12 +316,12 @@ ul li:hover a:before{
 }
 
 .sistemas-tab-button:hover {
-  background-color: #25D366;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
   color: #ffffff;
 }
 
 .sistemas-tab-button.software_active {
-  background-color: #25D366;
+  background: linear-gradient(200deg, #06badf, #0077b6);
   color: #ffffff;
 }
 
@@ -981,6 +982,7 @@ ul li:hover a:before{
     .wha-content {
         width: 90%;
     }
+
     .sistemas-tab-buttons {
     flex-direction: row; /* Los pone en fila */
     flex-wrap: wrap; /* Permite que salten a otra línea si no caben */
@@ -988,6 +990,7 @@ ul li:hover a:before{
     align-items: center;
     gap: 10px;
     min-width: 100%; /* Se ajusta al ancho del contenedor */
+    z-index: 200;
   }
 
   .sistemas-tab-button {
