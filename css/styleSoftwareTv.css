@@ -296,7 +296,7 @@ ul li:hover a:before{
 
 /* Contenido de las pestañas */
 .sistemas-tab-content {
-    display: none;
+  display:none;
   flex: 1;
   background-color: #fff;
   padding: 30px;
