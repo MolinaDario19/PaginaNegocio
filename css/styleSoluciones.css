@@ -525,6 +525,15 @@ section .container-videos {
     .video-thumbnails {
         grid-template-columns: 1fr;
     }
+
+    .video-thumbnails {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    }
+    .play-icon {
+    width: 25px;
+    height: 25px;
+    }
 }
 /*Galery*/
 .Titulo_sol{
