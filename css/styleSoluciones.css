@@ -523,12 +523,13 @@ section .container-videos {
 
 @media (max-width: 480px) {
     .video-thumbnails {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 2fr;
     }
 
     .video-thumbnails {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
     .play-icon {
     width: 25px;
