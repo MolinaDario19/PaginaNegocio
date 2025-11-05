@@ -317,9 +317,9 @@ ul li:hover a:before{
             color: var(--color-title);
             font-weight: 700;
             line-height: 1.2;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             animation: fadeInUp 1s ease-out 0.2s backwards;
-            padding-bottom: 7%;
+            padding-bottom: 4%;
             
         }
 
@@ -358,7 +358,7 @@ ul li:hover a:before{
 
        .description-box {
             position: relative;
-            height: 225px; /* altura fija para que los textos se sobrepongan en el mismo espacio */
+            height: 150px; /* altura fija para que los textos se sobrepongan en el mismo espacio */
             overflow: hidden;
         }
 
@@ -373,7 +373,7 @@ ul li:hover a:before{
             line-height: 1.8;
             margin: 0 auto;
             opacity: 0;
-            animation: textCycle 10s infinite;
+            animation: textCycle 16s infinite;
             transition: opacity 1s ease-in-out;
             text-align: center;
         }
@@ -385,7 +385,8 @@ ul li:hover a:before{
 
         /* Segunda descripción aparece después */
         .description-2 {
-            animation-delay: 5s;
+            animation-delay: 8s;
+            color: rgba(79, 129, 189, 255);
         }
 
         /* Animación: se intercambian */
@@ -401,11 +402,17 @@ ul li:hover a:before{
                 padding: 20px;
             }
 
+            .description-box {
+            position: relative;
+            height: 225px; /* altura fija para que los textos se sobrepongan en el mismo espacio */
+            overflow: hidden;
+        }
+
         }
 
 /* Buscador*/
 #buscador {
-  margin-top: 20px;
+  margin-top: 2px;
   border: 1px solid rgb(79, 129, 189);
   border-radius: 8px;
   box-shadow: 0 5px 5px rgba(0,0,0,0.9);
@@ -421,7 +428,7 @@ ul li:hover a:before{
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 00px;
     margin-left: 1vw;
     margin-right: 1vw;
     margin-top: -70px;
