@@ -2228,6 +2228,16 @@
     "instrucciones": "",
     "preference_id": "MPHY70"
   },
+  "HYLED43INT2": {
+    "modelo": "HYLED43INT2",
+    "software": "MstarUpgrade.bin",
+    "main": "P75-628",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY70"
+  },
   "HYLED422INT": {
     "modelo": "HYLED422INT",
     "software": "MstarUpgrade.bin -",
