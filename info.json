@@ -1514,6 +1514,16 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
+  "LED 32TG81 BT GOOGLE T2": {
+    "modelo": "LED 32TG81 BT GOOGLE T2",
+    "software": "V8-GT41AGL-00xxxx.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
   "LED 40TG79 BT GOOGLE TV T2": {
     "modelo": "LED 40TG79 BT GOOGLE TV T2",
     "software": "V8-GT41AGL-00124XX.img",
