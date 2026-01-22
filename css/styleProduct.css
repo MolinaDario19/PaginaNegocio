@@ -215,6 +215,8 @@ ul li:hover a:before{
 }
 
 
+
+
 /* Hero container */
 
 .hero__container {
@@ -363,6 +365,24 @@ ul li:hover a:before{
     justify-content: center;
     font-size: .9em;
 }
+
+.mp-button-small iframe {
+    transform: scale(0.7);   /* Más pequeño */
+    transform-origin: center;
+}
+
+.mp-button-small {
+    display: flex;
+    justify-content: center;
+}
+.mp-button-smallx2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+}
+
+
 
 /* share */
 
