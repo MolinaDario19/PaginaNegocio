@@ -1524,6 +1524,16 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
+  "LED 32TG79 BT GOOGLE TV T2": {
+    "modelo": "LED 32TG79 BT GOOGLE TV T2",
+    "software": "V8-GT41AGL-00124XX.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
   "LED 40TG79 BT GOOGLE TV T2": {
     "modelo": "LED 40TG79 BT GOOGLE TV T2",
     "software": "V8-GT41AGL-00124XX.img",
@@ -2703,30 +2713,40 @@
     "software": " CH_R_2K_upgrade_image_no_tvcertificate.pkg",
     "main": "JUC7.820.00292577",
     "estado": "Disponible",
-    "precio": "70.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPHY70"
+    "preference_id": "MPHY75"
   },
   "HYLED4322GIM": {
     "modelo": "HYLED4322GIM",
     "software": "install.img",
     "main": "P75-2841ATV6.2",
     "estado": "Disponible",
-    "precio": "70.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPHY70"
+    "preference_id": "MPHY75"
+  },
+  "HYLED3254GIM": {
+    "modelo": "HYLED3254GIM",
+    "software": "install.img",
+    "main": "P50-2841ATV3.2",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY75"
   },
   "HYLED4322NIM": {
     "modelo": "HYLED4322NIM",
     "software": "6683L_DVBT_4G.bin",
     "main": "6683M3C1",
     "estado": "Disponible",
-    "precio": "70.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPHY70"
+    "preference_id": "MPHY75"
   },
   "HYLED4501INTM": {
     "modelo": "HYLED4501INTM",
