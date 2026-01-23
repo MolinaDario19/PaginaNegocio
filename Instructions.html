@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TV Software Update Manual</title>
+
+<style>
+:root{
+    --bg:#0f172a;
+    --card:#020617;
+    --text:#f1f5f9;
+    --muted:#94a3b8;
+    --accent:#38bdf8;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.container{
+    background:var(--card);
+    width:90%;
+    max-width:700px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+h1{
+    text-align:center;
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+
+.lang-selector{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.lang-selector button{
+    border:1px solid var(--accent);
+    background:none;
+    color:var(--accent);
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.lang-selector button.active{
+    background:var(--accent);
+    color:#020617;
+    font-weight:bold;
+}
+
+.step{
+    margin:20px 0;
+    min-height:110px;
+    line-height:1.5;
+}
+
+.progress{
+    height:8px;
+    background:#1e293b;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    width:0%;
+    background:var(--accent);
+    transition:.3s;
+}
+
+.step-count{
+    text-align:center;
+    font-size:.85rem;
+    color:var(--muted);
+    margin-top:8px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+button.action{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    font-size:.9rem;
+    cursor:pointer;
+    background:var(--accent);
+    color:#020617;
+    font-weight:bold;
+}
+
+.print-btn{
+    margin-top:15px;
+    width:100%;
+    background:#22c55e;
+}
+
+/* -------- PRINT -------- */
+.print-all{
+    display:none;
+}
+
+@media print{
+    body{
+        background:#fff;
+        color:#000;
+    }
+    .container{
+        display:none;
+    }
+    .print-all{
+        display:block;
+        padding:30px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .print-all h1{
+        text-align:center;
+        margin-bottom:10px;
+    }
+    .print-all .subtitle{
+        text-align:center;
+        font-size:14px;
+        margin-bottom:20px;
+    }
+    .print-all ol{
+        font-size:14px;
+        line-height:1.6;
+    }
+    .print-all li{
+        margin-bottom:12px;
+        page-break-inside:avoid;
+    }
+    .signature{
+        margin-top:40px;
+        text-align:right;
+        font-size:14px;
+        font-weight:bold;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 id="title"></h1>
+
+    <div class="lang-selector">
+        <button id="btnEs" class="active" onclick="setLang('es')">Español</button>
+        <button id="btnEn" onclick="setLang('en')">English</button>
+    </div>
+
+    <div class="step" id="stepText"></div>
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <p class="step-count" id="stepCount"></p>
+
+    <div class="buttons">
+        <button class="action" onclick="prevStep()">Anterior</button>
+        <button class="action" onclick="nextStep()">Siguiente</button>
+    </div>
+
+    <button class="action print-btn" onclick="window.print()">Imprimir / Guardar PDF</button>
+</div>
+
+<!-- VISTA COMPLETA PARA IMPRESIÓN -->
+<div class="print-all" id="printAll"></div>
+
+<script>
+let lang="es";
+let currentStep=0;
+
+const content={
+es:{
+title:"Procedimiento de Actualización de Software",
+subtitle:"Manual Técnico de Servicio",
+steps:[
+"Copie el archivo <strong>V8-GT41AGL-0012147-user</strong> en una USB formateada en <strong>FAT32</strong>. La USB no debe contener otros archivos y se recomienda que sea de <strong>8GB o mayor</strong>. No copie el archivo dentro de carpetas.",
+"Desconecte el TV del tomacorriente.",
+"Inserte la USB en el puerto USB del TV.",
+"Mantenga presionada la tecla <strong>POWER</strong> y conecte el TV al tomacorriente.",
+"Mantenga presionada la tecla <strong>POWER</strong> durante <strong>10 segundos</strong> después de conectar el TV.",
+"Después de aproximadamente 1 minuto aparecerá un <strong>recuadro azul</strong> indicando que la actualización está en progreso.",
+"La actualización dura aproximadamente <strong>10 minutos</strong>. No desconecte ni manipule el TV o el control remoto durante este proceso.",
+"La actualización finaliza cuando el TV enciende y muestra el <strong>menú inicial de configuración</strong>.",
+"Retire la USB. Se recomienda desconectar el TV y volverlo a conectar.",
+"Encienda el TV, omita los ajustes iniciales y realice el <strong>Shop Init</strong>: Menú → Imagen → Ajustes de imagen → Ajustes avanzados → Contraste → presione OK 6 veces → Factory Menu → Shop.",
+"La pantalla cambiará a <strong>rojo</strong> y luego <strong>verde</strong>. Desconecte y vuelva a conectar el TV, luego realice la configuración inicial."
+]
+},
+en:{
+title:"Software Update Procedure",
+subtitle:"Technical Service Manual",
+steps:[
+"Copy the file <strong>V8-GT41AGL-0012147-user</strong> to a USB drive formatted in <strong>FAT32</strong>. The USB must not contain other files and should be <strong>8GB or larger</strong>. Do not place the file inside folders.",
+"Disconnect the TV from the power outlet.",
+"Insert the USB drive into the TV USB port.",
+"Press and hold the <strong>POWER</strong> button and connect the TV to the power outlet.",
+"Keep holding the <strong>POWER</strong> button for <strong>10 seconds</strong> after connecting the TV.",
+"After approximately 1 minute, a <strong>blue screen</strong> will appear indicating the update is in progress.",
+"The update process takes approximately <strong>10 minutes</strong>. Do not disconnect or operate the TV or remote control.",
+"The update is complete when the TV turns on and displays the <strong>initial setup screen</strong>.",
+"Remove the USB drive. It is recommended to disconnect and reconnect the TV.",
+"Turn on the TV, skip initial setup, and perform <strong>Shop Init</strong>: Menu → Picture → Picture Settings → Advanced Settings → Contrast → press OK 6 times → Factory Menu → Shop.",
+"The screen will turn <strong>red</strong> and then <strong>green</strong>. Disconnect and reconnect the TV, then complete the initial setup."
+]
+}
+};
+
+function updateUI(){
+    document.getElementById("title").innerHTML=content[lang].title;
+    document.getElementById("stepText").innerHTML=content[lang].steps[currentStep];
+    document.getElementById("stepCount").innerHTML=`Paso ${currentStep+1} / ${content[lang].steps.length}`;
+    document.getElementById("progressBar").style.width=((currentStep+1)/content[lang].steps.length)*100+"%";
+}
+
+function nextStep(){
+    if(currentStep<content[lang].steps.length-1){currentStep++;updateUI();}
+}
+function prevStep(){
+    if(currentStep>0){currentStep--;updateUI();}
+}
+
+function setLang(l){
+    lang=l;
+    currentStep=0;
+    document.getElementById("btnEs").classList.toggle("active",l==="es");
+    document.getElementById("btnEn").classList.toggle("active",l==="en");
+    updateUI();
+    buildPrintView();
+}
+
+function buildPrintView(){
+    const div=document.getElementById("printAll");
+    let html=`<h1>${content[lang].title}</h1>
+              <div class="subtitle">${content[lang].subtitle}</div>
+              <ol>`;
+    content[lang].steps.forEach(s=>html+=`<li>${s}</li>`);
+    html+=`</ol>
+           <div class="signature">
+               DigitalElectronics<br>
+               Technical Service Department
+           </div>`;
+    div.innerHTML=html;
+}
+
+updateUI();
+buildPrintView();
+</script>
+
+</body>
+</html>
+
