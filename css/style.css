@@ -951,9 +951,10 @@ ul li:hover a:before{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #a23131;
+    border-bottom: 1px solid rgba(79, 129, 189, 255);
     padding-bottom: 5px;
     padding: 20px;
+    /*box-shadow: 0 1px 6px rgba(79, 129, 189, 0.6);*/
 }
 
 .footer__container.container{

@@ -779,7 +779,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #a23131;
+    border-bottom: 1px solid rgba(79, 129, 189, 255);;
     padding-bottom: 5px;
     padding: 20px;
 }
