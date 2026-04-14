@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Garantías — Ing. Servicios Electrónicos</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <div class="nav-logo">IE</div>
+    <span class="nav-title">Ing. <span>Servicios Electrónicos</span></span>
+  </div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showView('client', this)">📋 Política</button>
+    <button class="nav-tab" onclick="showView('admin', this)">🗂 Panel Admin</button>
+  </div>
+</nav>
+
+<!-- ══════════ VISTA CLIENTE ══════════ -->
+<div id="view-client" class="view active">
+  <div class="hero">
+    <div class="hero-badge">📄 Documento Legal</div>
+    <h1>Política de <em>Garantías</em></h1>
+    <p class="hero-sub">Servicios de ingeniería electrónica, software y soporte técnico a domicilio y virtual.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">✅ Devolución 50%</span>
+      <span class="hero-pill">🎟 Bono 60% descuento</span>
+      <span class="hero-pill">📍 Domicilio & Virtual</span>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div id="form-section">
+      <!-- POLÍTICA -->
+      <div class="policy-card">
+        <div class="policy-card-header">
+          <div class="policy-icon">📋</div>
+          <h2>Términos y Condiciones de Garantía</h2>
+        </div>
+        <div class="policy-body">
+          <div class="policy-section">
+            <h3>1. Objeto</h3>
+            <p>Esta política establece los términos y condiciones de garantía aplicables a los servicios de ingeniería electrónica y software prestados a domicilio y mediante soporte virtual.</p>
+          </div>
+          <div class="policy-section">
+            <h3>2. Servicios Cubiertos</h3>
+            <ul>
+              <li>Instalación, configuración y actualización de software</li>
+              <li>Soporte técnico remoto (virtual) y presencial (a domicilio)</li>
+              <li>Diagnóstico y solución de problemas en sistemas informáticos</li>
+              <li>Asesoría técnica especializada en ingeniería electrónica</li>
+            </ul>
+          </div>
+          <div class="policy-section">
+            <h3>3. Condiciones</h3>
+            <p><strong>Aplica cuando:</strong> El cliente no logra completar el procedimiento con evidencia verificable del fallo.</p>
+            <p><strong>No aplica cuando:</strong> Intervención de terceros, modificaciones no autorizadas, fallas de hardware, o solicitud fuera del plazo de 15 días.</p>
+          </div>
+          <div class="policy-section">
+            <h3>4. Opciones de Compensación</h3>
+            <div class="option-grid">
+              <div class="option-box blue">
+                <h4>Opción A</h4>
+                <div class="pct">50%</div>
+                <p><strong>Devolución parcial</strong> con evidencia del no funcionamiento (capturas, videos, registros de error).</p>
+              </div>
+              <div class="option-box green">
+                <h4>Opción B — Solo técnicos</h4>
+                <div class="pct">60%</div>
+                <p><strong>Bono de descuento</strong> en próximo servicio de software. Vigencia 90 días. Intransferible.</p>
+              </div>
+            </div>
+            <p style="font-size:12px;color:var(--text-soft);margin-top:10px;">⚠ Solo se puede elegir una opción. Una vez confirmada no puede cambiarse.</p>
+          </div>
+          <div class="policy-section">
+            <h3>5. Procedimiento</h3>
+            <ol>
+              <li>Comunicar el inconveniente dentro de 15 días calendario</li>
+              <li>Describir el problema y pasos que no pudieron completarse</li>
+              <li>Adjuntar evidencias (capturas, videos, registros de error)</li>
+              <li>El prestador revisa en máximo 2 días hábiles</li>
+              <li>Se presentan las opciones de compensación disponibles</li>
+            </ol>
+          </div>
+          <div class="policy-section">
+            <h3>6. Vigencia</h3>
+            <p>Entra en vigor desde la fecha de aceptación. La versión aceptada quedará registrada digitalmente con código único.</p>
+          </div>
+        </div>
+        <div class="scroll-hint">
+          <div class="scroll-dot"></div>
+          Desplázate para leer la política completa antes de aceptar
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="form-card">
+        <div class="form-header">
+          <h2>Registro y Aceptación</h2>
+          <p>Recibirás un correo de confirmación automático al registrar tu aceptación.</p>
+        </div>
+        <div class="form-body">
+          <div class="form-grid">
+            <div class="field">
+              <label>Nombre completo <span class="req">*</span></label>
+              <input type="text" id="f-name" placeholder="Ej: Carlos Martínez">
+              <span class="field-error" id="err-name">Por favor ingresa tu nombre completo</span>
+            </div>
+            <div class="field">
+              <label>Correo electrónico <span class="req">*</span></label>
+              <input type="email" id="f-email" placeholder="correo@ejemplo.com">
+              <span class="field-error" id="err-email">Ingresa un correo válido</span>
+            </div>
+            <div class="field">
+              <label>Teléfono / WhatsApp <span class="req">*</span></label>
+              <input type="tel" id="f-phone" placeholder="Ej: 3001234567">
+              <span class="field-error" id="err-phone">Ingresa tu número de contacto</span>
+            </div>
+            <div class="field">
+              <label>Tipo de cliente <span class="req">*</span></label>
+              <div class="radio-group">
+                <label class="radio-option" id="opt-tecnico">
+                  <input type="radio" name="client-type" value="Técnico">
+                  <div class="radio-icon">🔧</div>
+                  <div class="radio-label">Cliente Técnico</div>
+                  <div class="radio-sub">Técnico, Tecnólogo o Ing. TI</div>
+                </label>
+                <label class="radio-option" id="opt-regular">
+                  <input type="radio" name="client-type" value="Regular">
+                  <div class="radio-icon">👤</div>
+                  <div class="radio-label">Cliente Regular</div>
+                  <div class="radio-sub">Usuario general</div>
+                </label>
+              </div>
+              <span class="field-error" id="err-type">Selecciona el tipo de cliente</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <label style="margin-bottom:10px;display:block;">Aceptación de la política <span class="req">*</span></label>
+          <div class="checkbox-row" id="checkbox-row" onclick="toggleCheck()">
+            <input type="checkbox" id="f-accept">
+            <div class="custom-checkbox">
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+                <path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="checkbox-text">
+              <strong>He leído y acepto la Política de Garantías</strong> en su totalidad. Entiendo las condiciones, exclusiones, opciones de compensación y el procedimiento de reclamación. Confirmo que la información es verídica.
+            </span>
+          </div>
+          <span class="field-error" id="err-accept">Debes aceptar la política para continuar</span>
+
+          <button class="btn-submit" id="btn-submit" onclick="handleSubmit()">
+            <span class="btn-text">✍️ Firmar y Registrar Aceptación</span>
+            <div class="spinner"></div>
+          </button>
+
+          <div class="status-banner" id="status-banner"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ÉXITO -->
+    <div id="success-section" style="display:none;">
+      <div class="success-card">
+        <div class="success-icon">✅</div>
+        <h2>¡Aceptación Registrada!</h2>
+        <p>Tu firma digital fue guardada en Google Sheets y recibirás un correo de confirmación en los próximos minutos.</p>
+        <div class="receipt-box" id="receipt-box"></div>
+        <p style="font-size:12px;color:var(--text-soft);margin-top:8px;">
+          📧 Revisa tu bandeja de entrada (y la carpeta de spam por si acaso).<br>
+          Conserva el código de registro para futuras referencias.
+        </p>
+        <button class="btn-submit" style="margin-top:24px;max-width:300px;" onclick="resetForm()">
+          <span class="btn-text">← Nueva aceptación</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ PANEL ADMIN ══════════ -->
+<div id="view-admin" class="view">
+  <div class="admin-hero">
+    <h2>Panel de Aceptaciones</h2>
+    <p>Configura la conexión con Google Sheets y consulta los registros</p>
+  </div>
+  <div class="admin-container">
+
+    <!-- GUÍA DE CONFIGURACIÓN -->
+    <div class="setup-guide">
+      <div class="setup-guide-header">
+        <h3>⚙️ Configuración de Google Sheets</h3>
+        <p>Sigue estos pasos una sola vez para activar el guardado en la nube</p>
+      </div>
+      <div class="setup-guide-body">
+
+        <div class="setup-step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Crea una hoja de cálculo en Google Sheets</h4>
+            <p>Ve a <strong>sheets.google.com</strong>, crea una hoja nueva y ponle el nombre <em>"Aceptaciones Garantía"</em>. En la fila 1 escribe estos encabezados exactos (una columna por celda):</p>
+            <div class="code-block">ID | Timestamp | Nombre | Correo | Telefono | TipoCliente | Aceptacion | FechaTexto</div>
+          </div>
+        </div>
+
+        <div class="setup-step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Crea el Apps Script</h4>
+            <p>En la hoja de cálculo ve a <strong>Extensiones → Apps Script</strong>. Borra el código que aparece y pega el script que encontrarás en el archivo <code>apps-script.gs</code> incluido en este paquete. Luego haz clic en <strong>Guardar 💾</strong>.</p>
+          </div>
+        </div>
+
+        <div class="setup-step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Despliega el script como Web App</h4>
+            <p>En Apps Script: <strong>Implementar → Nueva implementación</strong>. Configura así:</p>
+            <div class="code-block"><span class="comment"># Configuración de implementación:</span>
+<span class="key">Tipo:</span>           <span class="val">Aplicación web</span>
+<span class="key">Ejecutar como:</span>  <span class="val">Yo (tu cuenta de Google)</span>
+<span class="key">Acceso:</span>         <span class="val">Cualquier usuario</span></div>
+            <p style="margin-top:10px;">Haz clic en <strong>Implementar</strong>, autoriza los permisos y copia la <strong>URL de la aplicación web</strong> que te entrega Google.</p>
+          </div>
+        </div>
+
+        <div class="setup-step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Pega la URL aquí para activar la conexión</h4>
+            <p>Una vez tengas la URL del Web App, pégala aquí. Se guardará en este navegador.</p>
+            <div class="url-input-row">
+              <input type="text" id="webAppUrl" placeholder="https://script.google.com/macros/s/AKfy.../exec">
+              <button class="btn-save-url" onclick="saveWebAppUrl()">Guardar URL</button>
+            </div>
+            <div class="url-status" id="url-status"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ESTADÍSTICAS -->
+    <div class="stats-grid">
+      <div class="stat-card blue"><div class="stat-num" id="stat-total">—</div><div class="stat-label">Total registros</div></div>
+      <div class="stat-card green"><div class="stat-num" id="stat-tecnico">—</div><div class="stat-label">Clientes técnicos</div></div>
+      <div class="stat-card amber"><div class="stat-num" id="stat-regular">—</div><div class="stat-label">Clientes regulares</div></div>
+      <div class="stat-card navy"><div class="stat-num" id="stat-today">—</div><div class="stat-label">Aceptados hoy</div></div>
+    </div>
+
+    <!-- TABLA -->
+    <div class="table-card">
+      <div class="table-header">
+        <div>
+          <h3>Registro de Firmas</h3>
+          <p>Los registros viven en tu Google Sheets. Aquí se muestran los guardados localmente como respaldo.</p>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterRecords('all', this)">Todos</button>
+        <button class="filter-btn" onclick="filterRecords('Técnico', this)">Técnicos</button>
+        <button class="filter-btn" onclick="filterRecords('Regular', this)">Regulares</button>
+      </div>
+      <div id="admin-table-wrap">
+        <div class="empty-state">
+          <div class="es-icon">📭</div>
+          <p>Los registros aparecerán aquí una vez que los clientes acepten la política.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast">
+  <span id="toast-icon">✅</span>
+  <span id="toast-msg"></span>
+</div>
+
+<script>
+// ═══ CONFIGURACIÓN ═══
+const STORAGE_KEY  = 'garantias_registros_v1';
+const URL_KEY      = 'garantias_webappurl';
+
+// ═══ UTILS ═══
+function genId() {
+  return 'GR-' + Date.now().toString(36).toUpperCase() + '-' + Math.random().toString(36).substr(2,4).toUpperCase();
+}
+function getRecords() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch(e) { return []; }
+}
+function saveRecords(r) { localStorage.setItem(STORAGE_KEY, JSON.stringify(r)); }
+function getWebAppUrl() { return localStorage.getItem(URL_KEY) || ''; }
+function formatDate(ts) {
+  const d = new Date(ts);
+  return d.toLocaleDateString('es-CO', { day:'2-digit', month:'short', year:'numeric' }) + ' ' +
+         d.toLocaleTimeString('es-CO', { hour:'2-digit', minute:'2-digit' });
+}
+function showToast(msg, icon='✅') {
+  const t = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  document.getElementById('toast-icon').textContent = icon;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3500);
+}
+function setBanner(type, msg) {
+  const b = document.getElementById('status-banner');
+  b.className = 'status-banner show ' + type;
+  b.innerHTML = (type==='sending' ? '⏳ ' : type==='success' ? '✅ ' : '⚠️ ') + msg;
+}
+function hideBanner() {
+  document.getElementById('status-banner').className = 'status-banner';
+}
+
+// ═══ NAVEGACIÓN ═══
+function showView(v, btn) {
+  document.querySelectorAll('.view').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
+  document.getElementById('view-' + v).classList.add('active');
+  btn.classList.add('active');
+  if (v === 'admin') { loadUrlStatus(); renderAdmin(); }
+}
+
+// ═══ URL DEL WEB APP ═══
+function loadUrlStatus() {
+  const url = getWebAppUrl();
+  const input = document.getElementById('webAppUrl');
+  const status = document.getElementById('url-status');
+  if (url) {
+    input.value = url;
+    status.className = 'url-status ok';
+    status.textContent = '✅ URL configurada — la conexión con Google Sheets está activa';
+  } else {
+    status.className = 'url-status missing';
+    status.textContent = 'Sin URL configurada. Los registros solo se guardarán localmente.';
+  }
+}
+function saveWebAppUrl() {
+  const val = document.getElementById('webAppUrl').value.trim();
+  if (!val.startsWith('https://script.google.com')) {
+    showToast('Pega una URL válida de Google Apps Script', '⚠️'); return;
+  }
+  localStorage.setItem(URL_KEY, val);
+  loadUrlStatus();
+  showToast('URL guardada correctamente');
+}
+
+// ═══ RADIO ═══
+document.querySelectorAll('.radio-option input').forEach(input => {
+  input.addEventListener('change', function() {
+    document.querySelectorAll('.radio-option').forEach(o => o.classList.remove('selected'));
+    this.closest('.radio-option').classList.add('selected');
+  });
+});
+
+// ═══ CHECKBOX ═══
+let checkState = false;
+function toggleCheck() {
+  checkState = !checkState;
+  document.getElementById('f-accept').checked = checkState;
+  document.getElementById('checkbox-row').classList.toggle('checked', checkState);
+}
+
+// ═══ VALIDACIÓN ═══
+function validate() {
+  let ok = true;
+  [
+    { id:'f-name',  err:'err-name',  check: v => v.trim().length > 2 },
+    { id:'f-email', err:'err-email', check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+    { id:'f-phone', err:'err-phone', check: v => v.replace(/\D/g,'').length >= 7 },
+  ].forEach(f => {
+    const el = document.getElementById(f.id);
+    const valid = f.check(el.value);
+    el.classList.toggle('error', !valid);
+    document.getElementById(f.err).classList.toggle('show', !valid);
+    if (!valid) ok = false;
+  });
+  const hasType = !!document.querySelector('input[name="client-type"]:checked');
+  document.getElementById('err-type').classList.toggle('show', !hasType);
+  if (!hasType) ok = false;
+  document.getElementById('err-accept').classList.toggle('show', !checkState);
+  if (!checkState) ok = false;
+  return ok;
+}
+
+// ═══ ENVÍO ═══
+async function handleSubmit() {
+  if (!validate()) { showToast('Completa todos los campos requeridos', '⚠️'); return; }
+  const btn = document.getElementById('btn-submit');
+  btn.classList.add('loading'); btn.disabled = true;
+  setBanner('sending', 'Registrando tu aceptación y enviando correo de confirmación...');
+
+  const record = {
+    id:        genId(),
+    ts:        Date.now(),
+    name:      document.getElementById('f-name').value.trim(),
+    email:     document.getElementById('f-email').value.trim(),
+    phone:     document.getElementById('f-phone').value.trim(),
+    type:      document.querySelector('input[name="client-type"]:checked').value,
+    accepted:  true,
+    fechaTexto: formatDate(Date.now())
+  };
+
+  // Guardar localmente siempre
+  const all = getRecords();
+  all.unshift(record);
+  saveRecords(all);
+
+  const webAppUrl = getWebAppUrl();
+  if (webAppUrl) {
+    try {
+      await fetch(webAppUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(record)
+      });
+      // no-cors no retorna body, asumimos éxito si no lanza error
+      btn.classList.remove('loading'); btn.disabled = false;
+      hideBanner();
+      showReceipt(record);
+      showToast('✅ Registrado en Google Sheets');
+    } catch(err) {
+      btn.classList.remove('loading'); btn.disabled = false;
+      setBanner('error', 'No se pudo conectar con Google Sheets. Tu registro se guardó localmente.');
+      setTimeout(() => { hideBanner(); showReceipt(record); }, 2500);
+    }
+  } else {
+    // Sin URL configurada: guardar solo local
+    setTimeout(() => {
+      btn.classList.remove('loading'); btn.disabled = false;
+      hideBanner();
+      showReceipt(record);
+      showToast('Registro guardado localmente (configura Google Sheets en el Panel Admin)', '⚠️');
+    }, 800);
+  }
+}
+
+// ═══ RECEIPT ═══
+function showReceipt(r) {
+  document.getElementById('form-section').style.display = 'none';
+  document.getElementById('success-section').style.display = 'block';
+  document.getElementById('receipt-box').innerHTML = `
+    <div class="receipt-row"><span class="r-label">Código</span><span class="r-value"><span class="receipt-id">${r.id}</span></span></div>
+    <div class="receipt-row"><span class="r-label">Nombre</span><span class="r-value">${r.name}</span></div>
+    <div class="receipt-row"><span class="r-label">Correo</span><span class="r-value">${r.email}</span></div>
+    <div class="receipt-row"><span class="r-label">Teléfono</span><span class="r-value">${r.phone}</span></div>
+    <div class="receipt-row"><span class="r-label">Tipo</span><span class="r-value">${r.type}</span></div>
+    <div class="receipt-row"><span class="r-label">Fecha</span><span class="r-value">${r.fechaTexto}</span></div>
+    <div class="receipt-row"><span class="r-label">Estado</span><span class="r-value"><span class="badge badge-ok">✓ Aceptado</span></span></div>
+  `;
+}
+
+function resetForm() {
+  document.getElementById('form-section').style.display = 'block';
+  document.getElementById('success-section').style.display = 'none';
+  ['f-name','f-email','f-phone'].forEach(id => {
+    document.getElementById(id).value = '';
+    document.getElementById(id).classList.remove('error');
+  });
+  document.querySelectorAll('.radio-option').forEach(o => o.classList.remove('selected'));
+  document.querySelectorAll('input[name="client-type"]').forEach(r => r.checked = false);
+  checkState = false;
+  document.getElementById('checkbox-row').classList.remove('checked');
+  document.getElementById('f-accept').checked = false;
+  ['err-name','err-email','err-phone','err-type','err-accept'].forEach(id =>
+    document.getElementById(id).classList.remove('show'));
+  hideBanner();
+}
+
+// ═══ ADMIN TABLE ═══
+let currentFilter = 'all';
+function filterRecords(f, btn) {
+  currentFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderAdmin();
+}
+function renderAdmin() {
+  const all = getRecords();
+  const today = new Date().toDateString();
+  document.getElementById('stat-total').textContent   = all.length || '0';
+  document.getElementById('stat-tecnico').textContent = all.filter(r => r.type === 'Técnico').length;
+  document.getElementById('stat-regular').textContent = all.filter(r => r.type === 'Regular').length;
+  document.getElementById('stat-today').textContent   = all.filter(r => new Date(r.ts).toDateString() === today).length;
+  const filtered = currentFilter === 'all' ? all : all.filter(r => r.type === currentFilter);
+  const wrap = document.getElementById('admin-table-wrap');
+  if (!filtered.length) {
+    wrap.innerHTML = `<div class="empty-state"><div class="es-icon">📭</div><p>${
+      all.length === 0
+        ? 'Aún no hay registros locales. Los datos principales viven en tu Google Sheets.'
+        : 'No hay registros con este filtro.'
+    }</p></div>`;
+    return;
+  }
+  wrap.innerHTML = `<div style="overflow-x:auto;"><table>
+    <thead><tr>
+      <th>Cliente</th><th>Contacto</th><th>Tipo</th><th>Estado</th><th>Código</th><th>Fecha</th>
+    </tr></thead>
+    <tbody>${filtered.map(r => `
+      <tr>
+        <td><div class="td-name">${r.name}</div></td>
+        <td><div>${r.email}</div><div class="td-email">${r.phone}</div></td>
+        <td><span class="badge ${r.type==='Técnico'?'badge-tecnico':'badge-cliente'}">${r.type}</span></td>
+        <td><span class="badge badge-ok">✓ Aceptado</span></td>
+        <td><span class="td-id">${r.id}</span></td>
+        <td class="td-date">${formatDate(r.ts)}</td>
+      </tr>`).join('')}
+    </tbody></table></div>`;
+}
+
+// ═══ INIT ═══
+loadUrlStatus();
+renderAdmin();
+</script>
+</body>
+</html>
