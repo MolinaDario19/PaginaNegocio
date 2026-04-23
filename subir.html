@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Subir reseñas masivas</title>
+
+<style>
+
+body{
+font-family:Arial;
+padding:20px;
+background:#f5f5f5;
+}
+
+button{
+padding:15px 25px;
+font-size:16px;
+cursor:pointer;
+background:#28a745;
+color:white;
+border:none;
+border-radius:6px;
+}
+
+#log{
+margin-top:20px;
+background:white;
+padding:15px;
+border-radius:6px;
+height:300px;
+overflow:auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Subir reseñas masivas</h2>
+
+<button onclick="uploadAllReviews()">
+Subir todas las reseñas
+</button>
+
+<div id="log"></div>
+
+<script type="module">
+
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+
+import {
+getFirestore,
+collection,
+addDoc
+}
+from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
+
+import {
+getStorage,
+ref,
+uploadBytes,
+getDownloadURL
+}
+from "https://www.gstatic.com/firebasejs/12.12.1/firebase-storage.js";
+
+//////////////////////////////////////////////////////
+// TU CONFIG FIREBASE (ya conocida)
+//////////////////////////////////////////////////////
+
+const firebaseConfig = {
+
+apiKey: "AIzaSyDQ3R8KVEJTR1jYXHAq12FUn7qRYf5DBHA",
+
+authDomain:
+"digitalelectronics-f8c30.firebaseapp.com",
+
+projectId:
+"digitalelectronics-f8c30",
+
+storageBucket:
+"digitalelectronics-f8c30.firebasestorage.app",
+
+messagingSenderId:
+"207846884423",
+
+appId:
+"1:207846884423:web:4afcebd4e93a1c50f75d62"
+
+};
+
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+//////////////////////////////////////////////////////
+// DATOS FIJOS (IGUALES A TU SISTEMA)
+//////////////////////////////////////////////////////
+
+const uid =
+"loP5Mp74YAQRWAbe0s4m1ERRJGL2";
+
+const email =
+"digitalelectronicscalic@gmail.com";
+
+const userPhoto =
+"https://lh3.googleusercontent.com/a/ACg8ocKm5EihzpP6v0gFd0qexpNzh7ZPNpBPdTb1FRK6q-fI_0qUx7Y=s96-c";
+
+const service =
+"Instalación de software remoto";
+
+//////////////////////////////////////////////////////
+// RESEÑAS
+//////////////////////////////////////////////////////
+
+const reviews = [
+
+{
+name:"Camilo Polania",
+comment:"Muchas gracias. Dios los bendiga por su amable servicio y eficiente solución.",
+image:"./images/soft66.jpeg"
+},
+
+{
+name:"Jhon Jairo Paez",
+comment:"Super el servicio, muy agil, profesionales y eficientes en la ayuda.",
+image:"./images/soft61.png"
+},
+
+{
+name:"Mateo Acevedo Cardeño",
+comment:"Los mejores para asesorías y servicios.",
+image:"./images/soft63.png"
+},
+
+{
+name:"Daniel Camilo",
+comment:"Excelente servicio, solucionaron la falla de mi televisor.",
+image:"./images/soft60.png"
+},
+
+{
+name:"Jorge Sanchez",
+comment:"Excelente cumplimiento, seriedad y asesoría técnica.",
+image:"./images/soft57.png"
+},
+
+{
+name:"Lizeth Rojaz",
+comment:"Ofrecen muy buen servicio, excelente asesoría.",
+image:"./images/soft52.png"
+},
+
+{
+name:"Fernanda Gomez",
+comment:"Excelente. Muy fácil de hacer.",
+image:"./images/soft1.jpg"
+},
+
+{
+name:"Jorge Restrepo",
+comment:"Después de cargar el software funcionó correctamente.",
+image:"./images/soft2.jpeg"
+},
+
+{
+name:"J&B Technology",
+comment:"Muy bueno el tv quedó en buen estado.",
+image:"./images/soft3.jpeg"
+},
+
+{
+name:"Paola Andrea",
+comment:"El producto me pareció excelente.",
+image:"./images/soft4.jpeg"
+},
+{
+name:"Lucero Mirquez Florez",
+comment:"Excelente servicio técnico para mi TV Hyundai.",
+image:"./images/soft53.jpeg"
+},
+
+{
+name:"Daniel Felipe Palacios Moreno",
+comment:"Muy excelente servicio, 100% confiable.",
+image:"./images/soft54.jpeg"
+},
+
+{
+name:"Elvis Casamayor Espinoza",
+comment:"El maestro es un capo, recomendado.",
+image:"./images/soft55.jpg"
+},
+
+{
+name:"Juan David Garzon",
+comment:"Muy confiable y eficientes en su trabajo.",
+image:"./images/soft56.jpeg"
+},
+
+{
+name:"Anita Aguirre",
+comment:"Muy bueno te dan el paso a paso.",
+image:"./images/soft59.png"
+},
+
+{
+name:"Jorge Sanchez",
+comment:"Muchas gracias por el servicio.",
+image:"./images/soft58.png"
+},
+
+{
+name:"Jhonf 189",
+comment:"100 % recomendado muy efectivo el servicio.",
+image:"./images/soft62.png"
+},
+
+{
+name:"William Diaz",
+comment:"El mejor servicio técnico con asistencia remota.",
+image:"./images/soft65.webp"
+},
+
+{
+name:"Alonso Dueñas Vaca",
+comment:"Empresa seria y 100% recomendado.",
+image:"./images/soft64.webp"
+},
+
+{
+name:"Daniela Tobar",
+comment:"Excelente el servicio, con asesoría en todo.",
+image:"./images/soft67.jpeg"
+}
+
+];
+
+//////////////////////////////////////////////////////
+// SUBIR TODO
+//////////////////////////////////////////////////////
+
+window.uploadAllReviews = async function(){
+
+const log =
+document.getElementById("log");
+
+for (let i=0;i<reviews.length;i++){
+
+try{
+
+const r = reviews[i];
+
+log.innerHTML +=
+`Subiendo ${r.name}...<br>`;
+
+const response =
+await fetch(r.image);
+
+const blob =
+await response.blob();
+
+const storageRef =
+ref(storage,
+"reviews/"+Date.now()+"_"+r.name+".jpg");
+
+await uploadBytes(
+storageRef,
+blob
+);
+
+const imageURL =
+await getDownloadURL(storageRef);
+
+await addDoc(
+collection(db,"reviews"),
+{
+
+name:r.name,
+
+comment:r.comment,
+
+image:imageURL,
+
+service:service,
+
+email:email,
+
+uid:uid,
+
+userPhoto:userPhoto,
+
+rating:
+Math.random()>0.5 ? 5 : 4,
+
+approved:true,
+
+createdAt:new Date()
+
+});
+
+log.innerHTML +=
+`✔ ${r.name} subida<br>`;
+
+}
+catch(error){
+
+log.innerHTML +=
+`❌ Error en ${r.name}<br>`;
+
+console.error(error);
+
+}
+
+}
+
+log.innerHTML +=
+"<br>🚀 Todas las reseñas subidas";
+
+};
+
+</script>
+
+</body>
+
+</html>

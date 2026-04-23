@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reseñas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#FAF8F4;
+  --ink:#1A1714;
+  --muted:#7A7570;
+  --accent:#C8502A;
+  --accent-hover:#A83F1F;
+  --border:#E8E3DC;
+  --card:#FFFFFF;
+  --star:#E8A020;
+  --success:#2D7A4F;
+}
+body{background:var(--cream);font-family:'DM Sans',sans-serif;color:var(--ink)}
+
+/* ─── SECTION WRAPPER ─── */
+.reviews-section{max-width:960px;margin:0 auto;padding:3rem 1.25rem}
+
+.section-header{margin-bottom:2.5rem}
+.section-header h2{font-family:'DM Serif Display',serif;font-size:2.6rem;line-height:1.1;color:var(--ink);font-weight:400}
+.section-header p{color:var(--muted);margin-top:.5rem;font-size:.95rem}
+
+/* ─── RATING SUMMARY BAR ─── */
+.rating-summary{display:flex;align-items:center;gap:2rem;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem 2rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.rating-big{font-family:'DM Serif Display',serif;font-size:4rem;line-height:1;color:var(--accent)}
+.rating-meta{min-width:120px}
+.stars-row{display:flex;gap:3px;margin-bottom:.3rem}
+.star-icon{font-size:18px}
+.rating-count{font-size:.82rem;color:var(--muted);margin-top:.2rem}
+.bar-list{flex:2;min-width:180px;display:flex;flex-direction:column;gap:6px}
+.bar-row{display:grid;grid-template-columns:18px 1fr 36px;align-items:center;gap:8px;font-size:.78rem;color:var(--muted)}
+.bar-track{background:#EDE9E3;border-radius:4px;height:6px;overflow:hidden}
+.bar-fill{background:var(--accent);border-radius:4px;height:100%;transition:width .7s ease}
+
+/* ─── FORM CARD ─── */
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;margin-bottom:2.5rem}
+.form-title{font-family:'DM Serif Display',serif;font-size:1.4rem;font-weight:400;margin-bottom:1.5rem}
+
+/* Auth buttons */
+.auth-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.auth-btn{display:flex;align-items:center;gap:.6rem;padding:.65rem 1.1rem;border:1px solid var(--border);border-radius:10px;background:var(--card);cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--ink);transition:background .15s,border-color .15s}
+.auth-btn:hover{background:#F5F1EB;border-color:#C9C3BB}
+.auth-btn svg{width:20px;height:20px;flex-shrink:0}
+.divider{display:flex;align-items:center;gap:.75rem;margin:.9rem 0;color:var(--muted);font-size:.8rem}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* User badge (logged in) */
+.user-badge{display:none;align-items:center;gap:.75rem;background:#F5F1EB;border:1px solid var(--border);border-radius:10px;padding:.75rem 1rem;margin-bottom:1.25rem}
+.user-badge .u-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:500;color:#fff;overflow:hidden;flex-shrink:0}
+.user-badge .u-avatar img{width:100%;height:100%;object-fit:cover}
+.user-badge .u-info{flex:1;font-size:.88rem}
+.user-badge .u-name{font-weight:500}
+.user-badge .u-email{font-size:.78rem;color:var(--muted)}
+.user-badge .logout-btn{background:none;border:none;cursor:pointer;font-size:.78rem;color:var(--muted);text-decoration:underline;font-family:'DM Sans',sans-serif}
+
+/* Form grid */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-grid .full{grid-column:1/-1}
+label{display:block;font-size:.78rem;color:var(--muted);margin-bottom:.4rem;letter-spacing:.04em;text-transform:uppercase}
+input,select,textarea{width:100%;background:#FAF8F4;border:1px solid var(--border);border-radius:10px;padding:.7rem .95rem;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s;appearance:none}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(200,80,42,.1)}
+input.readonly-field{background:#EEE9E3;cursor:not-allowed;color:var(--muted)}
+textarea{resize:vertical;min-height:110px;line-height:1.5}
+
+/* Star input */
+.star-input-wrap{display:flex;gap:6px;padding:.2rem 0}
+.star-btn{background:none;border:none;cursor:pointer;font-size:28px;color:#D5CFC7;transition:color .12s,transform .12s;padding:0;line-height:1}
+.star-btn.lit,.star-btn:hover{color:var(--star)}
+.star-btn:hover{transform:scale(1.15)}
+.star-label{font-size:.8rem;color:var(--muted);margin-top:.25rem;height:16px}
+
+/* File upload */
+.file-area{border:1.5px dashed var(--border);border-radius:12px;padding:1.5rem;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;background:#FAF8F4;position:relative}
+.file-area:hover{border-color:var(--accent);background:#FDF9F6}
+.file-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.file-icon{font-size:1.6rem;margin-bottom:.4rem}
+.file-area p{font-size:.85rem;color:var(--muted)}
+.file-area .file-name{font-size:.82rem;color:var(--accent);margin-top:.3rem;font-weight:500}
+.preview-img{max-width:100%;max-height:160px;object-fit:cover;border-radius:8px;margin-top:.75rem;display:none;border:1px solid var(--border)}
+
+/* Submit */
+.submit-btn{width:100%;margin-top:1.25rem;padding:.9rem;background:var(--accent);color:#fff;border:none;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;cursor:pointer;letter-spacing:.02em;transition:background .15s,transform .1s}
+.submit-btn:hover{background:var(--accent-hover)}
+.submit-btn:active{transform:scale(.99)}
+.submit-btn:disabled{background:#C9BDB6;cursor:not-allowed}
+
+/* Toast */
+.toast{display:none;position:fixed;bottom:2rem;right:2rem;background:var(--ink);color:#fff;border-radius:12px;padding:.85rem 1.25rem;font-size:.9rem;z-index:999;animation:slideIn .3s ease;max-width:300px}
+.toast.success{background:var(--success)}
+.toast.error{background:#8B2020}
+@keyframes slideIn{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+/* ─── REVIEWS GRID ─── */
+.reviews-controls{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:.75rem}
+.controls-left{font-size:.88rem;color:var(--muted)}
+.filter-row{display:flex;gap:.5rem;flex-wrap:wrap}
+.filter-chip{background:transparent;border:1px solid var(--border);border-radius:20px;padding:.35rem .85rem;font-size:.8rem;color:var(--muted);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s}
+.filter-chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem}
+
+.review-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;display:flex;flex-direction:column;gap:.75rem;animation:fadeUp .35s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+.reviewer-row{display:flex;align-items:center;gap:.75rem}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:500;color:#fff;flex-shrink:0;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.reviewer-name{font-weight:500;font-size:.9rem}
+.reviewer-service{font-size:.78rem;color:var(--muted)}
+.card-stars{display:flex;gap:2px}
+.review-text{font-size:.88rem;line-height:1.65;color:#3A3530}
+.review-img{width:100%;border-radius:10px;max-height:170px;object-fit:cover;border:1px solid var(--border);cursor:pointer}
+.review-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.review-date{font-size:.75rem;color:var(--muted)}
+.verified-badge{font-size:.72rem;color:var(--success);font-weight:500}
+
+.empty-state{text-align:center;padding:3rem 1rem;color:var(--muted);grid-column:1/-1}
+.empty-state p{font-size:.9rem}
+
+/* Loading spinner */
+.spinner{display:inline-block;width:20px;height:20px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:.5rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Image lightbox */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:1000;align-items:center;justify-content:center;cursor:pointer}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:90vh;border-radius:12px;object-fit:contain}
+
+/* Responsive */
+@media(max-width:640px){
+  .form-grid{grid-template-columns:1fr}
+  .form-grid .full{grid-column:1}
+  .rating-summary{flex-direction:column;align-items:flex-start;gap:1rem}
+  .bar-list{width:100%}
+  .section-header h2{font-size:1.9rem}
+}
+</style>
+</head>
+<body>
+
+<section class="reviews-section">
+
+  <div class="section-header">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <p>Opiniones verificadas de personas que han confiado en nuestros servicios</p>
+  </div>
+
+  <!-- Rating Summary -->
+  <div class="rating-summary">
+    <div class="rating-big" id="avgDisplay">—</div>
+    <div class="rating-meta">
+      <div class="stars-row" id="avgStars"></div>
+      <div class="rating-count" id="countText">Cargando reseñas...</div>
+    </div>
+    <div class="bar-list" id="barList"></div>
+  </div>
+
+  <!-- Form -->
+  <div class="form-card">
+    <p class="form-title">Escribe tu reseña</p>
+
+    <!-- Auth options -->
+    <div id="authSection">
+      <div class="auth-row">
+        <button class="auth-btn" id="btnGoogle" onclick="loginGoogle()">
+          <svg viewBox="0 0 48 48">
+            <path fill="#FFC107" d="M43.6 20H24v8h11.3C33.7 33.6 29.3 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 6 1.1 8.2 3l5.7-5.7C34.4 5.1 29.5 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21c10.5 0 20-7.6 20-21 0-1.3-.1-2.7-.4-4z"/>
+            <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.5 15.1 18.9 12 24 12c3.1 0 6 1.1 8.2 3l5.7-5.7C34.4 5.1 29.5 3 24 3c-7.6 0-14.2 4.6-17.7 11.7z"/>
+            <path fill="#4CAF50" d="M24 45c5.4 0 10.2-1.9 13.9-5.1l-6.4-5.4C29.5 36.1 26.9 37 24 37c-5.2 0-9.7-3.4-11.3-8l-6.6 4.9C9.9 40.5 16.5 45 24 45z"/>
+            <path fill="#1976D2" d="M43.6 20H24v8h11.3c-.8 2.3-2.4 4.3-4.4 5.6l6.4 5.4C41.1 35.4 44 30.2 44 24c0-1.3-.1-2.7-.4-4z"/>
+          </svg>
+          Continuar con Google
+        </button>
+        <button class="auth-btn" id="btnEmailToggle" onclick="toggleEmailAuth()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>
+          </svg>
+          Continuar con correo
+        </button>
+      </div>
+
+      <!-- Email auth panel -->
+      <div id="emailAuthPanel" style="display:none;margin-bottom:1rem;">
+        <div class="form-grid" style="margin-bottom:.75rem">
+          <div>
+            <label>Correo electrónico</label>
+            <input type="email" id="authEmail" placeholder="tu@correo.com" />
+          </div>
+          <div>
+            <label>Contraseña</label>
+            <input type="password" id="authPassword" placeholder="Mínimo 6 caracteres" />
+          </div>
+        </div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+          <button class="auth-btn" onclick="loginEmail()">Iniciar sesión</button>
+          <button class="auth-btn" onclick="registerEmail()">Crear cuenta</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logged-in user badge -->
+    <div class="user-badge" id="userBadge">
+      <div class="u-avatar" id="userAvatar">?</div>
+      <div class="u-info">
+        <div class="u-name" id="userName">Usuario</div>
+        <div class="u-email" id="userEmail">correo@dominio.com</div>
+      </div>
+      <button class="logout-btn" onclick="logout()">Cerrar sesión</button>
+    </div>
+
+    <div class="divider" id="formDivider">Completa tu reseña</div>
+
+    <!-- Review form -->
+    <form id="reviewForm" onsubmit="submitReview(event)">
+      <div class="form-grid">
+        <div>
+          <label>Nombre completo</label>
+          <input type="text" id="fieldName" placeholder="Tu nombre" required />
+        </div>
+        <div>
+          <label>Correo electrónico</label>
+          <input type="email" id="fieldEmail" placeholder="tu@correo.com" required />
+        </div>
+        <div>
+          <label>Dispositivo o servicio</label>
+          <select id="fieldService" required>
+            <option value="">Selecciona un servicio...</option>
+            <option>Reparación de pantalla</option>
+            <option>Cambio de batería</option>
+            <option>Diagnóstico técnico</option>
+            <option>Venta de dispositivo</option>
+            <option>Reparación de cámara</option>
+            <option>Recuperación de datos</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div>
+          <label>Calificación</label>
+          <div class="star-input-wrap" id="starInput">
+            <button type="button" class="star-btn" data-v="1">★</button>
+            <button type="button" class="star-btn" data-v="2">★</button>
+            <button type="button" class="star-btn" data-v="3">★</button>
+            <button type="button" class="star-btn" data-v="4">★</button>
+            <button type="button" class="star-btn" data-v="5">★</button>
+          </div>
+          <div class="star-label" id="starLabel"></div>
+        </div>
+        <div class="full">
+          <label>Comentario</label>
+          <textarea id="fieldComment" placeholder="Cuéntanos tu experiencia con nuestro servicio..." required minlength="20"></textarea>
+        </div>
+        <div class="full">
+          <label>Foto del servicio <span style="font-size:.75rem;text-transform:none">(opcional)</span></label>
+          <div class="file-area">
+            <input type="file" id="fieldImage" accept="image/*" onchange="previewImage(event)" />
+            <div class="file-icon">📷</div>
+            <p>Arrastra una imagen o toca para seleccionar</p>
+            <p class="file-name" id="fileName"></p>
+            <img class="preview-img" id="previewImg" alt="Vista previa" />
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">Publicar reseña</button>
+    </form>
+  </div>
+
+  <!-- Reviews list -->
+  <div class="reviews-controls">
+    <div class="controls-left" id="reviewsCount"></div>
+    <div class="filter-row" id="filterRow">
+      <button class="filter-chip active" data-filter="all" onclick="setFilter('all',this)">Todas</button>
+      <button class="filter-chip" data-filter="5" onclick="setFilter('5',this)">★★★★★</button>
+      <button class="filter-chip" data-filter="4" onclick="setFilter('4',this)">★★★★</button>
+      <button class="filter-chip" data-filter="3" onclick="setFilter('3',this)">★★★ o menos</button>
+    </div>
+  </div>
+  <div class="cards-grid" id="cardsGrid">
+    <div class="empty-state"><p>Cargando reseñas...</p></div>
+  </div>
+</section>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="Imagen ampliada" />
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     FIREBASE — ajusta firebaseConfig con tus datos
+════════════════════════════════════════════════════ -->
+
+</body>
+</html>
