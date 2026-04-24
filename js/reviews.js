@@ -1,4 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+
 import {
   getFirestore,
   collection,
@@ -538,112 +540,135 @@ window.setFilter = (f, el) => {
 /* ─── SUMMARY ─── */
 
 function renderSummary(reviews) {
-
   const total = reviews.length;
-
   if (!total) return;
-
   /* ─── CONTAR ESTRELLAS ─── */
-
-  let counts = {
-    1: 0,
-    2: 0,
-    3: 0,
-    4: 0,
-    5: 0
-  };
-
+  const counts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
   let sum = 0;
-
   reviews.forEach(r => {
-
-    let rating =
-      Number(r.rating) || 0;
-
+    const rating = Number(r.rating) || 0;
     if (rating >= 1 && rating <= 5) {
-
       counts[rating]++;
-
       sum += rating;
-
     }
-
   });
 
   /* ─── PROMEDIO ─── */
+  const avg    = (sum / total).toFixed(1);
+  const avgNum = parseFloat(avg);
 
-  const avg =
-    (sum / total).toFixed(1);
+  document.getElementById('avgDisplay').textContent   = avg;
+  document.getElementById('countText').textContent    = `${total} reseñas`;
+  document.getElementById('reviewsCount').textContent = `${total} reseñas encontradas`;
 
-  document.getElementById('avgDisplay')
-    .textContent = avg;
-
-  document.getElementById('countText')
-    .textContent =
-    `${total} reseñas`;
-
-  document.getElementById('reviewsCount')
-    .textContent =
-    `${total} reseñas encontradas`;
+  /* ─── BADGE DINÁMICO ─── */
+  const badge = document.getElementById('ratingBadge');
+  if (badge) {
+    if (avgNum >= 4.5)      badge.textContent = 'Excelente ✦';
+    else if (avgNum >= 3.5) badge.textContent = 'Muy bueno';
+    else if (avgNum >= 2.5) badge.textContent = 'Regular';
+    else                    badge.textContent = 'Deficiente';
+  }
 
   /* ─── ESTRELLAS PROMEDIO ─── */
-
-  const avgStars =
-    document.getElementById('avgStars');
-
-  avgStars.innerHTML =
-    [1,2,3,4,5]
-      .map(i =>
-        `<span style="color:${
-          i <= Math.round(avg)
-            ? '#E8A020'
-            : '#D5CFC7'
-        }">★</span>`
-      )
-      .join('');
+  const rounded = Math.round(avgNum);
+  document.getElementById('avgStars').innerHTML = [1, 2, 3, 4, 5]
+    .map(i => `
+      <svg class="star-icon" viewBox="0 0 16 16"
+           fill="${i <= rounded ? '#534AB7' : '#D3D1C7'}">
+        <path d="M8 1l1.85 3.75L14 5.5l-3 2.92.71 4.13L8 10.4l-3.71 2.15L5 8.42 2 5.5l4.15-.75L8 1z"/>
+      </svg>
+    `)
+    .join('');
 
   /* ─── BARRAS DINÁMICAS ─── */
-
-  const barList =
-    document.getElementById('barList');
-
+  const barList = document.getElementById('barList');
   barList.innerHTML = '';
 
   for (let i = 5; i >= 1; i--) {
+    const percent    = Math.round((counts[i] / total) * 100);
+    const colorClass = i >= 4 ? 'high' : i === 3 ? 'mid' : 'low';
+    const fillColor  = i >= 4 ? '#001A49' : i === 3 ? '#75719b' : '#cac4a8';
 
-    const percent =
-      (counts[i] / total) * 100;
-
-    const row =
-      document.createElement('div');
-
+    const row = document.createElement('div');
     row.className = 'bar-row';
-
     row.innerHTML = `
-
-      <span class="bar-label">
-        ${i} ★
-      </span>
-
-      <div class="bar-wrap">
-
-        <div class="bar-fill"
-             style="width:${percent}%">
-        </div>
-
+      <span>${i}</span>
+      <div style="background:#EDE9E3;border-radius:99px;height:5px;overflow:hidden;flex:1;">
+        <div style="width:${percent}%;height:100%;background:${fillColor};border-radius:99px;"></div>
       </div>
-
-      <span class="bar-count">
-        ${counts[i]}
-      </span>
-
+      <span style="font-size:11px;text-align:right;min-width:34px;">${percent}%</span>
     `;
 
     barList.appendChild(row);
-
   }
 
 }
+/* ─── ABRIR FORMULARIO ─── */
+
+window.openReviewForm = function() {
+
+  const form =
+    document.getElementById("reviewFormCard");
+
+  form.style.display = "block";
+
+  /* Scroll automático */
+
+  form.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+
+};
+
+/* ─── CERRAR FORMULARIO ─── */
+
+window.closeReviewForm = function() {
+
+  const form =
+    document.getElementById("reviewFormCard");
+
+  form.style.display = "none";
+
+};
+
+/* ─── PREVIEW IMAGEN ─── */
+
+window.previewImage = function(event) {
+
+  const file =
+    event.target.files[0];
+
+  const preview =
+    document.getElementById("previewImg");
+
+  const fileName =
+    document.getElementById("fileName");
+
+  if (file) {
+
+    const reader =
+      new FileReader();
+
+    reader.onload = function(e) {
+
+      preview.src =
+        e.target.result;
+
+      preview.style.display =
+        "block";
+
+      fileName.textContent =
+        "✔ " + file.name;
+
+    };
+
+    reader.readAsDataURL(file);
+
+  }
+
+};
 
 /* ─── CARDS ─── */
 
@@ -815,6 +840,7 @@ function showToast(msg) {
   }, 3000);
 
 }
+
 
 /* ─── INIT ─── */
 
