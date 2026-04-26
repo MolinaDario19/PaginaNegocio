@@ -128,12 +128,12 @@ window.logout = async () => {
     await signOut(auth);
 
     document.getElementById('fieldName').value = '';
-    //document.getElementById('fieldEmail').value = '';
+    document.getElementById('fieldEmail').value = '';
 
-    //document.getElementById('fieldEmail').readOnly = false;
+    document.getElementById('fieldEmail').readOnly = false;
 
     document
-      //.getElementById('fieldEmail')
+      .getElementById('fieldEmail')
       .classList.remove('readonly-field');
 
     showToast('Sesión cerrada');
@@ -344,8 +344,8 @@ window.submitReview = async (e) => {
     const name =
       document.getElementById('fieldName').value;
 
-    //const email =
-      //document.getElementById('fieldEmail').value;
+    const email =
+      document.getElementById('fieldEmail').value;
 
     const service =
       document.getElementById('fieldService').value;
