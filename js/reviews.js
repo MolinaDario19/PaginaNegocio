@@ -405,6 +405,17 @@ window.submitReview = async (e) => {
   selectedRating = 0;
   highlight(0);
   document.getElementById('starLabel').textContent = '';
+  // LIMPIAR INPUT FILE MANUALMENTE
+  const fileInput = document.getElementById('fieldImage');
+  fileInput.value = "";
+
+  // LIMPIAR PREVIEW
+  const preview = document.getElementById("previewImg");
+  preview.src = "";
+  preview.style.display = "none";
+
+  // LIMPIAR NOMBRE DE ARCHIVO
+  document.getElementById("fileName").textContent = "";
 
 };
 
