@@ -383,7 +383,7 @@ window.submitReview = async (e) => {
 
     });
 
-    showToast('Reseña enviada 🎉');
+    showToast('¡Reseña recibida! Agradecemos tu confianza y tu tiempo.');
 
     loadReviews();
 
@@ -399,6 +399,12 @@ window.submitReview = async (e) => {
     );
 
   }
+
+  // 👇 LIMPIAR FORMULARIO
+  e.target.reset();
+  selectedRating = 0;
+  highlight(0);
+  document.getElementById('starLabel').textContent = '';
 
 };
 
