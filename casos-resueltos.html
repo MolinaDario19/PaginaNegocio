@@ -65,7 +65,7 @@
 
   function getBrandColor(brand) {
     const colors = {
-      'kalley': '#00d4ff', 'challenger': '#ff6b35', 'hyundai': '#0066b2',
+      'kalley': '#00d4ff', 'challenger': '#b8b5b4', 'hyundai': '#0066b2',
       'caixun': '#00e676', 'exclusiv': '#9c27b0', 'sankey': '#ff9800',
       'olimpo': '#f44336', 'jvc': '#e91e63', 'rca': '#ffd600', 'otro': '#78909c'
     };
@@ -362,9 +362,9 @@
     --bg-deep: #050a0f;
     --bg-card: #0a1628;
     --bg-card2: #0d1f3c;
-    --accent: #00d4ff;
+    --accent: #167513;
     --accent2: #00ff88;
-    --accent3: #ff6b35;
+    --accent3: #633524;
     --text: #e0eaf5;
     --text-muted: #6a8aad;
     --border: rgba(0, 212, 255, 0.15);
@@ -745,18 +745,18 @@
 <div class="hero">
   <div class="hero-badge">
     <span></span>
-    Casos documentados en tiempo real
+    Casos documentados
   </div>
   <h1>Casos Resueltos</h1>
-  <p>Soluciones técnicas verificadas para reparación de Smart TV. Cada caso incluye capturas del proceso de diagnóstico y reparación.</p>
+  <p>Soluciones verificadas para reparación de Smart TV. Cada caso incluye capturas del proceso de reparación.</p>
 
   <div class="stats-row">
     <div class="stat">
-      <div class="stat-num" id="caseCount">0 casos</div>
+      <div class="stat-num" id="caseCount"># casos</div>
       <div class="stat-label">Publicados</div>
     </div>
     <div class="stat">
-      <div class="stat-num">8+</div>
+      <div class="stat-num">9+</div>
       <div class="stat-label">Años exp.</div>
     </div>
     <div class="stat">
@@ -766,7 +766,7 @@
   </div>
 </div>
 
-<!-- ═══ MAIN ═══ -->
+<!--  MAIN  -->
 <main>
   <!-- Toolbar -->
   <div class="toolbar">
@@ -786,7 +786,7 @@
   <!-- Loading -->
   <div id="loadingState" class="loading-state">
     <div class="spinner"></div>
-    <p>Cargando casos...</p>
+    <p>Cargando...</p>
   </div>
 
   <!-- Empty -->
@@ -799,17 +799,17 @@
   <div class="cases-grid" id="casesGrid"></div>
 </main>
 
-<!-- ═══ FOOTER ═══ -->
+<!--  FOOTER  -->
 <footer>
   <p>© 2025 <a href="https://digitalelectronics.com.co">DigitalElectronics</a> · Soporte Técnico para Smart TV · Colombia</p>
 </footer>
 
-<!-- ═══ ADMIN BUTTON ═══ -->
+<!--  ADMIN BUTTON  -->
 <div class="admin-toggle-wrap">
   <button class="admin-toggle-btn" id="adminToggleBtn" title="Panel administrativo">⚙️</button>
 </div>
 
-<!-- ═══ ADMIN OVERLAY ═══ -->
+<!--  ADMIN OVERLAY  -->
 <div class="admin-overlay" id="adminOverlay">
   <div class="admin-panel">
     <div class="panel-head">
@@ -850,6 +850,8 @@
                 <option value="Kalley">Kalley</option>
                 <option value="Challenger">Challenger</option>
                 <option value="Hyundai">Hyundai</option>
+                <option value="RCA">Simply</option>
+                <option value="RCA">Siragon</option>
                 <option value="Caixun">Caixun</option>
                 <option value="Exclusiv">Exclusiv</option>
                 <option value="Sankey">Sankey</option>
@@ -905,7 +907,7 @@
   </div>
 </div>
 
-<!-- ═══ LIGHTBOX ═══ -->
+<!--  LIGHTBOX  -->
 <div class="lightbox" id="lightbox">
   <button class="lb-close" id="lbClose">✕</button>
   <button class="lb-nav" id="lbPrev">‹</button>
@@ -916,7 +918,7 @@
   <div class="lb-counter" id="lbCounter"></div>
 </div>
 
-<!-- ═══ NOTIFICATION ═══ -->
+<!--  NOTIFICATION  -->
 <div class="notification" id="notification"></div>
 
 <script>
