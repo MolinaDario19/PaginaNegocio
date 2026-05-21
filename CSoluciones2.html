@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Electronics - Soluciones</title>
+    <link rel="shortcut icon" href="./images/LOGODG16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styleSoluciones.css">
+
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Brindamos soluciones integrales de soporte, instalación y desarrollo de software, diseñadas para maximizar el rendimiento y la eficiencia de sus sistemas, somos distribuidores oficiales de nuestras marcas.">
+    <meta name="keywords" content="challenger, kalley, jvc, rca, hyundai, olimpo, hisense, westinhouse, caixun, exclusiv, recco, vinchi, ibg, kaiwi, famitecno, sankey, smartvision, visivo, simply,software tv, firmware tv, televisores, servicio tecnico, descuentos, distribuidores oficiales">
+    <meta name="author" content="Digital Electronics">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph (Facebook y redes) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Digital Electronics - Soluciones">
+    <meta property="og:description" content="Soluciones integrales en software, instalación y soporte técnico para televisores. Distribuidores oficiales">
+    <meta property="og:url" content="https://digitalelectronics.com.co/">
+    <meta property="og:image" content="https://digitalelectronics.com.co/images/img_main.jpeg">
+    <meta property="og:image:width" content="685">
+    <meta property="og:image:height" content="328">
+    <meta property="og:image:alt" content="Soporte Tecnico">
+    <meta property="og:locale" content="es_ES">
+    <meta property="article:publisher" content="https://www.facebook.com/digielec">
+
+    <!-- Para SEO (Google, Bing, etc.) -->
+    <meta name="description" content="Soluciones garantizadas. En Digital Electronics ofrecemos soluciones especializadas en instalación de software originales para televisores, nuestra trayectoria nos permite brindar soluciones con experiencia.">
+    <meta name="keywords" content="soporte técnico televisores, reparación de televisores, software original TV, desbloquear televisor, actualización de firmware, servicio técnico TV, Digital Electronics, televisores bloqueados, soporte técnico Cali, reparación Smart TV, instalación software televisores, firmware televisor, televisor se reinicia constantemente, software">
+
+    <!-- Redes sociales -->
+    <link rel="me" href="https://www.facebook.com/digielec">
+    <link rel="me" href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ==">
+    <link rel="me" href="https://www.tiktok.com/@digitalelectronicscali">
+    <link rel="me" href="https://youtube.com/@digitalelectronics6530?si=se4Bu_jzjUGeIPfU">
+    <script src="/js/headceo.js"></script>  
+    <script type="module" src="js/casos.js"></script>
+
+    <style>
+        :root {
+    --bg-deep: #ffffff;
+    --bg-card: #0a1628;
+    --bg-card2: #0d1f3c;
+    --accent: #00d4ff;
+    --accent2: #00ff88;
+    --accent3: #ff6b35;
+    --text: #e0eaf5;
+    --text-muted: #6a8aad;
+    --border: rgba(0, 212, 255, 0.15);
+    --glow: 0 0 20px rgba(0, 212, 255, 0.3);
+    --font-head: 'Orbitron', monospace;
+    --font-body: 'Rajdhani', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid bg */
+  body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: 0;
+    background-image:
+      linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+        /* ═══ HERO ═══ */
+  .casos {
+    position: relative; z-index: 1;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+  }
+  .casos-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    border: 1px solid var(--border); border-radius: 20px;
+    padding: 0.35rem 1rem; font-size: 0.75rem; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.5rem;
+    background: rgba(0,212,255,0.05);
+  }
+  .casos-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent2); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+  .casos h1 {
+    font-family: var(--font-head);
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-weight: 900; line-height: 1.1;
+    background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, var(--accent2) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  .casos p {
+    color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem;
+    line-height: 1.6; font-weight: 400;
+  }
+
+  .stats-row {
+    display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 0 auto 3rem; max-width: 700px;
+  }
+  .stat { text-align: center; }
+  .stat-num { font-family: var(--font-head); font-size: 2rem; color: var(--accent); font-weight: 700; }
+  .stat-label { color: var(--text-muted); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* ═══ MAIN ═══ */
+  main { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 0 2rem 5rem; }
+
+  /* ═══ TOOLBAR ═══ */
+  .toolbar {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .search-wrap { position: relative; flex: 1; min-width: 200px; max-width: 350px; }
+  .search-wrap input {
+    width: 100%; padding: 0.6rem 1rem 0.6rem 2.5rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); font-family: var(--font-body); font-size: 0.9rem;
+    outline: none; transition: border-color 0.2s;
+  }
+  .search-wrap input:focus { border-color: var(--accent); }
+  .search-wrap::before { content: '🔍'; position: absolute; left: 0.7rem; top: 50%; transform: translateY(-50%); font-size: 0.9rem; }
+
+  .filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .filter-btn {
+    padding: 0.45rem 1rem; border-radius: 6px; border: 1px solid var(--border);
+    background: transparent; color: var(--text-muted); font-family: var(--font-body);
+    font-size: 0.82rem; cursor: pointer; transition: all 0.2s; font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .filter-btn.active { background: rgba(0,212,255,0.15); border-color: var(--accent); color: var(--accent); }
+
+  .count-badge { margin-left: auto; color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
+
+  /* ═══ GRID ═══ */
+  .cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .case-card {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    animation: fadeUp 0.5s both;
+  }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  .case-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5), var(--glow);
+    border-color: rgba(0,212,255,0.35);
+  }
+  .card-accent { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+  .card-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.2rem 0.5rem; }
+  .brand-badge { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid; border-radius: 4px; padding: 0.2rem 0.6rem; }
+  .case-date { color: var(--text-muted); font-size: 0.78rem; }
+  .card-title { font-family: var(--font-head); font-size: 0.95rem; padding: 0.5rem 1.2rem; color: #fff; line-height: 1.3; }
+  .card-model { padding: 0.2rem 1.2rem; color: var(--text-muted); font-size: 0.82rem; }
+  .card-desc { padding: 0.6rem 1.2rem; color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+  .card-images { padding: 0.8rem 1.2rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .thumb-wrap {
+    aspect-ratio: 1; border-radius: 6px; overflow: hidden; cursor: pointer;
+    position: relative; background: #000; border: 1px solid var(--border);
+    transition: transform 0.2s;
+  }
+  .thumb-wrap:hover { transform: scale(1.05); }
+  .thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb-more {
+    position: absolute; inset: 0; background: rgba(0,0,0,0.7);
+    display: grid; place-items: center; color: #fff; font-size: 1.2rem;
+    font-family: var(--font-head); font-weight: 700;
+  }
+
+  .card-footer { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.2rem; border-top: 1px solid var(--border); margin-top: 0.5rem; }
+  .status-badge { font-size: 0.75rem; color: var(--accent2); letter-spacing: 1px; font-weight: 600; }
+  .btn-delete { background: rgba(255,50,50,0.1); border: 1px solid rgba(255,50,50,0.3); color: #ff6b6b; border-radius: 6px; padding: 0.3rem 0.7rem; cursor: pointer; font-size: 0.78rem; font-family: var(--font-body); transition: all 0.2s; }
+  .btn-delete:hover { background: rgba(255,50,50,0.25); }
+
+  /* ═══ STATES ═══ */
+  .loading-state, .empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5rem; gap: 1rem; color: var(--text-muted); }
+  .spinner { width: 48px; height: 48px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to{transform:rotate(360deg)} }
+  .empty-icon { font-size: 3rem; opacity: 0.4; }
+
+  /* ═══ ADMIN TOGGLE ═══ */
+  .admin-toggle-wrap {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 50;
+  }
+  .admin-toggle-btn {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border: none; cursor: pointer; font-size: 1.3rem;
+    box-shadow: 0 4px 20px rgba(0,212,255,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .admin-toggle-btn:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(0,212,255,0.6); }
+  .admin-toggle-btn.active { background: linear-gradient(135deg, #ff4444, #ff8800); box-shadow: 0 4px 20px rgba(255,68,68,0.4); }
+
+  /* ═══ ADMIN PANEL ═══ */
+  .admin-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,0.85); backdrop-filter: blur(8px);
+    display: none; align-items: flex-start; justify-content: flex-end;
+    padding: 1rem;
+  }
+  .admin-overlay.open { display: flex; }
+
+  .admin-panel {
+    width: 100%; max-width: 520px;
+    background: var(--bg-card2);
+    border: 1px solid var(--border);
+    border-radius: 16px; overflow: hidden;
+    max-height: 95vh; display: flex; flex-direction: column;
+    box-shadow: -10px 0 60px rgba(0,0,0,0.8), var(--glow);
+    margin-top: 4rem;
+  }
+  .panel-head {
+    padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(0,212,255,0.05);
+  }
+  .panel-head h2 { font-family: var(--font-head); font-size: 0.9rem; color: var(--accent); letter-spacing: 2px; }
+  .panel-close { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.2rem; padding: 0.2rem 0.5rem; border-radius: 4px; }
+  .panel-close:hover { color: #fff; }
+
+  .panel-body { padding: 1.5rem; overflow-y: auto; flex: 1; }
+
+  /* Login section */
+  .login-section { text-align: center; padding: 2rem 0; }
+  .login-section h3 { font-family: var(--font-head); font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text); }
+  .login-section p { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .input-group { display: flex; gap: 0.5rem; max-width: 320px; margin: 0 auto; }
+
+  /* Form */
+  .form-group { margin-bottom: 1.2rem; }
+  .form-group label { display: block; color: var(--text-muted); font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.4rem; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%; padding: 0.65rem 0.9rem;
+    background: rgba(0,0,0,0.3); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); font-family: var(--font-body);
+    font-size: 0.9rem; outline: none; transition: border-color 0.2s;
+    resize: vertical;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--accent); }
+  .form-group select option { background: #0a1628; }
+
+  .drop-zone {
+    border: 2px dashed var(--border); border-radius: 10px;
+    padding: 1.5rem; text-align: center; cursor: pointer;
+    transition: all 0.2s; position: relative;
+  }
+  .drop-zone:hover, .drop-zone.drag-over { border-color: var(--accent); background: rgba(0,212,255,0.05); }
+  .drop-zone input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; }
+  .drop-zone-text { color: var(--text-muted); font-size: 0.85rem; line-height: 2; }
+  .drop-zone-text span { color: var(--accent); font-weight: 600; }
+
+  .preview-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 0.8rem; }
+  .preview-item { position: relative; aspect-ratio: 1; border-radius: 6px; overflow: hidden; }
+  .preview-item img { width: 100%; height: 100%; object-fit: cover; }
+  .preview-item button {
+    position: absolute; top: 2px; right: 2px;
+    background: rgba(0,0,0,0.7); border: none; color: #fff;
+    border-radius: 50%; width: 20px; height: 20px; font-size: 0.65rem;
+    cursor: pointer; display: grid; place-items: center;
+  }
+  .wm-badge {
+    position: absolute; bottom: 3px; left: 3px;
+    background: rgba(0,212,255,0.2); border: 1px solid rgba(0,212,255,0.5);
+    color: var(--accent); font-size: 0.55rem; border-radius: 3px;
+    padding: 1px 4px; font-weight: 700; letter-spacing: 0.5px;
+    backdrop-filter: blur(4px);
+  }
+
+  .progress-wrap { display: none; margin-top: 1rem; }
+  .progress-bar-outer { height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; margin-bottom: 0.4rem; }
+  .progress-bar-inner { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 3px; transition: width 0.3s; width: 0%; }
+  .progress-text { color: var(--text-muted); font-size: 0.8rem; text-align: center; }
+
+  /* Google icon */
+  .google-icon { width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg,#4285F4,#34A853,#FBBC05,#EA4335); display:grid;place-items:center;font-size:1.5rem;font-weight:900;color:#fff;margin:0 auto 1.2rem;font-family:sans-serif; }
+  .login-section { padding: 2rem 0.5rem; text-align: center; }
+  .login-section h3 { font-family: var(--font-head); font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text); }
+  .login-section p { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; line-height: 1.6; }
+  .btn-google { display:flex; align-items:center; justify-content:center; width:100%; padding:0.75rem 1.4rem; border-radius:8px; border:1px solid var(--border); background:rgba(255,255,255,0.05); color:var(--text); font-family:var(--font-body); font-weight:600; font-size:0.9rem; cursor:pointer; transition:all 0.2s; }
+  .btn-google:hover { background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3); transform:translateY(-1px); }
+  .btn-google:disabled { opacity:0.6; cursor:not-allowed; transform:none; }
+
+  /* Buttons */
+  .btn { padding: 0.65rem 1.4rem; border-radius: 8px; border: none; cursor: pointer; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; transition: all 0.2s; letter-spacing: 0.5px; }
+  .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #000; box-shadow: 0 4px 15px rgba(0,212,255,0.3); }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,212,255,0.4); }
+  .btn-primary:disabled { opacity: 0.6; transform: none; }
+  .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text-muted); }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-danger { background: rgba(255,50,50,0.15); border: 1px solid rgba(255,50,50,0.3); color: #ff6b6b; }
+
+  .btn-full { width: 100%; }
+  .admin-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+
+  /* Inputs general */
+  input, textarea {
+    background: rgba(0,0,0,0.3); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); font-family: var(--font-body);
+    font-size: 0.9rem; padding: 0.65rem 0.9rem; outline: none;
+    transition: border-color 0.2s;
+  }
+  input:focus, textarea:focus { border-color: var(--accent); }
+
+  /* ═══ LIGHTBOX ═══ */
+  .lightbox { position: fixed; inset: 0; z-index: 500; background: rgba(0,0,0,0.95); display: none; align-items: center; justify-content: center; }
+  .lightbox.open { display: flex; }
+  .lb-img-wrap { position: relative; max-width: 90vw; max-height: 85vh; }
+  #lbImg { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 8px; box-shadow: 0 0 60px rgba(0,0,0,0.9); }
+  .lb-close { position: fixed; top: 1rem; right: 1rem; background: rgba(255,255,255,0.1); border: none; color: #fff; border-radius: 50%; width: 40px; height: 40px; font-size: 1.2rem; cursor: pointer; backdrop-filter: blur(10px); }
+  .lb-nav { position: fixed; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: none; color: #fff; border-radius: 50%; width: 44px; height: 44px; font-size: 1.2rem; cursor: pointer; backdrop-filter: blur(10px); transition: background 0.2s; }
+  .lb-nav:hover { background: rgba(0,212,255,0.2); }
+  #lbPrev { left: 1rem; }
+  #lbNext { right: 1rem; }
+  .lb-counter { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.6); font-size: 0.85rem; font-family: var(--font-head); }
+
+  /* ═══ NOTIFICATION ═══ */
+  .notification {
+    position: fixed; top: 80px; right: 1.5rem; z-index: 999;
+    padding: 0.8rem 1.4rem; border-radius: 10px;
+    font-family: var(--font-body); font-size: 0.9rem; font-weight: 600;
+    transform: translateX(120%); transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    max-width: 320px;
+  }
+  .notification.show { transform: translateX(0); }
+  .notification.success { background: rgba(0,255,136,0.15); border: 1px solid var(--accent2); color: var(--accent2); }
+  .notification.error { background: rgba(255,80,80,0.15); border: 1px solid #ff5050; color: #ff8080; }
+
+  /* ═══ SHAKE ═══ */
+  .shake { animation: shake 0.5s; }
+  @keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
+
+
+  /* ═══ RESPONSIVE ═══ */
+  @media (max-width: 768px) {
+    .cases-grid { grid-template-columns: 1fr; }
+    header nav { display: none; }
+    .toolbar { flex-direction: column; align-items: stretch; }
+    .search-wrap { max-width: 100%; }
+    .admin-panel { max-width: 100%; margin-top: 0; border-radius: 16px 16px 0 0; }
+    .admin-overlay { align-items: flex-end; padding: 0; }
+  }
+
+    </style>
+</head>
+
+<!--Start of Tawk.to Script con idioma español-->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {};
+Tawk_API.lang = 'es'; // <- Forzar idioma a español
+var Tawk_LoadStart = new Date();
+(function(){
+  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = 'https://embed.tawk.to/689ff8adf6c01119265927c1/1j2oe6pae';
+  s1.charset = 'UTF-8';
+  s1.setAttribute('crossorigin', '*');
+  s0.parentNode.insertBefore(s1, s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="/images/LOGO CP.png" alt="DigitalElectronics">
+                <div class="nav_titles">
+                    <h2 class="nav__title">DigitalElectronics</h2>
+                    <p>Líder en tecnología</p>
+                </div>  
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./products.html" class="nav__links">Productos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./SoftwareTv.html" class="nav__links">Software TV</a>
+                </li>
+                <li class="nav__items">
+                    <a id="nav_sol" href="./Soluciones.html" class="nav__links">Soluciones</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./Contact.html" class="nav__links">Contacto</a>
+                </li>
+                
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu4.png" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Nuestras soluciones</h1>
+            <p class="hero__paragraph">Soluciones a tu medida, diseñadas para adaptarse a tus necesidades.</p>
+            <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar ahora</a>
+        </section>
+    </header>
+    <main>
+
+        <!-- <section class="solutions">
+
+            <h3> Consulta MODO DE SERVICIO por referencia de MainBoard</h3>
+            <div class="contInputButton">
+                <input class="searchInput" type="text" id="searchInput">
+                <button class="searchBtn" id="searchBtn">Buscar</button>
+            </div>
+
+            <h3>Consulta software disponibles</h3>
+            <div class="contInputButton">
+                <label for="dropdown">Marca:</label>
+                <select class="searchInput" type="text" id="dropdown" name="dropdown" size="1">
+                    <option value="opcion1">HYUNDAI</option>
+                    <option value="opcion2">CHALLENGER</option>
+                    <option value="opcion3">KALLEY</option>
+                    <option value="opcion4">JVC</option>
+                    <option value="opcion5">SANKEY</option>
+                    <option value="opcion6">SIMPLY</option>
+                    <option value="opcion7">IBG</option>
+                    <option value="opcion8">KAIWI</option>
+                    <option value="opcion9">VISIVO</option>
+                    <option value="opcion10">CAIXUN</option>
+                    <option value="opcion11">EXCLUSIV</option>
+                    <option value="opcion12">INDUCOL</option>
+                    <option value="opcion13">INTEC</option>
+                    <option value="opcion14">RCA</option>
+                    <option value="opcion15">WESTINHOUSE</option>
+                    <option value="opcion16">OLIMPO</option>
+                    <option value="opcion17">SMARTVISION</option>
+                    
+                </select>
+                <button class="searchBtn" id="searchBtn">Buscar</button>
+            </div>
+
+        </section> -->
+        <section>
+            <!-- ═══ HERO2 ═══ -->
+            <div class="casos">
+            <div class="casos-badge">
+                <span></span>
+                Casos documentados en tiempo real
+            </div>
+            <h1>Casos Resueltos</h1>
+            <p>Soluciones técnicas verificadas para reparación de Smart TV. Cada caso incluye capturas del proceso de diagnóstico y reparación.</p>
+
+            <div class="stats-row">
+                <div class="stat">
+                <div class="stat-num" id="caseCount">0 casos</div>
+                <div class="stat-label">Publicados</div>
+                </div>
+                <div class="stat">
+                <div class="stat-num">8+</div>
+                <div class="stat-label">Años exp.</div>
+                </div>
+                <div class="stat">
+                <div class="stat-num">9</div>
+                <div class="stat-label">Países</div>
+                </div>
+            </div>
+            </div>
+
+            <main2>
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <div class="search-wrap">
+                <input type="text" id="searchInput" placeholder="Buscar por marca, modelo, falla...">
+                </div>
+                <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="kalley">Kalley</button>
+                <button class="filter-btn" data-filter="challenger">Challenger</button>
+                <button class="filter-btn" data-filter="hyundai">Hyundai</button>
+                <button class="filter-btn" data-filter="caixun">Caixun</button>
+                <button class="filter-btn" data-filter="otro">Otro</button>
+                </div>
+            </div>
+
+            <!-- Loading -->
+            <div id="loadingState" class="loading-state">
+                <div class="spinner"></div>
+                <p>Cargando casos...</p>
+            </div>
+
+            <!-- Empty -->
+            <div id="emptyState" class="empty-state" style="display:none">
+                <div class="empty-icon">📋</div>
+                <p>No hay casos publicados aún.</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="cases-grid" id="casesGrid"></div>
+            </main2>
+
+            <!-- ═══ ADMIN BUTTON ═══ -->
+            <div class="admin-toggle-wrap">
+            <button class="admin-toggle-btn" id="adminToggleBtn" title="Panel administrativo">⚙️</button>
+            </div>
+
+            <!-- ═══ ADMIN OVERLAY ═══ -->
+            <div class="admin-overlay" id="adminOverlay">
+            <div class="admin-panel">
+                <div class="panel-head">
+                <h2>⚙ PANEL ADMIN</h2>
+                <button class="panel-close" id="panelClose">✕</button>
+                </div>
+                <div class="panel-body">
+
+                <!-- Login -->
+                <div id="loginSection" class="login-section">
+                    <div class="google-icon">G</div>
+                    <h3>Acceso Restringido</h3>
+                    <p>Inicia sesión con tu cuenta de Google autorizada para publicar casos.</p>
+                    <button class="btn btn-google" id="loginBtn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" style="margin-right:8px;vertical-align:middle"><path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 6.29C4.672 4.163 6.656 3.58 9 3.58z"/></svg>
+                    Iniciar sesión con Google
+                    </button>
+                </div>
+
+                <!-- Admin Panel (hidden until login) -->
+                <div id="adminPanel" style="display:none">
+                    <div class="admin-actions">
+                    <span style="color:var(--accent2);font-size:0.82rem;font-weight:600">✓ <span id="adminUserName"></span></span>
+                    <button class="btn btn-outline" id="logoutBtn" style="padding:0.35rem 0.8rem;font-size:0.8rem">Cerrar sesión</button>
+                    </div>
+
+                    <form id="caseForm">
+                    <div class="form-group">
+                        <label>Título del caso *</label>
+                        <input type="text" id="caseTitle" placeholder="ej: TV se queda en logo de inicio" required>
+                    </div>
+
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem">
+                        <div class="form-group">
+                        <label>Marca *</label>
+                        <select id="caseBrand" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="Kalley">Kalley</option>
+                            <option value="Challenger">Challenger</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Caixun">Caixun</option>
+                            <option value="Exclusiv">Exclusiv</option>
+                            <option value="Sankey">Sankey</option>
+                            <option value="Olimpo">Olimpo</option>
+                            <option value="JVC">JVC</option>
+                            <option value="RCA">RCA</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                        <label>Modelo</label>
+                        <input type="text" id="caseModel" placeholder="ej: KAL-TV50UHDSM">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Descripción del problema *</label>
+                        <textarea id="caseDesc" rows="3" placeholder="Describe la falla reportada por el cliente..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Solución aplicada</label>
+                        <textarea id="caseSolution" rows="2" placeholder="Procedimiento utilizado para resolver el caso..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Capturas de pantalla</label>
+                        <div class="drop-zone" id="dropZone">
+                        <input type="file" id="imageInput" multiple accept="image/*">
+                        <div class="drop-zone-text">
+                            📁 Arrastra imágenes aquí<br>
+                            <span>o haz clic para seleccionar</span><br>
+                            <small style="opacity:0.5">JPG, PNG, WEBP — Múltiples archivos</small>
+                        </div>
+                        </div>
+                        <div class="preview-grid" id="previewGrid"></div>
+                    </div>
+
+                    <div class="progress-wrap" id="uploadProgress">
+                        <div class="progress-bar-outer">
+                        <div class="progress-bar-inner" id="progressBar"></div>
+                        </div>
+                        <div class="progress-text" id="progressText">Preparando...</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn" style="margin-top:1rem">
+                        ✓ Publicar Caso
+                    </button>
+                    </form>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- ═══ LIGHTBOX ═══ -->
+            <div class="lightbox" id="lightbox">
+            <button class="lb-close" id="lbClose">✕</button>
+            <button class="lb-nav" id="lbPrev">‹</button>
+            <div class="lb-img-wrap">
+                <img id="lbImg" src="" alt="Captura ampliada">
+            </div>
+            <button class="lb-nav" id="lbNext">›</button>
+            <div class="lb-counter" id="lbCounter"></div>
+            </div>
+
+            <!-- ═══ NOTIFICATION ═══ -->
+            <div class="notification" id="notification"></div>
+
+            <script>
+            // Admin toggle
+            const adminToggleBtn = document.getElementById('adminToggleBtn');
+            const adminOverlay = document.getElementById('adminOverlay');
+            const panelClose = document.getElementById('panelClose');
+
+            adminToggleBtn.addEventListener('click', () => {
+                adminOverlay.classList.toggle('open');
+                adminToggleBtn.classList.toggle('active');
+            });
+            panelClose.addEventListener('click', () => {
+                adminOverlay.classList.remove('open');
+                adminToggleBtn.classList.remove('active');
+            });
+            adminOverlay.addEventListener('click', (e) => {
+                if (e.target === adminOverlay) {
+                adminOverlay.classList.remove('open');
+                adminToggleBtn.classList.remove('active');
+                }
+            });
+
+            // Enter key on password
+            document.getElementById('adminPwd').addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') document.getElementById('loginBtn').click();
+            });
+            </script>
+        </section>
+
+        <section>
+            <div class="container-videos">
+
+            
+                <div class="video-container">
+                    <h3>Soluciones efectivas de software para televisores.</h3>
+                
+                    <!-- Reproductor principal -->
+                    <div class="main-video-wrapper">
+                        <div class="video-responsive">
+                            <iframe id="mainVideo"
+                                    src="https://www.youtube.com/embed/BpHE35w0pnU"
+                                    title="Video principal" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Galería de miniaturas -->
+                    <div class="video-thumbnails">
+                        <div class="thumbnail-card active" data-video-id="BpHE35w0pnU" data-title="Televisor bloqueado en el logo - SOLUCIÓN">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/BpHE35w0pnU/maxresdefault.jpg" alt="Video 1">
+                                <div class="thumbnail-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                            </div>
+                            <div class="thumbnail-title">TV bloqueado en logo - Solución</div>
+                        </div>
+
+                        <div class="thumbnail-card" data-video-id="J10PaYoXDj0" data-title="Actualización de software TV">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/J10PaYoXDj0/maxresdefault.jpg" alt="Video 2">
+                                <div class="thumbnail-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                            </div>
+                            <div class="thumbnail-title">Solución TV CAIXUN</div>
+                        </div>
+
+                        <div class="thumbnail-card" data-video-id="yczYr7cbrv4" data-title="Reparación pantalla negra">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/yczYr7cbrv4/maxresdefault.jpg" alt="Video 3">
+                                <div class="thumbnail-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                            </div>
+                            <div class="thumbnail-title">Reparación TV KALLEY</div>
+                        </div>
+
+                        <div class="thumbnail-card" data-video-id="eoFUtl9rInA" data-title="Reseteo de fábrica TV">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/eoFUtl9rInA/maxresdefault.jpg" alt="Video 4">
+                                <div class="thumbnail-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                            </div>
+                            <div class="thumbnail-title">DigitalElectronics</div>
+                        </div>
+
+                        <div class="thumbnail-card" data-video-id="UKYqYn2psQk" data-title="Instalación firmware TV">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/UKYqYn2psQk/maxresdefault.jpg" alt="Video 5">
+                                <div class="thumbnail-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                            </div>
+                            <div class="thumbnail-title">Reparación TV CHALLENGER</div>
+                        </div>
+
+                        <div class="thumbnail-card" data-video-id="5EmkIzwk548" data-title="Diagnóstico avanzado TV">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/5EmkIzwk548/maxresdefault.jpg" alt="Video 6">
+                                <div class="thumbnail-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                            </div>
+                            <div class="thumbnail-title">Reparación TV HYUNDAI</div>
+                        </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="video-description">
+                        <p>
+                            Ofrecemos soporte técnico especializado para resolver fallas de software en televisores de varias marcas.
+                            <strong><span class="marcas">HYUNDAI, KALLEY, OLIMPO, CHALLENGER, CAIXUN, EXCLUSIV, JVC, RCA, SANKEY, WESTINGHOUSE, RECCO, VISIVO, INDUCOL, SÍRAGON, SMART VISIÓN, HISENSE, IBG, SIMPLY, KAIWI, PREMIER, NEX, TCL, EPI, aiwa</span></strong> ¡y muchas más!
+                            ¿Tu TV se queda en el logo o no arranca? ¡Lo reparamos por software!   
+                        </p>
+                        <ul>
+                            <li>
+                                <div class="icon">✓</div>
+                                <div class="text">Software original certificado</div>
+                            </li>
+                            <li>
+                                <div class="icon">⚡</div>
+                                <div class="text">Solución rápida</div>
+                            </li>
+                            <li>
+                                <div class="icon">💬</div>
+                                <div class="text">Soporte técnico profesional en línea</div>
+                            </li>
+                            <li>
+                                <div class="icon">🏠</div>
+                                <div class="text">Servicio a domicilio (Cali - Valle del Cauca)</div>
+                            </li>
+                        </ul>
+                        <p>
+                            Escríbenos con una foto de los datos de fabricación y la falla que presenta tu TV, y te cotizamos el servicio.
+                            Contáctanos y te brindaremos asesoría personalizada según el modelo y la falla de tu equipo.
+                        </p>
+                        <h4>Nuestro diferencial.</h4>
+                        <p>
+                            Te acompañamos en todo el proceso hasta que tu problema quede completamente resuelto. Atención 100% personalizada.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="padding:55% 0 0 0;position:relative;">
+                    <iframe
+                        src="https://player.vimeo.com/video/1102561652?autoplay=1&muted=1&title=0&byline=0&portrait=0&autopause=0"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="VideoInstructivo">
+                    </iframe>
+
+                </div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+            </div>
+            </section>
+
+                
+
+            
+
+
+        <section id="galeria">
+
+            <div class="Titulo_sol">
+                <h3>Galería de soluciones</h3>
+            </div>
+
+            <div class="carousel-container">
+            <button id="prevBtn">&#8592;</button>
+
+            <div class="carousel" id="carousel">
+            <!-- Imágenes serán insertadas por JS -->
+            </div>
+
+            <button id="nextBtn">&#8594;</button>
+        </div>
+
+        <script src="js/galery_s.js"></script>
+        </section>
+
+        <section id="procedimientos">
+            <div class="Titulo_sol">
+                <h3>Procedimientos</h3>
+            </div>
+
+            <div class="procedimiento-container">
+                <div class="procedimiento" id="procedimiento">
+                <div class="proc1 procedimiento-btn">Formatear USB</div>
+                <div class="proc3 procedimiento-btn">Descargar Software</div>
+                <div class="proc2 procedimiento-btn">Copiar Software</div>
+                
+                </div>
+            </div>
+        </section>
+
+        <div class="container-detalle">
+            <!-- Secciones ocultas -->
+            <section id="proc1-section" class="detalle oculto">
+                <h4>Formatear USB</h4>
+                <p>Instrucciones detalladas para formatear una USB correctamente...</p>
+                <ol>
+                    <li>
+                    Conecte la memoria USB al computador, haga clic derecho sobre el ícono de la USB y seleccione la opción 
+                    <strong class="instr">Formatear.</strong>
+                    <br>
+                    <img class="detalle-img" src="./images/Paso1.JPG" alt="Formato USB">
+                    </li>
+                    <li>
+                    En la ventana de formato, ubique la opción “Sistema de archivos” y seleccione FAT32, luego 
+                    <strong class="instr">Iniciar.</strong>
+                    <br>
+                    <img class="detalle-img" src="./images/Paso2.JPG" alt="Formato USB">
+                    </li>
+                    <li>
+                    Aparecerá una advertencia indicando que todos los datos serán eliminados. Si está de acuerdo, haga clic en 
+                    <strong class="instr">Aceptar.</strong>
+                    <br>
+                    <img class="detalle-img" src="./images/Paso3.JPG" alt="Formato USB">
+                    </li>
+                    <li>
+                    Una vez finalizado el proceso, haga clic nuevamente en <strong class="instr">Aceptar</strong> para cerrar la ventana.
+                    <br>
+                    <img class="detalle-img" src="./images/Paso4.JPG" alt="Formato USB">
+                    </li>
+                </ol>
+            </section>
+
+            <section id="proc3-section" class="detalle oculto">
+                <h4>Descargar Software</h4>
+                <p>Cómo descargar el software desde el sitio oficial...</p>
+                <ol>
+                    <li>
+                        Ingrese al enlace enviado por correo electrónico. 
+                    <br>
+                    <img class="detalle-img" src="./images/Desc0.JPG" alt="Descargar Software">
+                    </li>
+                    <li>
+                        En la página, ubique la opción <strong class="instr">Descargar</strong>, haga clic sobre ella y despliegue el menú de opciones.
+                    <ul>
+                        <li>
+                            Seleccione 
+                    <strong class="instr">Descarga normal.</strong>
+                        </li>
+                    </ul>
+                    <br>
+                    <img class="detalle-img" src="./images/Desc1.JPG" alt="Descargar Software">
+                    </li>
+                    <li>
+                        Espere a que la descarga se complete.
+                    <ul>
+                        <li>⏳ El tiempo puede variar dependiendo de la velocidad de su conexión a internet.</li>
+                    </ul>
+                    <br>
+                    <img class="detalle-img" src="./images/Desc2.JPG" alt="Descargar Software">
+                    </li>
+                    <li>
+                        Una vez finalizada la descarga, el archivo puede quedar en espera de confirmación en su navegador.
+                        <ul>
+                            <li>Si aparece la opción <strong class="instr">Conservar</strong>, selecciónela para mantener el archivo.</li>
+                        </ul>
+                    <br>
+                    <img class="detalle-img" src="./images/Desc4.JPG" alt="Descargar SoftwareB">
+                    </li>
+                    <li>
+                        Luego, haga clic en <strong class="instr">Mostrar en carpeta</strong> para abrir la ubicación donde se guardó el archivo en su computador.
+                    <br>
+                    <img class="detalle-img" src="./images/Desc5.JPG" alt="Descargar Software">   
+                    </li>
+                </ol>
+            </section>
+
+
+            <section id="proc2-section" class="detalle oculto">
+                <h4>Copiar Software</h4>
+                <p>Paso a paso para copiar el software a tu USB...</p>
+                <ol>
+                    <li>
+                    Ubique el archivo del software en su computador, haga clic derecho sobre él y seleccione la opción <strong class="instr">Cortar.</strong>
+                    <br>
+                    <img class="detalle-img" src="./images/Cop1.JPG" alt="Copiar Software">
+                    </li>
+                    <li>
+                    Inserte una memoria USB previamente formateada en formato <strong>FAT32</strong> y acceda a su directorio raíz (es decir, no dentro de ninguna carpeta).
+                    <br>
+                    <img class="detalle-img" src="./images/Cop0.JPG" alt="Copiar Software">
+                    </li>
+                    <li>
+                    Haga clic derecho en el área vacía del directorio raíz de la USB y seleccione <strong class="instr">Pegar</strong>  para iniciar la copia del software.
+                    <br>
+                    <img class="detalle-img" src="./images/Cop3.png" alt="Copiar Software">
+                    </li>
+                    <li>
+                    Espere a que finalice completamente el proceso de copia.
+                    <br>
+                    <img class="detalle-img" src="./images/Cop4.JPG" alt="Copiar Software">
+                    </li>
+                    <li>
+                    Una vez copiado, verifique que el archivo esté en el directorio raíz y que su nombre no haya sido modificado.
+                    <ul>
+                        <li>⚠️ <strong>Importante:</strong> El archivo no debe tener nombres como rtk2831 (1).img o similares.</li>
+                        <li>El nombre debe ser exactamente el original, de lo contrario el televisor no reconocerá el software.</li>
+                    </ul>
+                    <br>
+                    <img class="detalle-img" src="./images/Cop5.JPG" alt="Copiar Software">
+                    </li>
+                </ol>
+            </section>
+
+            
+        </div>
+        
+
+        <section>
+            <div>
+                <p></p>
+            </div>
+        </section>
+
+        
+
+         <!-- Ventana emergente (wha) -->
+         <div id="myWha" class="wha ">
+            <div class="wha-content">
+                <div class="wha-header">
+                    <div class="perfil-nombre">
+                        <div class="perfil">
+                            <img src="./images/perfil.jpeg" alt="">
+                        </div>
+                        <ul class="lista-header">
+                            <li><h4>DigitalElectronics</h4></li>
+                            <li class="enLinea">En linea</li>
+                          </ul>
+                        <!-- <h4>DigitalElectronics</h4> -->
+                        <!-- <p>En linea</p> -->
+                    </div>
+                    <span class="closeWha">&times;</span>  
+                </div>
+                
+
+                <div class="wha-text"> 
+                    <div class="message">
+                        <div class="message-text">
+                            ¿Necesitas ayuda? Contacta a nuestros expertos. 👋
+                        </div>
+                        <div id="hora" class="message-time"></div>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="share">
+            <div class="menu">
+            
+                <li style="--i:1;--clr:#25d366;">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20*DigitalElectronics*%20%F0%9F%92%BB%2C%20vengo%20de%20la%20pagina%20web%20y%20estoy%20interesado%20en%20reparar%20mi%20televisor%20"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </li>
+        
+                <li style="--i:2;--clr:#1877f2;">
+                    <a target="_blank" href="https://www.facebook.com/share/14HaRv1WTf/"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+        
+                <li style="--i:3;--clr:#ea4c89;">
+                    <a target="_blank" href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+        
+                <li style="--i:4;--clr:#ff0000;">
+                    <a target="_blank" href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79"><ion-icon name="logo-youtube"></ion-icon></a>
+                </li>
+                
+                <li style="--i:5;--clr:#000000;">
+                    <a target="_blank" href="https://www.tiktok.com/@digitalelectronicscali?_t=ZS-8usXSfJnBJw&_r=1"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </li>
+
+                <div class="toggle">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <!--<ion-icon name="share-social-outline"></ion-icon>-->
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+
+            <script>
+                let toggle = document.querySelector('.toggle')
+                let menu = document.querySelector('.menu')
+                toggle.onclick = function(){
+                    menu.classList.toggle('active');
+                }
+            </script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav--footer">
+                <h2 class="footer__title">DigitalElectronics</h2>
+
+                <!-- <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="./index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./products.html" class="nav__links">Productos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./SoftwareTv.html" class="nav__links">Software TV</a>
+                    </li>
+                    <li class="nav__items">
+                        <a id="nav_sol" href="./Soluciones.html" class="nav__links">Soluciones</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./Contact.html" class="nav__links">Contacto</a>
+                    </li>
+                    
+                </ul> -->
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/share/14HaRv1WTf/" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ==" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+                <a href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+            <h4 class="footer__copyright">soporte@digitalelectronics.com.co</h4>
+            <h4 class="footer__copyright" id="copyright"></h4>
+        </section>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script type="module" src="/js/whatsapp.js"></script>
+    <script type="module" src="/js/update_instruccion.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1549739524053715"
+     crossorigin="anonymous"></script>
+     <script type="module" src="/js/video.js"></script>
+     <script type="module" src="/js/copyright.js"></script>
+</body>
+</html>

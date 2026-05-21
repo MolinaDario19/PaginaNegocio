@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Watermark</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<input type="file" id="fileInput">
+
+<br><br>
+
+<img id="preview" style="max-width:600px;">
+
+<script>
+async function applyWatermark(file) {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+      const img = new Image();
+
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        const ctx = canvas.getContext('2d');
+
+        ctx.drawImage(img, 0, 0);
+
+        const padding = img.width * 0.02;
+        const fontSize = Math.max(img.width * 0.088, 14);
+
+        const line1 = 'DigitalElectronics';
+        const line2 = '+57 310 384 1388';
+
+        ctx.font = `bold ${fontSize}px Arial`;
+        const w1 = ctx.measureText(line1).width;
+
+        ctx.font = `${fontSize * 0.72}px Arial`;
+        const w2 = ctx.measureText(line2).width;
+
+        const boxW = Math.max(w1, w2) + padding * 2;
+        const boxH = fontSize * 2.6 + padding * 2;
+
+        const boxX = (img.width - boxW) / 2;
+        const boxY = (img.height - boxH) / 2;
+
+        ctx.globalAlpha = 0.22;
+
+        ctx.fillStyle = 'black';
+        
+        ctx.fillRect(boxX, boxY, boxW, boxH);
+
+        ctx.globalAlpha = 1;
+        ctx.strokeStyle = 'rgba(0, 255, 156, 0.55)';
+        //ctx.fillStyle = '#00d4ff';
+        ctx.fillStyle = '#1CE305';
+        ctx.font = `bold ${fontSize}px Orbitron`;
+
+        ctx.fillText(
+          line1,
+          boxX + padding,
+          boxY + padding + fontSize
+        );
+
+        ctx.font = `${fontSize * 0.72}px Arial`;
+
+        ctx.fillText(
+          line2,
+          boxX + padding,
+          boxY + padding + fontSize * 2
+        );
+
+        canvas.toBlob((blob) => {
+          resolve(URL.createObjectURL(blob));
+        }, 'image/jpeg', 0.92);
+      };
+
+      img.src = e.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  });
+}
+
+document
+  .getElementById('fileInput')
+  .addEventListener('change', async (e) => {
+
+    const file = e.target.files[0];
+
+    const result = await applyWatermark(file);
+
+    document.getElementById('preview').src = result;
+});
+</script>
+
+</body>
+</html>
