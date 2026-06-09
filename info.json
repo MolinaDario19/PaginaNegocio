@@ -1853,6 +1853,18 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
+
+  "LED 40KG84 BT T2": {
+    "modelo": "LED 40KG84 BT T2",
+    "software": "install.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
   "LED 32TG81 BT GOOGLE T2": {
     "modelo": "LED 32TG81 BT GOOGLE T2",
     "software": "V8-GT41AGL-00xxxx.img",
@@ -1904,6 +1916,17 @@
     "preference_id": "MPCL75"
   },
   
+  "LED 40TG81 BT GOOGLE T2": {
+    "modelo": "LED 40TG81 BT GOOGLE T2",
+    "software": "V8-GT41AGL-00124XX.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
   "UHD 65KG85 BT GOOGLE T2": {
     "modelo": "UHD 65KG85 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
@@ -1914,6 +1937,18 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
+
+  "UHD 50KG85 BT GOOGLE T2": {
+    "modelo": "UHD 50KG85 BT GOOGLE T2",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
   "UHD 50LO70 BT ANDROID T2": {
     "modelo": "UHD 50LO70 BT ANDROID T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
