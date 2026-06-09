@@ -622,7 +622,346 @@
     "preference_id": "MPKL85"
   },
 
-
+  "115GM405": {
+    "modelo": "115GM405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "32GQ200": {
+    "modelo": "32GQ200",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "40G200": {
+    "modelo": "40G200",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "40GQ200": {
+    "modelo": "40GQ200",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "43G200": {
+    "modelo": "43G200",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "43G200A": {
+    "modelo": "43G200A",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL55"
+  },
+  "43G305": {
+    "modelo": "43G305",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "43G315": {
+    "modelo": "43G315",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "43GQ200": {
+    "modelo": "43GQ200",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL75"
+  },
+  "50G305": {
+    "modelo": "50G305",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "50G315": {
+    "modelo": "50G315",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "50GQ405": {
+    "modelo": "50GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "55G305": {
+    "modelo": "55G305",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "55G315": {
+    "modelo": "55G315",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "55GM405": {
+    "modelo": "55GM405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "55GQ405": {
+    "modelo": "55GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "58GQ400": {
+    "modelo": "58GQ400",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "58GQ400A": {
+    "modelo": "58GQ400A",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "58GQ405": {
+    "modelo": "58GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL78"
+  },
+  "60G300": {
+    "modelo": "60G300",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "60G310": {
+    "modelo": "60G310",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "60GQ400": {
+    "modelo": "60GQ400",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "65G305": {
+    "modelo": "65G305",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "65G315": {
+    "modelo": "65G315",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "65GM405": {
+    "modelo": "65GM405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "65GQ405": {
+    "modelo": "65GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "70GQ405": {
+    "modelo": "70GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "75GM405": {
+    "modelo": "75GM405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "75GQ405": {
+    "modelo": "75GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "75GQ415": {
+    "modelo": "75GQ415",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "85GQ405": {
+    "modelo": "85GQ405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "K-GTV85UHDQ2": {
+    "modelo": "K-GTV85UHDQ2",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "86GM405": {
+    "modelo": "86GM405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
+  "98GM405": {
+    "modelo": "98GM405",
+    "software": "",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPKL85"
+  },
 
   "K-LED28HDST2": {
     "modelo": "K-LED28HDST2",
