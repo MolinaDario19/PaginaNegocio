@@ -2944,6 +2944,16 @@
   },
   "HYLED3240NIM": {
     "modelo": "HYLED3240NIM",
+    "software": " 6683L_DVBT_4G.bin",
+    "main": "6683M2C1",
+    "estado": "Disponible",
+    "precio": "70.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY70"
+  },
+  "HYLED3246NIM": {
+    "modelo": "HYLED3246NIM",
     "software": " KKUpgrade6883DVB.bin",
     "main": "35023956",
     "estado": "Disponible",
