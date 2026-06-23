@@ -123,6 +123,224 @@
 </head>
 <body>
 
+    <div>
+        <!-- Botón para abrir el modal (opcional) -->
+        <button id="openModalBtn" style="cursor:pointer;">
+        Abrir instructivo
+        </button>
+
+        <!-- Modal -->
+        <div id="modal_instructivo" class="modal" aria-hidden="true">
+        <div class="modal__overlay" id="modalOverlay"></div>
+
+        <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal__header">
+            <h2 id="modalTitle">Instructivo (Windows): USB en FAT32</h2>
+            <button id="closeModalBtn" class="modal__close" aria-label="Cerrar modal">✖</button>
+            </div>
+
+            <div class="modal__body">
+            <div class="callout callout--warning">
+                <strong>⚠️ Importante:</strong>
+                <ul>
+                <li>Al formatear la USB se borrará todo su contenido.</li>
+                <li>Confirma que seleccionaste la <strong>unidad correcta</strong> (por ejemplo E:, F:, etc.).</li>
+                <li>Este instructivo es para <strong>Windows</strong>; el menú puede variar ligeramente.</li>
+                </ul>
+            </div>
+
+            <!-- Paso 1 -->
+            <h3>1) 📀 Formatear la memoria USB en FAT32 (Windows)</h3>
+            <ol class="steps">
+                <li>Conecta la memoria USB al computador.</li>
+                <li>Abre <strong>Este equipo</strong> (o <strong>Mi PC</strong>).</li>
+                <li>
+                Ubica la unidad de la USB (por ejemplo: <em>E:</em>, <em>F:</em>).
+                </li>
+                <li>
+                Clic derecho sobre la unidad → <strong>Formatear…</strong>.
+                </li>
+                <li>
+                En <strong>Sistema de archivos</strong> selecciona:
+                <ul>
+                    <li><strong>FAT32</strong> ✅</li>
+                </ul>
+                </li>
+                <li>Deja el resto en valores recomendados (por defecto).</li>
+                <li>Marca <strong>Formato rápido</strong> (si está disponible).</li>
+                <li>Pulsa <strong>Iniciar</strong> y confirma.</li>
+                <li>Cuando termine, asegúrate de que la USB se vea lista para copiar archivos.</li>
+            </ol>
+
+            <!-- Paso 2 -->
+            <h3>2) 📦 Descomprimir el archivo descargado (.zip / .rar / .7z)</h3>
+            <ol class="steps">
+                <li>
+                Localiza el archivo descargado. Puede terminar en:
+                <ul>
+                    <li><strong>.zip</strong></li>
+                    <li><strong>.rar</strong></li>
+                    <li><strong>.7z</strong></li>
+                </ul>
+                </li>
+                <li>
+                Clic derecho sobre el archivo → elige la opción de extracción, por ejemplo:
+                <ul>
+                    <li><strong>Extraer todo…</strong> (común para .zip)</li>
+                    <li><strong>Extract…</strong> / <strong>Extraer aquí</strong> (depende de la herramienta instalada)</li>
+                </ul>
+                </li>
+                <li>Selecciona una carpeta destino (por ejemplo, “Descargas”).</li>
+                <li>Confirma <strong>Extraer</strong>.</li>
+                <li>Verifica que ya exista la carpeta/archivos listos para copiar a la USB.</li>
+            </ol>
+
+            <!-- Paso 3 -->
+            <h3>3) 🔄 Copiar el archivo a la raíz de la USB (Windows)</h3>
+            <ol class="steps">
+                <li>
+                Abre la USB desde <strong>Este equipo</strong>.
+                </li>
+                <li>
+                <strong>Raíz</strong> significa la pantalla principal de la USB (sin entrar a carpetas).
+                </li>
+                <li>Abre la carpeta donde se descomprimió el contenido.</li>
+                <li>
+                Selecciona el/los archivo(s) que correspondan a lo descargado (por ejemplo: instalador, imagen, etc.).
+                </li>
+                <li>
+                Arrastra y suelta hacia la <strong>raíz</strong> de la USB
+                o usa <strong>Copiar</strong> → <strong>Pegar</strong>.
+                </li>
+                <li>Espera a que termine la copia.</li>
+                <li>
+                Expulsa correctamente la memoria USB:
+                <ul>
+                    <li>en el área de notificaciones usa <strong>“Quitar dispositivo”</strong> / <strong>“Expulsar”</strong></li>
+                </ul>
+                </li>
+            </ol>
+
+            <div class="callout callout--info">
+                ✅ <strong>Checklist rápido</strong>
+                <ul>
+                <li>La USB está en <strong>FAT32</strong>.</li>
+                <li>El archivo fue descomprimido (.zip/.rar/.7z).</li>
+                <li>Los archivos están en la <strong>raíz</strong> de la USB.</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="modal__footer">
+            <button id="closeModalBtn2" class="btn btn--secondary">Cerrar</button>
+            <a class="btn btn--primary" href="#" onclick="return false;">Listo ✅</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Estilos -->
+        <style>
+        #openModalBtn { padding: 10px 14px; border-radius: 8px; border: 1px solid #ccc; background: #fff; }
+
+        .modal { display: none; position: fixed; inset: 0; z-index: 9999; }
+        .modal.is-open { display: block; }
+        .modal__overlay {
+            position: absolute; inset: 0;
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(2px);
+        }
+        .modal__content {
+            position: relative;
+            width: min(860px, calc(100vw - 24px));
+            max-height: min(82vh, 780px);
+            overflow: auto;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+            border: 1px solid rgba(0,0,0,0.08);
+        }
+        .modal__header {
+            position: sticky; top: 0;
+            background: #fff;
+            padding: 16px 18px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+        }
+        .modal__header h2 { margin: 0; font-size: 18px; }
+        .modal__close {
+            border: 0; background: transparent; font-size: 18px; cursor: pointer;
+            padding: 6px 8px; border-radius: 10px;
+        }
+        .modal__close:hover { background: rgba(0,0,0,0.06); }
+
+        .modal__body { padding: 16px 18px; }
+        .modal__body h3 { margin-top: 16px; font-size: 16px; }
+        .steps { margin: 8px 0 0 18px; }
+        .steps li { margin: 8px 0; }
+
+        .callout {
+            padding: 12px 14px;
+            border-radius: 12px;
+            margin-top: 10px;
+            border: 1px solid rgba(0,0,0,0.08);
+        }
+        .callout--warning { background: #fff7f0; border-color: #ffd7b8; }
+        .callout--info { background: #f2f7ff; border-color: #cfe0ff; }
+
+        .modal__footer {
+            padding: 14px 18px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            display: flex; justify-content: flex-end; gap: 10px;
+            position: sticky; bottom: 0; background: #fff;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: 1px solid transparent;
+            cursor: pointer;
+            display: inline-flex; align-items: center; justify-content: center;
+        }
+        .btn--primary { background: #2563eb; color: white; }
+        .btn--secondary { background: #fff; border-color: rgba(0,0,0,0.12); color: #111; }
+        .btn--secondary:hover { background: rgba(0,0,0,0.03); }
+        </style>
+
+        <!-- Script -->
+        <script>
+        const modal = document.getElementById('modal_instructivo');
+        const overlay = document.getElementById('modalOverlay');
+        const openBtn = document.getElementById('openModalBtn');
+        const closeBtn = document.getElementById('closeModalBtn');
+        const closeBtn2 = document.getElementById('closeModalBtn2');
+
+        function openModal() {
+            modal.classList.add('is-open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('is-open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        openBtn?.addEventListener('click', openModal);
+        closeBtn?.addEventListener('click', closeModal);
+        closeBtn2?.addEventListener('click', closeModal);
+        overlay?.addEventListener('click', closeModal);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+        });
+        </script>
+
+    </div>
+
 <div class="container">
     <h1>Solicitud de Firmware para TV</h1>
 
