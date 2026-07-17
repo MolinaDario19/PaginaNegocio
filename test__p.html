@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Electronics Firmware</title>
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+
+body{
+
+    margin:0;
+    height:100vh;
+
+    background:#eef2f7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* BOTON DEMO */
+
+#abrirDemo{
+
+    background:#0066ff;
+
+    color:#fff;
+
+    border:0;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+
+/* =====================
+        MODAL
+===================== */
+
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    z-index:9999;
+
+}
+
+
+
+.modal-content{
+
+    width:820px;
+
+    max-width:95%;
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+    position:relative;
+
+    animation:entrada .3s;
+
+}
+
+
+
+@keyframes entrada{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+
+
+
+/* CERRAR */
+
+
+#cerrarModal{
+
+    position:absolute;
+
+    right:20px;
+
+    top:15px;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#333;
+
+    font-size:32px;
+
+    text-align:center;
+
+    line-height:36px;
+
+    cursor:pointer;
+
+    z-index:10;
+
+}
+
+
+
+
+
+/* HEADER */
+
+
+.modal-header{
+
+    background:linear-gradient(135deg,#003b80,#007bff);
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:20px 20px 0 0;
+
+}
+
+
+
+.modal-header h2{
+
+    margin:0;
+
+    font-size:30px;
+
+}
+
+
+.modal-header p{
+
+    margin-top:8px;
+
+    opacity:.85;
+
+}
+
+
+
+
+
+.modal-body{
+
+    padding:30px;
+
+}
+
+
+
+
+
+/* =====================
+       ARCHIVO
+===================== */
+
+
+.section-title{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#333;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.firmware-card{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:#f8fafc;
+
+    border:1px solid #dbe3ec;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.file-icon{
+
+
+    width:75px;
+
+    height:85px;
+
+    background:#0066ff;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    position:relative;
+
+}
+
+
+
+.file-icon:before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:25px;
+
+    height:25px;
+
+    background:white;
+
+    clip-path:polygon(0 0,100% 100%,0 100%);
+
+}
+
+
+
+.file-info{
+
+    flex:1;
+
+}
+
+
+
+.file-info small{
+
+    color:#777;
+
+}
+
+
+
+#modalSoftware{
+
+    display:block;
+
+    font-size:23px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin:5px 0;
+
+}
+
+
+
+.file-meta{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+
+.file-tags{
+
+    margin-top:12px;
+
+}
+
+
+
+.file-tags span{
+
+    background:#e0edff;
+
+    color:#0066ff;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+.download{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#e5efff;
+
+    color:#0066ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+}
+
+
+
+
+
+/* =====================
+      INFORMACION
+===================== */
+
+
+.product-section{
+
+    border-top:1px solid #eee;
+
+    padding-top:25px;
+
+}
+
+
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+
+
+.product-box{
+
+    border:1px solid #ddd;
+
+    border-radius:14px;
+
+    padding:18px;
+
+}
+
+
+
+.product-box label{
+
+    display:block;
+
+    color:#777;
+
+    font-size:13px;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.product-box strong{
+
+    font-size:18px;
+
+}
+
+
+
+.estado{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+}
+
+
+
+.precio{
+
+    color:#e53935;
+
+    font-size:25px!important;
+
+}
+
+
+
+
+
+/* =====================
+        BOTONES
+===================== */
+
+
+.Buttons_modal{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:25px 0;
+
+}
+
+
+
+#mp-button{
+
+    flex:1;
+
+}
+
+
+
+#mp-button button{
+
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+    background:#009ee3;
+
+    color:white;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+#openWha{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* USB */
+
+
+.usb-requirements{
+
+    background:#fff7df;
+
+    border-left:5px solid #f4b400;
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+
+
+.usb-requirements ul{
+
+    margin-top:10px;
+
+    padding-left:20px;
+
+}
+
+
+
+
+
+/* PDF */
+
+
+#modalPdfContainer{
+
+    display:none;
+
+    margin-top:25px;
+
+}
+
+
+
+#pdfViewer{
+
+    width:100%;
+
+    height:400px;
+
+    border:0;
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+.product-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.Buttons_modal{
+
+flex-direction:column;
+
+}
+
+
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<button id="abrirDemo">
+
+Ver Firmware
+
+</button>
+
+
+
+
+
+
+<!-- ===========================
+        MODAL ORIGINAL
+=========================== -->
+
+
+<div id="modal" class="modal">
+
+
+<div class="modal-content">
+
+
+
+<span id="cerrarModal">
+
+&times;
+
+</span>
+
+
+
+
+
+<div class="modal-header">
+
+
+<h2 id="modalTitulo"></h2>
+
+
+<p>
+Software de actualización Smart TV
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="modal-body">
+
+
+
+
+
+
+<!-- ARCHIVO -->
+
+
+<div class="section-title">
+
+Archivo de actualización
+
+</div>
+
+
+
+<div class="firmware-card">
+
+
+<div class="file-icon">
+
+BIN
+
+</div>
+
+
+
+<div class="file-info">
+
+
+<small>
+
+Firmware USB
+
+</small>
+
+
+<span id="modalSoftware">
+
+</span>
+
+
+<div class="file-meta">
+
+12.5 MB • Archivo descargable
+
+</div>
+
+
+<div class="file-tags">
+
+<span>USB</span>
+
+<span>FAT32</span>
+
+<span>UPDATE</span>
+
+</div>
+
+
+</div>
+
+
+<div class="download">
+
+↓
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- INFORMACION -->
+
+
+<div class="product-section">
+
+
+<div class="section-title">
+
+Información del producto
+
+</div>
+
+
+
+<div class="product-grid">
+
+
+<div class="product-box">
+
+
+<label>
+
+Main Board
+
+</label>
+
+
+<strong id="modalMain"></strong>
+
+
+</div>
+
+
+
+<div class="product-box">
+
+
+<label>
+
+Estado
+
+</label>
+
+
+<strong id="modalEstado" class="estado"></strong>
+
+
+</div>
+
+
+
+
+<div class="product-box">
+
+
+<label>
+
+Precio
+
+</label>
+
+
+<strong id="modalPrecio" class="precio"></strong>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- BOTONES -->
+
+
+<div class="Buttons_modal">
+
+
+<div id="mp-button">
+
+
+<button>
+
+Comprar ahora
+
+</button>
+
+
+</div>
+
+
+
+<a id="openWha"
+
+href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics"
+
+target="_blank">
+
+💬 Contactar asesor
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- USB -->
+
+
+<div class="usb-requirements">
+
+
+<p>
+
+<strong>⚠ Importante:</strong>
+
+USB requerido:
+
+</p>
+
+
+<ul>
+
+<li>4 GB o 8 GB</li>
+
+<li>USB 2.0</li>
+
+<li>Formato FAT32</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PDF -->
+
+
+<div id="modalPdfContainer">
+
+
+<iframe id="pdfViewer"></iframe>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+
+const modal=document.getElementById("modal");
+
+
+document.getElementById("abrirDemo").onclick=function(){
+
+
+modal.style.display="flex";
+
+
+document.getElementById("modalTitulo").innerHTML="Samsung UN50AU7000";
+
+document.getElementById("modalSoftware").innerHTML="MstarUpgrade.bin";
+
+document.getElementById("modalMain").innerHTML="BN94-17357A";
+
+document.getElementById("modalEstado").innerHTML="Disponible";
+
+document.getElementById("modalPrecio").innerHTML="$85.000";
+
+
+}
+
+
+
+
+document.getElementById("cerrarModal").onclick=function(){
+
+modal.style.display="none";
+
+}
+
+
+
+modal.onclick=function(e){
+
+if(e.target===modal){
+
+modal.style.display="none";
+
+}
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
