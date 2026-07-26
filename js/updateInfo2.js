@@ -61,7 +61,15 @@ const overlay = document.getElementById('modalPagoOverlay');
 
     document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
     document.getElementById('modalSoftware').textContent = info.software || 'No especificado';
-    document.getElementById('modalMain').textContent = info.main || 'No especificado';
+    const filaMain = document.getElementById('filaMain');
+    const modalMain = document.getElementById('modalMain');
+
+    if (info.main && info.main.trim() !== '') {
+        modalMain.textContent = info.main;
+        filaMain.style.display = '';
+    } else {
+        filaMain.style.display = 'none';
+    }
     document.getElementById('modalPrecio').textContent = info.precio || '...';
 
     const estado = info.estado || 'Disponible';

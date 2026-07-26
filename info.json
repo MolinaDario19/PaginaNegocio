@@ -3427,173 +3427,173 @@
 
   "C32T1HV": {
     "modelo": "C32T1HV",
-    "software": "",
-    "main": "",
+    "software": "MstarUpgrade.bin -",
+    "main": "EL.MT9602V-FG48",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C32V1HN": {
     "modelo": "C32V1HN",
-    "software": "",
-    "main": "",
+    "software": "NF51CX6683TWCO.bin",
+    "main": "EL.MT6683-FG48",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C32V1HV": {
     "modelo": "C32V1HV",
-    "software": "",
-    "main": "",
+    "software": "MstarUpgrade.bin -",
+    "main": "EL.MT9602V-FG48",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C32VAHG": {
     "modelo": "C32VAHG",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9216-FG48",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C32VAHV": {
     "modelo": "C32VAHV",
-    "software": "",
-    "main": "",
+    "software": "MstarUpgrade.bin -",
+    "main": "EL.MT9602V-FG48",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C32VAHW": {
     "modelo": "C32VAHW",
     "software": "",
-    "main": "",
+    "main": "EL.RT2864-FG48V1",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C32VBHG": {
     "modelo": "C32VBHG",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C32VJHW": {
     "modelo": "C32VJHW",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C32VJHZ": {
     "modelo": "C32VJHZ",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C40T1FN": {
     "modelo": "C40T1FN",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C40V1FN": {
     "modelo": "C40V1FN",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C40V1FV": {
     "modelo": "C40V1FV",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C40V2FV": {
     "modelo": "C40V2FV",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C40VAFG": {
     "modelo": "C40VAFG",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C40VAFV": {
     "modelo": "C40VAFV",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C40VAFW": {
     "modelo": "C40VAFW",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C40VBFG": {
     "modelo": "C40VBFG",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
 
   
@@ -3602,155 +3602,155 @@
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C40VJFZ": {
     "modelo": "C40VJFZ",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43T1UA": {
     "modelo": "C43T1UA",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43V1FN": {
     "modelo": "C43V1FN",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43V1FV": {
     "modelo": "C43V1FV",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43V1UA": {
     "modelo": "C43V1UA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43VAFG": {
     "modelo": "C43VAFG",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9216-FG75",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43VAFW": {
     "modelo": "C43VAFW",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C43VAUA": {
     "modelo": "C43VAUA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43VAUG": {
     "modelo": "C43VAUG",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL78"
   },
   "C43VAUW": {
     "modelo": "C43VAUW",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "78.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C50V1UA": {
     "modelo": "C50V1UA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C50V2UV": {
     "modelo": "C50V2UV",
-    "software": "",
-    "main": "",
+    "software": "MstarUpgrade.bin",
+    "main": "EL.MT9602V-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C50V3QA": {
     "modelo": "C50V3QA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C50VAUA": {
     "modelo": "C50VAUA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C50VAUG": {
     "modelo": "C50VAUG",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3759,8 +3759,8 @@
   },
   "C50VAUV": {
     "modelo": "C50VAUV",
-    "software": "",
-    "main": "",
+    "software": "MstarUpgrade.bin -",
+    "main": "EL.MT9602V-FG95",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3775,7 +3775,7 @@
     "precio": "90.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C50VSUG": {
     "modelo": "C50VSUG",
@@ -3790,33 +3790,33 @@
 
   "C55V1UA": {
     "modelo": "C55V1UA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C55V3QA": {
     "modelo": "C55V3QA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C55VAUA": {
     "modelo": "C55VAUA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C55VAUG": {
     "modelo": "C55VAUG",
@@ -3836,7 +3836,7 @@
     "precio": "90.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C55VSUG": {
     "modelo": "C55VSUG",
@@ -3850,48 +3850,48 @@
   },
   "C58T1UA": {
     "modelo": "C58T1UA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C65V1UA": {
     "modelo": "C65V1UA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-E",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C65V3QA": {
     "modelo": "C65V3QA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-E",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C65VAUA": {
     "modelo": "C65VAUA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "C65VAUG": {
     "modelo": "C65VAUG",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3906,12 +3906,12 @@
     "precio": "90.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "none"
   },
   "C65VSUG": {
     "modelo": "C65VSUG",
-    "software": "",
-    "main": "",
+    "software": "install.img",
+    "main": "EL.RT2885-E",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3920,8 +3920,8 @@
   },
   "C75T1UA": {
     "modelo": "C75T1UA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3930,8 +3930,8 @@
   },
   "C75VAUG": {
     "modelo": "C75VAUG",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3943,40 +3943,40 @@
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX24N1": {
     "modelo": "CX24N1",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX24P28": {
     "modelo": "CX24P28",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX24T1": {
     "modelo": "CX24T1",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
 
   
@@ -3985,220 +3985,220 @@
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32F1SM": {
     "modelo": "CX32F1SM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32F2SM": {
     "modelo": "CX32F2SM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32F3": {
     "modelo": "CX32F3",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32K1": {
     "modelo": "CX32K1",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32N3": {
     "modelo": "CX32N3",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32P28": {
     "modelo": "CX32P28",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32P28SM": {
     "modelo": "CX32P28SM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX32S1SM": {
     "modelo": "CX32S1SM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX40N1FSM": {
     "modelo": "CX40N1FSM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX40N3FSM": {
     "modelo": "CX40N3FSM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX40P28": {
     "modelo": "CX40P28",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX40P28FSM": {
     "modelo": "CX40P28FSM",
-    "software": "",
-    "main": "",
+    "software": "rtk2831.img",
+    "main": "P75-2831V6.0",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX40P28SM": {
     "modelo": "CX40P28SM",
-    "software": "",
-    "main": "",
+    "software": "rtk2831.img",
+    "main": "P75-2831V6.0",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX40Z1FSM": {
     "modelo": "CX40Z1FSM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX43F2FSM": {
     "modelo": "CX43F2FSM",
     "software": "",
-    "main": "",
+    "main": "P75-2831V6.0 CV6683H-D42",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX43F2USM": {
     "modelo": "CX43F2USM",
     "software": "",
-    "main": "",
+    "main": "EL.MT6886-E CV6886H-C",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX43P28FSM": {
     "modelo": "CX43P28FSM",
-    "software": "",
-    "main": "",
+    "software": "rtk2831.img",
+    "main": "P75-2831V6.0",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX43P28USM": {
     "modelo": "CX43P28USM",
     "software": "",
-    "main": "",
+    "main": "P150-2851V6.0 P75-2831V6.0 TP.MT5522.PC821",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX43S1FSM": {
     "modelo": "CX43S1FSM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX43S1USM": {
     "modelo": "CX43S1USM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
   "CX43Z1": {
     "modelo": "CX43Z1",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "75.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPCL75"
   },
 
   "CX50F2USM": {
@@ -4206,110 +4206,110 @@
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX50P28FSM": {
     "modelo": "CX50P28FSM",
-    "software": "",
-    "main": "",
+    "software": "rtk2831.img",
+    "main": "P130-2831V6.0",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX50P28USM": {
     "modelo": "CX50P28USM",
     "software": "",
-    "main": "",
+    "main": "TP.MT5522.PC821",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX50S1USM": {
     "modelo": "CX50S1USM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX55F2USM": {
     "modelo": "CX55F2USM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX55F3USM": {
     "modelo": "CX55F3USM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX55S1USM": {
     "modelo": "CX55S1USM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX5819NUSM": {
     "modelo": "CX5819NUSM",
     "software": "",
-    "main": "",
+    "main": "TP.MT5522.PC821",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX58F3USM": {
     "modelo": "CX58F3USM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX58N3USM": {
     "modelo": "CX58N3USM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX6519NUSM": {
     "modelo": "CX6519NUSM",
     "software": "",
     "main": "",
     "estado": "Disponible",
-    "precio": "90.000 COP",
+    "precio": "85.000 COP",
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPCX90"
+    "preference_id": "MPKL85"
   },
   "CX65E1USM": {
     "modelo": "CX65E1USM",
@@ -4370,6 +4370,150 @@
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCX90"
+  },
+
+  "C50KAUG": {
+    "modelo": "C50KAUG",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95-K",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+  
+  "C55KAUW": {
+    "modelo": "C55KAUW",
+    "software": "",
+    "main": "EL.RT2874-FG95V1-K",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "none"
+  },
+
+  "C32KAHZ": {
+    "modelo": "C32KAHZ",
+    "software": "aml_upgrade_package_signed.img aml_sdc_burn.ini",
+    "main": "EL.AM950-SG48",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "C55KAUG": {
+    "modelo": "C55KAUG",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95-K",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+
+  "C50KAUW": {
+    "modelo": "C50KAUW",
+    "software": "",
+    "main": "EL.RT2874-FG95V1-K",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "none"
+  },
+
+  "C65KAUG": {
+    "modelo": "C65KAUG",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG168",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCX90"
+  },
+
+
+  "VTL-4030ST2": {
+    "modelo": "VTL-4030ST2",
+    "software": "MS08GP_MAIN.bin",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
+  "VTL-4830ST2": {
+    "modelo": "VTL-4830ST2",
+    "software": "MS08GP_MAIN.bin",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
+  "VTL-3230ST2": {
+    "modelo": "VTL-3230ST2",
+    "software": "MS08GP_MAIN.bin",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
+  "VTL-FHD4041ST2": {
+    "modelo": "VTL-FHD4041ST2",
+    "software": "358_DVBT_8G.bin",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
+  "VTL-FHD4042SLT2": {
+    "modelo": "VTL-FHD4042SLT2",
+    "software": "358_DVBT_8G.bin",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
+  "VTL-HD3241ST2": {
+    "modelo": "VTL-HD3241ST2",
+    "software": "358_DVBT_8G.bin",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
+  },
+
+  "VTL-UHD5541ST2": {
+    "modelo": "VTL-UHD5541ST2",
+    "software": "658_DVBT_8G.bin",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL75"
   }
 
 
