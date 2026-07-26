@@ -20,7 +20,8 @@
     --glow: 0 0 20px rgba(0, 212, 255, 0.3);
     --font-head: 'Poppins', sans-serif;
     /*--font-head: 'Orbitron', monospace;*/
-    --font-body: 'Rajdhani', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    
 }
 
 body {
@@ -33,6 +34,7 @@ body {
     font-size: 16px;
     min-height: 100vh;
     overflow-x: hidden;
+
 }
 
 .container {
