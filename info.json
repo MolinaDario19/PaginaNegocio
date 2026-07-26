@@ -3810,8 +3810,8 @@
   },
   "C55VAUA": {
     "modelo": "C55VAUA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3820,8 +3820,8 @@
   },
   "C55VAUG": {
     "modelo": "C55VAUG",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
@@ -3860,8 +3860,8 @@
   },
   "C65V1UA": {
     "modelo": "C65V1UA",
-    "software": "",
-    "main": "",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "EL.MT9602Pro-E",
     "estado": "Disponible",
     "precio": "90.000 COP",
     "pdf": "",
