@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./images/LOGODG16.ico" type="image/x-icon">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styleKalley.css">
+    <link rel="stylesheet" href="./css/styleKalley_2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Meta descripción SEO -->
@@ -543,40 +543,81 @@ var Tawk_LoadStart = new Date();
         </section>
 
         <!-- Ventana emergente (modal) -->
-        <div id="modal" class="modal" style="display:none;">
-            <div class="modal-content">
-                <!-- Botón para cerrar el modal -->
-                <span id="cerrarModal" role="button" aria-label="Cerrar modal" style="cursor:pointer; font-size: 2em; float:right;">&times;</span>
+        <div class="modal-overlay" id="modalPagoOverlay" aria-hidden="true">
+            <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
 
-                <!-- Contenido del modal -->
-                <h2 id="modalTitulo"></h2>
-                <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
-                <p><strong>Main Board:</strong> <span id="modalMain"></span></p>
-                <p><strong>Estado:</strong> <span id="modalEstado"></span></p>
-                <p><strong>Precio:</strong> <span id="modalPrecio"></span></p>
-                <!-- <p><strong>Instrucciones:</strong> <span id="modalInstrucciones"></span></p> -->
-                 <div class="Buttons_modal">
-                    <div id="mp-button"></div>
-                    <!-- <script src="https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js"
-                    data-preference-id="243767526-f6dbf13c-0a53-4e32-9048-2e800978264e" data-source="button">
-                    </script> -->
-                    <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar un asesor</a>
-                 </div>
+                <div class="modal-head">
+                <!--<div class="eyebrow">Ficha técnica</div>-->
+                <h2 id="modalTitulo">Modelo</h2>
+                <button class="close-btn" id="cerrarModalBtn" aria-label="Cerrar">✕</button>
+                </div>
 
-                 <div class="usb-requirements">
-                    <p><strong>Importante:</strong> Tener disponibilidad de <strong>USB</strong> con las siguientes características:</p>
-                    <ul>
-                        <li>Capacidad: 4 o 8 GB</li>
-                        <li>Puerto: 2.0</li>
-                        <li>Formato: FAT32</li>
-                    </ul>
+                <div class="spec-sheet">
+                <div class="spec-row">
+                    <span class="spec-label">Software</span>
+                    <span class="spec-leader"></span>
+                    <span class="spec-value" id="modalSoftware">MAIN</span>
                 </div>
-                
-                <!-- PDF Embed -->
-                
-                <div id="modalPdfContainer" style="display: none; margin-top: 20px;">
-                    <iframe id="pdfViewer" width="100%" height="400px" style="border: none;"></iframe>
+                <div class="spec-row">
+                    <span class="spec-label">Main Board</span>
+                    <span class="spec-leader"></span>
+                    <span class="spec-value" id="modalMain">MAIN</span>
                 </div>
+                <div class="spec-row">
+                    <span class="spec-label">Estado</span>
+                    <span class="spec-leader"></span>
+                    <span class="spec-value">
+                    <span class="estado-pill" id="modalEstado">Disponible</span>
+                    </span>
+                </div>
+                </div>
+
+                <div class="requisitos">
+                <div class="requisitos-title">⚠ Importante antes de comprar</div>
+                <ul>
+                    <li>Ten disponible una <b>USB de 4 u 8 GB</b>.</li>
+                    <li>Necesitas un <b>computador</b> para realizar la descarga.</li>
+                </ul>
+                </div>
+
+                <div class="price-block">
+                <div>
+                    <div class="price-label">Precio</div>
+                    <div id="modalPrecio">$75.000</div>
+                </div>
+                <div class="download-hint">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00A650"  stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2 2 4-5"/>
+                    </svg>
+                    Pago seguro procesado por Mercado Pago
+                </div>
+                </div>
+
+                <div class="modal-actions">
+                <!-- Mercado Pago inyecta aquí su botón real (script data-preference-id).
+                    Antes de seleccionar un modelo se muestra un texto neutro. -->
+                <div id="mp-button">
+                    <p class="mp-placeholder">Selecciona un modelo para ver el botón de pago.</p>
+                </div>
+
+                <a class="whatsapp-btn"
+                    href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.12-1.34A9.96 9.96 0 0012.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.18c-1.6 0-3.16-.43-4.52-1.24l-.32-.19-3.04.8.81-2.96-.21-.31A8.16 8.16 0 013.86 12c0-4.51 3.67-8.18 8.18-8.18 4.51 0 8.18 3.67 8.18 8.18 0 4.51-3.67 8.18-8.18 8.18zm4.48-6.13c-.25-.12-1.45-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.25-.63.79-.78.95-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.36 1 2.52.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.55.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
+                    Contactar un asesor
+                </a>
+                </div>
+
+                <!-- Visor de PDF (manual / instrucciones), oculto hasta que el modelo traiga info.pdf -->
+                <div class="pdf-container" id="modalPdfContainer" style="display:none;">
+                <div class="requisitos-title" style="margin: 0 24px 6px;">📄 Manual del producto</div>
+                <iframe id="pdfViewer" title="Manual del producto" loading="lazy"></iframe>
+                </div>
+
+                <p class="fine-print">Después de confirmar el pago recibirás el software y las instrucciones necesarias 
+                para tu televisor. Además, contarás con asesoría técnica personalizada durante el proceso.</p>
+
             </div>
         </div>
         
@@ -697,7 +738,7 @@ var Tawk_LoadStart = new Date();
     <script src="./js/menu.js"></script>
     <script type="module" src="/js/badges.js"></script>
     <script type="module" src="/js/whatsapp.js"></script>
-    <script type="module" src="/js/updateInfo.js"></script>
+    <script type="module" src="/js/updateInfo2.js"></script>
     <script type="module" src="/js/buscador.js"></script>
     <script type="module" src="/js/copyright.js"></script>
 </body>

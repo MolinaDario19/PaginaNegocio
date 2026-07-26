@@ -1,0 +1,36 @@
+<div id="modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <!-- Botón para cerrar el modal -->
+                <span id="cerrarModal" role="button" aria-label="Cerrar modal" style="cursor:pointer; font-size: 2em; float:right;">&times;</span>
+
+                <!-- Contenido del modal -->
+                <h2 id="modalTitulo"></h2>
+                <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
+                <p><strong>Main Board:</strong> <span id="modalMain"></span></p>
+                <p><strong>Estado:</strong> <span id="modalEstado"></span></p>
+                <p><strong>Precio:</strong> <span id="modalPrecio"></span></p>
+                <!-- <p><strong>Instrucciones:</strong> <span id="modalInstrucciones"></span></p> -->
+                 <div class="Buttons_modal">
+                    <div id="mp-button"></div>
+                    <!-- <script src="https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="243767526-f6dbf13c-0a53-4e32-9048-2e800978264e" data-source="button">
+                    </script> -->
+                    <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar un asesor</a>
+                 </div>
+
+                 <div class="usb-requirements">
+                    <p><strong>Importante:</strong> Tener disponibilidad de <strong>USB</strong> con las siguientes características:</p>
+                    <ul>
+                        <li>Capacidad: 4 o 8 GB</li>
+                        <li>Puerto: 2.0</li>
+                        <li>Formato: FAT32</li>
+                    </ul>
+                </div>
+                
+                <!-- PDF Embed -->
+                
+                <div id="modalPdfContainer" style="display: none; margin-top: 20px;">
+                    <iframe id="pdfViewer" width="100%" height="400px" style="border: none;"></iframe>
+                </div>
+            </div>
+        </div>
