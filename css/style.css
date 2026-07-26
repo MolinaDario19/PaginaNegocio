@@ -431,7 +431,7 @@ ul li:hover a:before{
         transform: translateX(0);
     }
     to {
-        transform: translateX(calc(-180px * 9));
+        transform: translateX(calc(-180px * 10));
     }
 }
 
