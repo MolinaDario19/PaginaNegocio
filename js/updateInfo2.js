@@ -56,6 +56,29 @@ const overlay = document.getElementById('modalPagoOverlay');
     })
     .catch(err => console.error('Error cargando el archivo JSON:', err));
 
+
+    //WhatsApp
+    const telefono = "573103841388";
+
+    function actualizarWhatsApp(info) {
+
+        const mensaje = `Hola 👋
+
+    Estoy interesado en el siguiente software.
+
+    Modelo: ${info.modelo}
+    Precio: ${info.precio}
+    Estado: ${info.estado}
+
+    ¿Podrían brindarme más información?
+
+    Muchas gracias.`;
+
+        const enlace = `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
+
+        document.getElementById("whatsappBtn").href = enlace;
+    }
+
   function llenarModalDesdeRegistro(info){
     modeloActual = info;
 
@@ -109,6 +132,8 @@ const overlay = document.getElementById('modalPagoOverlay');
       pdfViewer.src = '';
       document.getElementById('modalPdfContainer').style.display = 'none';
     }
+
+    actualizarWhatsApp(info);
   }
 
   function cerrarModalPago() {
