@@ -62,13 +62,13 @@ const overlay = document.getElementById('modalPagoOverlay');
 
     function actualizarWhatsApp(info) {
 
-        const mensaje = `Hola 👋
+        const mensaje = `Hola DigitalElectronics👋
 
     Estoy interesado en el siguiente software.
 
-    Modelo: ${info.modelo}
-    Precio: ${info.precio}
-    Estado: ${info.estado}
+    *Modelo:* ${info.modelo}
+    *Precio:* ${info.precio}
+    *Estado:* ${info.estado}
 
     ¿Podrían brindarme más información?
 
