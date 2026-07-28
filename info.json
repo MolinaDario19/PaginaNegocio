@@ -1950,6 +1950,17 @@
     "preference_id": "MPCL78"
   },
 
+  "UHD 55KG85 BT GOOGLE T2": {
+    "modelo": "UHD 55KG85 BT GOOGLE T2",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "78.000 COP",
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
   "UHD 50LO70 BT ANDROID T2": {
     "modelo": "UHD 50LO70 BT ANDROID T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
