@@ -1,7 +1,7 @@
 import { MercadoPagoConfig, Preference } from "mercadopago";
 
 const client = new MercadoPagoConfig({
-    accessToken: process.env.MP_ACCESS_TOKEN
+    accessToken: process.env.MP_ACCESS_TOKEN_PRO
 });
 
 export default async function handler(req, res) {
@@ -36,9 +36,9 @@ export default async function handler(req, res) {
                 ],
 
                 back_urls: {
-                    success: "https://digitalelectronics.com.co/success",
-                    failure: "https://digitalelectronics.com.co/failure",
-                    pending: "https://digitalelectronics.com.co/pending"
+                    success: "https://digitalelectronics.com.co/payment.html",
+                    failure: "https://digitalelectronics.com.co/payment.html",
+                    pending: "https://digitalelectronics.com.co/payment.html"
                 },
 
                 auto_return: "approved"

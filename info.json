@@ -1720,6 +1720,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -1730,6 +1731,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -1740,6 +1742,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1750,6 +1753,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1760,6 +1764,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1770,6 +1775,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1780,6 +1786,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1790,6 +1797,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1800,6 +1808,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1810,6 +1819,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1820,6 +1830,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1830,6 +1841,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1840,6 +1852,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1850,6 +1863,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1861,6 +1875,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1872,6 +1887,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1882,6 +1898,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1892,6 +1909,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1902,6 +1920,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1912,6 +1931,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1923,6 +1943,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1933,7 +1954,8 @@
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
-    "precio": "78.000 COP",
+    "precio": "85.000 COP",
+    "valor": 85000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL78"
@@ -1944,8 +1966,8 @@
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
-    "precio": "78.000 COP",
-    "valor": 78000,
+    "precio": "85.000 COP",
+    "valor": 85000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL78"
@@ -1958,7 +1980,8 @@
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
     "estado": "Disponible",
-    "precio": "78.000 COP",
+    "precio": "85.000 COP",
+    "valor": 85000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL78"
@@ -1970,6 +1993,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1980,6 +2004,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -1990,6 +2015,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2000,6 +2026,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2010,6 +2037,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2020,6 +2048,7 @@
     "main": "40-MS08GP-MAB2HG",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2030,6 +2059,7 @@
     "main": "40-MS08GP-MAB2HG",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2040,6 +2070,7 @@
     "main": "40-MS08GP-MAB2HG",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2050,6 +2081,7 @@
     "main": "40-MS08GP-MAB2HG",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2060,6 +2092,7 @@
     "main": "40-MS08GP-MAB2HG",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "2MPCL70"
@@ -2070,6 +2103,7 @@
     "main": "40-MS08GP-MAB2HG",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2080,6 +2114,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2090,6 +2125,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "2MPCL70"
@@ -2100,6 +2136,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2110,6 +2147,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2120,6 +2158,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2130,6 +2169,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2140,6 +2180,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2150,6 +2191,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2160,6 +2202,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2170,6 +2213,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2180,6 +2224,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2190,6 +2235,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2200,6 +2246,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2210,6 +2257,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2220,6 +2268,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2230,6 +2279,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2240,6 +2290,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2250,6 +2301,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2260,6 +2312,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2270,6 +2323,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2280,6 +2334,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2290,6 +2345,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2300,6 +2356,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2310,6 +2367,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2320,6 +2378,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2330,6 +2389,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2340,6 +2400,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2350,6 +2411,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2360,6 +2422,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2370,6 +2433,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2380,6 +2444,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2390,6 +2455,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2400,6 +2466,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2410,6 +2477,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2420,6 +2488,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2430,6 +2499,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2440,6 +2510,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2450,6 +2521,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2460,6 +2532,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2470,6 +2543,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2480,6 +2554,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
@@ -2490,6 +2565,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2500,6 +2576,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2510,6 +2587,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "75.000 COP",
+    "valor": 75000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
@@ -2520,6 +2598,7 @@
     "main": "",
     "estado": "Disponible",
     "precio": "70.000 COP",
+    "valor": 70000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL70"
