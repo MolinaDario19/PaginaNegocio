@@ -14,7 +14,8 @@ export default async function handler(req, res) {
 
     try {
 
-        const { modelo, valor } = req.body;
+        //const { modelo, valor } = req.body;
+        const { modelo, titulo, valor } = req.body;
 
         if (!modelo || !valor) {
             return res.status(400).json({
@@ -28,9 +29,14 @@ export default async function handler(req, res) {
             body: {
                 items: [
                     {
-                        title: modelo,
+                        /*title: modelo,
                         quantity: 1,
                         unit_price: Number(valor),
+                        currency_id: "COP"*/
+
+                        title: titulo,
+                        quantity: 1,
+                        unit_price: valor,
                         currency_id: "COP"
                     }
                 ],

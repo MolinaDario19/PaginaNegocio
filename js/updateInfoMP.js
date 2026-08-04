@@ -9,20 +9,32 @@ const overlay = document.getElementById('modalPagoOverlay');
   // ------------------------------------------------------------------
   // Catálogo de modelos: se carga UNA vez desde tu JSON real.
   // ------------------------------------------------------------------
-  const RUTA_JSON = '/info.json'; // ajusta si tu archivo está en otra ruta
+  const RUTA_JSON = '/info.json'; 
   let catalogoModelos = null;
   let modeloActual = null;
  
 
   async function crearPreferencia(info){
 
-    const respuesta = await fetch("/api/crear-preferencia",{
+    /* const respuesta = await fetch("/api/crear-preferencia",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
         },
         body:JSON.stringify({
             modelo: info.modelo,
+            valor: info.valor
+        })
+    }); */
+
+    const respuesta = await fetch("/api/crear-preferencia", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            modelo: info.modelo,
+            titulo: `Software original ${info.modelo}`,
             valor: info.valor
         })
     });
