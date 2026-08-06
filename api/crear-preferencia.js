@@ -32,6 +32,12 @@ export default async function handler(req, res) {
 
                 external_reference: referencia,
 
+                metadata: {
+                    comercio: "DigitalElectronics",
+                    modelo: modelo,
+                    tipo_producto: "Software digital"
+                },
+
                 notification_url: "https://digitalelectronics.com.co/api/webhook",
 
                 items: [
@@ -50,8 +56,8 @@ export default async function handler(req, res) {
 
                 back_urls: {
                     success: "https://digitalelectronics.com.co/payment.html",
-                    failure: "https://digitalelectronics.com.co/payment.html",
-                    pending: "https://digitalelectronics.com.co/payment.html"
+                    failure: "https://digitalelectronics.com.co",
+                    pending: "https://digitalelectronics.com.co"
                 },
 
                 auto_return: "approved"
@@ -59,7 +65,8 @@ export default async function handler(req, res) {
         });
 
         return res.status(200).json({
-            preference_id: resultado.id
+            preference_id: resultado.id,
+            external_reference: referencia
         });
 
     } catch (error) {
