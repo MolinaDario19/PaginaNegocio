@@ -14,7 +14,6 @@ export default async function handler(req, res) {
 
     try {
 
-        //const { modelo, valor } = req.body;
         const { modelo, titulo, valor } = req.body;
 
         if (!modelo || !valor) {
@@ -23,20 +22,28 @@ export default async function handler(req, res) {
             });
         }
 
+        // Referencia única de la compra
+        const referencia = `DE-${Date.now()}-${Math.floor(Math.random() * 10000)}`;
+
         const preference = new Preference(client);
 
         const resultado = await preference.create({
             body: {
+
+                external_reference: referencia,
+
+                notification_url: "https://digitalelectronics.com.co/api/webhook",
+
                 items: [
                     {
-                        /*title: modelo,
-                        quantity: 1,
-                        unit_price: Number(valor),
-                        currency_id: "COP"*/
-
                         title: titulo,
+
+                        description: `Soporte técnico para recuperación del en televisor modelo: ${modelo}.`,
+
                         quantity: 1,
-                        unit_price: valor,
+
+                        unit_price: Number(valor),
+
                         currency_id: "COP"
                     }
                 ],
@@ -51,11 +58,9 @@ export default async function handler(req, res) {
             }
         });
 
-
         return res.status(200).json({
             preference_id: resultado.id
         });
-
 
     } catch (error) {
 

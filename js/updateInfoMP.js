@@ -34,7 +34,7 @@ const overlay = document.getElementById('modalPagoOverlay');
         },
         body: JSON.stringify({
             modelo: info.modelo,
-            titulo: `Software original ${info.modelo}`,
+            titulo: `Servicio técnico ${info.modelo}`,
             valor: info.valor
         })
     });
