@@ -2143,6 +2143,42 @@
     "preference_id": "MPCL78"
   },
 
+  "FHD 32KG90 BT GOOGLE T2": {
+    "modelo": "FHD 32KG90 BT GOOGLE T2",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "80.000 COP",
+    "valor": 80000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "FHD 43KG90 BT GOOGLE T2": {
+    "modelo": "FHD 43KG90 BT GOOGLE T2",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "80.000 COP",
+    "valor": 80000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "QLED 50KG190 BT T2": {
+    "modelo": "QLED 50KG190 BT T2",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
  
 
   "UHD 55KG85 BT GOOGLE T2": {
