@@ -159,20 +159,32 @@ const overlay = document.getElementById('modalPagoOverlay');
                 console.log('RESPUESTA WOMPI:', datos);
 
                 if (!respuesta.ok) {
-                    throw new Error(datos.error || 'Error creando transacción Wompi');
+                    throw new Error(
+                        datos.error || 'Error creando transacción Wompi'
+                    );
                 }
 
                 // Abrir Checkout de Wompi
-                const checkoutUrl =
-                    `https://checkout.wompi.co/p/?public-key=${encodeURIComponent(datos.publicKey)}` +
-                    `&currency=${encodeURIComponent(datos.moneda)}` +
-                    `&amount-in-cents=${encodeURIComponent(datos.montoCentavos)}` +
-                    `&reference=${encodeURIComponent(datos.referencia)}` +
-                    `&signature:integrity=${encodeURIComponent(datos.firma)}` +
-                    `&redirect-url=${encodeURIComponent('https://digitalelectronics.com.co/payment.html')}`;
+                const checkout = new WidgetCheckout({
+                    currency: datos.moneda,
+                    amountInCents: datos.montoCentavos,
+                    reference: datos.referencia,
+                    publicKey: datos.publicKey,
 
-                window.location.href = checkoutUrl;
-                
+                    signature: {
+                        integrity: datos.firma
+                    },
+
+                    redirectUrl:
+                        'https://digitalelectronics.com.co/payment.html'
+                });
+
+                checkout.open(function (result) {
+
+                    console.log('RESULTADO WOMPI:', result);
+
+                });
+
             } catch (error) {
 
                 console.error('ERROR WOMPI:', error);
@@ -183,8 +195,6 @@ const overlay = document.getElementById('modalPagoOverlay');
 
         };
     }
-
-
 
 
 
