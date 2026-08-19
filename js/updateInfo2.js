@@ -164,6 +164,14 @@ const overlay = document.getElementById('modalPagoOverlay');
                     );
                 }
 
+                console.log('DATOS QUE RECIBE WOMPI:', {
+                  currency: datos.moneda,
+                  amountInCents: datos.montoCentavos,
+                  reference: datos.referencia,
+                  publicKey: datos.publicKey,
+                  integrity: datos.firma
+              });
+
                 // Abrir Checkout de Wompi
                 const checkout = new WidgetCheckout({
                     currency: datos.moneda,
