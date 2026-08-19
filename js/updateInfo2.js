@@ -162,8 +162,17 @@ const overlay = document.getElementById('modalPagoOverlay');
                     throw new Error(datos.error || 'Error creando transacción Wompi');
                 }
 
-                alert('La conexión con Wompi funciona correctamente.');
+                // Abrir Checkout de Wompi
+                const checkoutUrl =
+                    `https://checkout.wompi.co/p/?public-key=${encodeURIComponent(datos.publicKey)}` +
+                    `&currency=${encodeURIComponent(datos.moneda)}` +
+                    `&amount-in-cents=${encodeURIComponent(datos.montoCentavos)}` +
+                    `&reference=${encodeURIComponent(datos.referencia)}` +
+                    `&signature:integrity=${encodeURIComponent(datos.firma)}` +
+                    `&redirect-url=${encodeURIComponent('https://digitalelectronics.com.co/payment.html')}`;
 
+                window.location.href = checkoutUrl;
+                
             } catch (error) {
 
                 console.error('ERROR WOMPI:', error);
