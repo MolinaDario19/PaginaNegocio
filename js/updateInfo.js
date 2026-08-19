@@ -31,33 +31,22 @@ fetch('/info.json')
     console.log('Enlaces encontrados:', enlaces);
 
     enlaces.forEach(link => {
-      link.addEventListener('click', async (e) => {
+      link.addEventListener('click', (e) => {
         e.preventDefault();
 
         const modelo = e.currentTarget.dataset.modelo;
-        const info = data[modelo];
+        const info = data[modelo]; // CORRECTO
 
         if (info) {
 
-          const respuestaWompi = await fetch("/api/crear-wompi", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-              modelo: info.modelo,
-              titulo: `Software original - ${info.modelo}`,
-              valor: info.valor
-            })
-          });
+          document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
+          document.getElementById('modalSoftware').textContent = info.software || '...';
+          document.getElementById('modalMain').textContent = info.main || '...';
+          document.getElementById('modalEstado').textContent = info.estado || '...';
+          document.getElementById('modalPrecio').textContent = info.precio || '...';
+          // document.getElementById('modalInstrucciones').textContent = info.instrucciones || 'No disponible';
 
-          const datosWompi = await respuestaWompi.json();
-
-          console.log("RESPUESTA WOMPI:", datosWompi);
-
-          // 
-            ////////
-
+          
           const mpButtonContainer = document.getElementById('mp-button');
           mpButtonContainer.innerHTML = ''; // Limpia el contenedor
 

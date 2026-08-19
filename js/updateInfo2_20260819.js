@@ -79,7 +79,7 @@ const overlay = document.getElementById('modalPagoOverlay');
         document.getElementById("whatsappBtn").href = enlace;
     }
 
-  async function llenarModalDesdeRegistro(info){
+  function llenarModalDesdeRegistro(info){
     modeloActual = info;
 
     document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
@@ -121,63 +121,6 @@ const overlay = document.getElementById('modalPagoOverlay');
         mpButtonContainer.innerHTML = '<p class="mp-unavailable">Este producto no está disponible para pago en línea.</p>';
       }
     }
-
-    // --------------------------------------------------
-    // WOMPI
-    // --------------------------------------------------
-
-    const wompiButtonContainer = document.getElementById('wompi-button');
-
-    if (wompiButtonContainer) {
-
-        wompiButtonContainer.innerHTML = `
-            <button id="btnWompi" type="button">
-                Pagar con Wompi
-            </button>
-        `;
-
-        document.getElementById('btnWompi').onclick = async () => {
-
-            try {
-
-                const respuesta = await fetch('/api/crear-wompi', {
-                    method: 'POST',
-
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-
-                    body: JSON.stringify({
-                        modelo: info.modelo,
-                        titulo: `Software original - ${info.modelo}`,
-                        valor: info.valor
-                    })
-                });
-
-                const datos = await respuesta.json();
-
-                console.log('RESPUESTA WOMPI:', datos);
-
-                if (!respuesta.ok) {
-                    throw new Error(datos.error || 'Error creando transacción Wompi');
-                }
-
-                alert('La conexión con Wompi funciona correctamente.');
-
-            } catch (error) {
-
-                console.error('ERROR WOMPI:', error);
-
-                alert('No fue posible iniciar el pago con Wompi.');
-
-            }
-
-        };
-    }
-
-
-
-
 
     // --- Visor de PDF (manual / instrucciones) ---
     const pdfViewer = document.getElementById('pdfViewer');
