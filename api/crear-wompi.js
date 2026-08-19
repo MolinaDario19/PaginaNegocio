@@ -43,6 +43,18 @@ export default async function handler(req, res) {
             .update(cadena)
             .digest("hex");
 
+        console.log("WOMPI DEBUG:", {
+            publicKey: process.env.WOMPI_PUBLIC_KEY,
+            secretExiste: !!process.env.WOMPI_INTEGRITY_SECRET,
+            secretInicio: process.env.WOMPI_INTEGRITY_SECRET?.substring(0, 14),
+            secretLongitud: process.env.WOMPI_INTEGRITY_SECRET?.length,
+            referencia,
+            montoCentavos,
+            moneda,
+            cadenaLongitud: cadena.length,
+            firma
+        });
+
         return res.status(200).json({
             publicKey: process.env.WOMPI_PUBLIC_KEY,
             referencia,
