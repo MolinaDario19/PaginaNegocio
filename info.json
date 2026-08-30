@@ -3801,6 +3801,17 @@
     "instrucciones": "",
     "preference_id": "MPHY75"
   },
+  "HYLED5030QG": {
+    "modelo": "HYLED5030QG",
+    "software": "install.img",
+    "main": "P150-2851FTV6.4",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "valor": 90000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY90"
+  },
   "HYLED3255HIM": {
     "modelo": "HYLED3255HIM",
     "software": "V8-NT63CLA-LF1V740",
