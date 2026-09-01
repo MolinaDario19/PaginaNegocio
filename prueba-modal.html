@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prueba · Modal de pago DigitalElectronics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  /* ============================================================
+     ESTILOS DE LA PÁGINA DE PRUEBA (fuera del modal)
+     ============================================================ */
+  body{
+    margin:0;
+    min-height:100vh;
+    background: radial-gradient(1200px 600px at 50% 0%, #0E1826 0%, #05080C 70%);
+    font-family: 'Inter', sans-serif;
+    color: #E7EEF5;
+    padding: 40px 20px 80px;
+  }
+  .page-header{
+    max-width: 900px;
+    margin: 0 auto 32px;
+    text-align:center;
+  }
+  .page-header h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 26px;
+    margin: 0 0 8px;
+  }
+  .page-header p{
+    color:#7C8DA0;
+    font-size: 14px;
+    margin:0;
+  }
+  .catalogo-grid{
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content:center;
+  }
+
+  /* ============================================================
+     ESTILOS DEL MODAL DE PAGO — DigitalElectronics
+     ============================================================ */
+  :root{
+    --bg-overlay: rgba(4,8,12,.8);
+    --panel: #0B121C;
+    --panel-alt: #101B2B;
+    --border: #1E2C3E;
+    --accent: #2FE8C8;
+    --accent-dim: #1B7F70;
+    --accent-warm: #FFB84D;
+    --danger: #FF5C6C;
+    --text: #E7EEF5;
+    --text-muted: #7C8DA0;
+    --radius: 18px;
+  }
+
+  .modal-overlay, .modal-overlay *{ box-sizing: border-box; }
+
+  .modal-overlay{
+    position:fixed;
+    inset:0;
+    background: var(--bg-overlay);
+    backdrop-filter: blur(6px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 20px;
+    opacity:0;
+    pointer-events:none;
+    transition: opacity .22s ease;
+    z-index: 999;
+  }
+  .modal-overlay.is-open{ opacity:1; pointer-events:auto; }
+
+  .modal-card{
+    width:100%;
+    max-width: 430px;
+    max-height: 92vh;
+    overflow-y: auto;
+    background: linear-gradient(180deg, var(--panel-alt) 0%, var(--panel) 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(47,232,200,.04);
+    transform: translateY(18px) scale(.98);
+    transition: transform .25s cubic-bezier(.2,.8,.2,1);
+  }
+  .modal-overlay.is-open .modal-card{ transform: translateY(0) scale(1); }
+  .modal-card::-webkit-scrollbar{ width:8px; }
+  .modal-card::-webkit-scrollbar-thumb{ background: var(--border); border-radius:8px; }
+
+  .modal-head{
+    padding: 22px 24px 16px;
+    border-bottom: 1px dashed var(--border);
+    position:relative;
+  }
+  .eyebrow{
+    display:flex; align-items:center; gap:8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; letter-spacing:1.5px; text-transform:uppercase;
+    color: var(--accent); margin-bottom:10px;
+  }
+  .eyebrow::before{
+    content:""; width:6px; height:6px; border-radius:50%;
+    background: var(--accent); box-shadow: 0 0 0 3px rgba(47,232,200,.15);
+  }
+  #modalTitulo{
+    margin:0;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700; font-size: 22px; line-height:1.25; letter-spacing:-.2px;
+  }
+  .close-btn{
+    position:absolute; top:16px; right:16px;
+    width:34px; height:34px; border-radius:50%;
+    border:1px solid var(--border);
+    background: rgba(255,255,255,.03);
+    color: var(--text-muted); font-size:16px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition: background .15s, color .15s;
+  }
+  .close-btn:hover{ background: rgba(255,255,255,.08); color: var(--text); }
+  .close-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+  .spec-sheet{ padding: 18px 24px 4px; display:flex; flex-direction:column; gap: 12px; }
+  .spec-row{ display:flex; align-items:baseline; gap:8px; }
+  .spec-label{
+    font-family:'IBM Plex Mono', monospace; font-size:12px;
+    color: var(--text-muted); white-space:nowrap;
+    text-transform:uppercase; letter-spacing:.5px;
+  }
+  .spec-leader{ flex:1; border-bottom: 1px dotted var(--border); transform: translateY(-4px); }
+  .spec-value{
+    font-family:'IBM Plex Mono', monospace; font-size:13.5px;
+    font-weight:500; text-align:right; max-width: 55%;
+  }
+
+  .estado-pill{
+    display:inline-flex; align-items:center; gap:6px;
+    font-family:'IBM Plex Mono', monospace; font-size:12px; font-weight:600;
+    padding: 3px 10px 3px 8px; border-radius: 999px;
+    background: rgba(47,232,200,.1); color: var(--accent);
+    border: 1px solid rgba(47,232,200,.35);
+  }
+  .estado-pill::before{
+    content:""; width:6px; height:6px; border-radius:50%;
+    background: currentColor; box-shadow: 0 0 6px currentColor;
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  .estado-pill.agotado{
+    background: rgba(255,92,108,.1); color: var(--danger);
+    border-color: rgba(255,92,108,.35);
+  }
+  @keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:.35; } }
+
+  .requisitos{
+    margin: 16px 24px 0; padding: 12px 14px;
+    border: 1px dashed var(--border); border-radius: 12px;
+    background: rgba(255,184,77,.04);
+  }
+  .requisitos-title{
+    display:flex; align-items:center; gap:7px;
+    font-family:'IBM Plex Mono', monospace; font-size:11px;
+    text-transform:uppercase; letter-spacing:1px;
+    color: var(--accent-warm); margin-bottom:8px;
+  }
+  .requisitos ul{ margin:0; padding-left:18px; font-size:12.5px; color: var(--text-muted); line-height:1.7; }
+  .requisitos li b{ color: var(--text); font-weight:600; }
+
+  .price-block{
+    margin: 20px 24px 0; padding-top: 18px;
+    border-top: 1px dashed var(--border);
+    display:flex; align-items:flex-end; justify-content:space-between; gap: 10px;
+  }
+  .price-label{
+    font-family:'IBM Plex Mono', monospace; font-size:11px;
+    text-transform:uppercase; letter-spacing:1px;
+    color: var(--text-muted); margin-bottom:4px;
+  }
+  #modalPrecio{
+    font-family:'IBM Plex Mono', monospace; font-size: 28px; font-weight:600;
+    color: var(--accent-warm); letter-spacing:-.5px;
+  }
+  .download-hint{
+    display:flex; align-items:center; gap:6px; font-size:11.5px;
+    color: var(--text-muted); max-width: 150px; text-align:right; line-height:1.4;
+  }
+  .download-hint svg{ flex-shrink:0; }
+
+  .modal-actions{ padding: 18px 24px 24px; display:flex; flex-direction:column; gap:10px; }
+
+  .pdf-container{ margin: 4px 0 18px; }
+  .pdf-container iframe{
+    display:block; width: calc(100% - 48px); margin: 0 24px; height: 320px;
+    border: 1px solid var(--border); border-radius: 12px; background: #fff;
+  }
+
+  .whatsapp-btn{
+    width:100%; padding: 12px 18px; border-radius: 12px;
+    border: 1px solid var(--border); background: rgba(255,255,255,.02);
+    color: var(--text); font-family:'Inter', sans-serif; font-weight:500; font-size:13.5px;
+    text-decoration:none; display:flex; align-items:center; justify-content:center; gap:8px;
+    transition: background .15s, border-color .15s;
+  }
+  .whatsapp-btn:hover{ background: rgba(255,255,255,.05); border-color:#2b3a4f; }
+  .whatsapp-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .whatsapp-btn svg{ flex-shrink:0; color:#25D366; }
+
+  .fine-print{ text-align:center; font-size:10.5px; color: var(--text-muted); margin: 2px 24px 20px; line-height:1.5; }
+
+  @media (max-width: 380px){
+    #modalPrecio{ font-size:24px; }
+    .spec-value{ font-size:12.5px; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .estado-pill::before{ animation:none; }
+    .modal-card, .modal-overlay{ transition:none; }
+  }
+
+  /* ---------- Tarjetas del catálogo ---------- */
+  .modelo-link{ display:block; text-decoration:none; color: inherit; }
+  .modelo-link:focus-visible .cuadro{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .cuadro{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 10px;
+    width: 150px; min-height: 120px; padding: 18px 14px;
+    background: linear-gradient(180deg, var(--panel-alt) 0%, var(--panel) 100%);
+    border: 1px solid var(--border); border-radius: 14px; text-align:center;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+  .cuadro .icono-carpeta{ font-size: 26px; color: var(--accent); filter: drop-shadow(0 0 6px rgba(47,232,200,.25)); }
+  .cuadro span{
+    font-family:'IBM Plex Mono', monospace; font-size: 11.5px; font-weight:500; line-height:1.4;
+    color: var(--text); text-transform: uppercase; letter-spacing:.3px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .modelo-link:hover .cuadro, .modelo-link:focus-visible .cuadro{
+    transform: translateY(-3px); border-color: rgba(47,232,200,.45);
+    box-shadow: 0 10px 24px rgba(0,0,0,.35), 0 0 0 1px rgba(47,232,200,.08);
+  }
+  .modelo-link:active .cuadro{ transform: translateY(-1px); }
+  .catalogo-grid{ display:flex; flex-wrap:wrap; gap: 16px; }
+  @media (max-width: 480px){
+    .cuadro{ width: 130px; min-height: 108px; }
+    .cuadro .icono-carpeta{ font-size:22px; }
+    .cuadro span{ font-size: 10.5px; }
+  }
+
+  /* ---------- Métodos de pago (pestañas) ---------- */
+  .payment-methods{ display:flex; flex-direction:column; gap: 12px; }
+  .payment-tabs{
+    display:flex; gap: 4px; padding: 4px;
+    background: rgba(255,255,255,.03); border: 1px solid var(--border); border-radius: 12px;
+  }
+  .payment-tab{
+    flex:1; display:flex; align-items:center; justify-content:center; gap: 7px;
+    padding: 9px 10px; border:none; border-radius: 9px; background: transparent;
+    color: var(--text-muted); font-family:'Inter', sans-serif; font-weight:500; font-size: 12.5px;
+    cursor:pointer; transition: background .15s ease, color .15s ease;
+  }
+  .payment-tab:hover{ color: var(--text); }
+  .payment-tab.is-active{
+    background: var(--panel-alt); color: var(--text);
+    box-shadow: 0 1px 0 rgba(255,255,255,.03) inset, 0 4px 10px rgba(0,0,0,.25);
+  }
+  .payment-tab:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tab-dot{ width: 8px; height: 8px; border-radius: 50%; flex-shrink:0; }
+  .tab-dot--mp{ background: #00B1EA; }
+  .tab-dot--wompi{ background: #00D6A3; }
+
+  .payment-panel{ display:none; flex-direction:column; gap: 8px; animation: fadeInPanel .18s ease; }
+  .payment-panel.is-active{ display:flex; }
+  @keyframes fadeInPanel{ from{ opacity:0; transform: translateY(3px); } to{ opacity:1; transform: translateY(0); } }
+  .payment-panel-tag{ margin:0; text-align:center; font-size: 11px; color: var(--text-muted); }
+
+  #mp-button{ width:100%; }
+  .mp-placeholder{
+    margin:0; padding: 14px; text-align:center; font-size:13px; color: var(--text-muted);
+    border: 1px dashed var(--border); border-radius: 12px;
+  }
+  .mp-unavailable{
+    margin:0; padding: 14px; text-align:center; font-size:13px; color: var(--danger);
+    border: 1px dashed rgba(255,92,108,.4); border-radius: 12px;
+  }
+
+  .wompi-btn{
+    width:100%; padding: 13px 16px; border:none; border-radius: 12px;
+    background: linear-gradient(135deg, #00D6A3, #00A883); color: #04241C;
+    font-family:'Space Grotesk', sans-serif; font-weight: 700; font-size: 14.5px;
+    display:flex; align-items:center; justify-content:center; gap: 8px;
+    cursor: pointer; transition: transform .12s ease, filter .12s ease;
+  }
+  .wompi-btn:hover{ filter: brightness(1.06); transform: translateY(-1px); }
+  .wompi-btn:active{ transform: translateY(0); }
+  .wompi-btn:focus-visible{ outline: 2px solid #fff; outline-offset: 2px; }
+
+  .payment-secure{
+    display:flex; align-items:center; justify-content:center; gap: 6px;
+    margin: 2px 0 0; font-size: 11px; color: var(--text-muted);
+  }
+  .payment-secure svg{ color: var(--accent); flex-shrink:0; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Catálogo de prueba</h1>
+  <p>Haz clic en cualquier modelo para abrir el modal de pago.</p>
+</div>
+
+<!-- ================================================================
+     CATÁLOGO — mismos enlaces que ya usas en tu página real.
+     ================================================================ -->
+<div class="catalogo-grid">
+  <a class="modelo-link" href="C43VAUW" data-modelo="C43VAUW" title="Software original C43VAUW" aria-label="Software original C43VAUW">
+    <div class="cuadro"><i class="fas fa-folder icono-carpeta"></i><span>C43VAUW</span></div>
+  </a>
+  <a class="modelo-link" href="C50V1UA" data-modelo="C50V1UA" title="Software original C50V1UA" aria-label="Software original C50V1UA">
+    <div class="cuadro"><i class="fas fa-folder icono-carpeta"></i><span>C50V1UA</span></div>
+  </a>
+  <a class="modelo-link" href="LED 32LO68 BT ANDROID T2 C" data-modelo="LED 32LO68 BT ANDROID T2 C" title="Software original LED 32LO68 BT ANDROID T2 C" aria-label="Software original LED 32LO68 BT ANDROID T2 C">
+    <div class="cuadro"><i class="fas fa-folder icono-carpeta"></i><span>LED 32LO68 BT ANDROID T2 C</span></div>
+  </a>
+  <a class="modelo-link" href="MPKL78" data-modelo="MPKL78" title="Software original MPKL78 (agotado, para probar ese estado)" aria-label="Software original MPKL78">
+    <div class="cuadro"><i class="fas fa-folder icono-carpeta"></i><span>MPKL78</span></div>
+  </a>
+</div>
+
+<!-- ================================================================
+     MODAL DE PAGO
+     ================================================================ -->
+<div class="modal-overlay" id="modalPagoOverlay" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+
+    <div class="modal-head">
+      <h2 id="modalTitulo">Modelo</h2>
+      <button class="close-btn" id="cerrarModalBtn" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="spec-sheet">
+      <div class="spec-row">
+        <span class="spec-label">Software</span>
+        <span class="spec-leader"></span>
+        <span class="spec-value" id="modalSoftware">—</span>
+      </div>
+      <div class="spec-row" id="filaMain">
+        <span class="spec-label">Main Board</span>
+        <span class="spec-leader"></span>
+        <span class="spec-value" id="modalMain">—</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Estado</span>
+        <span class="spec-leader"></span>
+        <span class="spec-value"><span class="estado-pill" id="modalEstado">Disponible</span></span>
+      </div>
+    </div>
+
+    <div class="requisitos">
+      <div class="requisitos-title">⚠ Importante antes de comprar</div>
+      <ul>
+        <li>Ten disponible una <b>USB de 4 u 8 GB</b>.</li>
+        <li>Necesitas un <b>computador</b> para realizar la descarga.</li>
+      </ul>
+    </div>
+
+    <div class="price-block">
+      <div>
+        <div class="price-label">Precio</div>
+        <div id="modalPrecio">$0</div>
+      </div>
+      <div class="download-hint">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00A650" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M9 12l2 2 4-5"/>
+        </svg>
+        Pago seguro procesado por Mercado Pago
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <div class="payment-methods">
+
+        <div class="payment-tabs" role="tablist" aria-label="Métodos de pago">
+          <button type="button" class="payment-tab is-active" data-target="panel-mp" role="tab" aria-selected="true">
+            <span class="tab-dot tab-dot--mp"></span> Mercado Pago
+          </button>
+          <button type="button" class="payment-tab" data-target="panel-wompi" role="tab" aria-selected="false">
+            <span class="tab-dot tab-dot--wompi"></span> Wompi
+          </button>
+        </div>
+
+        <div class="payment-panel is-active" id="panel-mp" role="tabpanel">
+          <div id="mp-button">
+            <p class="mp-placeholder">Selecciona un modelo para ver el botón de pago.</p>
+          </div>
+          <p class="payment-panel-tag">Tarjeta de crédito/débito · PSE · Efecty</p>
+        </div>
+
+        <div class="payment-panel" id="panel-wompi" role="tabpanel" hidden>
+          <div id="wompi-button">
+            <button id="btnWompi" type="button" class="wompi-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2.5"/>
+                <path d="M2 10h20"/>
+              </svg>
+              Pagar con Wompi
+            </button>
+          </div>
+          <p class="payment-panel-tag">Tarjeta · Nequi · Bancolombia</p>
+        </div>
+
+        <p class="payment-secure">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+          </svg>
+          Pago 100% seguro y encriptado
+        </p>
+      </div>
+
+      <a class="whatsapp-btn" id="whatsappBtn" href="#" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.12-1.34A9.96 9.96 0 0012.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.18c-1.6 0-3.16-.43-4.52-1.24l-.32-.19-3.04.8.81-2.96-.21-.31A8.16 8.16 0 013.86 12c0-4.51 3.67-8.18 8.18-8.18 4.51 0 8.18 3.67 8.18 8.18 0 4.51-3.67 8.18-8.18 8.18zm4.48-6.13c-.25-.12-1.45-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.25-.63.79-.78.95-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.36 1 2.52.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.55.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
+        Contactar un asesor
+      </a>
+    </div>
+
+    <div class="pdf-container" id="modalPdfContainer" style="display:none;">
+      <div class="requisitos-title" style="margin: 0 24px 6px;">📄 Manual del producto</div>
+      <iframe id="pdfViewer" title="Manual del producto" loading="lazy"></iframe>
+    </div>
+
+    <p class="fine-print">Después de confirmar el pago recibirás el software y las instrucciones necesarias
+    para tu televisor. Además, contarás con asesoría técnica personalizada durante el proceso.</p>
+
+  </div>
+</div>
+
+<script>
+  // ------------------------------------------------------------------
+  // DATOS DE PRUEBA (simulan tu info.json). En tu página real, esto
+  // lo reemplazas por: fetch('/info.json').then(res => res.json())...
+  // ------------------------------------------------------------------
+  const catalogoModelos = {
+    "C43VAUW": {
+      modelo: "C43VAUW",
+      software: "Android TV 11",
+      main: "TCL C43VAUW Mainboard",
+      estado: "Disponible",
+      precio: "90.000 COP",
+      pdf: "",
+      preference_id: "MPCX90"
+    },
+    "C50V1UA": {
+      modelo: "C50V1UA",
+      software: "Android TV 11",
+      main: "TCL C50V1UA Mainboard",
+      estado: "Disponible",
+      precio: "90.000 COP",
+      pdf: "",
+      preference_id: "MPCX90"
+    },
+    "LED 32LO68 BT ANDROID T2 C": {
+      modelo: "LED 32LO68 BT ANDROID T2 C",
+      software: "Android TV 10 (32\")",
+      main: "T.MS3663S.PB803 T2",
+      estado: "Disponible",
+      precio: "75.000 COP",
+      pdf: "",
+      preference_id: "MPHY70"
+    },
+    "MPKL78": {
+      modelo: "MPKL78",
+      software: "Android TV 12",
+      main: "Kalley MPKL78 Mainboard",
+      estado: "Agotado",
+      precio: "78.000 COP",
+      pdf: "",
+      preference_id: "MPKL78"
+    }
+  };
+
+  // Mapa de código interno -> preference_id real de Mercado Pago
+  const preferenceMap = {
+    MPHY70: "243767526-e211bc8d-ef7a-4972-b74c-6118f11c5da8",
+    MPHY75: "243767526-de42f10f-0932-41c2-bc61-6f5e09090398",
+    MPCL70: "243767526-f62c8943-c26c-4140-9ae3-da42e117b17b",
+    MPCL75: "243767526-76925841-6945-47f0-afa0-07268cc44fa6",
+    MPCL78: "243767526-c6b64379-5ed1-407b-8ca0-28ee7bc75635",
+    MPOL75: "243767526-f6dbf13c-0a53-4e32-9048-2e800978264e",
+    MPOL70: "243767526-ca0d1eec-9cc1-4d12-a9b1-66c7ca6499b1",
+    MPKL78: "243767526-4c3846ad-7147-45a0-a1f5-07b7c1689c68",
+    MPKL75: "243767526-d0ae37e3-aca3-42e6-a735-85cd6fe1da50",
+    MPKL85: "243767526-451c0835-529a-4407-88c9-e900619c08d3",
+    MPCX90: "243767526-b6ab0e33-ba47-4446-b4cc-74356bd41d16"
+  };
+
+  const overlay = document.getElementById('modalPagoOverlay');
+
+  function abrirModalPago(){
+    overlay.classList.add('is-open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function cerrarModalPago(){
+    overlay.classList.remove('is-open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('cerrarModalBtn').addEventListener('click', cerrarModalPago);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) cerrarModalPago(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') cerrarModalPago(); });
+
+  function llenarModalDesdeRegistro(info){
+    document.getElementById('modalTitulo').textContent = `Modelo: ${info.modelo}`;
+    document.getElementById('modalSoftware').textContent = info.software || 'No especificado';
+    document.getElementById('modalMain').textContent = info.main || 'No especificado';
+    document.getElementById('modalPrecio').textContent = info.precio || '...';
+
+    const estado = info.estado || 'Disponible';
+    const estadoEl = document.getElementById('modalEstado');
+    estadoEl.textContent = estado;
+    estadoEl.classList.toggle('agotado', estado.toLowerCase() === 'agotado');
+
+    // --- Botón de Mercado Pago (placeholder: en tu sitio real inyecta el script) ---
+    const mpButtonContainer = document.getElementById('mp-button');
+    if (estado.toLowerCase() === 'agotado'){
+      mpButtonContainer.innerHTML = '<p class="mp-unavailable">Este producto no está disponible por ahora.</p>';
+    } else {
+      const realPreferenceId = preferenceMap[info.preference_id];
+      mpButtonContainer.innerHTML = realPreferenceId
+        ? `<p class="mp-placeholder">[Aquí se cargaría el botón real de Mercado Pago · preference: ${realPreferenceId}]</p>`
+        : '<p class="mp-unavailable">Este producto no está disponible para pago en línea.</p>';
+    }
+
+    // --- Botón de Wompi ---
+    document.getElementById('btnWompi').disabled = estado.toLowerCase() === 'agotado';
+
+    // --- PDF ---
+    const pdfViewer = document.getElementById('pdfViewer');
+    if (info.pdf){
+      pdfViewer.src = info.pdf;
+      document.getElementById('modalPdfContainer').style.display = 'block';
+    } else {
+      pdfViewer.src = '';
+      document.getElementById('modalPdfContainer').style.display = 'none';
+    }
+
+    // --- WhatsApp con mensaje contextual del modelo ---
+    const mensaje = encodeURIComponent(`Hola DigitalElectronics, tengo una duda sobre el modelo ${info.modelo}`);
+    document.getElementById('whatsappBtn').href = `https://api.whatsapp.com/send?phone=573103841388&text=${mensaje}`;
+
+    // Reinicia siempre la pestaña activa a Mercado Pago al abrir un modelo nuevo
+    document.querySelector('.payment-tab[data-target="panel-mp"]').click();
+  }
+
+  document.querySelectorAll('.modelo-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const codigo = link.dataset.modelo;
+      const info = catalogoModelos[codigo];
+      if (!info){
+        alert('Información no disponible para este modelo.');
+        return;
+      }
+      llenarModalDesdeRegistro(info);
+      abrirModalPago();
+    });
+  });
+
+  // Pestañas de métodos de pago
+  document.querySelectorAll('.payment-tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.payment-tab').forEach((t) => {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.payment-panel').forEach((p) => {
+        p.classList.remove('is-active');
+        p.hidden = true;
+      });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+      const panel = document.getElementById(tab.dataset.target);
+      panel.classList.add('is-active');
+      panel.hidden = false;
+    });
+  });
+
+  // Botón de Wompi (placeholder de prueba)
+  document.getElementById('btnWompi').addEventListener('click', () => {
+    alert('Aquí se dispararía tu integración real de Wompi (Web Checkout / Widget).');
+  });
+</script>
+</body>
+</html>

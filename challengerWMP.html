@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./images/LOGODG16.ico" type="image/x-icon">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styleKalley_2.css">
+    <link rel="stylesheet" href="./css/styleKalley_2M.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Meta descripción SEO -->
@@ -591,24 +591,51 @@ var Tawk_LoadStart = new Date();
                 </div>
 
                 <div class="modal-actions">
-                <!-- Mercado Pago inyecta aquí su botón real (script data-preference-id).
-                    Antes de seleccionar un modelo se muestra un texto neutro. -->
-                <div id="mp-button">
-                    <p class="mp-placeholder">Selecciona un modelo para ver el botón de pago.</p>
-                </div>
-                <div id="wompi-button">
-                    <button id="btnWompi" type="button">
-                        Pagar con Wompi
-                    </button>
-                </div>
+                    <div class="payment-methods">
 
-                <a class="whatsapp-btn" id="whatsappBtn"
-                    href="#"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.12-1.34A9.96 9.96 0 0012.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.18c-1.6 0-3.16-.43-4.52-1.24l-.32-.19-3.04.8.81-2.96-.21-.31A8.16 8.16 0 013.86 12c0-4.51 3.67-8.18 8.18-8.18 4.51 0 8.18 3.67 8.18 8.18 0 4.51-3.67 8.18-8.18 8.18zm4.48-6.13c-.25-.12-1.45-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.25-.63.79-.78.95-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.36 1 2.52.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.55.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
-                    Contactar un asesor
-                </a>
-                </div>
+                        <p class="payment-secure">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                            </svg>
+                            Selecciona un metodo de pago.
+                        </p>
+
+                        <div class="payment-tabs" role="tablist" aria-label="Métodos de pago">
+                            <button type="button" class="payment-tab is-active" data-target="panel-mp" role="tab" aria-selected="true">
+                            <span class="tab-dot tab-dot--mp"></span> Mercado Pago
+                            </button>
+                            <button type="button" class="payment-tab" data-target="panel-wompi" role="tab" aria-selected="false">
+                            <span class="tab-dot tab-dot--wompi"></span> Wompi
+                            </button>
+                        </div>
+
+                        <div class="payment-panel is-active" id="panel-mp" role="tabpanel">
+                            <div id="mp-button">
+                            <p class="mp-placeholder">Selecciona un modelo para ver el botón de pago.</p>
+                            </div>
+                            <p class="payment-panel-tag">Tarjeta de crédito/débito · PSE · Efecty</p>
+                        </div>
+
+                        <div class="payment-panel" id="panel-wompi" role="tabpanel" hidden>
+                            <div id="wompi-button">
+                            <button id="btnWompi" type="button" class="wompi-btn">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="5" width="20" height="14" rx="2.5"/>
+                                <path d="M2 10h20"/>
+                                </svg>
+                                Pagar con Wompi
+                            </button>
+                            </div>
+                            <p class="payment-panel-tag">Tarjeta · Nequi · Bancolombia</p>
+                        </div>
+
+                        </div>
+
+                    <a class="whatsapp-btn" id="whatsappBtn" href="#" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.12-1.34A9.96 9.96 0 0012.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.18c-1.6 0-3.16-.43-4.52-1.24l-.32-.19-3.04.8.81-2.96-.21-.31A8.16 8.16 0 013.86 12c0-4.51 3.67-8.18 8.18-8.18 4.51 0 8.18 3.67 8.18 8.18 0 4.51-3.67 8.18-8.18 8.18zm4.48-6.13c-.25-.12-1.45-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.25-.63.79-.78.95-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.36 1 2.52.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.55.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
+                        Contactar un asesor
+                    </a>
+                    </div>
 
                 <!-- Visor de PDF (manual / instrucciones), oculto hasta que el modelo traiga info.pdf -->
                 <div class="pdf-container" id="modalPdfContainer" style="display:none;">
@@ -741,7 +768,7 @@ var Tawk_LoadStart = new Date();
     <script type="module" src="/js/badges.js"></script>
     <script type="module" src="/js/whatsapp.js"></script>
     <script src="https://checkout.wompi.co/widget.js"></script>
-    <script type="module" src="/js/updateInfo2.js"></script>
+    <script type="module" src="/js/updateInfo2M.js"></script>
     <script type="module" src="/js/buscador.js"></script>
     <script type="module" src="/js/copyright.js"></script>
 </body>
