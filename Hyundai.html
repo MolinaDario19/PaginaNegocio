@@ -707,38 +707,65 @@ var Tawk_LoadStart = new Date();
 
     <footer class="footer">
         <section class="footer__container container">
-            <nav class="nav--footer">
+            <div class="footer__brand">
                 <h2 class="footer__title">DigitalElectronics</h2>
+                <p class="footer__desc">
+                    Líderes en desarrollo de software, firmware original y soporte técnico integral para Smart TVs de todas las marcas.
+                </p>
+            </div>
 
-                <!-- <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="./index.html" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./products.html" class="nav__links">Productos</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./SoftwareTv.html" class="nav__links">Software TV</a>
-                    </li>
-                    <li class="nav__items">
-                        <a id="nav_sol" href="./Soluciones.html" class="nav__links">Soluciones</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./Contact.html" class="nav__links">Contacto</a>
-                    </li>
-                    
-                </ul> -->
-            </nav>
+            <div>
+                <h3 class="footer__col-title">Navegación</h3>
+                <nav class="nav--footer">
+                    <div class="nav__link--footer"><a href="./index.html">Inicio</a></div>
+                    <div class="nav__link--footer"><a href="./products.html">Productos</a></div>
+                    <div class="nav__link--footer"><a href="./SoftwareTv.html">Software TV</a></div>
+                    <div class="nav__link--footer"><a href="./Soluciones.html">Soluciones</a></div>
+                    <div class="nav__link--footer"><a href="./Contact.html">Contacto</a></div>
+                </nav>
+            </div>
+
+            <div>
+                <h3 class="footer__col-title">Marcas Principales</h3>
+                <nav class="nav--footer">
+                    <div class="nav__link--footer"><a href="./challenger.html">Challenger</a></div>
+                    <div class="nav__link--footer"><a href="./kalley.html">Kalley</a></div>
+                    <div class="nav__link--footer"><a href="./Hyundai.html">Hyundai</a></div>
+                    <div class="nav__link--footer"><a href="./caixun.html">Caixun</a></div>
+                    <div class="nav__link--footer"><a href="./tcl.html">TCL</a></div>
+                </nav>
+            </div>
+
+            <div>
+                <h3 class="footer__col-title">Contacto</h3>
+                <div class="footer__contact-item">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>soporte@digitalelectronics.com.co</span>
+                </div>
+                <div class="footer__contact-item">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+57 310 384 1388</span>
+                </div>
+                <div class="footer__contact-item">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Cali, Colombia &amp; Soporte Remoto</span>
+                </div>
+            </div>
         </section>
 
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="https://www.facebook.com/share/14HaRv1WTf/" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-                <a href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ==" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
-                <a href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+                <a href="https://www.facebook.com/share/14HaRv1WTf/" target="_blank" rel="noopener" class="footer__icons" aria-label="Facebook">
+                    <img src="./images/facebook.svg" alt="Facebook" class="footer__img">
+                </a>
+                <a href="https://www.instagram.com/digitalelectronics_cali?igsh=MW9jazA3aHJ4OTQ0cQ==" target="_blank" rel="noopener" class="footer__icons" aria-label="Instagram">
+                    <img src="./images/instagram.svg" alt="Instagram" class="footer__img">
+                </a>
+                <a href="https://youtube.com/@digitalelectronics6530?si=Fs1NehZyV_peqU79" target="_blank" rel="noopener" class="footer__icons" aria-label="YouTube">
+                    <img src="./images/youtube.svg" alt="YouTube" class="footer__img">
+                </a>
             </div>
-            <h4 class="footer__copyright">soporte@digitalelectronics.com.co</h4>
-            <h4 class="footer__copyright" id="copyright"></h4>
+            <div class="footer__copyright" id="copyright"></div>
         </section>
     </footer>
     <script src="./js/menu.js"></script>
