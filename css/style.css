@@ -1770,6 +1770,13 @@ textarea:focus {
 
 .questions__answer {
   padding: 0 24px;
+  display: grid;
+  grid-template-rows: auto 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.questions__padding--add .questions__answer {
+  grid-template-rows: auto 1fr;
 }
 
 .questions__title {
@@ -1823,10 +1830,10 @@ textarea:focus {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.7;
-  height: 0;
   overflow: hidden;
-  transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 0;
   padding-bottom: 0;
+  transition: padding-bottom 0.35s ease;
 }
 
 .questions__padding--add .questions__show {
