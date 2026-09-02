@@ -1,15 +1,26 @@
 const images = [];
-const total = 72; // Puedes usar 100 o más
+const total = 72;
 
 for (let i = 1; i <= total; i++) {
-  images.push(`../img_sol/soft${i}.jpeg`);
+  images.push(`/img_sol/soft${i}.jpeg`);
 }
 
 const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 let currentIndex = 0;
 
+function createImg(src, className) {
+  const img = document.createElement('img');
+  img.src = src;
+  img.className = className;
+  img.alt = `Solución de software Smart TV ${currentIndex + 1}`;
+  return img;
+}
+
 function renderCarousel() {
-  carousel.innerHTML = ''; // Limpiar
+  if (!carousel) return;
+  carousel.innerHTML = '';
 
   const prevIndex = (currentIndex - 1 + images.length) % images.length;
   const nextIndex = (currentIndex + 1) % images.length;
@@ -23,23 +34,20 @@ function renderCarousel() {
   carousel.appendChild(nextImg);
 }
 
-function createImg(src, className) {
-  const img = document.createElement('img');
-  img.src = src;
-  img.className = className;
-  return img;
+if (prevBtn) {
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    renderCarousel();
+  });
 }
 
-// Eventos
-document.getElementById('prevBtn').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  renderCarousel();
-});
+if (nextBtn) {
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    renderCarousel();
+  });
+}
 
-document.getElementById('nextBtn').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
+if (carousel) {
   renderCarousel();
-});
-
-// Iniciar
-renderCarousel();
+}
