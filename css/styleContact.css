@@ -817,3 +817,127 @@ a {
     margin-top: -30px;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: auto; 
+    padding-top: calc(var(--nav-height) + 40px); 
+  }
+
+  .hero__paragraph {
+    font-size: 1rem; 
+  }
+
+  .cta {
+    padding: 12px 20px; 
+    font-size: 0.95rem; 
+  }
+}
+
+/* ==========================================================================
+   Responsive - Dispositivos móviles
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+    margin: -20px auto 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  /* Tarjeta de información */
+  .contact-info-card {
+    padding: 30px 24px;
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-info-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info-card p {
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+
+  .contact-methods {
+    gap: 18px;
+  }
+
+  .contact-method-item {
+    gap: 12px;
+  }
+
+  .contact-method-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .contact-method-text h4 {
+    font-size: 0.78rem;
+  }
+
+  .contact-method-text p,
+  .contact-method-text a {
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+  }
+
+  /* Formulario */
+  .contact {
+    padding: 30px 22px;
+    border-radius: var(--radius-lg);
+    box-sizing: border-box;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+
+  .input-group {
+    gap: 14px;
+  }
+
+  .contact input[type="text"],
+  .contact input[type="tel"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    font-size: 0.9rem;
+  }
+
+  .contact textarea {
+    min-height: 110px;
+  }
+
+  /* Términos / checkbox */
+  .form-text {
+    align-items: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .form-text a {
+    font-size: 0.8rem;
+  }
+
+  /* Botón */
+  .contact .btn {
+    width: 100%;
+    padding: 13px 20px;
+    font-size: 0.95rem;
+  }
+}
+
