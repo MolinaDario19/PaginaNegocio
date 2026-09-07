@@ -1,0 +1,315 @@
+/* ==========================================================================
+   DIGITAL ELECTRONICS - UNIFIED WHATSAPP & FLOATING SHARE HUB
+   ========================================================================== */
+
+/* Floating Share Hub Container */
+.share {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.menu {
+  position: relative !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.menu .toggle {
+  position: absolute !important;
+  width: 60px !important;
+  height: 60px !important;
+  background: #25d366 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  font-size: 32px !important;
+  color: #ffffff !important;
+  z-index: 1000 !important;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.menu .toggle:hover {
+  transform: scale(1.08) !important;
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6) !important;
+}
+
+.menu .toggle ion-icon {
+  position: absolute !important;
+  transition: transform 0.3s ease, opacity 0.3s ease !important;
+  font-size: 32px !important;
+  color: #ffffff !important;
+}
+
+.menu .toggle ion-icon:nth-child(1) {
+  opacity: 1 !important;
+  transform: rotate(0deg) scale(1) !important;
+}
+
+.menu .toggle ion-icon:nth-child(2) {
+  opacity: 0 !important;
+  transform: rotate(-90deg) scale(0.5) !important;
+}
+
+.menu.active .toggle ion-icon:nth-child(1) {
+  opacity: 0 !important;
+  transform: rotate(90deg) scale(0.5) !important;
+}
+
+.menu.active .toggle ion-icon:nth-child(2) {
+  opacity: 1 !important;
+  transform: rotate(0deg) scale(1) !important;
+}
+
+.menu li {
+  position: absolute !important;
+  list-style: none !important;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease !important;
+  transform: scale(0) !important;
+  opacity: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 99 !important;
+  border-radius: 50% !important;
+}
+
+.menu.active li {
+  opacity: 1 !important;
+}
+
+.menu.active li:nth-child(1) { transform: translateY(-70px) scale(1) !important; }
+.menu.active li:nth-child(2) { transform: translateY(-130px) scale(1) !important; }
+.menu.active li:nth-child(3) { transform: translateY(-190px) scale(1) !important; }
+.menu.active li:nth-child(4) { transform: translateY(-250px) scale(1) !important; }
+.menu.active li:nth-child(5) { transform: translateY(-310px) scale(1) !important; }
+
+.menu li::before {
+  display: none !important;
+}
+
+.menu li a {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background: var(--clr, #25d366) !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 22px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+  border: 2px solid #ffffff !important;
+  transition: transform 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.menu li a:hover {
+  transform: scale(1.15) !important;
+}
+
+/* WhatsApp Interactive Popup Box */
+.wha {
+  display: none;
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(10, 31, 68, 0.45) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  z-index: 10000 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.wha-content {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  width: 100% !important;
+  max-width: 380px !important;
+  overflow: hidden !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid #e2e8f0 !important;
+  margin: auto !important;
+  animation: whaFadeUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  max-height: 90vh !important;
+}
+
+@keyframes whaFadeUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.wha-header {
+  background: #075e54 !important;
+  color: #ffffff !important;
+  padding: 16px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-bottom: none !important;
+}
+
+.perfil-nombre {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.perfil img {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 2px solid #ffffff !important;
+  margin: 0 !important;
+  background-color: transparent !important;
+}
+
+.lista-header {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.lista-header h4 {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.enLinea {
+  font-size: 0.78rem !important;
+  color: #86efac !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin-top: 2px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.enLinea::before {
+  content: '' !important;
+  width: 7px !important;
+  height: 7px !important;
+  background: #86efac !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+
+.closeWha {
+  font-size: 26px !important;
+  cursor: pointer !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: color 0.15s ease !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.closeWha:hover {
+  color: #ffffff !important;
+}
+
+.wha-text {
+  padding: 24px 20px !important;
+  background: #e5ddd5 !important;
+  background-image: radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px) !important;
+  background-size: 12px 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.message {
+  background: #ffffff !important;
+  padding: 14px 18px !important;
+  border-radius: 0 16px 16px 16px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+  position: relative !important;
+  max-width: 92% !important;
+  margin: 0 !important;
+  clear: both !important;
+  float: none !important;
+}
+
+.message::before {
+  content: '' !important;
+  position: absolute !important;
+  left: -8px !important;
+  top: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-top: 12px solid #ffffff !important;
+  border-left: 8px solid transparent !important;
+}
+
+.message-text {
+  font-size: 0.95rem !important;
+  color: #1e293b !important;
+  line-height: 1.55 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.message-time {
+  font-size: 0.72rem !important;
+  color: #94a3b8 !important;
+  text-align: right !important;
+  margin-top: 6px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.wha-text .cta {
+  width: 100% !important;
+  margin-top: 6px !important;
+  background-color: #25d366 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  padding: 14px 20px !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+}
+
+.wha-text .cta:hover {
+  background-color: #1ebe5d !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5) !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 600px) {
+  .share {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+}
