@@ -717,61 +717,7 @@ a {
   margin-top: 4px;
 }
 
-.footer {
-  background: var(--primary-dark);
-  color: #ffffff;
-  padding-top: 60px;
-}
 
-.footer__container.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  padding-bottom: 40px;
-}
-
-.footer__title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.footer__copy {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 24px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.footer__social {
-  display: flex;
-  gap: 12px;
-}
-
-.footer__icons {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__img {
-  width: 18px;
-  height: 18px;
-  filter: brightness(0) invert(1);
-}
-
-.footer__copyright {
-  color: var(--text-light);
-  font-size: 0.85rem;
-}
 
 /* ==========================================================================
    Responsive
