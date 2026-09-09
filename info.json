@@ -2155,6 +2155,18 @@
     "preference_id": "MPCL78"
   },
 
+  "FHD 40KG90 BT T2": {
+    "modelo": "FHD 40KG90 BT T2",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "80.000 COP",
+    "valor": 80000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
   "FHD 43KG90 BT GOOGLE T2": {
     "modelo": "FHD 43KG90 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
@@ -2174,6 +2186,18 @@
     "estado": "Disponible",
     "precio": "85.000 COP",
     "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "QLED 65KG290 BT T2": {
+    "modelo": "QLED 65KG290 BT T2",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "valor": 90000,
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL78"
@@ -5014,7 +5038,143 @@
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPCL75"
+  },
+
+
+  
+
+    "LT-32KB138": {
+    "modelo": "LT-32KB138",
+    "software": "install.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "valor": 75000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-32KD138": {
+    "modelo": "LT-32KD138",
+    "software": "install.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "75.000 COP",
+    "valor": 75000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-43KD628": {
+    "modelo": "LT-43KD628",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "80.000 COP",
+    "valor": 80000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-43KM348": {
+    "modelo": "LT-43KM348",
+    "software": "install.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "80.000 COP",
+    "valor": 80000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-43KM358": {
+    "modelo": "LT-43KM358",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "80.000 COP",
+    "valor": 80000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-50KD538": {
+    "modelo": "LT-50KD538",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-50KD608": {
+    "modelo": "LT-50KD608",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-55KD608": {
+    "modelo": "LT-55KD608",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-58KB528": {
+    "modelo": "LT-58KB528",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "valor": 90000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-58KD618": {
+    "modelo": "LT-58KD618",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "valor": 90000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  "LT-65KD738": {
+    "modelo": "LT-65KD738",
+    "software": "upgrade_image_no_tvcertificate.pkg",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "valor": 90000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
   }
+
 
 
 
