@@ -76,93 +76,55 @@ var Tawk_LoadStart = new Date();
 
         <section class="payment">
 
+            <div id="estadoPago"></div>
+
             <div class="containerForm">
-                <h3>Confirmar Pago</h3>
-
-                <div class="input-group">
-                <label>Nombre:</label>
-                <input type="text" id="nombre" placeholder="Ingresa tu nombre" /><br>
-
-                <label>Correo Electrónico: *</label>
-                <input type="email" id="correo" placeholder="Ingresa tu correo electrónico" /><br>
-
-                <label>Referencia de Pago: *</label>
-                <input type="text" id="referencia" placeholder="Ej: 121270177819" /><br>
-
-                <label>Modelo TV: *</label>
-                <input type="text" id="modelo" placeholder="Ej: HYLED4322GIM, K-ATV43FHDE..." /><br>
-
-                <label>Número de Serie:</label>
-                <input type="text" id="serie" placeholder="Ej: IDE971532B-03168, 241105-01152" /><br>
-
-
-                <button class=".btn" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+                <div class="containerForm__header">
+                    <span class="containerForm__badge"><i class="fa-solid fa-receipt"></i></span>
+                    <div>
+                        <h3>Confirmar pago</h3>
+                        <p>Revisa los datos antes de enviarlos por WhatsApp</p>
+                    </div>
                 </div>
 
-                <script>
-                function enviarWhatsApp() {
-                const nombre = document.getElementById("nombre").value.trim();
-                const correo = document.getElementById("correo").value.trim();
-                const referencia = document.getElementById("referencia").value.trim();
-                const modelo = document.getElementById("modelo").value.trim();
-                const serie = document.getElementById("serie").value.trim();
+                <form class="payment-form" onsubmit="return false;">
+                    <div class="field-grid">
+                        <div class="field">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Tu nombre completo" autocomplete="name" />
+                        </div>
+                        <div class="field">
+                            <label for="correo">Correo electrónico <span class="req">*</span></label>
+                            <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" required />
+                        </div>
+                    </div>
 
-                if (!correo || !referencia || !modelo) {
-                    alert("Por favor llena todos los campos.");
-                    return;
-                }
+                    <div class="field field--code">
+                        <label for="referencia">Referencia de pago <span class="req">*</span></label>
+                        <input type="text" id="referencia" placeholder="Ej: 121270177819" inputmode="numeric" required />
+                        <span class="field__hint">Aparece en el comprobante de tu transferencia o consignación</span>
+                    </div>
 
-                const mensaje = `Hola, confirmo que he realizado el pago.\n\n *Nombre:* ${nombre}\n *Correo:* ${correo}\n *Referencia de pago:* ${referencia}\n *Modelo TV:* ${modelo}\n *Número de serie TV:* ${serie}`;
+                    <div class="field-grid">
+                        <div class="field field--code">
+                            <label for="modelo">Modelo del TV <span class="req">*</span></label>
+                            <input type="text" id="modelo" placeholder="Ej: HYLED4322GIM" required />
+                        </div>
+                        <div class="field field--code">
+                            <label for="serie">Número de serie</label>
+                            <input type="text" id="serie" placeholder="Ej: IDE971532B-03168" />
+                            <span class="field__hint">Etiqueta trasera del televisor</span>
+                        </div>
+                    </div>
 
-                // Número de destino (WhatsApp) con código de país
-                const numeroDestino = "573103841388";
-                const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensaje)}`;
-
-                window.open(url, "_blank");
-                }
-                </script>
+                    <button type="submit" class="btn" onclick="enviarWhatsApp()">
+                        <i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp
+                    </button>
+                </form>
             </div>
 
             
         </section><br>
-
-        <!-- Ventana emergente (modal) -->
-        <div id="modal" class="modal" style="display:none;">
-            <div class="modal-content">
-                <!-- Botón para cerrar el modal -->
-                <span id="cerrarModal" role="button" aria-label="Cerrar modal" style="cursor:pointer; font-size: 2em; float:right;">&times;</span>
-
-                <!-- Contenido del modal -->
-                <h2 id="modalTitulo"></h2>
-                <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
-                <p><strong>Main Board:</strong> <span id="modalMain"></span></p>
-                <p><strong>Estado:</strong> <span id="modalEstado"></span></p>
-                <p><strong>Precio:</strong> <span id="modalPrecio"></span></p>
-                <!-- <p><strong>Instrucciones:</strong> <span id="modalInstrucciones"></span></p> -->
-                 <div class="Buttons_modal">
-                    <div id="mp-button"></div>
-                    <!-- <script src="https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js"
-                    data-preference-id="243767526-f6dbf13c-0a53-4e32-9048-2e800978264e" data-source="button">
-                    </script> -->
-                    <a id="openWha" href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">Contactar un asesor</a>
-                 </div>
-                
-                 <div class="usb-requirements">
-                    <p><strong>Importante:</strong> Tener disponibilidad de <strong>USB</strong> con las siguientes características:</p>
-                    <ul>
-                        <li>Capacidad: 4 o 8 GB</li>
-                        <li>Puerto: 2.0</li>
-                        <li>Formato: FAT32</li>
-                    </ul>
-                </div>
-                <!-- PDF Embed -->
-                
-                <div id="modalPdfContainer" style="display: none; margin-top: 20px;">
-                    <iframe id="pdfViewer" width="100%" height="400px" style="border: none;"></iframe>
-                </div>
-            </div>
-        </div>
-
 
          <!-- Ventana emergente (wha) -->
          <div id="myWha" class="wha ">
@@ -245,6 +207,7 @@ var Tawk_LoadStart = new Date();
     <!-- Footer -->
     <site-footer></site-footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/payment.js"></script>
     <script type="module" src="./js/footer.js"></script>
     <script type="module" src="/js/whatsapp.js"></script>
     <script type="module" src="/js/updateInfo.js"></script>

@@ -56,8 +56,8 @@ export default async function handler(req, res) {
 
                 back_urls: {
                     success: "https://digitalelectronics.com.co/payment.html",
-                    failure: "https://digitalelectronics.com.co",
-                    pending: "https://digitalelectronics.com.co"
+                    failure: "https://digitalelectronics.com.co/payment.html",
+                    pending: "https://digitalelectronics.com.co/payment.html"
                 },
 
                 auto_return: "approved"
