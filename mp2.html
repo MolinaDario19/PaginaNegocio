@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medios de Pago Verificados — Digital Electronics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== DESIGN SYSTEM (idéntico a digitalelectronics.com.co) ===== */
+    :root {
+      --primary: #0a1f44;
+      --primary-dark: #06152e;
+      --primary-light: #163a75;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-light: #eff6ff;
+      --whatsapp: #25d366;
+      --whatsapp-dark: #1ebe5d;
+      --whatsapp-glow: rgba(37, 211, 102, 0.35);
+      --star: #f59e0b;
+      --success: #16a34a;
+      --ink: #0f172a;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --bg-main: #ffffff;
+      --bg-alt: #f8fafc;
+      --bg-subtle: #f1f5f9;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --border-focus: #3b82f6;
+      --shadow-xs: 0 1px 2px 0 rgba(0,0,0,0.05);
+      --shadow-sm: 0 2px 4px 0 rgba(0,0,0,0.04);
+      --shadow-md: 0 6px 16px -2px rgba(10,31,68,0.08), 0 2px 6px -1px rgba(10,31,68,0.04);
+      --shadow-lg: 0 12px 28px -4px rgba(10,31,68,0.12), 0 4px 10px -2px rgba(10,31,68,0.05);
+      --shadow-xl: 0 20px 35px -6px rgba(10,31,68,0.16), 0 8px 16px -4px rgba(10,31,68,0.06);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+      --nav-height: 76px;
+      --transition-fast: 0.15s ease;
+      --transition-normal: 0.25s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== NAV ===== */
+    .nav {
+      position: fixed; top: 0; left: 0; width: 100%;
+      height: var(--nav-height);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(20px, 3vw, 60px);
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226,232,240,0.85);
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(10,31,68,0.04);
+    }
+    .nav__logo { display: flex; align-items: center; gap: 10px; }
+    .nav__logo-glyph {
+      width: 42px; height: 42px;
+      background: var(--primary);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-family: "DM Serif Display", serif;
+      font-size: 18px; color: #fff;
+      flex-shrink: 0;
+    }
+    .nav__brand-name {
+      font-family: 'Times New Roman', serif;
+      font-size: clamp(1.3rem, 2vw, 1.7rem);
+      color: rgba(79,129,189,255);
+      font-weight: 400; line-height: 1;
+    }
+    .nav__brand-sub {
+      font-size: 11px; color: #1D293F;
+      text-align: right; margin-top: -2px;
+    }
+    .nav__link { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nav__links {
+      color: var(--text-main); font-size: 0.92rem; font-weight: 500;
+      position: relative; padding: 6px 0;
+      transition: color var(--transition-fast);
+    }
+    .nav__links::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0%; height: 2.5px;
+      background: var(--accent); border-radius: var(--radius-full);
+      transition: width var(--transition-normal);
+    }
+    .nav__links:hover { color: var(--accent); }
+    .nav__links:hover::after { width: 100%; }
+    .nav__links.active { color: var(--accent); }
+    .nav__links.active::after { width: 100%; }
+    @media (max-width: 768px) {
+      .nav__link { display: none; }
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 520px;
+      display: flex; align-items: center; justify-content: center;
+      padding-top: var(--nav-height);
+      color: #fff; overflow: hidden;
+      position: relative;
+      background: var(--primary-dark);
+    }
+    .hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(6,21,46,0.95) 0%, rgba(10,31,68,0.88) 60%, rgba(37,99,235,0.55) 100%);
+      z-index: 1;
+    }
+    /* Circuit board pattern */
+    .hero::after {
+      content: "";
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(37,99,235,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 0;
+    }
+    .hero__container {
+      position: relative; z-index: 2;
+      text-align: center;
+      max-width: 860px;
+      padding: 60px 20px 80px;
+      margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .hero__badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 18px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius-full);
+      font-size: 0.82rem; font-weight: 500;
+      letter-spacing: 0.5px; color: #fff;
+      margin-bottom: 20px;
+      animation: fadeInDown 0.6s ease-out;
+    }
+    .hero__badge-dot {
+      width: 7px; height: 7px;
+      background: var(--whatsapp); border-radius: 50%;
+      box-shadow: 0 0 8px var(--whatsapp);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.3); }
+    }
+    .hero__title {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      animation: fadeInUp 0.7s ease-out;
+    }
+    .hero__title span {
+      background: linear-gradient(135deg, #60a5fa 0%, #38bdf8 50%, #4ade80 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero__paragraph {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      line-height: 1.75;
+      color: rgba(255,255,255,0.88);
+      max-width: 650px; margin: 0 auto 32px;
+      font-weight: 300;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    .hero__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px; width: 100%; max-width: 640px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      animation: fadeInUp 1s ease-out;
+    }
+    .hero__stat-item { display: flex; flex-direction: column; align-items: center; }
+    .hero__stat-num {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.8rem; font-weight: 700;
+      color: #fff; line-height: 1.1;
+    }
+    .hero__stat-label {
+      font-size: 0.75rem; color: rgba(255,255,255,0.72);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px;
+    }
+    @media (max-width: 600px) {
+      .hero__stats { grid-template-columns: 1fr; gap: 12px; }
+    }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      width: min(92%, 1160px);
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+    .section-title {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      display: inline-block;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 50px; height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--whatsapp));
+      border-radius: var(--radius-full);
+      margin-top: 8px;
+    }
+    .section-centered { text-align: center; }
+    .section-centered .section-title::after { margin-left: auto; margin-right: auto; }
+    .section-sub {
+      font-size: 1rem; color: var(--text-muted);
+      max-width: 620px; margin: 14px auto 0; line-height: 1.7;
+    }
+
+    /* ===== CTA BUTTONS ===== */
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 10px;
+      background: var(--whatsapp);
+      color: #fff; font-weight: 600; font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 15px var(--whatsapp-glow);
+      transition: var(--transition-normal);
+      cursor: pointer; border: none; text-align: center;
+    }
+    .cta:hover {
+      background: var(--whatsapp-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(37,211,102,0.45);
+      color: #fff;
+    }
+    .cta--blue {
+      background: var(--accent);
+      box-shadow: 0 4px 15px rgba(37,99,235,0.3);
+    }
+    .cta--blue:hover {
+      background: var(--accent-hover);
+      box-shadow: 0 8px 22px rgba(37,99,235,0.4);
+    }
+
+    /* ===== BADGE ===== */
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 14px;
+      background: rgba(37,99,235,0.08);
+      color: var(--accent);
+      border: 1px solid rgba(37,99,235,0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.5px; text-transform: uppercase;
+    }
+    .badge--green {
+      background: rgba(37,211,102,0.08);
+      color: var(--success);
+      border-color: rgba(37,211,102,0.25);
+    }
+
+    /* ===== PAYMENT METHODS SECTION ===== */
+    .payments-section { background: var(--bg-main); }
+    .payments-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 22px;
+      margin-top: 44px;
+    }
+    .payment-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .payment-card::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--whatsapp));
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+    }
+    .payment-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+      border-color: rgba(37,99,235,0.25);
+    }
+    .payment-card:hover::before { opacity: 1; }
+
+    .payment-card__top {
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 12px;
+      margin-bottom: 16px;
+    }
+    .payment-icon-wrap {
+      width: 52px; height: 52px;
+      border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; flex-shrink: 0;
+      background: rgba(37,99,235,0.08);
+    }
+    .payment-card__name {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      line-height: 1.2;
+    }
+    .payment-card__detail {
+      font-size: 0.92rem; color: var(--text-muted);
+      margin-top: 4px; font-weight: 400;
+    }
+    .payment-card__detail strong {
+      color: var(--text-main); font-weight: 600;
+    }
+    .payment-card__verified {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.75rem; font-weight: 600;
+      color: var(--success);
+      background: rgba(22,163,74,0.08);
+      border: 1px solid rgba(22,163,74,0.2);
+      border-radius: var(--radius-full);
+      padding: 3px 10px; white-space: nowrap; flex-shrink: 0;
+    }
+    .payment-card__verified svg { width: 12px; height: 12px; }
+    .payment-card__divider {
+      height: 1px; background: var(--border);
+      margin: 14px 0;
+    }
+    .payment-card__holder {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.82rem; color: var(--text-light);
+    }
+    .payment-card__holder svg { width: 14px; height: 14px; color: var(--accent); }
+    .payment-card__holder strong { color: var(--text-muted); }
+
+    /* Highlight card: MercadoPago */
+    .payment-card--featured {
+      border-color: rgba(37,99,235,0.3);
+      background: linear-gradient(145deg, #fff 60%, var(--accent-light));
+    }
+
+    /* Security note */
+    .security-note {
+      margin-top: 28px;
+      padding: 18px 22px;
+      background: rgba(37,211,102,0.05);
+      border: 1px solid rgba(37,211,102,0.2);
+      border-radius: var(--radius-md);
+      display: flex; gap: 14px; align-items: flex-start;
+      font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;
+    }
+    .security-note svg {
+      width: 20px; height: 20px; flex-shrink: 0;
+      margin-top: 1px; color: var(--success);
+    }
+    .security-note strong { color: var(--primary); font-weight: 600; }
+
+    /* ===== HOW IT WORKS ===== */
+    .steps-section { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px; margin-top: 44px;
+    }
+    .step-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 30px 22px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-normal);
+      position: relative; display: flex; flex-direction: column;
+    }
+    .step-box:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
+    }
+    .step-number {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: "Oswald", sans-serif;
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--accent); text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .step-num-circle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: rgba(37,99,235,0.1);
+      color: var(--accent); font-size: 1rem; font-weight: 700;
+      transition: var(--transition-normal);
+    }
+    .step-box:hover .step-num-circle {
+      background: var(--accent); color: #fff;
+    }
+    .step-title {
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--primary); margin-bottom: 10px;
+    }
+    .step-desc {
+      font-size: 0.9rem; color: var(--text-muted); line-height: 1.65;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .reviews-section { background: var(--bg-main); }
+    .rating-summary {
+      display: flex; align-items: center; gap: 2.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 2rem 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-md);
+      position: relative; overflow: hidden;
+    }
+    .rating-summary::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--whatsapp));
+    }
+    .rating-big-wrap { display: flex; flex-direction: column; align-items: center; min-width: 90px; }
+    .rating-big {
+      font-family: "DM Serif Display", serif;
+      font-size: 3.8rem; line-height: 1;
+      color: var(--primary);
+    }
+    .rating-max { font-size: 0.82rem; color: var(--text-muted); font-weight: 500; }
+    .rating-divider { width: 1px; align-self: stretch; background: var(--border); }
+    .stars-row { display: flex; gap: 3px; margin-bottom: 6px; }
+    .star { color: var(--star); font-size: 18px; }
+    .rating-badge {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 600;
+      color: var(--accent);
+      background: rgba(37,99,235,0.08);
+      border: 1px solid rgba(37,99,235,0.2);
+      border-radius: var(--radius-full);
+      padding: 3px 10px; margin-top: 8px;
+    }
+    .rating-text { font-size: 0.88rem; color: var(--text-muted); font-weight: 500; }
+    @media (max-width: 700px) {
+      .rating-summary { flex-direction: column; text-align: center; }
+      .rating-divider { width: 100%; height: 1px; }
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .review-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-normal);
+      display: flex; flex-direction: column;
+    }
+    .review-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(37,99,235,0.2);
+    }
+    .review-stars { display: flex; gap: 2px; margin-bottom: 12px; }
+    .review-text {
+      font-size: 0.92rem; color: var(--text-main);
+      line-height: 1.65; flex: 1; margin-bottom: 14px;
+    }
+    .review-who {
+      font-size: 0.8rem; color: var(--text-muted);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .review-who::before {
+      content: "";
+      width: 8px; height: 8px;
+      background: var(--whatsapp); border-radius: 50%; flex-shrink: 0;
+    }
+
+    /* ===== ORDER BOX ===== */
+    .order-section { background: var(--bg-alt); border-top: 1px solid var(--border); }
+    .order-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 44px 40px;
+      box-shadow: var(--shadow-lg);
+      max-width: 700px; margin: 0 auto;
+      position: relative; overflow: hidden;
+    }
+    .order-box::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; height: 5px;
+      background: linear-gradient(90deg, var(--accent), var(--whatsapp));
+    }
+    .order-box h2 {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.9rem; font-weight: 700;
+      color: var(--primary); text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .order-box .order-sub {
+      font-size: 0.95rem; color: var(--text-muted);
+      margin-bottom: 30px; line-height: 1.65;
+    }
+    .field { margin-bottom: 20px; }
+    .field label {
+      display: block;
+      font-size: 0.82rem; font-weight: 600;
+      color: var(--accent); text-transform: uppercase;
+      letter-spacing: 0.5px; margin-bottom: 8px;
+    }
+    .field-input {
+      width: 100%;
+      border: 1.5px solid var(--border);
+      background: var(--bg-alt);
+      border-radius: var(--radius-md);
+      padding: 13px 16px;
+      font-size: 0.95rem; font-family: "Poppins", sans-serif;
+      color: var(--text-main);
+      transition: border-color var(--transition-fast);
+      outline: none;
+    }
+    .field-input:focus { border-color: var(--border-focus); background: #fff; }
+    .field-input::placeholder { color: var(--text-light); }
+    .field-upload {
+      width: 100%;
+      border: 1.5px dashed var(--border);
+      background: var(--bg-subtle);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem; cursor: pointer;
+      transition: border-color var(--transition-fast), background var(--transition-fast);
+    }
+    .field-upload:hover { border-color: var(--accent); background: var(--accent-light); }
+    .field-upload-icon { font-size: 28px; margin-bottom: 6px; }
+    .order-cta { width: 100%; margin-top: 8px; font-size: 1.05rem; padding: 16px; }
+    .order-fine {
+      font-size: 0.8rem; color: var(--text-light);
+      margin-top: 18px; border-top: 1px solid var(--border);
+      padding-top: 16px; line-height: 1.6;
+    }
+    @media (max-width: 600px) {
+      .order-box { padding: 28px 20px; }
+    }
+
+    /* ===== CTA BANNER ===== */
+    .cta-banner {
+      background: var(--primary);
+      text-align: center; padding: 64px 20px;
+      position: relative; overflow: hidden;
+    }
+    .cta-banner::before {
+      content: "";
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(37,99,235,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.07) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .cta-banner h2 {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 12px; position: relative; z-index: 1;
+    }
+    .cta-banner p {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem; margin-bottom: 28px;
+      max-width: 520px; margin-left: auto; margin-right: auto;
+      position: relative; z-index: 1; margin-bottom: 28px;
+    }
+    .cta-banner .cta { position: relative; z-index: 1; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--primary-dark);
+      padding: 40px 20px;
+      display: flex; justify-content: center; align-items: center;
+      flex-direction: column; gap: 10px; text-align: center;
+    }
+    .footer__name {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: #fff; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .footer__sub {
+      font-size: 0.82rem; color: rgba(255,255,255,0.45);
+    }
+    .footer__links {
+      display: flex; gap: 20px; margin-top: 6px;
+    }
+    .footer__link {
+      font-size: 0.82rem; color: rgba(255,255,255,0.5);
+      transition: color var(--transition-fast);
+    }
+    .footer__link:hover { color: var(--whatsapp); }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="https://digitalelectronics.com.co/" class="nav__logo">
+    <div class="nav__logo-glyph">DE</div>
+    <div>
+      <div class="nav__brand-name">DigitalElectronics</div>
+      <div class="nav__brand-sub">Líder en tecnología</div>
+    </div>
+  </a>
+  <ul class="nav__link">
+    <li><a href="https://digitalelectronics.com.co/" class="nav__links">Inicio</a></li>
+    <li><a href="https://digitalelectronics.com.co/SoftwareTv.html" class="nav__links">Software TV</a></li>
+    <li><a href="https://digitalelectronics.com.co/Soluciones.html" class="nav__links">Soluciones</a></li>
+    <li><a href="https://digitalelectronics.com.co/Contact.html" class="nav__links active">Pagar</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero__container">
+    <div class="hero__badge">
+      <div class="hero__badge-dot"></div>
+      Titular verificado · Oscar Darío Molina
+    </div>
+    <h1 class="hero__title">
+      Medios de Pago <span>Seguros y Verificados</span>
+    </h1>
+    <p class="hero__paragraph">
+      Cada cuenta está activa, a nombre del mismo titular y confirmada antes de publicarse.
+      Así sabes exactamente a quién le pagas y cómo reclamar si algo falla.
+    </p>
+    <div class="hero__stats">
+      <div class="hero__stat-item">
+        <span class="hero__stat-num">4.9★</span>
+        <span class="hero__stat-label">Calificación MercadoLibre</span>
+      </div>
+      <div class="hero__stat-item">
+        <span class="hero__stat-num">+9 Años</span>
+        <span class="hero__stat-label">Experiencia comprobada</span>
+      </div>
+      <div class="hero__stat-item">
+        <span class="hero__stat-num">&lt; 30 min</span>
+        <span class="hero__stat-label">Tiempo de entrega</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAYMENT METHODS -->
+<section class="payments-section">
+  <div class="container">
+    <div class="section-centered">
+      <span class="section-title">Cuentas para Pagar</span>
+      <p class="section-sub">6 métodos disponibles · Elige el que prefieras · Mismo titular en todas</p>
+    </div>
+
+    <div class="payments-grid">
+
+      <!-- Bancolombia -->
+      <div class="payment-card">
+        <div class="payment-card__top">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="payment-icon-wrap" style="background:rgba(255,204,0,0.12);">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                <rect width="32" height="32" rx="8" fill="#FFCC00"/>
+                <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1a1a1a">B</text>
+              </svg>
+            </div>
+            <div>
+              <div class="payment-card__name">Bancolombia</div>
+              <div class="payment-card__detail">Cuenta de <strong>Ahorros</strong></div>
+            </div>
+          </div>
+          <span class="payment-card__verified">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Verificada
+          </span>
+        </div>
+        <div class="payment-card__detail" style="font-size:1rem;font-weight:600;color:var(--primary);letter-spacing:0.5px;">064-627142-10</div>
+        <div class="payment-card__divider"></div>
+        <div class="payment-card__holder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Titular: <strong>Oscar Darío Molina</strong>
+        </div>
+      </div>
+
+      <!-- Nequi / Daviplata -->
+      <div class="payment-card">
+        <div class="payment-card__top">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="payment-icon-wrap" style="background:rgba(108,43,217,0.1);">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                <rect width="32" height="32" rx="8" fill="#6C2BD9"/>
+                <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="white">N/D</text>
+              </svg>
+            </div>
+            <div>
+              <div class="payment-card__name">Nequi / Daviplata</div>
+              <div class="payment-card__detail">Transferencia instantánea</div>
+            </div>
+          </div>
+          <span class="payment-card__verified">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Verificada
+          </span>
+        </div>
+        <div class="payment-card__detail" style="font-size:1rem;font-weight:600;color:var(--primary);letter-spacing:0.5px;">310 384 1388</div>
+        <div class="payment-card__divider"></div>
+        <div class="payment-card__holder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Titular: <strong>Oscar Darío Molina</strong>
+        </div>
+      </div>
+
+      <!-- MercadoPago (destacado) -->
+      <div class="payment-card payment-card--featured">
+        <div style="position:absolute;top:14px;right:14px;">
+          <span class="badge">Recomendado</span>
+        </div>
+        <div class="payment-card__top" style="margin-top:6px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="payment-icon-wrap" style="background:rgba(37,99,235,0.1);">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                <rect width="32" height="32" rx="8" fill="#2563EB"/>
+                <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">MP</text>
+              </svg>
+            </div>
+            <div>
+              <div class="payment-card__name">MercadoPago</div>
+              <div class="payment-card__detail">Con <strong>protección al comprador</strong></div>
+            </div>
+          </div>
+          <span class="payment-card__verified">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Verificada
+          </span>
+        </div>
+        <div class="payment-card__detail" style="font-size:0.9rem;color:var(--primary);font-weight:500;">Perfil: <strong>DigitalElectronics</strong></div>
+        <div class="payment-card__divider"></div>
+        <div class="payment-card__holder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Pago con respaldo · puedes reclamar si algo falla
+        </div>
+      </div>
+
+      <!-- Binance -->
+      <div class="payment-card">
+        <div class="payment-card__top">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="payment-icon-wrap" style="background:rgba(243,186,47,0.12);">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                <rect width="32" height="32" rx="8" fill="#F3BA2F"/>
+                <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1a1a1a">BNB</text>
+              </svg>
+            </div>
+            <div>
+              <div class="payment-card__name">Binance Pay</div>
+              <div class="payment-card__detail">Pago en <strong>USDT / Cripto</strong></div>
+            </div>
+          </div>
+          <span class="payment-card__verified">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Verificada
+          </span>
+        </div>
+        <div class="payment-card__detail" style="font-size:1rem;font-weight:600;color:var(--primary);letter-spacing:0.5px;">ID: 1025060508</div>
+        <div class="payment-card__divider"></div>
+        <div class="payment-card__holder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Titular: <strong>Oscar Darío Molina</strong>
+        </div>
+      </div>
+
+      <!-- PayPal -->
+      <div class="payment-card">
+        <div class="payment-card__top">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="payment-icon-wrap" style="background:rgba(0,112,186,0.1);">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                <rect width="32" height="32" rx="8" fill="#0070BA"/>
+                <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">PP</text>
+              </svg>
+            </div>
+            <div>
+              <div class="payment-card__name">PayPal</div>
+              <div class="payment-card__detail">Usar <strong>"Bienes y servicios"</strong></div>
+            </div>
+          </div>
+          <span class="payment-card__verified">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Verificada
+          </span>
+        </div>
+        <div class="payment-card__detail" style="font-size:0.95rem;font-weight:600;color:var(--primary);">Digielec@hotmail.com</div>
+        <div class="payment-card__divider"></div>
+        <div class="payment-card__holder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Pago con protección para el comprador
+        </div>
+      </div>
+
+      <!-- Efectivo -->
+      <div class="payment-card">
+        <div class="payment-card__top">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="payment-icon-wrap" style="background:rgba(22,163,74,0.1);">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                <rect width="32" height="32" rx="8" fill="#16a34a"/>
+                <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">$</text>
+              </svg>
+            </div>
+            <div>
+              <div class="payment-card__name">Efectivo</div>
+              <div class="payment-card__detail">Puntos en todo el país</div>
+            </div>
+          </div>
+          <span class="payment-card__verified">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Verificada
+          </span>
+        </div>
+        <div class="payment-card__detail" style="font-size:0.9rem;color:var(--text-muted);">
+          Efecty · Western Union · Baloto
+        </div>
+        <div class="payment-card__divider"></div>
+        <div class="payment-card__holder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          A nombre de: <strong>Oscar Darío Molina</strong>
+        </div>
+      </div>
+
+    </div><!-- /payments-grid -->
+
+    <!-- Security note -->
+    <div class="security-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      <div>
+        <strong>Consejo de seguridad:</strong> si pagas por PayPal o MercadoPago, usa siempre la opción
+        <strong>"bienes y servicios"</strong> — así queda un registro oficial del pago y puedes
+        reclamar si hay algún inconveniente con tu entrega. Nunca uses la opción "amigos y familiares" en estas plataformas.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps-section">
+  <div class="container">
+    <div class="section-centered">
+      <span class="section-title">Proceso de Entrega</span>
+      <p class="section-sub">Simple, rápido y con acompañamiento en cada paso</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-box">
+        <div class="step-number">
+          <div class="step-num-circle">1</div>
+          Contacto
+        </div>
+        <div class="step-title">Escríbenos tu pedido</div>
+        <p class="step-desc">Indícanos el software o licencia que necesitas por este mismo chat o por WhatsApp. Te confirmamos disponibilidad al instante.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">
+          <div class="step-num-circle">2</div>
+          Pago
+        </div>
+        <div class="step-title">Realiza el pago</div>
+        <p class="step-desc">Elige cualquiera de los métodos verificados de arriba. Guarda la captura o comprobante de la transacción.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">
+          <div class="step-num-circle">3</div>
+          Confirmación
+        </div>
+        <div class="step-title">Envía tu correo y comprobante</div>
+        <p class="step-desc">Comparte el comprobante de pago y tu dirección de correo electrónico. Verifica que el correo esté bien escrito antes de enviarlo.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">
+          <div class="step-num-circle">4</div>
+          Entrega
+        </div>
+        <div class="step-title">Recibe tu software</div>
+        <p class="step-desc">En menos de 30 minutos en horario laboral recibes tu licencia con guía de instalación. Si tienes dudas, te acompañamos hasta que funcione.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-centered" style="margin-bottom:36px;">
+      <span class="section-title">Lo que Dicen los Clientes</span>
+      <p class="section-sub">Reseñas reales de compradores verificados en MercadoLibre</p>
+    </div>
+
+    <div class="rating-summary">
+      <div class="rating-big-wrap">
+        <div class="rating-big">4.9</div>
+        <div class="rating-max">de 5</div>
+      </div>
+      <div class="rating-divider"></div>
+      <div>
+        <div class="stars-row">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <div class="rating-text">Calificación en MercadoLibre</div>
+        <div class="rating-badge">Vendedor Destacado</div>
+      </div>
+      <div class="rating-divider"></div>
+      <div style="font-size:0.9rem;color:var(--text-muted);line-height:1.7;max-width:320px;">
+        Más de <strong style="color:var(--primary);">9 años</strong> vendiendo software y licencias originales,
+        con cientos de clientes satisfechos en Colombia y toda Latinoamérica.
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Entregaron el software en menos de 20 minutos y me ayudaron con la instalación paso a paso por WhatsApp. El televisor volvió a funcionar perfecto."</p>
+        <div class="review-who">Comprador verificado · Cali, Colombia</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Ya es la tercera vez que compro aquí. Siempre rápido, siempre el software correcto para el modelo, y el soporte posventa es excelente."</p>
+        <div class="review-who">Comprador verificado · Medellín, Colombia</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Mi televisor Kalley llevaba meses trancado en el logo. Con el firmware que me enviaron lo resolví en 10 minutos siguiendo el video tutorial."</p>
+        <div class="review-who">Comprador verificado · Bogotá, Colombia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="order-section">
+  <div class="container">
+    <div class="order-box">
+      <h2>Confirma tu Pedido</h2>
+      <p class="order-sub">
+        Envíanos los datos de abajo para activar tu licencia. Revisa el correo dos veces antes de enviarlo — ahí llegará el software.
+      </p>
+      <div class="field">
+        <label>➡ Correo electrónico</label>
+        <input class="field-input" type="email" placeholder="nombre@correo.com" />
+      </div>
+      <div class="field">
+        <label>➡ Comprobante de pago</label>
+        <div class="field-upload">
+          <div class="field-upload-icon">📎</div>
+          <div>Adjunta la captura o imagen del pago</div>
+          <div style="font-size:0.78rem;margin-top:4px;color:var(--text-light);">PNG, JPG o PDF · máx. 10 MB</div>
+        </div>
+      </div>
+      <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics%2C%20adjunto%20mi%20comprobante%20de%20pago." target="_blank" class="cta order-cta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.547 4.09 1.503 5.81L0 24l6.338-1.48A11.926 11.926 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.01-1.374l-.36-.214-3.76.877.916-3.648-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+        Enviar por WhatsApp
+      </a>
+      <div class="order-fine">
+        Al confirmar tu pedido aceptas que el software se entrega por correo electrónico.
+        Si tienes cualquier inconveniente con la instalación, escríbenos y te acompañamos hasta resolverlo.
+        · <a href="https://digitalelectronics.com.co/" style="color:var(--accent);">digitalelectronics.com.co</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>¿Tienes alguna pregunta?</h2>
+  <p>Nuestros ingenieros están en línea y listos para ayudarte. Escríbenos ahora.</p>
+  <a href="https://api.whatsapp.com/send?phone=573103841388&text=Hola%20DigitalElectronics" target="_blank" class="cta">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.107.547 4.09 1.503 5.81L0 24l6.338-1.48A11.926 11.926 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.01-1.374l-.36-.214-3.76.877.916-3.648-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+    Contactar por WhatsApp
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__name">Digital Electronics</div>
+  <div class="footer__sub">Software y Soporte Técnico para Smart TV · Colombia</div>
+  <div class="footer__links">
+    <a href="https://digitalelectronics.com.co/" class="footer__link">Inicio</a>
+    <a href="https://digitalelectronics.com.co/SoftwareTv.html" class="footer__link">Software TV</a>
+    <a href="https://digitalelectronics.com.co/Contact.html" class="footer__link">Contacto</a>
+    <a href="https://www.facebook.com/digielec" class="footer__link">Facebook</a>
+  </div>
+</footer>
+
+</body>
+</html>
