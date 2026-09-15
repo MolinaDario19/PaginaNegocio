@@ -347,12 +347,7 @@ a {
     img { display: block; max-width: 100%; }
     a { color: inherit; text-decoration: none; }
 
-    /* ===== LAYOUT ===== */
-    .container {
-      width: min(92%, 1160px);
-      margin: 0 auto;
-      padding: 80px 0;
-    }
+    
     .section-title {
       font-family: "Oswald", sans-serif;
       font-size: clamp(1.7rem, 3.5vw, 2.3rem);
@@ -379,32 +374,6 @@ a {
       max-width: 620px; margin: 14px auto 0; line-height: 1.7;
     }
 
-    /* ===== CTA BUTTONS ===== */
-    .cta {
-      display: inline-flex; align-items: center; justify-content: center;
-      gap: 10px;
-      background: var(--whatsapp);
-      color: #fff; font-weight: 600; font-size: 1rem;
-      padding: 14px 32px;
-      border-radius: var(--radius-full);
-      box-shadow: 0 4px 15px var(--whatsapp-glow);
-      transition: var(--transition-normal);
-      cursor: pointer; border: none; text-align: center;
-    }
-    .cta:hover {
-      background: var(--whatsapp-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 22px rgba(37,211,102,0.45);
-      color: #fff;
-    }
-    .cta--blue {
-      background: var(--accent);
-      box-shadow: 0 4px 15px rgba(37,99,235,0.3);
-    }
-    .cta--blue:hover {
-      background: var(--accent-hover);
-      box-shadow: 0 8px 22px rgba(37,99,235,0.4);
-    }
 
     /* ===== BADGE ===== */
     .badge {
@@ -509,6 +478,95 @@ a {
       border-color: rgba(37,99,235,0.3);
       background: linear-gradient(145deg, #fff 60%, var(--accent-light));
     }
+
+    /* Número de cuenta + botón */
+.payment-card__account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.payment-card__number {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    word-break: break-all;
+}
+
+/* Botón copiar */
+.payment-card__copy {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    border: 0;
+    border-radius: 9px;
+
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--primary);
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.payment-card__copy svg {
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+}
+
+.payment-card__copy:hover {
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.payment-card__copy:active {
+    transform: scale(0.9);
+}
+
+.payment-card__copy:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Check oculto inicialmente */
+.payment-card__copy .check-icon {
+    display: none;
+}
+
+/* Estado copiado */
+.payment-card__copy.is-copied {
+    background: rgba(34, 197, 94, 0.12);
+    color: #16a34a;
+}
+
+.payment-card__copy.is-copied .copy-icon {
+    display: none;
+}
+
+.payment-card__copy.is-copied .check-icon {
+    display: block;
+}
+.payment-card__link {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
 
     /* Security note */
     .security-note {
@@ -717,44 +775,7 @@ a {
       .order-box { padding: 28px 20px; }
     }
 
-    /* ===== CTA BANNER ===== */
-    .cta-banner {
-      background: var(--primary);
-      text-align: center; padding: 64px 20px;
-      position: relative; overflow: hidden;
-    }
-    .cta-banner::before {
-      content: "";
-      position: absolute; inset: 0;
-      background-image:
-        linear-gradient(rgba(37,99,235,0.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(37,99,235,0.07) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-    .cta-banner h2 {
-      font-family: "Oswald", sans-serif;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 700; color: #fff;
-      text-transform: uppercase;
-      margin-bottom: 12px; position: relative; z-index: 1;
-    }
-    .cta-banner p {
-      color: rgba(255,255,255,0.75);
-      font-size: 1rem; margin-bottom: 28px;
-      max-width: 520px; margin-left: auto; margin-right: auto;
-      position: relative; z-index: 1; margin-bottom: 28px;
-    }
-    .cta-banner .cta { position: relative; z-index: 1; }
-
-    /* ===== ANIMATIONS ===== */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    
 
 .searchBtn {
     background-color: #1D293F; 

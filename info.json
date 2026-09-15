@@ -2143,6 +2143,20 @@
     "preference_id": "MPCL78"
   },
 
+  "UHD 50TG80 BT GOOGLE TV T2": {
+    "modelo": "UHD 50TG80 BT GOOGLE TV T2",
+    "software": "V8-GT51MGL-0015287-user.img",
+    "main": "",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPCL78"
+  },
+
+  
+
   "FHD 32KG90 BT GOOGLE T2": {
     "modelo": "FHD 32KG90 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
