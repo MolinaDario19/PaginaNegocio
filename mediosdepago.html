@@ -757,6 +757,49 @@ var Tawk_LoadStart = new Date();
         <br><br>
         </section>
 
+        
+        <!-- ✦ RESEÑAS DE GOOGLE ✦ -->
+        <section class="reviews-section" id="de-reviews-section">
+        
+        <!-- div oculto que necesita el Places Service -->
+        <div id="de-gmap-dummy" style="display:none;"></div>
+        
+        <div class="container">
+        
+            <!-- Encabezado -->
+            <div class="section-centered">
+            <span class="section-title">Reseñas de Google</span>
+            <p class="section-sub">
+                Opiniones reales de clientes verificados en Google Maps
+            </p>
+            </div>
+        
+            <!-- Estado de carga: skeletons -->
+            <div id="de-loading" class="de-loading-wrap">
+            <div class="de-skeleton de-skeleton--summary"></div>
+            <div class="de-skeleton-grid">
+                <div class="de-skeleton de-skeleton--card"></div>
+                <div class="de-skeleton de-skeleton--card"></div>
+                <div class="de-skeleton de-skeleton--card"></div>
+            </div>
+            </div>
+        
+            <!-- Estado de error -->
+            <div id="de-error" class="de-error-box" style="display:none;"></div>
+        
+            <!-- Resumen de calificación (se rellena con JS) -->
+            <div id="de-rating-summary" class="de-rating-summary" style="display:none;"></div>
+        
+            <!-- Grid de reseñas (se rellena con JS) -->
+            <div id="de-reviews-grid" class="de-reviews-grid" style="display:none;"></div>
+        
+            <!-- Botones finales (se rellenan con JS) -->
+            <div id="de-reviews-cta" class="de-reviews-cta" style="display:none;"></div>
+        
+        </div><!-- /container -->
+        </section>
+        <!-- ✦ FIN RESEÑAS DE GOOGLE ✦ -->
+
         <!--
 
         
@@ -945,6 +988,7 @@ var Tawk_LoadStart = new Date();
     <site-footer></site-footer>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/google-reviews.js"></script>
     <script type="module" src="./js/footer.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1549739524053715"
      crossorigin="anonymous"></script>
