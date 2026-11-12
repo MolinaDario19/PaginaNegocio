@@ -38,7 +38,7 @@
 .pt-lead {
   max-width: 640px;
   margin: 0 auto 30px;
-  color: var(--text-muted, #64748b);
+  color: var(--text-muted, #1f1f21);
   font-size: 1.05rem;
   line-height: 1.6;
 }

@@ -59,7 +59,7 @@ const PLANTILLA_PORTADA = path.join(__dirname, "plantillas", "productos.template
 // logo:   ruta del logo que se muestra en la tarjeta de la portada
 // prefijos (opcional): para modelos sin campo "brand", se asignan por prefijo del código
 const MARCAS = [
-  { nombre: "Kalley", slug: "kalley", logo: "/images/Kalley.jpg", prefijos: ["K-"] },
+  { nombre: "Kalley", slug: "kalley", logo: "/images/Google-TV-Animation.gif", prefijos: ["K-"] },
   { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.png", prefijos: ["HYLED"] },
   { nombre: "Challenger", slug: "challenger", logo: "/images/logo_challenger.png" },
   { nombre: "JVC", slug: "jvc", logo: "/images/logo-jvc.jpg", prefijos: ["LT-"] },
