@@ -38,7 +38,7 @@
 .pt-lead {
   max-width: 640px;
   margin: 0 auto 30px;
-  color: var(--text-muted, #1f1f21);
+  color: var(--text-muted, #64748b);
   font-size: 1.05rem;
   line-height: 1.6;
 }
@@ -182,7 +182,7 @@
 .marca-card__pantalla {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: #f4f6fa;
+  background: #19191a;
   border-radius: 4px;
   display: flex;
   align-items: center;
