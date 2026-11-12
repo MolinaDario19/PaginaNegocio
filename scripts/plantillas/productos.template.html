@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Original para Smart TV por Marca | Digital Electronics</title>
+    <link rel="canonical" href="{{DOMAIN}}{{URL_PORTADA}}">
+    <meta name="description" content="Encuentra el software original para tu Smart TV: {{LISTA_MARCAS}}. {{TOTAL_MODELOS}} modelos con precio y disponibilidad. Instalación con soporte técnico en Cali, Colombia.">
+    <meta name="keywords" content="software smart tv, firmware tv, reparar smart tv, actualizar software tv, TV pegada en el logo, digital electronics cali">
+    <meta name="robots" content="{{ROBOTS}}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Software Original para Smart TV por Marca | Digital Electronics">
+    <meta property="og:description" content="{{TOTAL_MODELOS}} modelos de software original para Smart TV. Elige tu marca, consulta precio y disponibilidad.">
+    <meta property="og:url" content="{{DOMAIN}}{{URL_PORTADA}}">
+    <meta property="og:locale" content="es_ES">
+
+    <link rel="shortcut icon" href="/images/LOGODG16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styleSoftwareTv.css">
+    <link rel="stylesheet" href="/css/portada-marcas.css">
+
+    <script type="application/ld+json">{{JSONLD_MARCAS}}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"¿Dónde encuentro el modelo exacto de mi televisor?","acceptedAnswer":{"@type":"Answer","text":"Está en la etiqueta de la parte trasera del equipo, cerca de los puertos. Escríbelo en el buscador tal como aparece en la etiqueta."}},
+        {"@type":"Question","name":"¿El software es original?","acceptedAnswer":{"@type":"Answer","text":"Sí. Trabajamos únicamente con software original y licenciado para garantizar el rendimiento y la seguridad de tu televisor."}},
+        {"@type":"Question","name":"¿Qué hago si no encuentro mi modelo?","acceptedAnswer":{"@type":"Answer","text":"Escríbenos por WhatsApp con la marca y el modelo. Actualizamos la disponibilidad de software de forma continua y verificamos si ya lo tenemos."}},
+        {"@type":"Question","name":"¿Tienen acompañamiento técnico durante la instalación?","acceptedAnswer":{"@type":"Answer","text":"Sí. Te acompañamos técnicamente hasta que tu dispositivo funcione correctamente."}}
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="/images/LOGO CP.png" alt="DigitalElectronics">
+                <div class="nav_titles">
+                    <h2 class="nav__title">DigitalElectronics</h2>
+                    <p>Líder en tecnología</p>
+                </div>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="/" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="/products" class="nav__links">Productos</a></li>
+                <li class="nav__items"><a href="{{URL_PORTADA}}" class="nav__links">Software TV</a></li>
+                <li class="nav__items"><a id="nav_sol" href="/Soluciones" class="nav__links">Soluciones</a></li>
+                <li class="nav__items"><a href="/Contact" class="nav__links">Contacto</a></li>
+                <img src="/images/close.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu"><img src="/images/menu4.png" class="nav__img"></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============ HERO + BUSCADOR ============ -->
+        <section class="pt-hero container">
+            <p class="pt-eyebrow">Software original · Soporte técnico incluido</p>
+            <h1>Software original para tu Smart TV, por marca y modelo</h1>
+            <p class="pt-lead">Si tu televisor se quedó pegado en el logo, se reinicia solo o no enciende, encuentra aquí el software que le corresponde. Busca tu modelo o elige tu marca.</p>
+
+            <form class="pt-buscador" role="search" onsubmit="return false;">
+                <label for="buscadorModelo" class="pt-sr">Buscar modelo de televisor</label>
+                <input type="text" id="buscadorModelo" placeholder="Escribe tu modelo, ej. K-ATV43UHD" autocomplete="off">
+                <button type="button" id="btnBuscarModelo">Buscar</button>
+            </form>
+            <p class="pt-hint">El modelo está en la etiqueta de la parte trasera del televisor.</p>
+            <div class="pt-resultados" id="resultadosBusqueda" aria-live="polite"></div>
+
+            <dl class="pt-stats">
+                <div><dt>{{TOTAL_MODELOS}}</dt><dd>modelos de software</dd></div>
+                <div><dt>{{TOTAL_MARCAS}}</dt><dd>marcas disponibles</dd></div>
+                <div><dt>+10 años</dt><dd>de experiencia en servicio técnico</dd></div>
+            </dl>
+        </section>
+
+        <!-- ============ MARCAS ============ -->
+        <section class="pt-marcas container" id="marcas">
+            <div class="pt-section-head">
+                <h2>Elige la marca de tu televisor</h2>
+                <p>Cada marca tiene su propia página con todos los modelos, precios y disponibilidad.</p>
+            </div>
+            <div class="pt-grid">
+{{TARJETAS}}
+            </div>
+        </section>
+
+        <!-- ============ CÓMO FUNCIONA ============ -->
+        <section class="pt-pasos container">
+            <div class="pt-section-head">
+                <h2>Cómo conseguir tu software</h2>
+            </div>
+            <ol class="pt-pasos__lista">
+                <li>
+                    <span class="pt-pasos__num">1</span>
+                    <h3>Identifica tu modelo</h3>
+                    <p>Revisa la etiqueta en la parte trasera del televisor y anota la referencia completa.</p>
+                </li>
+                <li>
+                    <span class="pt-pasos__num">2</span>
+                    <h3>Elige marca y referencia</h3>
+                    <p>Entra a la página de tu marca o usa el buscador para ver precio y disponibilidad.</p>
+                </li>
+                <li>
+                    <span class="pt-pasos__num">3</span>
+                    <h3>Solicita la instalación</h3>
+                    <p>Escríbenos por WhatsApp y te acompañamos hasta que tu televisor funcione correctamente.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ============ PREGUNTAS FRECUENTES ============ -->
+        <section class="pt-faq container">
+            <div class="pt-section-head">
+                <h2>Preguntas frecuentes</h2>
+            </div>
+            <details>
+                <summary>¿Dónde encuentro el modelo exacto de mi televisor?</summary>
+                <p>Está en la etiqueta de la parte trasera del equipo, cerca de los puertos. Escríbelo en el buscador tal como aparece en la etiqueta.</p>
+            </details>
+            <details>
+                <summary>¿El software es original?</summary>
+                <p>Sí. Trabajamos únicamente con software original y licenciado para garantizar el rendimiento y la seguridad de tu televisor.</p>
+            </details>
+            <details>
+                <summary>¿Qué hago si no encuentro mi modelo?</summary>
+                <p>Escríbenos por WhatsApp con la marca y el modelo. Actualizamos la disponibilidad de software de forma continua y verificamos si ya lo tenemos.</p>
+            </details>
+            <details>
+                <summary>¿Tienen acompañamiento técnico durante la instalación?</summary>
+                <p>Sí. Te acompañamos técnicamente hasta que tu dispositivo funcione correctamente.</p>
+            </details>
+        </section>
+
+        <!-- ============ LLAMADO FINAL ============ -->
+        <section class="pt-final">
+            <div class="container pt-final__inner">
+                <div>
+                    <h2>¿No encuentras tu modelo?</h2>
+                    <p>Escríbenos con la marca y la referencia de tu televisor y lo verificamos.</p>
+                </div>
+                <a class="pt-btn-wha" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone={{WHATSAPP}}&text=Hola%20DigitalElectronics%2C%20no%20encuentro%20el%20modelo%20de%20mi%20TV">Escribir por WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var CATALOGO = null;
+        fetch('/info.json').then(function (r) { return r.json(); }).then(function (d) { CATALOGO = d; }).catch(function () {});
+
+        function slugify(t) {
+            return t.toString().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim()
+                .replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+        }
+        function limpiar(t) { return t.toString().toLowerCase().replace(/[^a-z0-9]/g, ''); }
+        function esc(t) {
+            return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function buscarModelo() {
+            var q = limpiar(document.getElementById('buscadorModelo').value);
+            var cont = document.getElementById('resultadosBusqueda');
+            if (!q || !CATALOGO) { cont.classList.remove('activo'); cont.innerHTML = ''; return; }
+
+            var res = Object.entries(CATALOGO).filter(function (e) {
+                return limpiar(e[0]).indexOf(q) !== -1 || limpiar(e[1].modelo || '').indexOf(q) !== -1;
+            }).slice(0, 8);
+
+            if (!res.length) {
+                cont.innerHTML = '<div class="pt-sin">No encontramos ese modelo. Escríbenos por WhatsApp y lo confirmamos.</div>';
+                cont.classList.add('activo');
+                return;
+            }
+            cont.innerHTML = res.map(function (e) {
+                var i = e[1], marca = i.brand || '';
+                var url = marca ? '/{{CARPETA}}/' + slugify(marca) + '/' + slugify(i.modelo || e[0]) : '#marcas';
+                return '<a href="' + url + '"><span>' + esc(marca ? marca + ' ' : '') + esc(i.modelo || e[0]) +
+                       '</span><span class="pt-precio">' + esc(i.precio || 'Consultar') + '</span></a>';
+            }).join('');
+            cont.classList.add('activo');
+        }
+        document.getElementById('btnBuscarModelo').addEventListener('click', buscarModelo);
+        document.getElementById('buscadorModelo').addEventListener('input', buscarModelo);
+    </script>
+
+    <site-footer></site-footer>
+    <script src="/js/menu.js"></script>
+    <script type="module" src="/js/footer.js"></script>
+    <script type="module" src="/js/copyright.js"></script>
+</body>
+</html>
