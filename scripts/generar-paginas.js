@@ -64,6 +64,7 @@ const MARCAS = [
   { nombre: "Challenger", slug: "challenger", logo: "/images/logo_challenger.png" },
   { nombre: "JVC", slug: "jvc", logo: "/images/logo-jvc.jpg", prefijos: ["LT-"] },
   { nombre: "Olimpo", slug: "olimpo", logo: "/images/logos olimpo.png" },
+  { nombre: "Visivo", slug: "visivo", logo: "/images/visivo logo.png" },
   { nombre: "Caixun", slug: "caixun", logo: "/images/logo caixun.png", prefijos: ["CX", "C"] },
 ];
 

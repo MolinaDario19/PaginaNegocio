@@ -1860,7 +1860,7 @@
     "preference_id": "MPKL78"
   },
   "43D3200S": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "43D3200S",
     "software": "V8-NT563LA-LF1V424",
     "main": "NT563LA",
@@ -1872,7 +1872,7 @@
     "preference_id": "MPOL75"
   },
   "43D2930": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "43D2930",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1896,7 +1896,7 @@
     "preference_id": "MPOL75"
   },
   "40D2930": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "40D2930",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1908,7 +1908,7 @@
     "preference_id": "MPOL75"
   },
   "32D3200S": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "32D3200S",
     "software": "V8-NT63CLA-LF1V596.bin",
     "main": "NT63CLA",
@@ -1920,7 +1920,7 @@
     "preference_id": "MPOL75"
   },
   "50U3200S": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "50U3200S",
     "software": "V8-NT671LA-LF1V670",
     "main": "NT671LA",
@@ -1932,7 +1932,7 @@
     "preference_id": "MPOL75"
   },
   "55S8800": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "55S8800",
     "software": "V8-MS88ACO-LF1V015.bin",
     "main": "MS88ACO",
@@ -1956,7 +1956,7 @@
     "preference_id": "MPOL75"
   },
   "32D2200S": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "32D2200S",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1968,7 +1968,7 @@
     "preference_id": "MPOL75"
   },
   "32D2930": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "32D2930",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1980,7 +1980,7 @@
     "preference_id": "MPOL75"
   },
   "42D2180": {
-    "brand": "Kalley",
+    "brand": "Olimpo",
     "modelo": "42D2180",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -2040,7 +2040,7 @@
     "preference_id": "MPOL75"
   },
   "24H2 T2": {
-    "brand": "Kalley",
+    "brand": "Challenger",
     "modelo": "24H2 T2",
     "software": "MSD3663W_8M_OB3353_XX.bin",
     "main": "",
@@ -2052,7 +2052,7 @@
     "preference_id": "MPCL70"
   },
   "32H2 T2": {
-    "brand": "Kalley",
+    "brand": "Challenger",
     "modelo": "32H2 T2",
     "software": "MSD3663W_8M_OB3353_XX.bin",
     "main": "",
@@ -4174,6 +4174,42 @@
     "instrucciones": "",
     "preference_id": "MPHY70"
   },
+  "HYLED5815SQG": {
+    "brand": "Hyundai",
+    "modelo": "HYLED5815SQG",
+    "software": "install.img",
+    "main": "P150-2851FTV6.4 V.2",
+    "estado": "Disponible",
+    "precio": "90.000 COP",
+    "valor": 90000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY90"
+  },
+  "HYLED5525QG4KM": {
+    "brand": "Hyundai",
+    "modelo": "HYLED5525QG4KM",
+    "software": "install.img",
+    "main": "P150-2851AV6.2",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY90"
+  },
+  "HYLED6005QG": {
+    "brand": "Hyundai",
+    "modelo": "HYLED6005QG",
+    "software": "CH_R5_GTV_4KL_upgrade_image.pkg",
+    "main": "MB-M9603-DL-0398",
+    "estado": "Disponible",
+    "precio": "85.000 COP",
+    "valor": 85000,
+    "pdf": "",
+    "instrucciones": "",
+    "preference_id": "MPHY90"
+  },
   "C32T1HV": {
     "brand": "Caixun",
     "modelo": "C32T1HV",
@@ -5366,7 +5402,7 @@
     "preference_id": "MPCX90"
   },
   "VTL-4030ST2": {
-    "brand": "Challenger",
+    "brand": "Visivo",
     "modelo": "VTL-4030ST2",
     "software": "MS08GP_MAIN.bin",
     "main": "",
@@ -5378,7 +5414,7 @@
     "preference_id": "MPCL75"
   },
   "VTL-4830ST2": {
-    "brand": "Challenger",
+    "brand": "Visivo",
     "modelo": "VTL-4830ST2",
     "software": "MS08GP_MAIN.bin",
     "main": "",
@@ -5390,7 +5426,7 @@
     "preference_id": "MPCL75"
   },
   "VTL-3230ST2": {
-    "brand": "Challenger",
+    "brand": "Visivo",
     "modelo": "VTL-3230ST2",
     "software": "MS08GP_MAIN.bin",
     "main": "",
@@ -5402,7 +5438,7 @@
     "preference_id": "MPCL75"
   },
   "VTL-FHD4041ST2": {
-    "brand": "Challenger",
+    "brand": "Visivo",
     "modelo": "VTL-FHD4041ST2",
     "software": "358_DVBT_8G.bin",
     "main": "",
@@ -5414,7 +5450,7 @@
     "preference_id": "MPCL75"
   },
   "VTL-FHD4042SLT2": {
-    "brand": "Challenger",
+    "brand": "Visivo",
     "modelo": "VTL-FHD4042SLT2",
     "software": "358_DVBT_8G.bin",
     "main": "",
@@ -5426,7 +5462,7 @@
     "preference_id": "MPCL75"
   },
   "VTL-HD3241ST2": {
-    "brand": "Challenger",
+    "brand": "Visivo",
     "modelo": "VTL-HD3241ST2",
     "software": "358_DVBT_8G.bin",
     "main": "",
@@ -5438,7 +5474,7 @@
     "preference_id": "MPCL75"
   },
   "VTL-UHD5541ST2": {
-    "brand": "Challenger",
+    "brand": "Visivo",
     "modelo": "VTL-UHD5541ST2",
     "software": "658_DVBT_8G.bin",
     "main": "",
