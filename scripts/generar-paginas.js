@@ -393,6 +393,9 @@ function renderModelo(grupo, actual) {
             <div class="producto-info-box">
                 <div class="producto-info-item"><span class="label">Modelo</span><span class="value">${esc(modelo)}</span></div>
                 <div class="producto-info-item"><span class="label">Marca</span><span class="value">${esc(nombre)}</span></div>
+                <div class="producto-info-item"><span class="label">Software</span><span class="value">${esc(info.software || "Consultar")}</span></div>
+                <div class="producto-info-item"><span class="label">MainBoard</span><span class="value">${esc(info.main || "Consultar")}</span></div>
+                
                 <div class="producto-info-item"><span class="label">Precio</span><span class="value">${esc(precioTxt)}</span></div>
                 <div class="producto-info-item"><span class="label">Disponibilidad</span><span class="value">${esc(info.estado || "Consultar")}</span></div>
             </div>
