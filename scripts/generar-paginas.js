@@ -60,8 +60,8 @@ const PLANTILLA_PORTADA = path.join(__dirname, "plantillas", "productos.template
 // prefijos (opcional): para modelos sin campo "brand", se asignan por prefijo del código
 const MARCAS = [
   { nombre: "Kalley", slug: "kalley", logo: "/images/Google-TV-Animation.gif", prefijos: ["K-"] },
-  { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.png", prefijos: ["HYLED"] },
-  { nombre: "Challenger", slug: "challenger", logo: "/images/logo_challenger.png" },
+  { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.jpg", prefijos: ["HYLED"] },
+  { nombre: "Challenger", slug: "challenger", logo: "/images/upgrading.jpg" },
   { nombre: "JVC", slug: "jvc", logo: "/images/logo-jvc.jpg", prefijos: ["LT-"] },
   { nombre: "Olimpo", slug: "olimpo", logo: "/images/logos olimpo.png" },
   { nombre: "Visivo", slug: "visivo", logo: "/images/visivo logo.png" },
