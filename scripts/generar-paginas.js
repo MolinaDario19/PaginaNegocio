@@ -526,6 +526,22 @@ function renderPortada(grupos) {
     JSONLD_MARCAS: jsonLd(itemList),
     TARJETAS: tarjetas.join("\n"),
   };
+
+  console.log("========== DIAGNÓSTICO ==========");
+  console.log("Directorio actual:", process.cwd());
+  console.log("Directorio del script:", __dirname);
+  console.log("Ruta absoluta:", PLANTILLA_PORTADA);
+  console.log("¿Existe la plantilla?", fs.existsSync(PLANTILLA_PORTADA));
+
+  console.log(
+      "Archivos en plantillas:",
+      fs.existsSync(path.dirname(PLANTILLA_PORTADA))
+          ? fs.readdirSync(path.dirname(PLANTILLA_PORTADA))
+          : "LA CARPETA NO EXISTE"
+  );
+
+  console.log("=================================");
+
   let html = fs.readFileSync(PLANTILLA_PORTADA, "utf-8");
   for (const [k, v] of Object.entries(reemplazos)) html = html.split(`{{${k}}}`).join(v);
   return html;
