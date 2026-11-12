@@ -9,7 +9,12 @@
     "valor": 75000,
     "pdf": "",
     "instrucciones": "",
-    "preference_id": "MPKL75"
+    "preference_id": "MPKL75",
+    "evidencias": [
+    { "tipo": "imagen", "url": "/images/soft66.jpeg", "titulo": "TV funcionando tras la instalación" },
+    { "tipo": "video", "url": "https://www.youtube.com/watch?v=yczYr7cbrv4&t=1s", "titulo": "Video Kalley" },
+    "/videos/k-atv43uhd.mp4"
+  ]
   },
   "K-ATV32HDE": {
     "brand": "Kalley",

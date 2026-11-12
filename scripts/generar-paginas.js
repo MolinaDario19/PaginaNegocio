@@ -13,6 +13,10 @@
 //
 // MODO BORRADOR (por defecto) vs MODO PUBLICAR  ->  ver constante PUBLICAR abajo.
 //
+// CAMPOS OPCIONALES EN info.json (por modelo):
+//   "pulgadas": 43            -> fuerza el tamaño; si no existe se deduce del código del modelo
+//   "evidencias": [ ... ]     -> fotos y videos de funcionamiento (ver evidenciasDe() más abajo)
+//
 // PARA AGREGAR UNA MARCA NUEVA:
 //   1) Agrega sus modelos en info.json con  "brand": "NombreMarca"
 //   2) Agrega una línea en MARCAS (abajo) con nombre, slug y logo
@@ -59,12 +63,11 @@ const PLANTILLA_PORTADA = path.join(__dirname, "plantillas", "productos.template
 // logo:   ruta del logo que se muestra en la tarjeta de la portada
 // prefijos (opcional): para modelos sin campo "brand", se asignan por prefijo del código
 const MARCAS = [
-  { nombre: "Kalley", slug: "kalley", logo: "/images/Google-TV-Animation.gif", prefijos: ["K-"] },
-  { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.jpg", prefijos: ["HYLED"] },
-  { nombre: "Challenger", slug: "challenger", logo: "/images/upgrading.jpg" },
+  { nombre: "Kalley", slug: "kalley", logo: "/images/Kalley.jpg", prefijos: ["K-"] },
+  { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.png", prefijos: ["HYLED"] },
+  { nombre: "Challenger", slug: "challenger", logo: "/images/logo_challenger.png" },
   { nombre: "JVC", slug: "jvc", logo: "/images/logo-jvc.jpg", prefijos: ["LT-"] },
   { nombre: "Olimpo", slug: "olimpo", logo: "/images/logos olimpo.png" },
-  { nombre: "Visivo", slug: "visivo", logo: "/images/visivo logo.png" },
   { nombre: "Caixun", slug: "caixun", logo: "/images/logo caixun.png", prefijos: ["CX", "C"] },
 ];
 
@@ -202,7 +205,132 @@ const HEAD_ASSETS = `
 
 const waLink = (texto) => `https://api.whatsapp.com/send?phone=${WHATSAPP}&text=${encodeURIComponent(texto)}`;
 
+// ------------------------------- ayudas de contenido ------------------------
+
+const TELEFONO = WHATSAPP; // número para llamadas (cámbialo si es distinto al de WhatsApp)
+const WOMPI_WIDGET = "https://checkout.wompi.co/widget.js";
+const MP_CHECKOUT = "https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js";
+
+const limpiar = (t) => String(t || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+
+// Tamaño en pulgadas: se toma de info.pulgadas si existe; si no, se deduce del código
+// del modelo (primer número, ej. K-ATV43UHD -> 43). Si no es un tamaño conocido, queda vacío.
+const TAMANOS = new Set([19, 20, 22, 24, 28, 32, 39, 40, 42, 43, 45, 46, 47, 48, 49, 50, 55, 58, 60, 65, 70, 75, 82, 85, 86, 98, 115]);
+function pulgadasDe(codigo, info) {
+  if (Number(info.pulgadas) > 0) return Number(info.pulgadas);
+  const m = String(info.modelo || codigo).toUpperCase().match(/\d{2,4}/);
+  if (!m) return null;
+  const d = m[0];
+  if (d.length >= 3 && Number(d.slice(0, 3)) >= 100 && TAMANOS.has(Number(d.slice(0, 3)))) return Number(d.slice(0, 3));
+  const dos = Number(d.slice(0, 2));
+  return TAMANOS.has(dos) ? dos : null;
+}
+
+// Evidencias opcionales en info.json:
+//   "evidencias": [
+//     { "tipo": "imagen", "url": "/images/evidencias/k-atv32hd-1.jpg", "titulo": "TV funcionando" },
+//     { "tipo": "video",  "url": "https://www.youtube.com/watch?v=XXXXXXXXXXX", "titulo": "Prueba" },
+//     { "url": "/videos/k-atv32hd.mp4" }
+//   ]
+// Se aceptan imágenes, videos de YouTube y archivos .mp4/.webm. Solo rutas del sitio ("/...") o https.
+function evidenciasDe(info) {
+  const lista = Array.isArray(info.evidencias) ? info.evidencias : [];
+  const salida = [];
+  for (const e of lista) {
+    const item = typeof e === "string" ? { url: e } : e || {};
+    const url = String(item.url || "").trim();
+    if (!/^(\/(?!\/)|https:\/\/)/.test(url)) continue;
+    const titulo = String(item.titulo || "").trim();
+    const yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/))([\w-]{11})/);
+    if (yt) salida.push({ tipo: "youtube", id: yt[1], titulo });
+    else if (String(item.tipo || "").toLowerCase() === "video" || /\.(mp4|webm)(\?.*)?$/i.test(url)) salida.push({ tipo: "video", url, titulo });
+    else salida.push({ tipo: "imagen", url, titulo });
+  }
+  return salida;
+}
+
+function htmlEvidencias(evs, nombre, modelo) {
+  if (!evs.length) return "";
+  const items = evs
+    .map((e, i) => {
+      const alt = e.titulo || `Evidencia de funcionamiento ${nombre} ${modelo} (${i + 1})`;
+      let media;
+      if (e.tipo === "imagen") {
+        media = `<a href="${esc(e.url)}" target="_blank" rel="noopener"><img src="${esc(e.url)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a>`;
+      } else if (e.tipo === "youtube") {
+        media = `<div class="evid-video"><iframe src="https://www.youtube-nocookie.com/embed/${e.id}" title="${esc(alt)}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
+      } else {
+        media = `<video controls preload="metadata" playsinline src="${esc(e.url)}"></video>`;
+      }
+      return `<figure class="evid">${media}${e.titulo ? `<figcaption>${esc(e.titulo)}</figcaption>` : ""}</figure>`;
+    })
+    .join("");
+  return `
+            <section class="bloque">
+                <h2>Evidencias de funcionamiento</h2>
+                <p class="bloque-sub">Fotos y videos de este modelo funcionando después del servicio.</p>
+                <div class="evid-grid">${items}</div>
+            </section>`;
+}
+
 // ------------------------------- página de marca ----------------------------
+
+const scriptBusqueda = (nombre) => `
+    <script>
+    (function () {
+        var NOMBRE = ${jsonLd(nombre)};
+        var TEL = ${jsonLd(WHATSAPP)};
+        var input = document.getElementById('q');
+        var borrar = document.getElementById('borrar');
+        var cont = document.getElementById('contador');
+        var vacio = document.getElementById('vacio');
+        var vacioWa = document.getElementById('vacioWa');
+        var cards = [].slice.call(document.querySelectorAll('.modelo-card'));
+        var chips = [].slice.call(document.querySelectorAll('.chip[data-t]'));
+        var chipDisp = document.getElementById('soloDisp');
+        var total = cards.length, tam = '', soloDisp = false;
+
+        function limpiar(t) { return String(t).toLowerCase().replace(/[^a-z0-9]/g, ''); }
+
+        function aplicar() {
+            var q = limpiar(input.value), n = 0;
+            cards.forEach(function (c) {
+                var ok = (!q || c.getAttribute('data-q').indexOf(q) !== -1) &&
+                         (!tam || c.getAttribute('data-t') === tam) &&
+                         (!soloDisp || c.getAttribute('data-d') === '1');
+                c.hidden = !ok;
+                if (ok) n++;
+            });
+            cont.textContent = n === total ? total + ' modelos' : 'Mostrando ' + n + ' de ' + total + ' modelos';
+            vacio.hidden = n > 0;
+            borrar.hidden = !input.value;
+            vacioWa.href = 'https://api.whatsapp.com/send?phone=' + TEL + '&text=' +
+                encodeURIComponent('Hola DigitalElectronics, busco software para mi TV ' + NOMBRE + (input.value ? ' modelo ' + input.value : ''));
+        }
+
+        input.addEventListener('input', aplicar);
+        borrar.addEventListener('click', function () { input.value = ''; aplicar(); input.focus(); });
+        chips.forEach(function (ch) {
+            ch.addEventListener('click', function () {
+                tam = ch.getAttribute('data-t');
+                chips.forEach(function (x) {
+                    x.classList.toggle('is-on', x === ch);
+                    x.setAttribute('aria-pressed', x === ch ? 'true' : 'false');
+                });
+                aplicar();
+            });
+        });
+        if (chipDisp) {
+            chipDisp.addEventListener('click', function () {
+                soloDisp = !soloDisp;
+                chipDisp.classList.toggle('is-on', soloDisp);
+                chipDisp.setAttribute('aria-pressed', soloDisp ? 'true' : 'false');
+                aplicar();
+            });
+        }
+        aplicar();
+    })();
+    </script>`;
 
 function renderMarca(grupo) {
   const { marca, modelos } = grupo;
@@ -210,16 +338,26 @@ function renderMarca(grupo) {
   const url = `${DOMAIN}${urlMarca(slug)}`;
   const total = modelos.length;
   const precios = modelos.map((m) => Number(m.info.valor)).filter((v) => v > 0);
-  const desde = precios.length ? ` Desde ${formatoCOP(Math.min(...precios))}.` : "";
+  const desdeTxt = precios.length ? `desde ${formatoCOP(Math.min(...precios))}` : "";
+  const desdeMeta = precios.length ? ` Desde ${formatoCOP(Math.min(...precios))}.` : "";
   const wa = waLink(`Hola DigitalElectronics, necesito software para mi TV ${nombre}`);
+  const ejemplo = modelos[0] ? modelos[0].info.modelo || modelos[0].codigo : "";
 
-  const metaDesc = `Software y firmware original para ${total} modelos de Smart TV ${nombre}. Soluciona pantalla negra, bloqueos y reinicios.${desde} Instalación con soporte técnico en Cali, Colombia.`;
+  const tamanos = [...new Set(modelos.map((m) => pulgadasDe(m.codigo, m.info)).filter(Boolean))].sort((a, b) => a - b);
+  const chipsTam = tamanos.length >= 2
+    ? `<button type="button" class="chip is-on" data-t="" aria-pressed="true">Todos</button>` +
+      tamanos.map((t) => `<button type="button" class="chip" data-t="${t}" aria-pressed="false">${t}″</button>`).join("")
+    : "";
+
+  const metaDesc = `Software y firmware original para ${total} modelos de Smart TV ${nombre}. Soluciona pantalla negra, bloqueos y reinicios.${desdeMeta} Guía por WhatsApp, llamada o videollamada en Cali, Colombia.`;
 
   const faq = [
     [`¿Qué necesito para conseguir el software de mi TV ${nombre}?`,
      `Solo el modelo exacto de tu televisor ${nombre}, que está en la etiqueta de la parte trasera. Búscalo en esta página para ver precio y disponibilidad.`],
     [`¿El software para ${nombre} es original?`,
      `Sí. Trabajamos únicamente con software original y licenciado, con acompañamiento técnico hasta que tu televisor funcione correctamente.`],
+    [`¿Cómo me ayudan con la instalación?`,
+     `Te guiamos por WhatsApp, por llamada telefónica o por videollamada si tu caso lo requiere.`],
     [`¿Qué hago si no encuentro mi modelo ${nombre}?`,
      `Escríbenos por WhatsApp con el modelo exacto y verificamos si está disponible.`],
   ];
@@ -246,25 +384,31 @@ function renderMarca(grupo) {
   };
 
   const tarjetas = modelos
-    .map(
-      (m) => `
-            <a class="modelo-card" href="${urlModelo(slug, m.mslug)}">
-                <div class="modelo-card__top">
-                    <h3>${esc(nombre)} ${esc(m.info.modelo || m.codigo)}</h3>
-                    ${badgeEstado(m.info.estado)}
-                </div>
-                <p class="modelo-card__precio">${esc(m.info.precio || "Consultar")}</p>
-                <span class="modelo-card__cta">Ver detalles</span>
-            </a>`
-    )
+    .map((m) => {
+      const modelo = m.info.modelo || m.codigo;
+      const t = pulgadasDe(m.codigo, m.info);
+      const disp = (m.info.estado || "").trim().toLowerCase() === "disponible";
+      return `
+                <a class="modelo-card" href="${urlModelo(slug, m.mslug)}" data-q="${esc(limpiar(modelo + " " + m.codigo))}" data-t="${t || ""}" data-d="${disp ? 1 : 0}">
+                    <div class="mc-top">
+                        <h3><span class="mc-marca">${esc(nombre)}</span> ${esc(modelo)}</h3>
+                        ${badgeEstado(m.info.estado)}
+                    </div>
+                    <div class="mc-bottom">
+                        <span class="mc-precio">${esc(m.info.precio || "Consultar")}</span>
+                        ${t ? `<span class="tag-size">${t}″</span>` : ""}
+                        <span class="mc-cta">Ver software</span>
+                    </div>
+                </a>`;
+    })
     .join("");
 
   const faqHtml = faq
     .map(([q, a]) => `
-            <details>
-                <summary>${esc(q)}</summary>
-                <p>${esc(a)}</p>
-            </details>`)
+                <details>
+                    <summary>${esc(q)}</summary>
+                    <p>${esc(a)}</p>
+                </details>`)
     .join("");
 
   return `<!DOCTYPE html>
@@ -285,34 +429,159 @@ function renderMarca(grupo) {
     <script type="application/ld+json">${jsonLd(breadcrumb)}</script>
     <script type="application/ld+json">${jsonLd(faqLd)}</script>
 </head>
-<body>
-    <header class="hero">
-        ${NAV_HTML}
-        <section class="hero__container container">
-            <h1 class="hero__title">Software Original para Smart TV ${esc(nombre)}</h1>
-            <p class="hero__paragraph">Encuentra tu modelo de televisor ${esc(nombre)} y consulta la disponibilidad de software original. Instalación con soporte técnico profesional.</p>
-            <a href="${wa}" target="_blank" rel="noopener" class="cta">Contactar ahora</a>
-        </section>
-    </header>
+<body class="pagina-marca">
+    <header>${NAV_HTML}</header>
+
     <main>
-        <section class="productos-marca container">
-            <nav class="breadcrumb" aria-label="breadcrumb">
-                <a href="/">Inicio</a> &raquo; <a href="${URL_PORTADA}">Software TV</a> &raquo; <span>${esc(nombre)}</span>
-            </nav>
-            <p class="intro-marca">Contamos con ${total} modelos de ${esc(nombre)}. Selecciona tu referencia exacta para ver precio y disponibilidad.</p>
-            <div class="modelos-grid">${tarjetas}
+        <section class="marca-hero">
+            <div class="container">
+                <nav class="breadcrumb breadcrumb--claro" aria-label="breadcrumb">
+                    <a href="/">Inicio</a> &raquo; <a href="${URL_PORTADA}">Software TV</a> &raquo; <span>${esc(nombre)}</span>
+                </nav>
+                <div class="marca-hero__fila">
+                    <div class="marca-hero__logo"><img src="${encodeURI(marca.logo)}" alt="Logo ${esc(nombre)}"></div>
+                    <div>
+                        <h1>Software original para Smart TV ${esc(nombre)}</h1>
+                        <p class="marca-hero__sub">${total} modelos${desdeTxt ? " · " + desdeTxt : ""}</p>
+                    </div>
+                </div>
+                <ul class="confianza">
+                    <li>Software original y licenciado</li>
+                    <li>Te guiamos por WhatsApp, llamada o videollamada</li>
+                    <li>Paga con Mercado Pago o Wompi</li>
+                </ul>
             </div>
-            <section class="faq-marca">
-                <h2>Preguntas frecuentes sobre software ${esc(nombre)}</h2>${faqHtml}
-            </section>
+        </section>
+
+        <section class="catalogo container">
+            <div class="buscador-bloque">
+                <label for="q" class="buscador-label">Busca tu modelo ${esc(nombre)}</label>
+                <div class="buscador">
+                    <input type="search" id="q" placeholder="Ej. ${esc(ejemplo)}" autocomplete="off" enterkeyhint="search">
+                    <button type="button" id="borrar" class="buscador-borrar" hidden>Borrar</button>
+                </div>
+                <p class="buscador-ayuda">El modelo está en la etiqueta de la parte trasera del televisor.</p>
+                <div class="filtros">
+                    ${chipsTam ? `<div class="filtros-grupo" role="group" aria-label="Filtrar por tamaño">${chipsTam}</div>` : ""}
+                    <button type="button" class="chip" id="soloDisp" aria-pressed="false">Solo disponibles</button>
+                </div>
+                <p class="contador" id="contador" aria-live="polite">${total} modelos</p>
+            </div>
+
+            <div class="modelos-grid" id="grid">${tarjetas}
+            </div>
+
+            <div class="sin-resultados" id="vacio" hidden>
+                <h3>No encontramos ese modelo</h3>
+                <p>Puede que aún no lo tengamos publicado. Escríbenos y lo verificamos.</p>
+                <a id="vacioWa" class="btn-wha" target="_blank" rel="noopener" href="${wa}">Consultar por WhatsApp</a>
+            </div>
+        </section>
+
+        <section class="faq-marca container">
+            <h2>Preguntas frecuentes sobre software ${esc(nombre)}</h2>${faqHtml}
         </section>
     </main>
+    ${scriptBusqueda(nombre)}
     ${FOOTER_HTML}
 </body>
 </html>`;
 }
 
 // ------------------------------- página de modelo ---------------------------
+
+const scriptPago = () => `
+    <script>
+    (function () {
+        var MP = ${jsonLd(MP_CHECKOUT)};
+        var WOMPI = ${jsonLd(WOMPI_WIDGET)};
+        var REDIRECT = ${jsonLd(DOMAIN + "/payment.html")};
+        var card = document.getElementById('comprar');
+        if (!card || !card.getAttribute('data-valor')) return;
+        var modelo = card.getAttribute('data-modelo');
+        var valor = Number(card.getAttribute('data-valor'));
+        var btn = document.getElementById('btnPagar');
+        var mpBox = document.getElementById('mp-button');
+        var estado = document.getElementById('compraEstado');
+        var radios = card.querySelectorAll('input[name="metodo"]');
+
+        function metodo() {
+            for (var i = 0; i < radios.length; i++) if (radios[i].checked) return radios[i].value;
+            return 'mp';
+        }
+        function mensaje(txt, esError) {
+            estado.textContent = txt || '';
+            estado.className = 'compra-estado' + (esError ? ' compra-estado--error' : '');
+        }
+        function reiniciar() {
+            mpBox.innerHTML = '';
+            btn.hidden = false;
+            btn.disabled = false;
+            btn.textContent = 'Continuar con el pago';
+            mensaje('');
+        }
+        function crear(url, titulo) {
+            return fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ modelo: modelo, titulo: titulo, valor: valor })
+            }).then(function (r) {
+                return r.json().then(function (d) {
+                    if (!r.ok) throw new Error(d.error || 'Error');
+                    return d;
+                });
+            });
+        }
+        function cargar(src) {
+            return new Promise(function (ok, fail) {
+                if (window.WidgetCheckout) return ok();
+                var s = document.createElement('script');
+                s.src = src; s.async = true; s.onload = ok; s.onerror = fail;
+                document.head.appendChild(s);
+            });
+        }
+        function pagarMP() {
+            return crear('/api/crear-preferencia', 'Servicio técnico ' + modelo).then(function (d) {
+                if (!d.preference_id) throw new Error('Sin preferencia');
+                var s = document.createElement('script');
+                s.src = MP;
+                s.setAttribute('data-preference-id', d.preference_id);
+                s.setAttribute('data-source', 'button');
+                mpBox.appendChild(s);
+                btn.hidden = true;
+                mensaje('Listo. Pulsa el botón de Mercado Pago para completar tu pago.');
+            });
+        }
+        function pagarWompi() {
+            return Promise.all([crear('/api/crear-wompi', 'Software original - ' + modelo), cargar(WOMPI)]).then(function (r) {
+                var d = r[0];
+                var w = new WidgetCheckout({
+                    currency: d.moneda,
+                    amountInCents: d.montoCentavos,
+                    reference: d.referencia,
+                    publicKey: d.publicKey,
+                    signature: { integrity: d.firma },
+                    redirectUrl: REDIRECT
+                });
+                w.open(function () {});
+                btn.disabled = false;
+                btn.textContent = 'Continuar con el pago';
+                mensaje('Se abrió la ventana de pago de Wompi.');
+            });
+        }
+        btn.addEventListener('click', function () {
+            btn.disabled = true;
+            btn.textContent = 'Preparando tu pago…';
+            mensaje('');
+            (metodo() === 'wompi' ? pagarWompi() : pagarMP()).catch(function () {
+                btn.disabled = false;
+                btn.textContent = 'Continuar con el pago';
+                mensaje('No pudimos iniciar el pago. Intenta de nuevo o escríbenos por WhatsApp.', true);
+            });
+        });
+        for (var i = 0; i < radios.length; i++) radios[i].addEventListener('change', reiniciar);
+    })();
+    </script>`;
 
 function renderModelo(grupo, actual) {
   const { marca, modelos } = grupo;
@@ -321,23 +590,34 @@ function renderModelo(grupo, actual) {
   const modelo = info.modelo || codigo;
   const url = `${DOMAIN}${urlModelo(slug, mslug)}`;
   const precioTxt = info.precio || "Consultar";
-  const disponible = (info.estado || "").trim().toLowerCase() === "disponible";
+  const estadoTxt = (info.estado || "").trim();
+  const disponible = estadoTxt.toLowerCase() === "disponible";
+  const valor = Number(info.valor);
+  const comprable = disponible && valor > 0;
+  const pulg = pulgadasDe(codigo, info);
+  const evs = evidenciasDe(info);
+  const refPlaca = String(info.main || "").trim();
   const wa = waLink(`Hola DigitalElectronics, necesito software para mi TV ${nombre} ${modelo}`);
-  const comprable = disponible && Number(info.valor) > 0;
+  const waVideo = waLink(`Hola DigitalElectronics, necesito una videollamada para guiarme con el software de mi TV ${nombre} ${modelo}`);
+
+  const metaDesc = `Software original para el Smart TV ${nombre} ${modelo}${pulg ? ` de ${pulg} pulgadas` : ""}. Solución para pantalla negra, bloqueos, reinicios o TV que no enciende. Precio ${precioTxt}. Guía por WhatsApp, llamada o videollamada.`;
 
   const producto = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `Software original para Smart TV ${nombre} ${modelo}`,
+    description: metaDesc,
     brand: { "@type": "Brand", name: nombre },
     sku: codigo,
     url,
   };
-  if (Number(info.valor) > 0) {
+  const imgs = evs.filter((e) => e.tipo === "imagen").map((e) => (e.url.startsWith("/") ? DOMAIN + e.url : e.url));
+  if (imgs.length) producto.image = imgs;
+  if (valor > 0) {
     producto.offers = {
       "@type": "Offer",
       priceCurrency: "COP",
-      price: Number(info.valor),
+      price: valor,
       availability: disponible ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       url,
     };
@@ -353,14 +633,91 @@ function renderModelo(grupo, actual) {
     ],
   };
 
-  // enlaces a modelos vecinos (los 3 anteriores y 3 siguientes en la lista)
   const idx = modelos.findIndex((m) => m.codigo === codigo);
   const vecinos = [...modelos.slice(Math.max(0, idx - 3), idx), ...modelos.slice(idx + 1, idx + 4)];
   const otros = vecinos
     .map((m) => `<li><a href="${urlModelo(slug, m.mslug)}">${esc(nombre)} ${esc(m.info.modelo || m.codigo)}</a></li>`)
     .join("");
 
-  const metaDesc = `Software original para el Smart TV ${nombre} ${modelo}. Solución para pantalla negra, bloqueos, reinicios o TV que no enciende. Precio ${precioTxt}. Instalación con soporte técnico en Cali, Colombia.`;
+  const faq = [
+    [`¿Este software es para el ${nombre} ${modelo} exacto?`,
+     `Sí, corresponde a la referencia ${modelo} de ${nombre}. Antes de pagar, confirma en la etiqueta de la parte trasera de tu televisor que la referencia sea la misma. Si tienes dudas, escríbenos.`],
+    [`¿Cómo me ayudan con la instalación?`,
+     `Te guiamos por WhatsApp, por llamada telefónica o por videollamada si tu caso lo requiere, hasta que el televisor funcione correctamente.`],
+    [`¿Qué medios de pago puedo usar?`,
+     `Puedes pagar con Mercado Pago o con Wompi. Eliges la plataforma antes de continuar.`],
+  ];
+  const faqHtml = faq
+    .map(([q, a]) => `
+                <details>
+                    <summary>${esc(q)}</summary>
+                    <p>${esc(a)}</p>
+                </details>`)
+    .join("");
+
+  const filas = [
+    ["Marca", nombre],
+    ["Modelo", modelo],
+    pulg ? ["Tamaño", `${pulg} pulgadas`] : null,
+    refPlaca ? ["Referencias de placa", refPlaca] : null,
+    ["Disponibilidad", estadoTxt || "Consultar"],
+    ["Precio", precioTxt],
+  ].filter(Boolean);
+  const fichaHtml = filas.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("");
+
+  const tarjetaCompra = comprable
+    ? `
+            <section class="compra-card" id="comprar" aria-labelledby="compra-titulo" data-modelo="${esc(modelo)}" data-valor="${valor}">
+                <h2 id="compra-titulo">Resumen de tu pedido</h2>
+                <div class="resumen">
+                    <div class="resumen-item">
+                        <div>
+                            <strong>Software original</strong>
+                            <span>${esc(nombre)} ${esc(modelo)}</span>
+                        </div>
+                        <span class="resumen-precio">${esc(precioTxt)}</span>
+                    </div>
+                    <ul class="resumen-incluye">
+                        <li>Software original para tu modelo</li>
+                        <li>Acompañamiento técnico hasta que tu TV funcione</li>
+                        <li>Guía por WhatsApp, llamada o videollamada si la necesitas</li>
+                    </ul>
+                    <div class="resumen-total"><span>Total</span><strong>${esc(precioTxt)}</strong></div>
+                </div>
+
+                <fieldset class="metodos">
+                    <legend>Elige cómo pagar</legend>
+                    <label class="metodo">
+                        <input type="radio" name="metodo" value="mp" checked>
+                        <span class="metodo-caja"><strong>Mercado Pago</strong><small>Pagas en la plataforma de Mercado Pago</small></span>
+                    </label>
+                    <label class="metodo">
+                        <input type="radio" name="metodo" value="wompi">
+                        <span class="metodo-caja"><strong>Wompi</strong><small>Pagas en la plataforma de Wompi</small></span>
+                    </label>
+                </fieldset>
+
+                <button type="button" class="btn-pagar" id="btnPagar">Continuar con el pago</button>
+                <div id="mp-button"></div>
+                <p class="compra-estado" id="compraEstado" role="status" aria-live="polite"></p>
+
+                <p class="compra-nota">Los datos de tu tarjeta o cuenta los procesa directamente Mercado Pago o Wompi; no pasan por este sitio. Al terminar volverás a Digital Electronics para confirmar tu pedido y coordinar la instalación.</p>
+                <p class="compra-ayuda">¿Dudas antes de pagar? <a href="${wa}" target="_blank" rel="noopener">WhatsApp</a> · <a href="tel:+${TELEFONO}">Llamar</a></p>
+            </section>`
+    : `
+            <section class="compra-card compra-card--off" id="comprar" aria-labelledby="compra-titulo">
+                <h2 id="compra-titulo">Disponibilidad</h2>
+                <p>${disponible ? "Consulta el precio de este software con nosotros." : "Este software no está disponible por ahora."}</p>
+                <a href="${wa}" target="_blank" rel="noopener" class="btn-wha">Consultar por WhatsApp</a>
+            </section>`;
+
+  const barraMovil = comprable
+    ? `
+    <div class="barra-movil">
+        <div><span>Total</span><strong>${esc(precioTxt)}</strong></div>
+        <a href="#comprar" class="btn-barra">Comprar ahora</a>
+    </div>`
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="es">
@@ -379,76 +736,73 @@ function renderModelo(grupo, actual) {
     <script type="application/ld+json">${jsonLd(producto)}</script>
     <script type="application/ld+json">${jsonLd(breadcrumb)}</script>
 </head>
-<body>
-    <header class="hero hero--producto">${NAV_HTML}</header>
-    <main>
-        <section class="producto-detalle container">
-            <nav class="breadcrumb" aria-label="breadcrumb">
-                <a href="/">Inicio</a> &raquo; <a href="${URL_PORTADA}">Software TV</a> &raquo;
-                <a href="${urlMarca(slug)}">${esc(nombre)}</a> &raquo; <span>${esc(modelo)}</span>
-            </nav>
-            <h1>Software Original para ${esc(nombre)} ${esc(modelo)}</h1>
-            ${badgeEstado(info.estado)}
-            <p class="producto-descripcion">Si tu televisor <strong>${esc(nombre)} ${esc(modelo)}</strong> se queda pegado en el logo, entra en modo recovery, se reinicia solo o no enciende, contamos con el software original correspondiente a este modelo. Realizamos la instalación con acompañamiento técnico hasta que tu equipo funcione correctamente.</p>
-            <div class="producto-info-box">
-                <div class="producto-info-item"><span class="label">Modelo</span><span class="value">${esc(modelo)}</span></div>
-                <div class="producto-info-item"><span class="label">Marca</span><span class="value">${esc(nombre)}</span></div>
-                <div class="producto-info-item"><span class="label">Software</span><span class="value">${esc(info.software || "Consultar")}</span></div>
-                <div class="producto-info-item"><span class="label">MainBoard</span><span class="value">${esc(info.main || "Consultar")}</span></div>
-                
-                <div class="producto-info-item"><span class="label">Precio</span><span class="value">${esc(precioTxt)}</span></div>
-                <div class="producto-info-item"><span class="label">Disponibilidad</span><span class="value">${esc(info.estado || "Consultar")}</span></div>
+<body class="pagina-modelo">
+    <header class="site-top">${NAV_HTML}</header>
+
+    <main class="prod container">
+        <div class="prod-layout">
+
+            <div class="prod-head">
+                <nav class="breadcrumb" aria-label="breadcrumb">
+                    <a href="/">Inicio</a> &raquo; <a href="${URL_PORTADA}">Software TV</a> &raquo;
+                    <a href="${urlMarca(slug)}">${esc(nombre)}</a> &raquo; <span>${esc(modelo)}</span>
+                </nav>
+                <h1>Software original para ${esc(nombre)} ${esc(modelo)}</h1>
+                <div class="prod-badges">${badgeEstado(estadoTxt)}${pulg ? `<span class="tag-size">${pulg}″</span>` : ""}</div>
+                <p class="prod-intro">Si tu televisor <strong>${esc(nombre)} ${esc(modelo)}</strong>${pulg ? ` de ${pulg} pulgadas` : ""} se queda pegado en el logo, entra en modo recovery, se reinicia solo o no enciende, este es el software original que le corresponde. Te acompañamos en la instalación hasta que funcione correctamente.</p>
             </div>
-            ${comprable ? `<div class="compra" data-modelo="${esc(modelo)}" data-valor="${Number(info.valor)}">
-                <button type="button" class="btn-comprar" id="btnComprar">Comprar ahora</button>
-                <div id="mp-button"></div>
-                <p class="compra-nota">Pagas con Mercado Pago y te acompañamos por WhatsApp hasta que tu televisor funcione.</p>
-            </div>` : ""}
-            <a href="${wa}" target="_blank" rel="noopener" class="cta-producto cta-producto--wha">${comprable ? "Preguntar por WhatsApp" : "Solicitar instalación por WhatsApp"}</a>
-            <section class="otros-modelos">
-                <h2>Otros modelos de ${esc(nombre)}</h2>
-                <ul>${otros}</ul>
-                <a href="${urlMarca(slug)}" class="ver-todos">Ver todos los modelos de ${esc(nombre)}</a>
-            </section>
-        </section>
-    </main>${comprable ? `
-    <script>
-    (function () {
-        var box = document.querySelector('.compra');
-        if (!box) return;
-        var btn = document.getElementById('btnComprar');
-        var cont = document.getElementById('mp-button');
-        btn.addEventListener('click', function () {
-            btn.disabled = true;
-            btn.textContent = 'Preparando pago…';
-            // Misma llamada que usa el modal de tus páginas de marca (updateInfoMP.js)
-            fetch('/api/crear-preferencia', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    modelo: box.dataset.modelo,
-                    titulo: 'Servicio técnico ' + box.dataset.modelo,
-                    valor: Number(box.dataset.valor)
-                })
-            })
-            .then(function (r) { return r.json(); })
-            .then(function (d) {
-                if (!d.preference_id) throw new Error('Sin preferencia');
-                var s = document.createElement('script');
-                s.src = 'https://www.mercadopago.com.co/integrations/v1/web-payment-checkout.js';
-                s.setAttribute('data-preference-id', d.preference_id);
-                s.setAttribute('data-source', 'button');
-                cont.appendChild(s);
-                btn.style.display = 'none';
-            })
-            .catch(function () {
-                btn.disabled = false;
-                btn.textContent = 'Comprar ahora';
-                cont.innerHTML = '<p class="mp-error">No pudimos preparar el pago. Escríbenos por WhatsApp y te ayudamos.</p>';
-            });
-        });
-    })();
-    </script>` : ""}
+
+            <aside class="prod-buy">${tarjetaCompra}
+            </aside>
+
+            <div class="prod-body">
+                <section class="bloque">
+                    <h2>Un servicio guiado de principio a fin</h2>
+                    <div class="canales">
+                        <a class="canal" href="${wa}" target="_blank" rel="noopener">
+                            <strong>WhatsApp</strong>
+                            <span>Resolvemos tus dudas y te guiamos por chat.</span>
+                        </a>
+                        <a class="canal" href="tel:+${TELEFONO}">
+                            <strong>Llamada telefónica</strong>
+                            <span>Si prefieres hablar, llámanos y te explicamos paso a paso.</span>
+                        </a>
+                        <a class="canal" href="${waVideo}" target="_blank" rel="noopener">
+                            <strong>Videollamada</strong>
+                            <span>Si tu caso lo requiere, te guiamos viendo tu televisor.</span>
+                        </a>
+                    </div>
+                </section>
+${htmlEvidencias(evs, nombre, modelo)}
+                <section class="bloque">
+                    <h2>Cómo funciona</h2>
+                    <ol class="pasos">
+                        <li><span class="paso-num">1</span><div><h3>Eliges y pagas</h3><p>Pagas con Mercado Pago o con Wompi.</p></div></li>
+                        <li><span class="paso-num">2</span><div><h3>Confirmas tu pedido</h3><p>Al terminar el pago confirmas el modelo y el número de serie de tu televisor y los envías por WhatsApp.</p></div></li>
+                        <li><span class="paso-num">3</span><div><h3>Te guiamos en la instalación</h3><p>Por WhatsApp, llamada o videollamada, según lo que necesites.</p></div></li>
+                        <li><span class="paso-num">4</span><div><h3>Tu televisor vuelve a funcionar</h3><p>Te acompañamos hasta que funcione correctamente.</p></div></li>
+                    </ol>
+                </section>
+
+                <section class="bloque">
+                    <h2>Ficha del modelo</h2>
+                    <dl class="ficha">${fichaHtml}</dl>
+                </section>
+
+                <section class="bloque faq">
+                    <h2>Preguntas frecuentes</h2>${faqHtml}
+                </section>
+
+                <section class="bloque otros-modelos">
+                    <h2>Otros modelos de ${esc(nombre)}</h2>
+                    <ul>${otros}</ul>
+                    <a href="${urlMarca(slug)}" class="ver-todos">Ver todos los modelos de ${esc(nombre)}</a>
+                </section>
+            </div>
+
+        </div>
+    </main>${barraMovil}
+    ${comprable ? scriptPago() : ""}
     ${FOOTER_HTML}
 </body>
 </html>`;
@@ -530,22 +884,6 @@ function renderPortada(grupos) {
     JSONLD_MARCAS: jsonLd(itemList),
     TARJETAS: tarjetas.join("\n"),
   };
-
-  console.log("========== DIAGNÓSTICO ==========");
-  console.log("Directorio actual:", process.cwd());
-  console.log("Directorio del script:", __dirname);
-  console.log("Ruta absoluta:", PLANTILLA_PORTADA);
-  console.log("¿Existe la plantilla?", fs.existsSync(PLANTILLA_PORTADA));
-
-  console.log(
-      "Archivos en plantillas:",
-      fs.existsSync(path.dirname(PLANTILLA_PORTADA))
-          ? fs.readdirSync(path.dirname(PLANTILLA_PORTADA))
-          : "LA CARPETA NO EXISTE"
-  );
-
-  console.log("=================================");
-
   let html = fs.readFileSync(PLANTILLA_PORTADA, "utf-8");
   for (const [k, v] of Object.entries(reemplazos)) html = html.split(`{{${k}}}`).join(v);
   return html;
