@@ -1,5 +1,6 @@
 {
   "K-ATV32HD": {
+    "brand": "Kalley",
     "modelo": "K-ATV32HD",
     "software": "V8-T841TNF-LF1V851-CTS.img",
     "main": "V8-T841TNF-LF1V808, V8-T841TNF-LF1V851",
@@ -11,6 +12,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV32HDE": {
+    "brand": "Kalley",
     "modelo": "K-ATV32HDE",
     "software": "V8-T841AGL-0000871-CTS.img",
     "main": "V8-T841AGL-0000136",
@@ -22,6 +24,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV32HDS": {
+    "brand": "Kalley",
     "modelo": "K-ATV32HDS",
     "software": "V8-T841TNF-LF1V851-CTS.img",
     "main": "V8-T841TNF-LF1V646 02-SHRT2841-TA04",
@@ -33,6 +36,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV32HDW": {
+    "brand": "Kalley",
     "modelo": "K-ATV32HDW",
     "software": "V8-T841AGL-0000871-CTS.img",
     "main": "V8--T841GL-0000136 BL=36-40",
@@ -44,6 +48,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV39HDB": {
+    "brand": "Kalley",
     "modelo": "K-ATV39HDB",
     "software": "install.img",
     "main": "V8-T841TNF-LF1V742 SVS841TA01-MA200CK",
@@ -55,6 +60,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV40FHD": {
+    "brand": "Kalley",
     "modelo": "K-ATV40FHD",
     "software": "V8-T841TNF-LF1V785-CTS.img",
     "main": "",
@@ -66,6 +72,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV40FHDE": {
+    "brand": "Kalley",
     "modelo": "K-ATV40FHDE",
     "software": "V8-T841AGL-0000871-CTS.img",
     "main": "02-5RT41AB40-CO1D",
@@ -77,6 +84,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV40FHDW": {
+    "brand": "Kalley",
     "modelo": "K-ATV40FHDW",
     "software": "V8-T841AGL-0000975-CTS.img",
     "main": "TPD.RT2841A.PB782",
@@ -88,6 +96,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV42FHDE": {
+    "brand": "Kalley",
     "modelo": "K-ATV42FHDE",
     "software": "V8-T841AGL-0000871-CTS.img",
     "main": "",
@@ -99,6 +108,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV43FHDB": {
+    "brand": "Kalley",
     "modelo": "K-ATV43FHDB",
     "software": "V8-T841AGL-0000394-CTS.img",
     "main": "",
@@ -110,6 +120,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV43FHDE": {
+    "brand": "Kalley",
     "modelo": "K-ATV43FHDE",
     "software": "V8-T841AGL-0000975-CTS.img",
     "main": "V8-7841AGL-0000125",
@@ -121,6 +132,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV43FHDS": {
+    "brand": "Kalley",
     "modelo": "K-ATV43FHDS",
     "software": "V8-T841TNF-LF1V715-CTS.img",
     "main": "",
@@ -132,6 +144,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV43UHD": {
+    "brand": "Kalley",
     "modelo": "K-ATV43UHD",
     "software": "V8-T851TNF-LF1V898-CTS.img",
     "main": "",
@@ -143,6 +156,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV43UHDQW": {
+    "brand": "Kalley",
     "modelo": "K-ATV43UHDQW",
     "software": "V8-T851MGL-0001531-CTS.img",
     "main": "",
@@ -154,6 +168,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV43UHDW": {
+    "brand": "Kalley",
     "modelo": "K-ATV43UHDW",
     "software": "V8-T851MGL-0000895-CTS.img",
     "main": "",
@@ -165,6 +180,7 @@
     "preference_id": "MPKL75"
   },
   "K-ATV50UHD": {
+    "brand": "Kalley",
     "modelo": "K-ATV50UHD",
     "software": "V8-T851TNF-LF1V820-CTS.img",
     "main": " V8-T851TNF-LF",
@@ -176,6 +192,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV50UHDQW": {
+    "brand": "Kalley",
     "modelo": "K-ATV50UHDQW",
     "software": "V8-T851MGL-0001531-CTS.img",
     "main": "",
@@ -187,6 +204,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV50UHDS": {
+    "brand": "Kalley",
     "modelo": "K-ATV50UHDS",
     "software": "install2851.img",
     "main": "V8-T851TNF-LF1V639 02-MART2851-TA21",
@@ -198,6 +216,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV50UHDW": {
+    "brand": "Kalley",
     "modelo": "K-ATV50UHDW",
     "software": "V8-T851MGL-0001531-CTS.img",
     "main": "",
@@ -209,6 +228,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV55UHD": {
+    "brand": "Kalley",
     "modelo": "K-ATV55UHD",
     "software": "V8-T851TNF-LF1V791-CTS.img",
     "main": "",
@@ -220,6 +240,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV55UHDQW": {
+    "brand": "Kalley",
     "modelo": "K-ATV55UHDQW",
     "software": "V8-T851MGL-0001531-CTS.img",
     "main": "",
@@ -231,6 +252,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV55UHDS": {
+    "brand": "Kalley",
     "modelo": "K-ATV55UHDS",
     "software": "install2851.img",
     "main": "",
@@ -242,6 +264,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV55UHDW": {
+    "brand": "Kalley",
     "modelo": "K-ATV55UHDW",
     "software": "V8-T851MGL-0001531-CTS.img",
     "main": "",
@@ -253,6 +276,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV58UHD": {
+    "brand": "Kalley",
     "modelo": "K-ATV58UHD",
     "software": "V8-T851TNF-LF2V015-CTS.img",
     "main": "",
@@ -264,6 +288,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV65UHDB": {
+    "brand": "Kalley",
     "modelo": "K-ATV65UHDB",
     "software": "V8-T851TNF-LF1V888-CTS.img V8-T851TNF-LF2V127-CTS.img",
     "main": "",
@@ -275,6 +300,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV65UHDS": {
+    "brand": "Kalley",
     "modelo": "K-ATV65UHDS",
     "software": "install2851.img",
     "main": "",
@@ -286,6 +312,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV65UHDSQV": {
+    "brand": "Kalley",
     "modelo": "K-ATV65UHDSQV",
     "software": "V8-T851MGL-0001152-CTS.img",
     "main": "",
@@ -297,6 +324,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV65UHDW": {
+    "brand": "Kalley",
     "modelo": "K-ATV65UHDW",
     "software": "V8-T851MGL-0001531-CTS.img",
     "main": "",
@@ -308,6 +336,7 @@
     "preference_id": "MPKL78"
   },
   "K-ATV70UHDB": {
+    "brand": "Kalley",
     "modelo": "K-ATV70UHDB",
     "software": "V8-T851TNF-LF2V015-CTS.img",
     "main": "",
@@ -319,6 +348,7 @@
     "preference_id": "MPKL85"
   },
   "K-ATV70UHDE": {
+    "brand": "Kalley",
     "modelo": "K-ATV70UHDE",
     "software": "V8-T841AGL-0000394-CTS-001.img",
     "main": "",
@@ -330,6 +360,7 @@
     "preference_id": "MPKL85"
   },
   "K-ATV70UHDF": {
+    "brand": "Kalley",
     "modelo": "K-ATV70UHDF",
     "software": "V8-T851MGL-0001531-CTS.img",
     "main": "",
@@ -341,6 +372,7 @@
     "preference_id": "MPKL85"
   },
   "K-ATV70UHDSQV": {
+    "brand": "Kalley",
     "modelo": "K-ATV70UHDSQV",
     "software": "V8-T851MGL-0001152-CTS.img",
     "main": "",
@@ -352,6 +384,7 @@
     "preference_id": "MPKL85"
   },
   "K-ATV75UHDQW": {
+    "brand": "Kalley",
     "modelo": "K-ATV75UHDQW",
     "software": "",
     "main": "",
@@ -363,6 +396,7 @@
     "preference_id": "MPKL85"
   },
   "K-ATV75UHDSQV": {
+    "brand": "Kalley",
     "modelo": "K-ATV75UHDSQV",
     "software": "V8-T851MGL-0001152-CTS.img",
     "main": "",
@@ -374,6 +408,7 @@
     "preference_id": "MPKL85"
   },
   "K-ATV86UHDS": {
+    "brand": "Kalley",
     "modelo": "K-ATV86UHDS",
     "software": "install2851.img",
     "main": "",
@@ -384,9 +419,8 @@
     "instrucciones": "",
     "preference_id": "MPKL85"
   },
-  
-
-   "32GQ200": {
+  "32GQ200": {
+    "brand": "Kalley",
     "modelo": "32GQ200",
     "software": "41A0514-KALLEY.250731190412.0D02-user.img",
     "main": "",
@@ -398,6 +432,7 @@
     "preference_id": "MPKL75"
   },
   "K-GTV32FHD": {
+    "brand": "Kalley",
     "modelo": "K-GTV32FHD",
     "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
     "main": "TPD.RT2841A.PB782",
@@ -409,6 +444,7 @@
     "preference_id": "MPKL75"
   },
   "K-GTV40FHD": {
+    "brand": "Kalley",
     "modelo": "K-GTV40FHD",
     "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
     "main": "TPD.RT2841A.PB782",
@@ -420,6 +456,7 @@
     "preference_id": "MPKL75"
   },
   "K-TV40G200": {
+    "brand": "Kalley",
     "modelo": "K-TV40G200",
     "software": "3 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
     "main": "...",
@@ -431,6 +468,7 @@
     "preference_id": "MPKL75"
   },
   "K-GTV43FHD": {
+    "brand": "Kalley",
     "modelo": "K-GTV43FHD",
     "software": "4 Versiones - V8-GT41AGL-00XXXXX.XXXX.img",
     "main": "TPD.RT2841A.PB782",
@@ -442,6 +480,7 @@
     "preference_id": "MPKL75"
   },
   "K-GTV43UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV43UHDQ",
     "software": "",
     "main": "",
@@ -453,6 +492,7 @@
     "preference_id": "MPKL75"
   },
   "K-GTV43UHDQV": {
+    "brand": "Kalley",
     "modelo": "K-GTV43UHDQV",
     "software": "",
     "main": "",
@@ -464,6 +504,7 @@
     "preference_id": "MPKL75"
   },
   "K-GTV50UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV50UHDQ",
     "software": "",
     "main": "",
@@ -475,6 +516,7 @@
     "preference_id": "2MPKL78"
   },
   "K-GTV50UHDQV": {
+    "brand": "Kalley",
     "modelo": "K-GTV50UHDQV",
     "software": "",
     "main": "",
@@ -486,6 +528,7 @@
     "preference_id": "MPKL78"
   },
   "K-GTV50UHDQV2": {
+    "brand": "Kalley",
     "modelo": "K-GTV50UHDQV2",
     "software": "",
     "main": "",
@@ -497,6 +540,7 @@
     "preference_id": "MPKL78"
   },
   "K-TV50G305": {
+    "brand": "Kalley",
     "modelo": "K-TV50G305",
     "software": "",
     "main": "",
@@ -508,6 +552,7 @@
     "preference_id": "MPKL78"
   },
   "K-TV50GQ405": {
+    "brand": "Kalley",
     "modelo": "K-TV50GQ405",
     "software": "",
     "main": "",
@@ -519,6 +564,7 @@
     "preference_id": "MPKL78"
   },
   "K-GTV55UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV55UHDQ",
     "software": "3 Versiones - V8-GT51MGL-00XXXXX.XXXX.img",
     "main": "TD.RT2851M.783",
@@ -530,6 +576,7 @@
     "preference_id": "MPKL78"
   },
   "K-GTV55UHDQV": {
+    "brand": "Kalley",
     "modelo": "K-GTV55UHDQV",
     "software": "",
     "main": "",
@@ -541,6 +588,7 @@
     "preference_id": "MPKL78"
   },
   "K-GTV55UHDQV2": {
+    "brand": "Kalley",
     "modelo": "K-GTV55UHDQV2",
     "software": "",
     "main": "",
@@ -552,6 +600,7 @@
     "preference_id": "MPKL78"
   },
   "K-55GM405": {
+    "brand": "Kalley",
     "modelo": "K-55GM405",
     "software": "",
     "main": "",
@@ -563,6 +612,7 @@
     "preference_id": "MPKL78"
   },
   "K-55GQ405": {
+    "brand": "Kalley",
     "modelo": "K-55GQ405",
     "software": "",
     "main": "",
@@ -574,6 +624,7 @@
     "preference_id": "MPKL78"
   },
   "K-GTV58UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV58UHDQ",
     "software": "",
     "main": "",
@@ -585,6 +636,7 @@
     "preference_id": "MPKL78"
   },
   "K-58GQ405": {
+    "brand": "Kalley",
     "modelo": "K-58GQ405",
     "software": "",
     "main": "",
@@ -596,6 +648,7 @@
     "preference_id": "MPKL78"
   },
   "K-60G300": {
+    "brand": "Kalley",
     "modelo": "K-60G300",
     "software": "",
     "main": "",
@@ -607,6 +660,7 @@
     "preference_id": "MPKL78"
   },
   "K-GTV65UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV65UHDQ",
     "software": "",
     "main": "",
@@ -618,6 +672,7 @@
     "preference_id": "MPKL78"
   },
   "K-GTV70UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV70UHDQ",
     "software": "",
     "main": "",
@@ -629,6 +684,7 @@
     "preference_id": "MPKL85"
   },
   "K-70GQ405": {
+    "brand": "Kalley",
     "modelo": "K-70GQ405",
     "software": "",
     "main": "",
@@ -640,6 +696,7 @@
     "preference_id": "MPKL85"
   },
   "K-GTV75UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV75UHDQ",
     "software": "",
     "main": "",
@@ -651,6 +708,7 @@
     "preference_id": "MPKL85"
   },
   "K-75GQ405": {
+    "brand": "Kalley",
     "modelo": "K-75GQ405",
     "software": "",
     "main": "",
@@ -662,6 +720,7 @@
     "preference_id": "MPKL85"
   },
   "K-GTV85UHDQ": {
+    "brand": "Kalley",
     "modelo": "K-GTV85UHDQ",
     "software": "",
     "main": "",
@@ -673,6 +732,7 @@
     "preference_id": "MPKL85"
   },
   "K-GTV98UHDQV": {
+    "brand": "Kalley",
     "modelo": "K-GTV98UHDQV",
     "software": "",
     "main": "",
@@ -684,6 +744,7 @@
     "preference_id": "MPKL85"
   },
   "K-GTV98UHDQV2": {
+    "brand": "Kalley",
     "modelo": "K-GTV98UHDQV2",
     "software": "",
     "main": "",
@@ -694,8 +755,8 @@
     "instrucciones": "",
     "preference_id": "MPKL85"
   },
-
   "115GM405": {
+    "brand": "Kalley",
     "modelo": "115GM405",
     "software": "",
     "main": "",
@@ -706,8 +767,8 @@
     "instrucciones": "",
     "preference_id": "MPKL75"
   },
- 
   "40G200": {
+    "brand": "Kalley",
     "modelo": "40G200",
     "software": "V8-GT41AGL-0012570.0002-KALLEY-oem124-user.img",
     "main": "",
@@ -719,6 +780,7 @@
     "preference_id": "MPKL75"
   },
   "40GQ200": {
+    "brand": "Kalley",
     "modelo": "40GQ200",
     "software": "41A0514-KALLEY.250731190412.0D01-user.img",
     "main": "",
@@ -730,6 +792,7 @@
     "preference_id": "MPKL75"
   },
   "43G200": {
+    "brand": "Kalley",
     "modelo": "43G200",
     "software": "",
     "main": "",
@@ -741,6 +804,7 @@
     "preference_id": "MPKL75"
   },
   "43G200A": {
+    "brand": "Kalley",
     "modelo": "43G200A",
     "software": "",
     "main": "",
@@ -752,6 +816,7 @@
     "preference_id": "MPKL55"
   },
   "43G305": {
+    "brand": "Kalley",
     "modelo": "43G305",
     "software": "",
     "main": "",
@@ -763,6 +828,7 @@
     "preference_id": "MPKL75"
   },
   "43G315": {
+    "brand": "Kalley",
     "modelo": "43G315",
     "software": "",
     "main": "",
@@ -774,6 +840,7 @@
     "preference_id": "MPKL75"
   },
   "43GQ200": {
+    "brand": "Kalley",
     "modelo": "43GQ200",
     "software": "",
     "main": "",
@@ -785,6 +852,7 @@
     "preference_id": "MPKL75"
   },
   "50G305": {
+    "brand": "Kalley",
     "modelo": "50G305",
     "software": "",
     "main": "",
@@ -796,6 +864,7 @@
     "preference_id": "MPKL78"
   },
   "50G315": {
+    "brand": "Kalley",
     "modelo": "50G315",
     "software": "",
     "main": "",
@@ -807,6 +876,7 @@
     "preference_id": "MPKL78"
   },
   "50GQ405": {
+    "brand": "Kalley",
     "modelo": "50GQ405",
     "software": "",
     "main": "",
@@ -818,6 +888,7 @@
     "preference_id": "MPKL78"
   },
   "55G305": {
+    "brand": "Kalley",
     "modelo": "55G305",
     "software": "",
     "main": "",
@@ -829,6 +900,7 @@
     "preference_id": "MPKL78"
   },
   "55G315": {
+    "brand": "Kalley",
     "modelo": "55G315",
     "software": "",
     "main": "",
@@ -840,6 +912,7 @@
     "preference_id": "MPKL78"
   },
   "55GM405": {
+    "brand": "Kalley",
     "modelo": "55GM405",
     "software": "",
     "main": "",
@@ -851,6 +924,7 @@
     "preference_id": "MPKL78"
   },
   "55GQ405": {
+    "brand": "Kalley",
     "modelo": "55GQ405",
     "software": "",
     "main": "",
@@ -862,6 +936,7 @@
     "preference_id": "MPKL78"
   },
   "58GQ400": {
+    "brand": "Kalley",
     "modelo": "58GQ400",
     "software": "",
     "main": "",
@@ -873,6 +948,7 @@
     "preference_id": "MPKL78"
   },
   "58GQ400A": {
+    "brand": "Kalley",
     "modelo": "58GQ400A",
     "software": "",
     "main": "",
@@ -884,6 +960,7 @@
     "preference_id": "MPKL78"
   },
   "58GQ405": {
+    "brand": "Kalley",
     "modelo": "58GQ405",
     "software": "",
     "main": "",
@@ -895,6 +972,7 @@
     "preference_id": "MPKL78"
   },
   "60G300": {
+    "brand": "Kalley",
     "modelo": "60G300",
     "software": "",
     "main": "",
@@ -906,6 +984,7 @@
     "preference_id": "MPKL85"
   },
   "60G310": {
+    "brand": "Kalley",
     "modelo": "60G310",
     "software": "",
     "main": "",
@@ -917,6 +996,7 @@
     "preference_id": "MPKL85"
   },
   "60GQ400": {
+    "brand": "Kalley",
     "modelo": "60GQ400",
     "software": "",
     "main": "",
@@ -928,6 +1008,7 @@
     "preference_id": "MPKL85"
   },
   "65G305": {
+    "brand": "Kalley",
     "modelo": "65G305",
     "software": "",
     "main": "",
@@ -939,6 +1020,7 @@
     "preference_id": "MPKL85"
   },
   "65G315": {
+    "brand": "Kalley",
     "modelo": "65G315",
     "software": "",
     "main": "",
@@ -950,6 +1032,7 @@
     "preference_id": "MPKL85"
   },
   "65GM405": {
+    "brand": "Kalley",
     "modelo": "65GM405",
     "software": "",
     "main": "",
@@ -961,6 +1044,7 @@
     "preference_id": "MPKL85"
   },
   "65GQ405": {
+    "brand": "Kalley",
     "modelo": "65GQ405",
     "software": "",
     "main": "",
@@ -972,6 +1056,7 @@
     "preference_id": "MPKL85"
   },
   "70GQ405": {
+    "brand": "Kalley",
     "modelo": "70GQ405",
     "software": "",
     "main": "",
@@ -983,6 +1068,7 @@
     "preference_id": "MPKL85"
   },
   "75GM405": {
+    "brand": "Kalley",
     "modelo": "75GM405",
     "software": "",
     "main": "",
@@ -994,6 +1080,7 @@
     "preference_id": "MPKL85"
   },
   "75GQ405": {
+    "brand": "Kalley",
     "modelo": "75GQ405",
     "software": "",
     "main": "",
@@ -1005,6 +1092,7 @@
     "preference_id": "MPKL85"
   },
   "75GQ415": {
+    "brand": "Kalley",
     "modelo": "75GQ415",
     "software": "",
     "main": "",
@@ -1016,6 +1104,7 @@
     "preference_id": "MPKL85"
   },
   "85GQ405": {
+    "brand": "Kalley",
     "modelo": "85GQ405",
     "software": "",
     "main": "",
@@ -1027,6 +1116,7 @@
     "preference_id": "MPKL85"
   },
   "K-GTV85UHDQ2": {
+    "brand": "Kalley",
     "modelo": "K-GTV85UHDQ2",
     "software": "",
     "main": "",
@@ -1038,6 +1128,7 @@
     "preference_id": "MPKL85"
   },
   "86GM405": {
+    "brand": "Kalley",
     "modelo": "86GM405",
     "software": "",
     "main": "",
@@ -1049,6 +1140,7 @@
     "preference_id": "MPKL85"
   },
   "98GM405": {
+    "brand": "Kalley",
     "modelo": "98GM405",
     "software": "",
     "main": "",
@@ -1059,8 +1151,8 @@
     "instrucciones": "",
     "preference_id": "MPKL85"
   },
-
   "K-LED28HDST2": {
+    "brand": "Kalley",
     "modelo": "K-LED28HDST2",
     "software": "",
     "main": "",
@@ -1072,6 +1164,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDRST2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDRST2",
     "software": "",
     "main": "",
@@ -1083,6 +1176,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSDT2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSDT2",
     "software": "",
     "main": "",
@@ -1094,6 +1188,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSFBT": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSFBT",
     "software": "",
     "main": "",
@@ -1105,6 +1200,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSFT2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSFT2",
     "software": "",
     "main": "",
@@ -1116,6 +1212,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSNBT": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSNBT",
     "software": "",
     "main": "",
@@ -1127,6 +1224,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSNT2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSNT2",
     "software": "",
     "main": "",
@@ -1138,6 +1236,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSPT2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSPT2",
     "software": "",
     "main": "",
@@ -1149,6 +1248,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSQT2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSQT2",
     "software": "",
     "main": "",
@@ -1160,6 +1260,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDST2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDST2",
     "software": "",
     "main": "",
@@ -1171,6 +1272,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDSZT2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDSZT2",
     "software": "",
     "main": "",
@@ -1182,6 +1284,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDF2": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDF2",
     "software": "",
     "main": "",
@@ -1193,6 +1296,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED32HDT": {
+    "brand": "Kalley",
     "modelo": "K-LED32HDT",
     "software": "",
     "main": "",
@@ -1204,6 +1308,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED40FHDS1T2": {
+    "brand": "Kalley",
     "modelo": "K-LED40FHDS1T2",
     "software": "",
     "main": "",
@@ -1215,6 +1320,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED40FHDSFBT": {
+    "brand": "Kalley",
     "modelo": "K-LED40FHDSFBT",
     "software": "",
     "main": "",
@@ -1226,6 +1332,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED40FHDSPT2": {
+    "brand": "Kalley",
     "modelo": "K-LED40FHDSPT2",
     "software": "",
     "main": "",
@@ -1237,6 +1344,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED40FHDSQT2": {
+    "brand": "Kalley",
     "modelo": "K-LED40FHDSQT2",
     "software": "",
     "main": "",
@@ -1248,6 +1356,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED40FHDST2": {
+    "brand": "Kalley",
     "modelo": "K-LED40FHDST2",
     "software": "",
     "main": "",
@@ -1259,6 +1368,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED40FHDSZT2": {
+    "brand": "Kalley",
     "modelo": "K-LED40FHDSZT2",
     "software": "",
     "main": "",
@@ -1270,6 +1380,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDRST2": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDRST2",
     "software": "",
     "main": "",
@@ -1281,6 +1392,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDSF2BT": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDSF2BT",
     "software": "",
     "main": "",
@@ -1292,6 +1404,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDSFBT": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDSFBT",
     "software": "",
     "main": "",
@@ -1303,6 +1416,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDSN": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDSN",
     "software": "",
     "main": "",
@@ -1314,6 +1428,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDSNBT": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDSNBT",
     "software": "",
     "main": "",
@@ -1325,6 +1440,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDSPT2": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDSPT2",
     "software": "",
     "main": "",
@@ -1336,6 +1452,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDSQT2": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDSQT2",
     "software": "",
     "main": "",
@@ -1347,6 +1464,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDST2": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDST2",
     "software": "",
     "main": "",
@@ -1358,6 +1476,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43FHDSZT2": {
+    "brand": "Kalley",
     "modelo": "K-LED43FHDSZT2",
     "software": "",
     "main": "",
@@ -1369,6 +1488,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43UHDSMT2": {
+    "brand": "Kalley",
     "modelo": "K-LED43UHDSMT2",
     "software": "",
     "main": "",
@@ -1380,6 +1500,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED43UHDSPK": {
+    "brand": "Kalley",
     "modelo": "K-LED43UHDSPK",
     "software": "",
     "main": "",
@@ -1391,6 +1512,7 @@
     "preference_id": "MPKL75"
   },
   "K-STV43FHDT": {
+    "brand": "Kalley",
     "modelo": "K-STV43FHDT",
     "software": "",
     "main": "",
@@ -1402,6 +1524,7 @@
     "preference_id": "MPKL75"
   },
   "K-STV43UHDN": {
+    "brand": "Kalley",
     "modelo": "K-STV43UHDN",
     "software": "",
     "main": "",
@@ -1413,6 +1536,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED49FHDSN": {
+    "brand": "Kalley",
     "modelo": "K-LED49FHDSN",
     "software": "",
     "main": "",
@@ -1424,6 +1548,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED49FHDSPT2": {
+    "brand": "Kalley",
     "modelo": "K-LED49FHDSPT2",
     "software": "",
     "main": "",
@@ -1435,6 +1560,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED49FHDSQT2": {
+    "brand": "Kalley",
     "modelo": "K-LED49FHDSQT2",
     "software": "",
     "main": "",
@@ -1446,6 +1572,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED49FHDSZT2": {
+    "brand": "Kalley",
     "modelo": "K-LED49FHDSZT2",
     "software": "",
     "main": "",
@@ -1457,6 +1584,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED49UHDSMT2": {
+    "brand": "Kalley",
     "modelo": "K-LED49UHDSMT2",
     "software": "",
     "main": "",
@@ -1468,6 +1596,7 @@
     "preference_id": "MPKL75"
   },
   "K-LED50UHDSAAT2": {
+    "brand": "Kalley",
     "modelo": "K-LED50UHDSAAT2",
     "software": "",
     "main": "",
@@ -1479,6 +1608,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED50UHDSFBT": {
+    "brand": "Kalley",
     "modelo": "K-LED50UHDSFBT",
     "software": "",
     "main": "",
@@ -1490,6 +1620,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED50UHDSNBT": {
+    "brand": "Kalley",
     "modelo": "K-LED50UHDSNBT",
     "software": "",
     "main": "",
@@ -1501,6 +1632,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED50UHDSNT2": {
+    "brand": "Kalley",
     "modelo": "K-LED50UHDSNT2",
     "software": "",
     "main": "",
@@ -1512,6 +1644,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55FHDSFBT": {
+    "brand": "Kalley",
     "modelo": "K-LED55FHDSFBT",
     "software": "",
     "main": "",
@@ -1523,6 +1656,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55FHDSPBT2": {
+    "brand": "Kalley",
     "modelo": "K-LED55FHDSPBT2",
     "software": "",
     "main": "",
@@ -1534,6 +1668,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55FHDSPT2": {
+    "brand": "Kalley",
     "modelo": "K-LED55FHDSPT2",
     "software": "",
     "main": "",
@@ -1545,6 +1680,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55FHDSQT2": {
+    "brand": "Kalley",
     "modelo": "K-LED55FHDSQT2",
     "software": "",
     "main": "",
@@ -1556,6 +1692,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55FHDXRST2": {
+    "brand": "Kalley",
     "modelo": "K-LED55FHDXRST2",
     "software": "",
     "main": "",
@@ -1567,6 +1704,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55FHDXST2": {
+    "brand": "Kalley",
     "modelo": "K-LED55FHDXST2",
     "software": "",
     "main": "",
@@ -1578,6 +1716,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55UHDCST2": {
+    "brand": "Kalley",
     "modelo": "K-LED55UHDCST2",
     "software": "",
     "main": "",
@@ -1589,6 +1728,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55UHDSFBT": {
+    "brand": "Kalley",
     "modelo": "K-LED55UHDSFBT",
     "software": "",
     "main": "",
@@ -1600,6 +1740,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55UHDSMT2": {
+    "brand": "Kalley",
     "modelo": "K-LED55UHDSMT2",
     "software": "",
     "main": "",
@@ -1611,6 +1752,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55UHDSPK": {
+    "brand": "Kalley",
     "modelo": "K-LED55UHDSPK",
     "software": "",
     "main": "",
@@ -1622,6 +1764,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55UHDSST2": {
+    "brand": "Kalley",
     "modelo": "K-LED55UHDSST2",
     "software": "",
     "main": "",
@@ -1633,6 +1776,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED55UHDSVT2": {
+    "brand": "Kalley",
     "modelo": "K-LED55UHDSVT2",
     "software": "",
     "main": "",
@@ -1644,6 +1788,7 @@
     "preference_id": "MPKL78"
   },
   "K-STV55UHDT": {
+    "brand": "Kalley",
     "modelo": "K-STV55UHDT",
     "software": "",
     "main": "",
@@ -1655,6 +1800,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED65UHDSFBT": {
+    "brand": "Kalley",
     "modelo": "K-LED65UHDSFBT",
     "software": "",
     "main": "",
@@ -1666,6 +1812,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED65UHDSMT2": {
+    "brand": "Kalley",
     "modelo": "K-LED65UHDSMT2",
     "software": "",
     "main": "",
@@ -1677,6 +1824,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED65UHDSST2": {
+    "brand": "Kalley",
     "modelo": "K-LED65UHDSST2",
     "software": "",
     "main": "",
@@ -1688,6 +1836,7 @@
     "preference_id": "MPKL78"
   },
   "K-LED65UHDSVT2": {
+    "brand": "Kalley",
     "modelo": "K-LED65UHDSVT2",
     "software": "",
     "main": "",
@@ -1699,6 +1848,7 @@
     "preference_id": "MPKL78"
   },
   "K-STV65UHDT": {
+    "brand": "Kalley",
     "modelo": "K-STV65UHDT",
     "software": "",
     "main": "",
@@ -1709,10 +1859,8 @@
     "instrucciones": "",
     "preference_id": "MPKL78"
   },
-  
- 
-
   "43D3200S": {
+    "brand": "Kalley",
     "modelo": "43D3200S",
     "software": "V8-NT563LA-LF1V424",
     "main": "NT563LA",
@@ -1724,6 +1872,7 @@
     "preference_id": "MPOL75"
   },
   "43D2930": {
+    "brand": "Kalley",
     "modelo": "43D2930",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1734,9 +1883,8 @@
     "instrucciones": "",
     "preference_id": "MPOL75"
   },
-
-  
- "L43D1420/MS08GP": {
+  "L43D1420/MS08GP": {
+    "brand": "Olimpo",
     "modelo": "L43D1420/MS08GP",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1747,8 +1895,8 @@
     "instrucciones": "",
     "preference_id": "MPOL75"
   },
-
   "40D2930": {
+    "brand": "Kalley",
     "modelo": "40D2930",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1759,8 +1907,8 @@
     "instrucciones": "",
     "preference_id": "MPOL75"
   },
-  
   "32D3200S": {
+    "brand": "Kalley",
     "modelo": "32D3200S",
     "software": "V8-NT63CLA-LF1V596.bin",
     "main": "NT63CLA",
@@ -1772,6 +1920,7 @@
     "preference_id": "MPOL75"
   },
   "50U3200S": {
+    "brand": "Kalley",
     "modelo": "50U3200S",
     "software": "V8-NT671LA-LF1V670",
     "main": "NT671LA",
@@ -1783,6 +1932,7 @@
     "preference_id": "MPOL75"
   },
   "55S8800": {
+    "brand": "Kalley",
     "modelo": "55S8800",
     "software": "V8-MS88ACO-LF1V015.bin",
     "main": "MS88ACO",
@@ -1794,6 +1944,7 @@
     "preference_id": "MPOL75"
   },
   "L40D2700MS08GP": {
+    "brand": "Olimpo",
     "modelo": "L40D2700MS08GP",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1805,6 +1956,7 @@
     "preference_id": "MPOL75"
   },
   "32D2200S": {
+    "brand": "Kalley",
     "modelo": "32D2200S",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1816,6 +1968,7 @@
     "preference_id": "MPOL75"
   },
   "32D2930": {
+    "brand": "Kalley",
     "modelo": "32D2930",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1827,6 +1980,7 @@
     "preference_id": "MPOL75"
   },
   "42D2180": {
+    "brand": "Kalley",
     "modelo": "42D2180",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -1838,6 +1992,7 @@
     "preference_id": "MPOL75"
   },
   "OLED322W": {
+    "brand": "Olimpo",
     "modelo": "OLED322W",
     "software": "MstarUpgrade.bin",
     "main": "TP.MS608_P82C",
@@ -1849,6 +2004,7 @@
     "preference_id": "MPOL70"
   },
   "OLED323W": {
+    "brand": "Olimpo",
     "modelo": "OLED323W",
     "software": "MstarUpgrade.bin",
     "main": "TP.MS608_P82C",
@@ -1860,6 +2016,7 @@
     "preference_id": "MPOL70"
   },
   "OLED403W": {
+    "brand": "Olimpo",
     "modelo": "OLED403W",
     "software": "MstarUpgrade.bin",
     "main": "TP.MS608_P82C",
@@ -1871,6 +2028,7 @@
     "preference_id": "MPOL70"
   },
   "OLED5020W": {
+    "brand": "Olimpo",
     "modelo": "OLED5020W",
     "software": "MstarUpgrade.bin",
     "main": "TP.MS608_P82C",
@@ -1881,10 +2039,8 @@
     "instrucciones": "",
     "preference_id": "MPOL75"
   },
-
-
-  
   "24H2 T2": {
+    "brand": "Kalley",
     "modelo": "24H2 T2",
     "software": "MSD3663W_8M_OB3353_XX.bin",
     "main": "",
@@ -1896,6 +2052,7 @@
     "preference_id": "MPCL70"
   },
   "32H2 T2": {
+    "brand": "Kalley",
     "modelo": "32H2 T2",
     "software": "MSD3663W_8M_OB3353_XX.bin",
     "main": "",
@@ -1907,6 +2064,7 @@
     "preference_id": "MPCL70"
   },
   "LED 32LO68 BT ANDROID T2 C": {
+    "brand": "Challenger",
     "modelo": "LED 32LO68 BT ANDROID T2 C",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -1918,6 +2076,7 @@
     "preference_id": "MPCL75"
   },
   "LED 43LO68 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 43LO68 BT ANDROID T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -1929,6 +2088,7 @@
     "preference_id": "MPCL75"
   },
   "LED 43LO69 BT ANDROID T2 S": {
+    "brand": "Challenger",
     "modelo": "LED 43LO69 BT ANDROID T2 S",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -1940,6 +2100,7 @@
     "preference_id": "MPCL75"
   },
   "LED 43TO61 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 43TO61 BT ANDROID T2",
     "software": "install.img",
     "main": "",
@@ -1951,6 +2112,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32TO65 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 32TO65 BT ANDROID T2",
     "software": "install.img",
     "main": "",
@@ -1962,6 +2124,7 @@
     "preference_id": "MPCL75"
   },
   "LED 40TO65 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 40TO65 BT ANDROID T2",
     "software": "install.img",
     "main": "",
@@ -1973,6 +2136,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32LO69 BT ANDROID T2 S": {
+    "brand": "Challenger",
     "modelo": "LED 32LO69 BT ANDROID T2 S",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -1984,6 +2148,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32TO59 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 32TO59 BT ANDROID T2",
     "software": "install.img",
     "main": "",
@@ -1995,6 +2160,7 @@
     "preference_id": "MPCL75"
   },
   "LED 43TO59 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 43TO59 BT ANDROID T2",
     "software": "install.img",
     "main": "",
@@ -2006,6 +2172,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 50TO60 BT ANDROIDTV": {
+    "brand": "Challenger",
     "modelo": "UHD 50TO60 BT ANDROIDTV",
     "software": "install2851.img",
     "main": "",
@@ -2017,6 +2184,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32KG84 BT T2": {
+    "brand": "Challenger",
     "modelo": "LED 32KG84 BT T2",
     "software": "install.img",
     "main": "",
@@ -2028,6 +2196,7 @@
     "preference_id": "MPCL75"
   },
   "LED 43KG84 BT T2": {
+    "brand": "Challenger",
     "modelo": "LED 43KG84 BT T2",
     "software": "install.img",
     "main": "",
@@ -2038,8 +2207,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "LED 40KG84 BT T2": {
+    "brand": "Challenger",
     "modelo": "LED 40KG84 BT T2",
     "software": "install.img",
     "main": "",
@@ -2050,8 +2219,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "LED 32TG81 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "LED 32TG81 BT GOOGLE T2",
     "software": "V8-GT41AGL-00xxxx.img",
     "main": "",
@@ -2063,6 +2232,7 @@
     "preference_id": "MPCL75"
   },
   "LED 43TG81 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "LED 43TG81 BT GOOGLE T2",
     "software": "V8-GT41AGL-00xxxx.img",
     "main": "",
@@ -2074,6 +2244,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32TG79 BT GOOGLE TV T2": {
+    "brand": "Challenger",
     "modelo": "LED 32TG79 BT GOOGLE TV T2",
     "software": "V8-GT41AGL-00124XX.img",
     "main": "",
@@ -2085,6 +2256,7 @@
     "preference_id": "MPCL75"
   },
   "LED 40TG79 BT GOOGLE TV T2": {
+    "brand": "Challenger",
     "modelo": "LED 40TG79 BT GOOGLE TV T2",
     "software": "V8-GT41AGL-00124XX.img",
     "main": "",
@@ -2096,6 +2268,7 @@
     "preference_id": "MPCL75"
   },
   "LED 43TG79 BT GOOGLE TV T2": {
+    "brand": "Challenger",
     "modelo": "LED 43TG79 BT GOOGLE TV T2",
     "software": "V8-GT41AGL-00124XX.img",
     "main": "",
@@ -2106,8 +2279,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-  
   "LED 40TG81 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "LED 40TG81 BT GOOGLE T2",
     "software": "V8-GT41AGL-00124XX.img",
     "main": "",
@@ -2118,8 +2291,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "UHD 65KG85 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "UHD 65KG85 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2130,8 +2303,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "UHD 50KG85 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "UHD 50KG85 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2142,8 +2315,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "UHD 50TG80 BT GOOGLE TV T2": {
+    "brand": "Challenger",
     "modelo": "UHD 50TG80 BT GOOGLE TV T2",
     "software": "V8-GT51MGL-0015287-user.img",
     "main": "",
@@ -2154,10 +2327,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
-  
-
   "FHD 32KG90 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "FHD 32KG90 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2168,8 +2339,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "FHD 40KG90 BT T2": {
+    "brand": "Challenger",
     "modelo": "FHD 40KG90 BT T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2180,8 +2351,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "FHD 43KG90 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "FHD 43KG90 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2192,8 +2363,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "QLED 50KG190 BT T2": {
+    "brand": "Challenger",
     "modelo": "QLED 50KG190 BT T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2204,8 +2375,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "QLED 65KG290 BT T2": {
+    "brand": "Challenger",
     "modelo": "QLED 65KG290 BT T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2216,10 +2387,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
- 
-
   "UHD 55KG85 BT GOOGLE T2": {
+    "brand": "Challenger",
     "modelo": "UHD 55KG85 BT GOOGLE T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2230,8 +2399,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "UHD 50LO70 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 50LO70 BT ANDROID T2",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -2243,6 +2412,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 58LO70 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 58LO70 BT ANDROID T2",
     "software": "upgrade_image.pkg",
     "main": "",
@@ -2254,6 +2424,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 55HO60 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 55HO60 BT ANDROID T2",
     "software": "upgrade_no_tvcertificate_RCA_4K_ATV_PA.pkg",
     "main": "",
@@ -2265,6 +2436,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 65LO70 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 65LO70 BT ANDROID T2",
     "software": "upgrade_image.pkg",
     "main": "",
@@ -2276,6 +2448,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32L51 T2": {
+    "brand": "Challenger",
     "modelo": "LED 32L51 T2",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -2287,6 +2460,7 @@
     "preference_id": "MPCL70"
   },
   "LED 32D27 NG T2 SMART": {
+    "brand": "Challenger",
     "modelo": "LED 32D27 NG T2 SMART",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -2298,6 +2472,7 @@
     "preference_id": "MPCL70"
   },
   "LD 32D28 SMART T2": {
+    "brand": "Challenger",
     "modelo": "LD 32D28 SMART T2",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -2309,6 +2484,7 @@
     "preference_id": "MPCL70"
   },
   "LD 43D14 T2 SMART": {
+    "brand": "Challenger",
     "modelo": "LD 43D14 T2 SMART",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -2320,6 +2496,7 @@
     "preference_id": "MPCL70"
   },
   "LED 32T16 Smart T2 HD": {
+    "brand": "Challenger",
     "modelo": "LED 32T16 Smart T2 HD",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -2331,6 +2508,7 @@
     "preference_id": "MPCL70"
   },
   "LED 43T16 Smart T2 HD": {
+    "brand": "Challenger",
     "modelo": "LED 43T16 Smart T2 HD",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -2342,6 +2520,7 @@
     "preference_id": "2MPCL70"
   },
   "LD 50D27 T2 SMART": {
+    "brand": "Challenger",
     "modelo": "LD 50D27 T2 SMART",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -2353,6 +2532,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32S51 SMART T2": {
+    "brand": "Challenger",
     "modelo": "LED 32S51 SMART T2",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -2364,6 +2544,7 @@
     "preference_id": "MPCL70"
   },
   "LED 40S51 SMART T2": {
+    "brand": "Challenger",
     "modelo": "LED 40S51 SMART T2",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -2375,6 +2556,7 @@
     "preference_id": "2MPCL70"
   },
   "UHD 50L24 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 50L24 ANDROID T2",
     "software": "658_DVBT_8G.bin",
     "main": "",
@@ -2386,6 +2568,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 55L24 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 55L24 ANDROID T2",
     "software": "658_DVBT_8G.bin",
     "main": "",
@@ -2397,6 +2580,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 55B23 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 55B23 BT ANDROID T2",
     "software": "install.img",
     "main": "",
@@ -2408,6 +2592,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 65B23 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 65B23 BT ANDROID T2",
     "software": "install.img",
     "main": "",
@@ -2419,6 +2604,7 @@
     "preference_id": "MPCL75"
   },
   "LED HD 32S22 BT ANDROID TV": {
+    "brand": "Challenger",
     "modelo": "LED HD 32S22 BT ANDROID TV",
     "software": "install.img",
     "main": "",
@@ -2430,6 +2616,7 @@
     "preference_id": "MPCL70"
   },
   "LED 32T18 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 32T18 ANDROID T2",
     "software": "V8-T56FT04-LF1V095.pkg",
     "main": "",
@@ -2441,6 +2628,7 @@
     "preference_id": "MPCL70"
   },
   "LED 43T18 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 43T18 ANDROID T2",
     "software": "V8-T56FT04-LF1V095.pkg",
     "main": "",
@@ -2452,6 +2640,7 @@
     "preference_id": "MPCL70"
   },
   "LED 32T20 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 32T20 ANDROID T2",
     "software": "allupgrade_msd338_4G_1G.bin",
     "main": "",
@@ -2463,6 +2652,7 @@
     "preference_id": "MPCL70"
   },
   "LED 40T20 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 40T20 ANDROID T2",
     "software": "allupgrade_msd338_4G_1G.bin",
     "main": "",
@@ -2474,6 +2664,7 @@
     "preference_id": "MPCL70"
   },
   "LED 43T20 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 43T20 ANDROID T2",
     "software": "allupgrade_msd338_4G_1G.bin",
     "main": "",
@@ -2485,6 +2676,7 @@
     "preference_id": "MPCL70"
   },
   "LED 49T20 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 49T20 ANDROID T2",
     "software": "",
     "main": "",
@@ -2496,6 +2688,7 @@
     "preference_id": "MPCL70"
   },
   "LED 55T20 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 55T20 ANDROID T2",
     "software": "",
     "main": "",
@@ -2507,6 +2700,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32T21 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 32T21 BT ANDROID T2",
     "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
@@ -2518,6 +2712,7 @@
     "preference_id": "MPCL70"
   },
   "LED 43T21 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 43T21 BT ANDROID T2",
     "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
@@ -2529,6 +2724,7 @@
     "preference_id": "MPCL70"
   },
   "LED 40T21 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 40T21 BT ANDROID T2",
     "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
@@ -2540,6 +2736,7 @@
     "preference_id": "MPCL70"
   },
   "LED 55T21 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 55T21 BT ANDROID T2",
     "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
@@ -2551,6 +2748,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32T22 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 32T22 BT ANDROID T2",
     "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
@@ -2562,6 +2760,7 @@
     "preference_id": "MPCL70"
   },
   "LED 40T22 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 40T22 BT ANDROID T2",
     "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
@@ -2573,6 +2772,7 @@
     "preference_id": "MPCL70"
   },
   "LED 43T22 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "LED 43T22 BT ANDROID T2",
     "software": "allupgrade_5510_8G_1G_ref100.pkg",
     "main": "",
@@ -2584,6 +2784,7 @@
     "preference_id": "MPCL70"
   },
   "TV UHD 43T23 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "TV UHD 43T23 BT ANDROID T2",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -2595,6 +2796,7 @@
     "preference_id": "MPCL70"
   },
   "TV UHD 49T23 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "TV UHD 49T23 BT ANDROID T2",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -2606,6 +2808,7 @@
     "preference_id": "MPCL70"
   },
   "TV UHD 55T23 BT ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "TV UHD 55T23 BT ANDROID T2",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -2617,6 +2820,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 43K53 ANDROID T2 NG": {
+    "brand": "Challenger",
     "modelo": "UHD 43K53 ANDROID T2 NG",
     "software": "MonetUpgrade.bin",
     "main": "",
@@ -2628,6 +2832,7 @@
     "preference_id": "MPCL70"
   },
   "UHD 49K53 ANDROID T2": {
+    "brand": "Challenger",
     "modelo": "UHD 49K53 ANDROID T2",
     "software": "MonetUpgrade.bin",
     "main": "",
@@ -2639,6 +2844,7 @@
     "preference_id": "MPCL70"
   },
   "UHD 55K53 ANDROID T2 NG": {
+    "brand": "Challenger",
     "modelo": "UHD 55K53 ANDROID T2 NG",
     "software": "MonetUpgrade.bin",
     "main": "",
@@ -2650,6 +2856,7 @@
     "preference_id": "MPCL75"
   },
   "LED 55E67 UHD3D SMART": {
+    "brand": "Challenger",
     "modelo": "LED 55E67 UHD3D SMART",
     "software": "MbootUpgrade.bin",
     "main": "",
@@ -2661,6 +2868,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32LL48 NETFLIXT2": {
+    "brand": "Challenger",
     "modelo": "LED 32LL48 NETFLIXT2",
     "software": "6683L_DVBT_4G.bin",
     "main": "",
@@ -2672,6 +2880,7 @@
     "preference_id": "MPCL70"
   },
   "LED 42LL30 BT NETFLIX T2": {
+    "brand": "Challenger",
     "modelo": "LED 42LL30 BT NETFLIX T2",
     "software": "6683L_DVBT_4G.bin",
     "main": "",
@@ -2683,6 +2892,7 @@
     "preference_id": "MPCL70"
   },
   "LED 40LL49 BT NETFLIX FHD T2": {
+    "brand": "Challenger",
     "modelo": "LED 40LL49 BT NETFLIX FHD T2",
     "software": "6683L_DVBT_4G.bin",
     "main": "",
@@ -2694,6 +2904,7 @@
     "preference_id": "MPCL70"
   },
   "LED 43LL49 NETFLIX TV T2": {
+    "brand": "Challenger",
     "modelo": "LED 43LL49 NETFLIX TV T2",
     "software": "6683L_DVBT_4G.bin",
     "main": "",
@@ -2705,6 +2916,7 @@
     "preference_id": "MPCL70"
   },
   "LED 43LL30 BT NETFLIX T2": {
+    "brand": "Challenger",
     "modelo": "LED 43LL30 BT NETFLIX T2",
     "software": "6683L_DVBT_4G.bin",
     "main": "",
@@ -2716,6 +2928,7 @@
     "preference_id": "MPCL70"
   },
   "LED 40TL31 BT NETFLIX T2": {
+    "brand": "Challenger",
     "modelo": "LED 40TL31 BT NETFLIX T2",
     "software": "",
     "main": "",
@@ -2727,6 +2940,7 @@
     "preference_id": "MPCL70"
   },
   "UHD 50LL51 BT NETFLIX T2": {
+    "brand": "Challenger",
     "modelo": "UHD 50LL51 BT NETFLIX T2",
     "software": "6886L_DVBT_4G.bin",
     "main": "",
@@ -2738,6 +2952,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 55LL51 BT NETFLIX T2": {
+    "brand": "Challenger",
     "modelo": "UHD 55LL51 BT NETFLIX T2",
     "software": "6886L_DVBT_4G.bin",
     "main": "",
@@ -2749,6 +2964,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 65LL51 BT NETFLIX T2": {
+    "brand": "Challenger",
     "modelo": "UHD 65LL51 BT NETFLIX T2",
     "software": "6886L_DVBT_4G.bin",
     "main": "",
@@ -2760,6 +2976,7 @@
     "preference_id": "MPCL75"
   },
   "LED 55LL50 NETFLIX T2": {
+    "brand": "Challenger",
     "modelo": "LED 55LL50 NETFLIX T2",
     "software": "6886L_DVBT_4G.bin",
     "main": "",
@@ -2771,6 +2988,7 @@
     "preference_id": "MPCL75"
   },
   "LED 32TL48 NETFLIX TV HD T2": {
+    "brand": "Challenger",
     "modelo": "LED 32TL48 NETFLIX TV HD T2",
     "software": "V8-NT563LA-LF1V386.bin",
     "main": "",
@@ -2782,6 +3000,7 @@
     "preference_id": "MPCL70"
   },
   "FHD 43TL49 SMART TV": {
+    "brand": "Challenger",
     "modelo": "FHD 43TL49 SMART TV",
     "software": "update.zip",
     "main": "",
@@ -2793,6 +3012,7 @@
     "preference_id": "MPCL70"
   },
   "FHD 49TL49 SMART TV": {
+    "brand": "Challenger",
     "modelo": "FHD 49TL49 SMART TV",
     "software": "update.zip",
     "main": "",
@@ -2804,6 +3024,7 @@
     "preference_id": "MPCL70"
   },
   "UHD 50TL50 SMART TV": {
+    "brand": "Challenger",
     "modelo": "UHD 50TL50 SMART TV",
     "software": "",
     "main": "",
@@ -2815,6 +3036,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 55TL50 SMART TV": {
+    "brand": "Challenger",
     "modelo": "UHD 55TL50 SMART TV",
     "software": "V8-MS86MCO-LF1V086.bin",
     "main": "",
@@ -2826,6 +3048,7 @@
     "preference_id": "MPCL75"
   },
   "UHD 65TL50 SMART TV": {
+    "brand": "Challenger",
     "modelo": "UHD 65TL50 SMART TV",
     "software": "V8-MS86MCO-LF1V086.bin",
     "main": "",
@@ -2837,6 +3060,7 @@
     "preference_id": "MPCL75"
   },
   "SERIES S30": {
+    "brand": "Challenger",
     "modelo": "SERIES S30",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -2847,10 +3071,8 @@
     "instrucciones": "",
     "preference_id": "MPCL70"
   },
-
-
-
   "HYLED39INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED39INT",
     "software": "",
     "main": "TP.MS608.P83",
@@ -2862,6 +3084,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED55INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED55INT2",
     "software": "MstarUpgrade.bin",
     "main": "5800-A6M820-OP40",
@@ -2873,6 +3096,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED58INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED58INT2",
     "software": "install.img",
     "main": "5800-A8R20T-0P30",
@@ -2884,6 +3108,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED322INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED322INT",
     "software": "MstarUpgrade.bin",
     "main": "TP.MS608.P83",
@@ -2895,6 +3120,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED323INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED323INT",
     "software": "MstarUpgrade.bin",
     "main": "CT-TP.MS608.P83",
@@ -2906,6 +3132,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED326INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED326INT",
     "software": "MstarUpgrade.bin",
     "main": "TPMS608PB831",
@@ -2917,6 +3144,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED328INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED328INT2",
     "software": "MS08GP_MAIN.bin",
     "main": " 40-MS08GP-MAB2HG",
@@ -2928,6 +3156,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED399AIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED399AIM",
     "software": " CH_R_2K_upgrade_image_no_tvcertificate.pkg - upgrade_image_project_id.pkg",
     "main": "JUC7.820.00292575",
@@ -2939,6 +3168,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED401INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED401INT",
     "software": "MstarUpgrade.bin -",
     "main": "XX-XX-TP.MS608.PB83x",
@@ -2950,6 +3180,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED402INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED402INT",
     "software": "MstarUpgrade.bin -",
     "main": "TP.MS608.PB83",
@@ -2961,6 +3192,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED407INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED407INT2",
     "software": "MstarUpgrade.bin",
     "main": "5800-A6M820-0P40",
@@ -2972,6 +3204,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED408INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED408INT2",
     "software": "MonetUpgrade.bin",
     "main": "35022449",
@@ -2983,6 +3216,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED43INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED43INT2",
     "software": "MstarUpgrade.bin",
     "main": "P75-628",
@@ -2994,6 +3228,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED422INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED422INT",
     "software": "MstarUpgrade.bin -",
     "main": "35019185 35018877",
@@ -3005,6 +3240,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED425AIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED425AIM",
     "software": "upgrade_loader.pkg",
     "main": "JUC7.820.00263105",
@@ -3016,6 +3252,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED427GIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED427GIM",
     "software": " CH_R_GTV_2K_upgrade_image_no_tvcertificate.pkg",
     "main": "JUC7.820.00292577",
@@ -3027,6 +3264,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED428GIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED428GIM",
     "software": " CH_R_GTV_2K_upgrade_image_no_tvcertificate.pkg",
     "main": "JUC7.820.00292577",
@@ -3038,6 +3276,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED5809G4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5809G4KM",
     "software": " install.img",
     "main": "MB-RT2851A-W-DS-0221 - CH",
@@ -3049,6 +3288,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED431INTC": {
+    "brand": "Hyundai",
     "modelo": "HYLED431INTC",
     "software": "MstarUpgrade.bin -",
     "main": "P75-628VX V6.0",
@@ -3060,6 +3300,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED432INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED432INT2",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -3071,6 +3312,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED434INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED434INT2",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB2HG",
@@ -3082,6 +3324,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED436INT4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED436INT4K",
     "software": "MacanUpgrade.bin",
     "main": "35022301",
@@ -3093,6 +3336,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED438INT4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED438INT4K",
     "software": "MacanUpgrade.bin",
     "main": "35022386",
@@ -3104,6 +3348,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED472INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED472INT",
     "software": "MstarUpgrade.bin",
     "main": "35018682",
@@ -3115,6 +3360,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED481INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED481INT2",
     "software": "messi.bin",
     "main": "P75-338V6.2",
@@ -3126,6 +3372,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED483INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED483INTM",
     "software": "install.img",
     "main": "P75 2831V6.0",
@@ -3137,6 +3384,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED491iC": {
+    "brand": "Hyundai",
     "modelo": "HYLED491iC",
     "software": "messi.bin",
     "main": "DV-SA-P130-338V6.2",
@@ -3148,6 +3396,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED495INTC": {
+    "brand": "Hyundai",
     "modelo": "HYLED495INTC",
     "software": "MstarUpgrade.bin",
     "main": "P130-628VX V6.0",
@@ -3159,6 +3408,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED496INT4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED496INT4K",
     "software": "MonetUpgrade.bin",
     "main": "35022301",
@@ -3170,6 +3420,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED498INT4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED498INT4K",
     "software": "MacanUpgrade.bin",
     "main": "35022386",
@@ -3181,6 +3432,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED501INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED501INT",
     "software": "MstarUpgrade.bin",
     "main": "TP.MS608.P81 .P82 T.MS608.81",
@@ -3192,6 +3444,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED506INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED506INT2",
     "software": "messi.bin",
     "main": "P130-338 V6.2",
@@ -3203,6 +3456,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED551INTC4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED551INTC4K",
     "software": "MstarUpgrade.bin",
     "main": "DT-SA- P150.638.V6.0",
@@ -3214,6 +3468,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED558INT4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED558INT4K",
     "software": "MstarUpgrade.bin",
     "main": "MSD6A638-T8E2",
@@ -3225,6 +3480,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED3210INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED3210INT2",
     "software": "MstarUpgrade.bin",
     "main": "P75-628-VX",
@@ -3236,6 +3492,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3211INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED3211INT2",
     "software": "MS08GP_MAIN.bin",
     "main": "40-MS08GP-MAB 2HG",
@@ -3247,6 +3504,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3212INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED3212INT",
     "software": "",
     "main": "TP.MS3393.PB756",
@@ -3258,6 +3516,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3213INTC": {
+    "brand": "Hyundai",
     "modelo": "HYLED3213INTC",
     "software": "MstarUpgrade.bin messi.bin",
     "main": "P75.338 V6.2 - P75-628VX V6.0",
@@ -3269,6 +3528,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3215INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED3215INT2",
     "software": "messi.bin",
     "main": "P50-338TVX.X - P75-338V V6.2",
@@ -3280,6 +3540,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3216INTC": {
+    "brand": "Hyundai",
     "modelo": "HYLED3216INTC",
     "software": "rtk2831.img",
     "main": "DY-SA-P75-2831V6.0",
@@ -3291,6 +3552,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3237INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3237INTM",
     "software": "install.img rtk2831.img",
     "main": "P75-2831V6.0",
@@ -3302,6 +3564,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3237INTMG": {
+    "brand": "Hyundai",
     "modelo": "HYLED3237INTMG",
     "software": "install.img rtk2831.img",
     "main": "P75-2831V6.0",
@@ -3313,6 +3576,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3239INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3239INTM",
     "software": "install.img rtk2831.img",
     "main": "P150-2831V5.0",
@@ -3324,6 +3588,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3240NIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3240NIM",
     "software": " KKUpgrade6883DVB.bin",
     "main": "35023956",
@@ -3335,6 +3600,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3246NIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3246NIM",
     "software": " 6683L_DVBT_4G.bin",
     "main": " 6683M2C1",
@@ -3346,6 +3612,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3243NIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3243NIM",
     "software": " ChiefUpgrade_m5621_dvb.bin",
     "main": "JUC7.820.00246386",
@@ -3357,6 +3624,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3245INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED3245INT",
     "software": "348_DVBT_8G.bin",
     "main": "MSD6A348 M2C2",
@@ -3368,6 +3636,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3248AIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3248AIM",
     "software": " CH_R_2K_upgrade_image_no_tvcertificate.pkg",
     "main": "JUC7.820.00297270",
@@ -3379,6 +3648,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED3251AIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3251AIM",
     "software": " CH_R_2K_upgrade_image_no_tvcertificate.pkg",
     "main": "JUC7.820.00297270",
@@ -3390,6 +3660,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4010INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED4010INT2",
     "software": "MstarUpgrade.bin",
     "main": "P75-628VXV6.0",
@@ -3401,6 +3672,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4013INT": {
+    "brand": "Hyundai",
     "modelo": "HYLED4013INT",
     "software": "",
     "main": "P75-338 V6.2",
@@ -3412,6 +3684,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4019INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4019INTM",
     "software": "rtk2831.img install.img",
     "main": "P75.2831V6.0",
@@ -3423,6 +3696,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4022AIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4022AIM",
     "software": " CH_R_2K_upgrade_image.pkg",
     "main": "JUC7.820.00292575",
@@ -3434,6 +3708,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4024HIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4024HIM",
     "software": "u-boot.bin  uloader.bin V8-NT63CLA-LF1V740",
     "main": "TPD.NT72563C.PB788",
@@ -3445,6 +3720,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4313INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4313INTM",
     "software": " rtk2831.img install.img",
     "main": "P75.2831V6.0",
@@ -3456,6 +3732,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4314IM4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED4314IM4K",
     "software": "MacanUpgrade.bin",
     "main": "35022386   ",
@@ -3467,6 +3744,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4315INT2": {
+    "brand": "Hyundai",
     "modelo": "HYLED4315INT2",
     "software": " allupgrade_msd338_8G_1G_ref52.bin",
     "main": "TP.MS338.PB801",
@@ -3478,6 +3756,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4317INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4317INTM",
     "software": " rtk2831.img install.img",
     "main": "P75-2831TV9.0",
@@ -3488,6 +3767,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4318NIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4318NIM",
     "software": " KKUpgrade6683DVB.bin",
     "main": "35023957",
@@ -3499,6 +3779,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4321AIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4321AIM",
     "software": " CH_R_2K_upgrade_image_no_tvcertificate.pkg",
     "main": "JUC7.820.00292577",
@@ -3510,6 +3791,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED4322GIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4322GIM",
     "software": "install.img",
     "main": "P75-2841ATV6.2",
@@ -3521,6 +3803,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED3254GIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3254GIM",
     "software": "install.img",
     "main": "P50-2841ATV3.2",
@@ -3532,6 +3815,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED4322NIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4322NIM",
     "software": "6683L_DVBT_4G.bin",
     "main": "6683M3C1",
@@ -3543,6 +3827,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED4501INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4501INTM",
     "software": "rtk2831.img",
     "main": "P75-2831V6.0",
@@ -3554,6 +3839,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4914C4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED4914C4K",
     "software": "MstarUpgrade.bin",
     "main": "",
@@ -3565,6 +3851,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4917C4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED4917C4K",
     "software": "MstarUpgrade.bin",
     "main": "P150-638 V6.0",
@@ -3576,6 +3863,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED4917N4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED4917N4KM",
     "software": "KKUpgrade6586ISDB.bin",
     "main": "35022818",
@@ -3587,6 +3875,7 @@
     "preference_id": "MPHY70"
   },
   "HYLED5012N4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5012N4KM",
     "software": " KKUpgrade6886DVB.bin",
     "main": "35023895",
@@ -3598,6 +3887,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5013INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5013INTM",
     "software": "install.img",
     "main": "HK.T.RT2831P838",
@@ -3609,6 +3899,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5014N4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5014N4KM",
     "software": " KKUpgrade6886DVB.bin",
     "main": "35024549",
@@ -3620,6 +3911,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5015A4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5015A4KM",
     "software": " upgrade_no_tvcertificate.pkg",
     "main": "JUC7.820.00259094",
@@ -3631,6 +3923,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5016INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5016INTM",
     "software": " install_2842_1GDDR.img",
     "main": "ZH-SA-HK.T.RT2842P838",
@@ -3642,6 +3935,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5020G4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5020G4KM",
     "software": "install.img",
     "main": "P150-2851AV8.1",
@@ -3653,6 +3947,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5021QG4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5021QG4KM",
     "software": "install.img",
     "main": "P150-2851AV9.7",
@@ -3664,6 +3959,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5514IM4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED5514IM4K",
     "software": "MacanUpgrade.bin",
     "main": "35022386",
@@ -3675,6 +3971,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5514K": {
+    "brand": "Hyundai",
     "modelo": "HYLED5514K",
     "software": "MstarUpgrade.bin",
     "main": "P150-638V6.0",
@@ -3686,6 +3983,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5516IM4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED5516IM4K",
     "software": "6586_DVBT_8G.bin",
     "main": "MSD6586-T8E",
@@ -3697,6 +3995,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5517N4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5517N4KM",
     "software": "6886L_DVBT_4G.bin",
     "main": "6886T8E",
@@ -3708,6 +4007,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5518INTM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5518INTM",
     "software": "rtk2831.img",
     "main": "P130-2831V6.0",
@@ -3719,8 +4019,9 @@
     "preference_id": "MPHY75"
   },
   "HYLED5519N4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5519N4KM",
-    "software":  " KKUpgrade6886DVB.bin",
+    "software": " KKUpgrade6886DVB.bin",
     "main": "35024017",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -3730,6 +4031,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5520A4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5520A4KM",
     "software": " upgrade_loader.pkg",
     "main": "JUC7.820.00259094",
@@ -3741,6 +4043,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5523QA4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5523QA4KM",
     "software": " install_2851.img",
     "main": " TTD851A1/1.30.01.TTD851A1-00",
@@ -3752,6 +4055,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5524G4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5524G4KM",
     "software": "install.img",
     "main": "P150-2851AV8.1",
@@ -3763,6 +4067,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5803IM4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED5803IM4K",
     "software": "install.img",
     "main": "HK.T.RT2861P839",
@@ -3774,8 +4079,9 @@
     "preference_id": "MPHY75"
   },
   "HYLED5804N4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5804N4KM",
-    "software":  " KKUpgrade6886DVB.bin",
+    "software": " KKUpgrade6886DVB.bin",
     "main": "35023895",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -3785,8 +4091,9 @@
     "preference_id": "MPHY75"
   },
   "HYLED5805N4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5805N4KM",
-    "software":  " KKUpgrade6886DVB.bin",
+    "software": " KKUpgrade6886DVB.bin",
     "main": "35023895",
     "estado": "Disponible",
     "precio": "75.000 COP",
@@ -3796,6 +4103,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5806A4KM": {
+    "brand": "Hyundai",
     "modelo": "HYLED5806A4KM",
     "software": "upgrade_loader.pkg",
     "main": "JUC7.820.00259094",
@@ -3807,6 +4115,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED6505INT4K": {
+    "brand": "Hyundai",
     "modelo": "HYLED6505INT4K",
     "software": " LDM538.bin",
     "main": "NH-SA-LD.M538.A",
@@ -3818,6 +4127,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED50104K": {
+    "brand": "Hyundai",
     "modelo": "HYLED50104K",
     "software": "MstarUpgrade.bin",
     "main": "P150-638 V6.0",
@@ -3829,6 +4139,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED50114K": {
+    "brand": "Hyundai",
     "modelo": "HYLED50114K",
     "software": "658_DVBT_8G.bin",
     "main": "MSD6A658 T8F1",
@@ -3840,6 +4151,7 @@
     "preference_id": "MPHY75"
   },
   "HYLED5030QG": {
+    "brand": "Hyundai",
     "modelo": "HYLED5030QG",
     "software": "install.img",
     "main": "P150-2851FTV6.4",
@@ -3851,6 +4163,7 @@
     "preference_id": "MPHY90"
   },
   "HYLED3255HIM": {
+    "brand": "Hyundai",
     "modelo": "HYLED3255HIM",
     "software": "V8-NT63CLA-LF1V740",
     "main": "TPD.NT72563C.PB788",
@@ -3861,10 +4174,8 @@
     "instrucciones": "",
     "preference_id": "MPHY70"
   },
-  
-
-
   "C32T1HV": {
+    "brand": "Caixun",
     "modelo": "C32T1HV",
     "software": "MstarUpgrade.bin -",
     "main": "EL.MT9602V-FG48",
@@ -3876,6 +4187,7 @@
     "preference_id": "MPCL78"
   },
   "C32V1HN": {
+    "brand": "Caixun",
     "modelo": "C32V1HN",
     "software": "NF51CX6683TWCO.bin",
     "main": "EL.MT6683-FG48",
@@ -3887,6 +4199,7 @@
     "preference_id": "MPCL78"
   },
   "C32V1HV": {
+    "brand": "Caixun",
     "modelo": "C32V1HV",
     "software": "MstarUpgrade.bin -",
     "main": "EL.MT9602V-FG48",
@@ -3898,6 +4211,7 @@
     "preference_id": "MPCL78"
   },
   "C32VAHG": {
+    "brand": "Caixun",
     "modelo": "C32VAHG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9216-FG48",
@@ -3909,6 +4223,7 @@
     "preference_id": "MPCL78"
   },
   "C32VAHV": {
+    "brand": "Caixun",
     "modelo": "C32VAHV",
     "software": "MstarUpgrade.bin -",
     "main": "EL.MT9602V-FG48",
@@ -3920,6 +4235,7 @@
     "preference_id": "MPCL78"
   },
   "C32VAHW": {
+    "brand": "Caixun",
     "modelo": "C32VAHW",
     "software": "",
     "main": "EL.RT2864-FG48V1",
@@ -3930,6 +4246,7 @@
     "preference_id": "none"
   },
   "C32VBHG": {
+    "brand": "Caixun",
     "modelo": "C32VBHG",
     "software": "",
     "main": "",
@@ -3941,6 +4258,7 @@
     "preference_id": "MPCL78"
   },
   "C32VJHW": {
+    "brand": "Caixun",
     "modelo": "C32VJHW",
     "software": "",
     "main": "",
@@ -3951,6 +4269,7 @@
     "preference_id": "none"
   },
   "C32VJHZ": {
+    "brand": "Caixun",
     "modelo": "C32VJHZ",
     "software": "",
     "main": "",
@@ -3962,6 +4281,7 @@
     "preference_id": "MPCL78"
   },
   "C40T1FN": {
+    "brand": "Caixun",
     "modelo": "C40T1FN",
     "software": "",
     "main": "",
@@ -3973,6 +4293,7 @@
     "preference_id": "MPCL78"
   },
   "C40V1FN": {
+    "brand": "Caixun",
     "modelo": "C40V1FN",
     "software": "",
     "main": "",
@@ -3984,6 +4305,7 @@
     "preference_id": "MPCL78"
   },
   "C40V1FV": {
+    "brand": "Caixun",
     "modelo": "C40V1FV",
     "software": "",
     "main": "",
@@ -3995,6 +4317,7 @@
     "preference_id": "MPCL78"
   },
   "C40V2FV": {
+    "brand": "Caixun",
     "modelo": "C40V2FV",
     "software": "",
     "main": "",
@@ -4006,6 +4329,7 @@
     "preference_id": "MPCL78"
   },
   "C40VAFG": {
+    "brand": "Caixun",
     "modelo": "C40VAFG",
     "software": "",
     "main": "",
@@ -4017,6 +4341,7 @@
     "preference_id": "MPCL78"
   },
   "C40VAFV": {
+    "brand": "Caixun",
     "modelo": "C40VAFV",
     "software": "",
     "main": "",
@@ -4028,6 +4353,7 @@
     "preference_id": "MPCL78"
   },
   "C40VAFW": {
+    "brand": "Caixun",
     "modelo": "C40VAFW",
     "software": "",
     "main": "",
@@ -4038,6 +4364,7 @@
     "preference_id": "none"
   },
   "C40VBFG": {
+    "brand": "Caixun",
     "modelo": "C40VBFG",
     "software": "",
     "main": "",
@@ -4048,9 +4375,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
-  
   "C40VJFW": {
+    "brand": "Caixun",
     "modelo": "C40VJFW",
     "software": "",
     "main": "",
@@ -4062,6 +4388,7 @@
     "preference_id": "none"
   },
   "C40VJFZ": {
+    "brand": "Caixun",
     "modelo": "C40VJFZ",
     "software": "",
     "main": "",
@@ -4073,6 +4400,7 @@
     "preference_id": "MPCL78"
   },
   "C43T1UA": {
+    "brand": "Caixun",
     "modelo": "C43T1UA",
     "software": "",
     "main": "",
@@ -4084,6 +4412,7 @@
     "preference_id": "MPCL78"
   },
   "C43V1FN": {
+    "brand": "Caixun",
     "modelo": "C43V1FN",
     "software": "",
     "main": "",
@@ -4095,6 +4424,7 @@
     "preference_id": "MPCL78"
   },
   "C43V1FV": {
+    "brand": "Caixun",
     "modelo": "C43V1FV",
     "software": "",
     "main": "",
@@ -4106,6 +4436,7 @@
     "preference_id": "MPCL78"
   },
   "C43V1UA": {
+    "brand": "Caixun",
     "modelo": "C43V1UA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4117,6 +4448,7 @@
     "preference_id": "MPCL78"
   },
   "C43VAFG": {
+    "brand": "Caixun",
     "modelo": "C43VAFG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9216-FG75",
@@ -4128,6 +4460,7 @@
     "preference_id": "MPCL78"
   },
   "C43VAFW": {
+    "brand": "Caixun",
     "modelo": "C43VAFW",
     "software": "",
     "main": "",
@@ -4138,6 +4471,7 @@
     "preference_id": "none"
   },
   "C43VAUA": {
+    "brand": "Caixun",
     "modelo": "C43VAUA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4149,6 +4483,7 @@
     "preference_id": "MPCL78"
   },
   "C43VAUG": {
+    "brand": "Caixun",
     "modelo": "C43VAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4160,6 +4495,7 @@
     "preference_id": "MPCL78"
   },
   "C43VAUW": {
+    "brand": "Caixun",
     "modelo": "C43VAUW",
     "software": "",
     "main": "",
@@ -4170,6 +4506,7 @@
     "preference_id": "none"
   },
   "C50V1UA": {
+    "brand": "Caixun",
     "modelo": "C50V1UA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4181,6 +4518,7 @@
     "preference_id": "MPKL85"
   },
   "C50V2UV": {
+    "brand": "Caixun",
     "modelo": "C50V2UV",
     "software": "MstarUpgrade.bin",
     "main": "EL.MT9602V-FG95",
@@ -4192,6 +4530,7 @@
     "preference_id": "MPKL85"
   },
   "C50V3QA": {
+    "brand": "Caixun",
     "modelo": "C50V3QA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4203,6 +4542,7 @@
     "preference_id": "MPKL85"
   },
   "C50VAUA": {
+    "brand": "Caixun",
     "modelo": "C50VAUA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4214,6 +4554,7 @@
     "preference_id": "MPKL85"
   },
   "C50VAUG": {
+    "brand": "Caixun",
     "modelo": "C50VAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4225,6 +4566,7 @@
     "preference_id": "MPCX90"
   },
   "C50VAUV": {
+    "brand": "Caixun",
     "modelo": "C50VAUV",
     "software": "MstarUpgrade.bin -",
     "main": "EL.MT9602V-FG95",
@@ -4236,6 +4578,7 @@
     "preference_id": "MPCX90"
   },
   "C50VAUW": {
+    "brand": "Caixun",
     "modelo": "C50VAUW",
     "software": "",
     "main": "",
@@ -4246,6 +4589,7 @@
     "preference_id": "none"
   },
   "C50VSUG": {
+    "brand": "Caixun",
     "modelo": "C50VSUG",
     "software": "",
     "main": "",
@@ -4256,8 +4600,8 @@
     "instrucciones": "",
     "preference_id": "MPCX90"
   },
-
   "C55V1UA": {
+    "brand": "Caixun",
     "modelo": "C55V1UA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4269,17 +4613,18 @@
     "preference_id": "MPKL85"
   },
   "C55V3QA": {
+    "brand": "Caixun",
     "modelo": "C55V3QA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
     "estado": "Disponible",
     "precio": "85.000 COP",
-    
     "pdf": "",
     "instrucciones": "",
     "preference_id": "MPKL85"
   },
   "C55VAUA": {
+    "brand": "Caixun",
     "modelo": "C55VAUA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4291,6 +4636,7 @@
     "preference_id": "MPKL85"
   },
   "C55VAUG": {
+    "brand": "Caixun",
     "modelo": "C55VAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4302,6 +4648,7 @@
     "preference_id": "MPCX90"
   },
   "C55VAUW": {
+    "brand": "Caixun",
     "modelo": "C55VAUW",
     "software": "",
     "main": "",
@@ -4312,6 +4659,7 @@
     "preference_id": "none"
   },
   "C55VSUG": {
+    "brand": "Caixun",
     "modelo": "C55VSUG",
     "software": "",
     "main": "",
@@ -4323,6 +4671,7 @@
     "preference_id": "MPCX90"
   },
   "C58T1UA": {
+    "brand": "Caixun",
     "modelo": "C58T1UA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4334,6 +4683,7 @@
     "preference_id": "MPKL85"
   },
   "C65V1UA": {
+    "brand": "Caixun",
     "modelo": "C65V1UA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-E",
@@ -4345,6 +4695,7 @@
     "preference_id": "MPKL85"
   },
   "C65V3QA": {
+    "brand": "Caixun",
     "modelo": "C65V3QA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-E",
@@ -4356,6 +4707,7 @@
     "preference_id": "MPKL85"
   },
   "C65VAUA": {
+    "brand": "Caixun",
     "modelo": "C65VAUA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4367,6 +4719,7 @@
     "preference_id": "MPKL85"
   },
   "C65VAUG": {
+    "brand": "Caixun",
     "modelo": "C65VAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4378,6 +4731,7 @@
     "preference_id": "MPCX90"
   },
   "C65VAUW": {
+    "brand": "Caixun",
     "modelo": "C65VAUW",
     "software": "",
     "main": "",
@@ -4388,6 +4742,7 @@
     "preference_id": "none"
   },
   "C65VSUG": {
+    "brand": "Caixun",
     "modelo": "C65VSUG",
     "software": "install.img",
     "main": "EL.RT2885-E",
@@ -4399,6 +4754,7 @@
     "preference_id": "MPCX90"
   },
   "C75T1UA": {
+    "brand": "Caixun",
     "modelo": "C75T1UA",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4410,6 +4766,7 @@
     "preference_id": "MPCX90"
   },
   "C75VAUG": {
+    "brand": "Caixun",
     "modelo": "C75VAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95",
@@ -4421,6 +4778,7 @@
     "preference_id": "MPCX90"
   },
   "CX2219D": {
+    "brand": "Caixun",
     "modelo": "CX2219D",
     "software": "",
     "main": "",
@@ -4432,6 +4790,7 @@
     "preference_id": "MPCL75"
   },
   "CX24N1": {
+    "brand": "Caixun",
     "modelo": "CX24N1",
     "software": "",
     "main": "",
@@ -4443,6 +4802,7 @@
     "preference_id": "MPCL75"
   },
   "CX24P28": {
+    "brand": "Caixun",
     "modelo": "CX24P28",
     "software": "",
     "main": "",
@@ -4454,6 +4814,7 @@
     "preference_id": "MPCL75"
   },
   "CX24T1": {
+    "brand": "Caixun",
     "modelo": "CX24T1",
     "software": "",
     "main": "",
@@ -4464,9 +4825,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
-  
   "CX32F1": {
+    "brand": "Caixun",
     "modelo": "CX32F1",
     "software": "",
     "main": "",
@@ -4478,6 +4838,7 @@
     "preference_id": "MPCL75"
   },
   "CX32F1SM": {
+    "brand": "Caixun",
     "modelo": "CX32F1SM",
     "software": "",
     "main": "",
@@ -4489,6 +4850,7 @@
     "preference_id": "MPCL75"
   },
   "CX32F2SM": {
+    "brand": "Caixun",
     "modelo": "CX32F2SM",
     "software": "",
     "main": "",
@@ -4500,6 +4862,7 @@
     "preference_id": "MPCL75"
   },
   "CX32F3": {
+    "brand": "Caixun",
     "modelo": "CX32F3",
     "software": "",
     "main": "",
@@ -4511,6 +4874,7 @@
     "preference_id": "MPCL75"
   },
   "CX32K1": {
+    "brand": "Caixun",
     "modelo": "CX32K1",
     "software": "",
     "main": "",
@@ -4522,6 +4886,7 @@
     "preference_id": "MPCL75"
   },
   "CX32N3": {
+    "brand": "Caixun",
     "modelo": "CX32N3",
     "software": "",
     "main": "",
@@ -4533,6 +4898,7 @@
     "preference_id": "MPCL75"
   },
   "CX32P28": {
+    "brand": "Caixun",
     "modelo": "CX32P28",
     "software": "",
     "main": "",
@@ -4544,6 +4910,7 @@
     "preference_id": "MPCL75"
   },
   "CX32P28SM": {
+    "brand": "Caixun",
     "modelo": "CX32P28SM",
     "software": "",
     "main": "",
@@ -4555,6 +4922,7 @@
     "preference_id": "MPCL75"
   },
   "CX32S1SM": {
+    "brand": "Caixun",
     "modelo": "CX32S1SM",
     "software": "",
     "main": "",
@@ -4566,6 +4934,7 @@
     "preference_id": "MPCL75"
   },
   "CX40N1FSM": {
+    "brand": "Caixun",
     "modelo": "CX40N1FSM",
     "software": "",
     "main": "",
@@ -4577,6 +4946,7 @@
     "preference_id": "MPCL75"
   },
   "CX40N3FSM": {
+    "brand": "Caixun",
     "modelo": "CX40N3FSM",
     "software": "",
     "main": "",
@@ -4588,6 +4958,7 @@
     "preference_id": "MPCL75"
   },
   "CX40P28": {
+    "brand": "Caixun",
     "modelo": "CX40P28",
     "software": "",
     "main": "",
@@ -4599,6 +4970,7 @@
     "preference_id": "MPCL75"
   },
   "CX40P28FSM": {
+    "brand": "Caixun",
     "modelo": "CX40P28FSM",
     "software": "rtk2831.img",
     "main": "P75-2831V6.0",
@@ -4610,6 +4982,7 @@
     "preference_id": "MPCL75"
   },
   "CX40P28SM": {
+    "brand": "Caixun",
     "modelo": "CX40P28SM",
     "software": "rtk2831.img",
     "main": "P75-2831V6.0",
@@ -4621,6 +4994,7 @@
     "preference_id": "MPCL75"
   },
   "CX40Z1FSM": {
+    "brand": "Caixun",
     "modelo": "CX40Z1FSM",
     "software": "",
     "main": "",
@@ -4632,6 +5006,7 @@
     "preference_id": "MPCL75"
   },
   "CX43F2FSM": {
+    "brand": "Caixun",
     "modelo": "CX43F2FSM",
     "software": "",
     "main": "P75-2831V6.0 CV6683H-D42",
@@ -4643,6 +5018,7 @@
     "preference_id": "MPCL75"
   },
   "CX43F2USM": {
+    "brand": "Caixun",
     "modelo": "CX43F2USM",
     "software": "",
     "main": "EL.MT6886-E CV6886H-C",
@@ -4654,6 +5030,7 @@
     "preference_id": "MPCL75"
   },
   "CX43P28FSM": {
+    "brand": "Caixun",
     "modelo": "CX43P28FSM",
     "software": "rtk2831.img",
     "main": "P75-2831V6.0",
@@ -4665,6 +5042,7 @@
     "preference_id": "MPCL75"
   },
   "CX43P28USM": {
+    "brand": "Caixun",
     "modelo": "CX43P28USM",
     "software": "",
     "main": "P150-2851V6.0 P75-2831V6.0 TP.MT5522.PC821",
@@ -4676,6 +5054,7 @@
     "preference_id": "MPCL75"
   },
   "CX43S1FSM": {
+    "brand": "Caixun",
     "modelo": "CX43S1FSM",
     "software": "",
     "main": "",
@@ -4687,6 +5066,7 @@
     "preference_id": "MPCL75"
   },
   "CX43S1USM": {
+    "brand": "Caixun",
     "modelo": "CX43S1USM",
     "software": "",
     "main": "",
@@ -4698,6 +5078,7 @@
     "preference_id": "MPCL75"
   },
   "CX43Z1": {
+    "brand": "Caixun",
     "modelo": "CX43Z1",
     "software": "",
     "main": "",
@@ -4708,8 +5089,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "CX50F2USM": {
+    "brand": "Caixun",
     "modelo": "CX50F2USM",
     "software": "",
     "main": "",
@@ -4721,6 +5102,7 @@
     "preference_id": "MPKL85"
   },
   "CX50P28FSM": {
+    "brand": "Caixun",
     "modelo": "CX50P28FSM",
     "software": "rtk2831.img",
     "main": "P130-2831V6.0",
@@ -4732,6 +5114,7 @@
     "preference_id": "MPKL85"
   },
   "CX50P28USM": {
+    "brand": "Caixun",
     "modelo": "CX50P28USM",
     "software": "",
     "main": "TP.MT5522.PC821",
@@ -4743,6 +5126,7 @@
     "preference_id": "MPKL85"
   },
   "CX50S1USM": {
+    "brand": "Caixun",
     "modelo": "CX50S1USM",
     "software": "",
     "main": "",
@@ -4754,6 +5138,7 @@
     "preference_id": "MPKL85"
   },
   "CX55F2USM": {
+    "brand": "Caixun",
     "modelo": "CX55F2USM",
     "software": "",
     "main": "",
@@ -4765,6 +5150,7 @@
     "preference_id": "MPKL85"
   },
   "CX55F3USM": {
+    "brand": "Caixun",
     "modelo": "CX55F3USM",
     "software": "",
     "main": "",
@@ -4776,6 +5162,7 @@
     "preference_id": "MPKL85"
   },
   "CX55S1USM": {
+    "brand": "Caixun",
     "modelo": "CX55S1USM",
     "software": "",
     "main": "",
@@ -4787,6 +5174,7 @@
     "preference_id": "MPKL85"
   },
   "CX5819NUSM": {
+    "brand": "Caixun",
     "modelo": "CX5819NUSM",
     "software": "",
     "main": "TP.MT5522.PC821",
@@ -4798,6 +5186,7 @@
     "preference_id": "MPKL85"
   },
   "CX58F3USM": {
+    "brand": "Caixun",
     "modelo": "CX58F3USM",
     "software": "",
     "main": "",
@@ -4809,6 +5198,7 @@
     "preference_id": "MPKL85"
   },
   "CX58N3USM": {
+    "brand": "Caixun",
     "modelo": "CX58N3USM",
     "software": "",
     "main": "",
@@ -4820,6 +5210,7 @@
     "preference_id": "MPKL85"
   },
   "CX6519NUSM": {
+    "brand": "Caixun",
     "modelo": "CX6519NUSM",
     "software": "",
     "main": "",
@@ -4831,6 +5222,7 @@
     "preference_id": "MPKL85"
   },
   "CX65E1USM": {
+    "brand": "Caixun",
     "modelo": "CX65E1USM",
     "software": "",
     "main": "",
@@ -4842,6 +5234,7 @@
     "preference_id": "MPCX90"
   },
   "CX65F3USM": {
+    "brand": "Caixun",
     "modelo": "CX65F3USM",
     "software": "",
     "main": "",
@@ -4853,6 +5246,7 @@
     "preference_id": "MPCX90"
   },
   "CX65N3USM": {
+    "brand": "Caixun",
     "modelo": "CX65N3USM",
     "software": "",
     "main": "",
@@ -4864,6 +5258,7 @@
     "preference_id": "MPCX90"
   },
   "CX75A8MUSM": {
+    "brand": "Caixun",
     "modelo": "CX75A8MUSM",
     "software": "",
     "main": "",
@@ -4875,6 +5270,7 @@
     "preference_id": "MPCX90"
   },
   "CX75E1USM": {
+    "brand": "Caixun",
     "modelo": "CX75E1USM",
     "software": "",
     "main": "",
@@ -4886,6 +5282,7 @@
     "preference_id": "MPCX90"
   },
   "CX75N3USM": {
+    "brand": "Caixun",
     "modelo": "CX75N3USM",
     "software": "",
     "main": "",
@@ -4896,8 +5293,8 @@
     "instrucciones": "",
     "preference_id": "MPCX90"
   },
-
   "C50KAUG": {
+    "brand": "Caixun",
     "modelo": "C50KAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95-K",
@@ -4908,8 +5305,8 @@
     "instrucciones": "",
     "preference_id": "MPCX90"
   },
-  
   "C55KAUW": {
+    "brand": "Caixun",
     "modelo": "C55KAUW",
     "software": "",
     "main": "EL.RT2874-FG95V1-K",
@@ -4920,8 +5317,8 @@
     "instrucciones": "",
     "preference_id": "none"
   },
-
   "C32KAHZ": {
+    "brand": "Caixun",
     "modelo": "C32KAHZ",
     "software": "aml_upgrade_package_signed.img aml_sdc_burn.ini",
     "main": "EL.AM950-SG48",
@@ -4932,8 +5329,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "C55KAUG": {
+    "brand": "Caixun",
     "modelo": "C55KAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG95-K",
@@ -4944,8 +5341,8 @@
     "instrucciones": "",
     "preference_id": "MPCX90"
   },
-
   "C50KAUW": {
+    "brand": "Caixun",
     "modelo": "C50KAUW",
     "software": "",
     "main": "EL.RT2874-FG95V1-K",
@@ -4956,8 +5353,8 @@
     "instrucciones": "",
     "preference_id": "none"
   },
-
   "C65KAUG": {
+    "brand": "Caixun",
     "modelo": "C65KAUG",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "EL.MT9602Pro-FG168",
@@ -4968,9 +5365,8 @@
     "instrucciones": "",
     "preference_id": "MPCX90"
   },
-
-
   "VTL-4030ST2": {
+    "brand": "Challenger",
     "modelo": "VTL-4030ST2",
     "software": "MS08GP_MAIN.bin",
     "main": "",
@@ -4981,8 +5377,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "VTL-4830ST2": {
+    "brand": "Challenger",
     "modelo": "VTL-4830ST2",
     "software": "MS08GP_MAIN.bin",
     "main": "",
@@ -4993,8 +5389,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "VTL-3230ST2": {
+    "brand": "Challenger",
     "modelo": "VTL-3230ST2",
     "software": "MS08GP_MAIN.bin",
     "main": "",
@@ -5005,8 +5401,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "VTL-FHD4041ST2": {
+    "brand": "Challenger",
     "modelo": "VTL-FHD4041ST2",
     "software": "358_DVBT_8G.bin",
     "main": "",
@@ -5017,8 +5413,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "VTL-FHD4042SLT2": {
+    "brand": "Challenger",
     "modelo": "VTL-FHD4042SLT2",
     "software": "358_DVBT_8G.bin",
     "main": "",
@@ -5029,8 +5425,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "VTL-HD3241ST2": {
+    "brand": "Challenger",
     "modelo": "VTL-HD3241ST2",
     "software": "358_DVBT_8G.bin",
     "main": "",
@@ -5041,8 +5437,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
   "VTL-UHD5541ST2": {
+    "brand": "Challenger",
     "modelo": "VTL-UHD5541ST2",
     "software": "658_DVBT_8G.bin",
     "main": "",
@@ -5053,11 +5449,8 @@
     "instrucciones": "",
     "preference_id": "MPCL75"
   },
-
-
-  
-
-    "LT-32KB138": {
+  "LT-32KB138": {
+    "brand": "JVC",
     "modelo": "LT-32KB138",
     "software": "install.img",
     "main": "",
@@ -5068,8 +5461,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-32KD138": {
+    "brand": "JVC",
     "modelo": "LT-32KD138",
     "software": "install.img",
     "main": "",
@@ -5080,8 +5473,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-43KD628": {
+    "brand": "JVC",
     "modelo": "LT-43KD628",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5092,8 +5485,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-43KM348": {
+    "brand": "JVC",
     "modelo": "LT-43KM348",
     "software": "install.img",
     "main": "",
@@ -5104,8 +5497,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-43KM358": {
+    "brand": "JVC",
     "modelo": "LT-43KM358",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5116,8 +5509,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-50KD538": {
+    "brand": "JVC",
     "modelo": "LT-50KD538",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5128,8 +5521,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-50KD608": {
+    "brand": "JVC",
     "modelo": "LT-50KD608",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5140,8 +5533,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-55KD608": {
+    "brand": "JVC",
     "modelo": "LT-55KD608",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5152,8 +5545,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-58KB528": {
+    "brand": "JVC",
     "modelo": "LT-58KB528",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5164,8 +5557,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-58KD618": {
+    "brand": "JVC",
     "modelo": "LT-58KD618",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5176,8 +5569,8 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   },
-
   "LT-65KD738": {
+    "brand": "JVC",
     "modelo": "LT-65KD738",
     "software": "upgrade_image_no_tvcertificate.pkg",
     "main": "",
@@ -5188,11 +5581,4 @@
     "instrucciones": "",
     "preference_id": "MPCL78"
   }
-
-
-
-
 }
-
-
-

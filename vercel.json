@@ -1,13 +1,32 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
   "rewrites": [
-    { "source": "/inicio", "destination": "/index.html" },
-    { "source": "/contacto", "destination": "/Contact.html" },
-    { "source": "/productos", "destination": "/products.html" },
-    { "source": "/soluciones", "destination": "/Soluciones.html" },
-    { "source": "/hyundai", "destination": "/Hyundai.html" },
-    { "source": "/softwaretv", "destination": "/SoftwareTv.html" }
-    
+    {
+      "source": "/inicio",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contacto",
+      "destination": "/Contact.html"
+    },
+    {
+      "source": "/productos",
+      "destination": "/products.html"
+    },
+    {
+      "source": "/soluciones",
+      "destination": "/Soluciones.html"
+    },
+    {
+      "source": "/hyundai",
+      "destination": "/Hyundai.html"
+    },
+    {
+      "source": "/softwaretv",
+      "destination": "/SoftwareTv.html"
+    }
   ],
   "cleanUrls": true,
   "trailingSlash": false

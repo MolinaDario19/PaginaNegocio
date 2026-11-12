@@ -1,0 +1,219 @@
+/* ==========================================================================
+   DIGITAL ELECTRONICS - PÁGINAS DE MARCA Y PRODUCTO (SEO)
+   ========================================================================== */
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 24px 0 12px;
+}
+.breadcrumb a {
+  color: var(--accent);
+}
+.breadcrumb span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.intro-marca {
+  max-width: 760px;
+  margin: 0 0 28px;
+  color: var(--text-muted);
+}
+
+.modelos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+  margin-bottom: 48px;
+}
+
+.modelo-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.modelo-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+}
+.modelo-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.modelo-card__top h3 {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+.modelo-card__precio {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+.modelo-card__cta {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.estado-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.estado-disponible {
+  background: rgba(37, 211, 102, 0.12);
+  color: var(--whatsapp-dark);
+}
+.estado-otro {
+  background: rgba(148, 163, 184, 0.18);
+  color: var(--text-muted);
+}
+
+.faq-marca {
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+.faq-marca h2 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.faq-marca details {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+.faq-marca summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--primary);
+}
+.faq-marca p {
+  margin-top: 10px;
+  color: var(--text-muted);
+}
+
+/* ---------- Ficha de producto ---------- */
+.producto-detalle {
+  padding-bottom: 60px;
+}
+.producto-detalle h1 {
+  color: var(--primary);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 6px 0 12px;
+}
+.producto-descripcion {
+  max-width: 720px;
+  color: var(--text-muted);
+  margin: 18px 0 26px;
+}
+
+.producto-info-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+.producto-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.producto-info-item .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-light);
+}
+.producto-info-item .value {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.cta-producto {
+  display: inline-block;
+  background: var(--whatsapp);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  box-shadow: 0 8px 20px -6px var(--whatsapp-glow);
+  margin-bottom: 40px;
+}
+.cta-producto:hover {
+  background: var(--whatsapp-dark);
+}
+
+.otros-modelos h2 {
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+.otros-modelos ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-bottom: 16px;
+  padding: 0;
+}
+.otros-modelos li a {
+  color: var(--accent);
+  font-size: 0.92rem;
+}
+.otros-modelos .ver-todos {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ---------- Compra con Mercado Pago (ficha de modelo) ---------- */
+.compra {
+  max-width: 720px;
+  margin-bottom: 14px;
+}
+.btn-comprar {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 15px 34px;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-comprar:hover { background: var(--accent-hover, #1d4ed8); }
+.btn-comprar:disabled { opacity: 0.7; cursor: default; }
+#mp-button { margin: 4px 0; }
+.compra-nota {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.mp-error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.cta-producto--wha {
+  display: inline-block;
+  margin-bottom: 40px;
+}
