@@ -304,19 +304,7 @@ details p {
     color: #26a536;
     border: 1px solid rgba(9, 139, 15, 0.397);
   }
-  .estado-pill1{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    font-weight:600;
-    
-    border-radius: 999px;
-    background: rgba(11, 224, 11, 0.1);
-    color: #26a536;
-    
-  }
+
   .estado-pill::before{
     content:"";
     width:6px; height:6px;

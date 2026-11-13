@@ -174,11 +174,7 @@ const badgeEstado = (estado) => {
   return `<span class="estado-pill estado-otro">${esc(estado ? estado[0].toUpperCase() + estado.slice(1) : "Consultar")}</span>`;
 };
 
-const badgeEstado1 = (estado1) => {
-  const e = (estado1 || "").trim().toLowerCase();
-  if (e === "disponible") return `<span class="estado-pill1 estado-disponible"></span>`;
-  return `<span class="estado-pill estado-otro">${esc(estado1 ? estado[0].toUpperCase() + estado1.slice(1) : "Consultar")}</span>`;
-};
+
 
 const NAV_HTML = `
 <nav class="nav container">
@@ -400,7 +396,7 @@ function renderMarca(grupo) {
                 <a class="modelo-card" href="${urlModelo(slug, m.mslug)}" data-q="${esc(limpiar(modelo + " " + m.codigo))}" data-t="${t || ""}" data-d="${disp ? 1 : 0}">
                     <div class="mc-top">
                         <h3><span class="mc-marca">${esc(nombre)}</span> ${esc(modelo)}</h3>
-                        ${badgeEstado1(m.info.estado)}
+                        <!-- ${badgeEstado(m.info.estado)} -->
                     </div>
                     <div class="mc-bottom">
                     <!-- <span class="mc-precio">${esc(m.info.precio || "Consultar")}</span> -->
@@ -606,10 +602,21 @@ function renderModelo(grupo, actual) {
   const pulg = pulgadasDe(codigo, info);
   const evs = evidenciasDe(info);
   const refPlaca = String(info.main || "").trim();
-  const wa = waLink(`Hola DigitalElectronics, necesito software para mi TV ${nombre} ${modelo}`);
+  const wa = waLink(`Hola DigitalElectronics👋
+
+    Estoy interesado en el siguiente software. 
+    *Marca:* ${nombre}
+    *Modelo:* ${modelo}
+    *Precio:* ${precioTxt}
+    *Estado:* ${estadoTxt}
+
+    ¿Podrían brindarme más información?
+
+    Muchas gracias.`);
   const waVideo = waLink(`Hola DigitalElectronics, necesito una videollamada para guiarme con el software de mi TV ${nombre} ${modelo}`);
 
   const metaDesc = `Software original para el Smart TV ${nombre} ${modelo}${pulg ? ` de ${pulg} pulgadas` : ""}. Solución para pantalla negra, bloqueos, reinicios o TV que no enciende. Precio ${precioTxt}. Guía por WhatsApp, llamada o videollamada.`;
+
 
   const producto = {
     "@context": "https://schema.org",
