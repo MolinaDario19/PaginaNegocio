@@ -66,8 +66,8 @@ const PLANTILLA_PORTADA = path.join(__dirname, "plantillas", "productos.template
 //   usa los archivos de /images/marcas/{slug}/ (ver imagenesDeMarca más abajo).
 const MARCAS = [
   { nombre: "Kalley", slug: "kalley", logo: "/images/Kalley2.JPG", prefijos: ["K-"] },
-  { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.png", prefijos: ["HYLED"] },
-  { nombre: "Challenger", slug: "challenger", logo: "/images/logo_challenger.png" },
+  { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.jpg", prefijos: ["HYLED"] },
+  { nombre: "Challenger", slug: "challenger", logo: "/images/Logo_Challenger.jpg" },
   { nombre: "JVC", slug: "jvc", logo: "/images/logo-jvc.jpg", prefijos: ["LT-"] },
   { nombre: "Olimpo", slug: "olimpo", logo: "/images/logos olimpo.png" },
   { nombre: "Caixun", slug: "caixun", logo: "/images/logo caixun.png", prefijos: ["CX", "C"] },
