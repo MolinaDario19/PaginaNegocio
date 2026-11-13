@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Original para Smart TV por Marca | Digital Electronics</title>
     <link rel="canonical" href="{{DOMAIN}}{{URL_PORTADA}}">
-    <meta name="description" content="Encuentra el software original para tu Smart TV: {{LISTA_MARCAS}}. {{TOTAL_MODELOS}} modelos con precio y disponibilidad. Instalación con soporte técnico en Cali, Colombia.">
+    <meta name="description" content="Encuentra el software original para tu Smart TV: {{LISTA_MARCAS}}. {{TOTAL_MODELOS}} softwares disponibles con precio a la vista. Guía por WhatsApp, llamada o videollamada en Cali, Colombia.">
     <meta name="keywords" content="software smart tv, firmware tv, reparar smart tv, actualizar software tv, TV pegada en el logo, digital electronics cali">
     <meta name="robots" content="{{ROBOTS}}">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Software Original para Smart TV por Marca | Digital Electronics">
-    <meta property="og:description" content="{{TOTAL_MODELOS}} modelos de software original para Smart TV. Elige tu marca, consulta precio y disponibilidad.">
+    <meta property="og:description" content="{{TOTAL_MODELOS}} softwares originales para Smart TV de {{TOTAL_MARCAS}} marcas. Elige tu marca, consulta precio y disponibilidad.">
     <meta property="og:url" content="{{DOMAIN}}{{URL_PORTADA}}">
     <meta property="og:locale" content="es_ES">
 
@@ -28,13 +28,13 @@
         {"@type":"Question","name":"¿Dónde encuentro el modelo exacto de mi televisor?","acceptedAnswer":{"@type":"Answer","text":"Está en la etiqueta de la parte trasera del equipo, cerca de los puertos. Escríbelo en el buscador tal como aparece en la etiqueta."}},
         {"@type":"Question","name":"¿El software es original?","acceptedAnswer":{"@type":"Answer","text":"Sí. Trabajamos únicamente con software original y licenciado para garantizar el rendimiento y la seguridad de tu televisor."}},
         {"@type":"Question","name":"¿Qué hago si no encuentro mi modelo?","acceptedAnswer":{"@type":"Answer","text":"Escríbenos por WhatsApp con la marca y el modelo. Actualizamos la disponibilidad de software de forma continua y verificamos si ya lo tenemos."}},
-        {"@type":"Question","name":"¿Tienen acompañamiento técnico durante la instalación?","acceptedAnswer":{"@type":"Answer","text":"Sí. Te acompañamos técnicamente hasta que tu dispositivo funcione correctamente."}}
+        {"@type":"Question","name":"¿Tienen acompañamiento técnico durante la instalación?","acceptedAnswer":{"@type":"Answer","text":"Sí. Te guiamos por WhatsApp, llamada telefónica o videollamada, hasta que tu dispositivo funcione correctamente."}}
       ]
     }
     </script>
 </head>
-<body>
-    <header class="hero">
+<body class="portada">
+    <header class="site-top">
         <nav class="nav container">
             <div class="nav__logo">
                 <img src="/images/LOGO CP.png" alt="DigitalElectronics">
@@ -56,32 +56,50 @@
     </header>
 
     <main>
-        <!-- ============ HERO + BUSCADOR ============ -->
-        <section class="pt-hero container">
-            <p class="pt-eyebrow">Software original · Soporte técnico incluido</p>
-            <h1>Software original para tu Smart TV, por marca y modelo</h1>
-            <p class="pt-lead">Si tu televisor se quedó pegado en el logo, se reinicia solo o no enciende, encuentra aquí el software que le corresponde. Busca tu modelo o elige tu marca.</p>
+        <!-- ============ PRESENTACIÓN + BUSCADOR ============ -->
+        <section class="pt-intro">
+            <div class="container pt-intro__inner">
+                <p class="pt-eyebrow">Software original · Soporte técnico incluido</p>
+                <h1>Software original para tu Smart TV</h1>
+                <p class="pt-lead">Encuentra el software de tu televisor por marca y referencia. {{TOTAL_MODELOS}} softwares disponibles de {{TOTAL_MARCAS}} marcas, con el precio a la vista y guía personalizada hasta que tu TV funcione.</p>
 
-            <form class="pt-buscador" role="search" onsubmit="return false;">
-                <label for="buscadorModelo" class="pt-sr">Buscar modelo de televisor</label>
-                <input type="text" id="buscadorModelo" placeholder="Escribe tu modelo, ej. K-ATV43UHD" autocomplete="off">
-                <button type="button" id="btnBuscarModelo">Buscar</button>
-            </form>
-            <p class="pt-hint">El modelo está en la etiqueta de la parte trasera del televisor.</p>
-            <div class="pt-resultados" id="resultadosBusqueda" aria-live="polite"></div>
+                <form class="pt-buscador" role="search" onsubmit="return false;">
+                    <label for="buscadorModelo" class="pt-sr">Buscar modelo de televisor</label>
+                    <input type="search" id="buscadorModelo" placeholder="Escribe tu modelo, ej. K-ATV43UHD" autocomplete="off" enterkeyhint="search">
+                    <button type="button" id="btnBuscarModelo">Buscar</button>
+                </form>
+                <p class="pt-hint">El modelo está en la etiqueta de la parte trasera del televisor.</p>
+                <div class="pt-resultados" id="resultadosBusqueda" aria-live="polite"></div>
+            </div>
+        </section>
 
-            <dl class="pt-stats">
-                <div><dt>{{TOTAL_MODELOS}}</dt><dd>modelos de software</dd></div>
-                <div><dt>{{TOTAL_MARCAS}}</dt><dd>marcas disponibles</dd></div>
-                <div><dt>+10 años</dt><dd>de experiencia en servicio técnico</dd></div>
-            </dl>
+        <!-- ============ CONFIANZA ============ -->
+        <section class="container">
+            <ul class="pt-confianza">
+                <li>
+                    <span class="pt-confianza__marca" aria-hidden="true"></span>
+                    <div><strong>Software original</strong><span>Licenciado, para el rendimiento y la seguridad de tu TV.</span></div>
+                </li>
+                <li>
+                    <span class="pt-confianza__marca" aria-hidden="true"></span>
+                    <div><strong>Guía personalizada</strong><span>Por WhatsApp, llamada o videollamada si la necesitas.</span></div>
+                </li>
+                <li>
+                    <span class="pt-confianza__marca" aria-hidden="true"></span>
+                    <div><strong>Pago a tu elección</strong><span>Con Mercado Pago o con Wompi.</span></div>
+                </li>
+                <li>
+                    <span class="pt-confianza__marca" aria-hidden="true"></span>
+                    <div><strong>Más de 10 años</strong><span>De trayectoria en servicio técnico.</span></div>
+                </li>
+            </ul>
         </section>
 
         <!-- ============ MARCAS ============ -->
         <section class="pt-marcas container" id="marcas">
             <div class="pt-section-head">
                 <h2>Elige la marca de tu televisor</h2>
-                <p>Cada marca tiene su propia página con todos los modelos, precios y disponibilidad.</p>
+                <p>Cada marca tiene su propia página con todas las referencias, precios y disponibilidad.</p>
             </div>
             <div class="pt-grid">
 {{TARJETAS}}
@@ -91,23 +109,29 @@
         <!-- ============ CÓMO FUNCIONA ============ -->
         <section class="pt-pasos container">
             <div class="pt-section-head">
-                <h2>Cómo conseguir tu software</h2>
+                <h2>Así funciona el servicio</h2>
+                <p>Un proceso simple, acompañado por nosotros de principio a fin.</p>
             </div>
             <ol class="pt-pasos__lista">
                 <li>
                     <span class="pt-pasos__num">1</span>
-                    <h3>Identifica tu modelo</h3>
-                    <p>Revisa la etiqueta en la parte trasera del televisor y anota la referencia completa.</p>
+                    <h3>Eliges y pagas</h3>
+                    <p>Encuentras tu referencia exacta y pagas con Mercado Pago o con Wompi.</p>
                 </li>
                 <li>
                     <span class="pt-pasos__num">2</span>
-                    <h3>Elige marca y referencia</h3>
-                    <p>Entra a la página de tu marca o usa el buscador para ver precio y disponibilidad.</p>
+                    <h3>Confirmas tu pedido</h3>
+                    <p>Al terminar el pago confirmas el modelo y el número de serie y los envías por WhatsApp.</p>
                 </li>
                 <li>
                     <span class="pt-pasos__num">3</span>
-                    <h3>Solicita la instalación</h3>
-                    <p>Escríbenos por WhatsApp y te acompañamos hasta que tu televisor funcione correctamente.</p>
+                    <h3>Te guiamos</h3>
+                    <p>Te acompañamos en la instalación por WhatsApp, llamada o videollamada.</p>
+                </li>
+                <li>
+                    <span class="pt-pasos__num">4</span>
+                    <h3>Tu TV funciona</h3>
+                    <p>Seguimos contigo hasta que tu televisor funcione correctamente.</p>
                 </li>
             </ol>
         </section>
@@ -131,7 +155,7 @@
             </details>
             <details>
                 <summary>¿Tienen acompañamiento técnico durante la instalación?</summary>
-                <p>Sí. Te acompañamos técnicamente hasta que tu dispositivo funcione correctamente.</p>
+                <p>Sí. Te guiamos por WhatsApp, llamada telefónica o videollamada, hasta que tu dispositivo funcione correctamente.</p>
             </details>
         </section>
 
@@ -142,12 +166,16 @@
                     <h2>¿No encuentras tu modelo?</h2>
                     <p>Escríbenos con la marca y la referencia de tu televisor y lo verificamos.</p>
                 </div>
-                <a class="pt-btn-wha" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone={{WHATSAPP}}&text=Hola%20DigitalElectronics%2C%20no%20encuentro%20el%20modelo%20de%20mi%20TV">Escribir por WhatsApp</a>
+                <div class="pt-final__acciones">
+                    <a class="pt-btn-wha" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone={{WHATSAPP}}&text=Hola%20DigitalElectronics%2C%20no%20encuentro%20el%20modelo%20de%20mi%20TV">Escribir por WhatsApp</a>
+                    <a class="pt-btn-llamar" href="tel:+{{WHATSAPP}}">Llamar</a>
+                </div>
             </div>
         </section>
     </main>
 
     <script>
+        /* ---------- Buscador de modelos ---------- */
         var CATALOGO = null;
         fetch('/info.json').then(function (r) { return r.json(); }).then(function (d) { CATALOGO = d; }).catch(function () {});
 
@@ -184,6 +212,41 @@
         }
         document.getElementById('btnBuscarModelo').addEventListener('click', buscarModelo);
         document.getElementById('buscadorModelo').addEventListener('input', buscarModelo);
+
+        /* ---------- Carruseles de imágenes ---------- */
+        // El deslizado es nativo (scroll-snap): funciona con el dedo, el trackpad y el teclado.
+        // Este código solo agrega las flechas y los puntos indicadores.
+        [].slice.call(document.querySelectorAll('[data-carrusel]')).forEach(function (caja) {
+            var pista = caja.querySelector('.mcard__slides');
+            var puntos = [].slice.call(caja.querySelectorAll('.mcard__dots span'));
+            var prev = caja.querySelector('.mcard__nav--prev');
+            var next = caja.querySelector('.mcard__nav--next');
+            var total = pista.children.length;
+            if (total < 2) return;
+
+            function actual() { return Math.round(pista.scrollLeft / (pista.clientWidth || 1)); }
+            function marcar() {
+                var i = Math.max(0, Math.min(total - 1, actual()));
+                puntos.forEach(function (p, k) { p.classList.toggle('is-on', k === i); });
+                prev.disabled = i === 0;
+                next.disabled = i === total - 1;
+            }
+            function ir(i) {
+                i = Math.max(0, Math.min(total - 1, i));
+                pista.scrollTo({ left: i * pista.clientWidth, behavior: 'auto' });
+                marcar();
+            }
+            prev.hidden = next.hidden = false;
+            caja.querySelector('.mcard__dots').hidden = false;
+            prev.addEventListener('click', function () { ir(actual() - 1); });
+            next.addEventListener('click', function () { ir(actual() + 1); });
+            pista.addEventListener('scroll', function () { window.requestAnimationFrame(marcar); }, { passive: true });
+            pista.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowRight') { e.preventDefault(); ir(actual() + 1); }
+                if (e.key === 'ArrowLeft') { e.preventDefault(); ir(actual() - 1); }
+            });
+            marcar();
+        });
     </script>
 
     <site-footer></site-footer>

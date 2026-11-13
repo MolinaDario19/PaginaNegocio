@@ -62,6 +62,8 @@ const PLANTILLA_PORTADA = path.join(__dirname, "plantillas", "productos.template
 // slug:   define la URL, en minúsculas y sin espacios ni tildes
 // logo:   ruta del logo que se muestra en la tarjeta de la portada
 // prefijos (opcional): para modelos sin campo "brand", se asignan por prefijo del código
+// imagenes (opcional): rutas de imágenes para el carrusel de la portada. Si no las pones, el script
+//   usa los archivos de /images/marcas/{slug}/ (ver imagenesDeMarca más abajo).
 const MARCAS = [
   { nombre: "Kalley", slug: "kalley", logo: "/images/Kalley.jpg", prefijos: ["K-"] },
   { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.png", prefijos: ["HYLED"] },
@@ -810,66 +812,141 @@ ${htmlEvidencias(evs, nombre, modelo)}
 
 // ---------------------------------- portada ---------------------------------
 
+const IMG_EXT = /\.(jpe?g|png|webp|avif)$/i;
+const formatoPesos = (n) => "$" + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+// Imágenes del carrusel de cada tarjeta. Orden de prioridad:
+//   1) la lista "imagenes" de la marca, si la escribes en MARCAS / MARCAS_EXTERNAS
+//   2) los archivos de /images/marcas/{slug}/  (se ordenan por nombre: 1.jpg, 2.jpg, 3.jpg...)
+//   3) /images/instalacion/{slug}.jpg  (si existe)
+// Si no hay imágenes, la tarjeta muestra el logo de la marca.
+function imagenesDeMarca(slug, manual) {
+  if (Array.isArray(manual) && manual.length) return manual;
+  const dir = path.join(ROOT, "images", "marcas", slug);
+  let lista = [];
+  if (fs.existsSync(dir)) {
+    lista = fs
+      .readdirSync(dir)
+      .filter((f) => IMG_EXT.test(f))
+      .sort((a, b) => a.localeCompare(b, "es", { numeric: true }))
+      .map((f) => `/images/marcas/${slug}/${f}`);
+  }
+  if (!lista.length && fs.existsSync(path.join(ROOT, "images", "instalacion", `${slug}.jpg`))) {
+    lista.push(`/images/instalacion/${slug}.jpg`);
+  }
+  return lista;
+}
+
+function tarjetaMarca(d, idx) {
+  const { nombre, href, logo, imagenes } = d;
+  const logoSrc = esc(encodeURI(logo));
+  let media;
+
+  if (imagenes.length) {
+    const slides = imagenes
+      .map(
+        (src, i) => `
+                            <div class="mcard__slide" role="group" aria-roledescription="diapositiva" aria-label="${i + 1} de ${imagenes.length}">
+                                <img src="${esc(encodeURI(src))}" alt="${esc(`Servicio de software para Smart TV ${nombre} (${i + 1} de ${imagenes.length})`)}" width="800" height="500" decoding="async"${idx === 0 && i === 0 ? "" : ' loading="lazy"'}>
+                            </div>`
+      )
+      .join("");
+    const varias = imagenes.length > 1;
+    const flechas = varias
+      ? `
+                        <button type="button" class="mcard__nav mcard__nav--prev" aria-label="Imagen anterior de ${esc(nombre)}" hidden>&#8249;</button>
+                        <button type="button" class="mcard__nav mcard__nav--next" aria-label="Imagen siguiente de ${esc(nombre)}" hidden>&#8250;</button>`
+      : "";
+    const puntos = varias
+      ? `
+                        <div class="mcard__dots" aria-hidden="true" hidden>${imagenes.map((_, i) => `<span${i === 0 ? ' class="is-on"' : ""}></span>`).join("")}</div>`
+      : "";
+    media = `
+                    <div class="mcard__media" data-carrusel>
+                        <div class="mcard__slides" tabindex="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de ${esc(nombre)}">${slides}
+                        </div>${flechas}${puntos}
+                        <span class="mcard__chip"><img src="${logoSrc}" alt="Logo ${esc(nombre)}"></span>
+                    </div>`;
+  } else {
+    media = `
+                    <div class="mcard__media mcard__media--logo">
+                        <img class="mcard__logo-grande" src="${logoSrc}" alt="Logo ${esc(nombre)}" loading="lazy">
+                    </div>`;
+  }
+
+  const tam = d.tamMin && d.tamMax && d.tamMin !== d.tamMax ? `<p class="mcard__tam">Tamaños de ${d.tamMin}″ a ${d.tamMax}″</p>` : "";
+  const stats =
+    d.total > 0
+      ? `<div class="mcard__stats">
+                        <div><strong>${d.total}</strong><span>${d.total === 1 ? "software disponible" : "softwares disponibles"}</span></div>${
+          d.desde ? `
+                        <div><strong>${formatoPesos(d.desde)}</strong><span>precio desde (COP)</span></div>` : ""
+        }
+                    </div>`
+      : `<p class="mcard__nota">${esc(d.texto || "Consulta la disponibilidad de tu referencia.")}</p>`;
+
+  return `
+                <article class="mcard">${media}
+                    <div class="mcard__body">
+                        <h3><a href="${href}">${esc(nombre)}</a></h3>
+                        ${tam}
+                        ${stats}
+                        <a class="mcard__cta" href="${href}">Ver softwares ${esc(nombre)}</a>
+                    </div>
+                </article>`;
+}
+
 function renderPortada(grupos) {
   const activos = [...grupos.values()].filter((g) => g.modelos.length > 0);
-  const totalModelos = activos.reduce((s, g) => s + g.modelos.length, 0);
-  const nombres = [...activos.map((g) => g.marca.nombre), ...MARCAS_EXTERNAS.map((m) => m.nombre)];
 
-  const tarjeta = ({ nombre, slug, href, logo, meta, ejemplos }) => `
-                <a class="marca-card" href="${href}">
-                    <div class="marca-card__tv">
-                        <div class="marca-card__pantalla">
-                            <img class="marca-card__logo" src="${encodeURI(logo)}" alt="Logo ${esc(nombre)}" loading="lazy">
-                            <img class="marca-card__foto" src="/images/instalacion/${slug}.jpg" alt="Instalación de software en Smart TV ${esc(nombre)}" loading="lazy" onerror="this.remove()">
-                        </div>
-                    </div>
-                    <div class="marca-card__cuerpo">
-                        <h3>${esc(nombre)}</h3>
-                        <p class="marca-card__meta">${esc(meta)}</p>
-                        <p class="marca-card__ejemplos">${esc(ejemplos)}</p>
-                        <span class="marca-card__cta">Buscar software ${esc(nombre)}</span>
-                    </div>
-                </a>`;
+  const datos = activos
+    .map((g) => {
+      const disp = g.modelos.filter((m) => (m.info.estado || "").trim().toLowerCase() === "disponible");
+      const precios = disp.map((m) => Number(m.info.valor)).filter((v) => v > 0);
+      const tams = g.modelos.map((m) => pulgadasDe(m.codigo, m.info)).filter(Boolean);
+      return {
+        nombre: g.marca.nombre,
+        slug: g.marca.slug,
+        href: urlMarca(g.marca.slug),
+        logo: g.marca.logo,
+        imagenes: imagenesDeMarca(g.marca.slug, g.marca.imagenes),
+        total: disp.length,
+        desde: precios.length ? Math.min(...precios) : 0,
+        tamMin: tams.length ? Math.min(...tams) : 0,
+        tamMax: tams.length ? Math.max(...tams) : 0,
+      };
+    })
+    .sort((a, b) => b.total - a.total);
 
-  const tarjetas = activos.map((g) => {
-    const precios = g.modelos.map((m) => Number(m.info.valor)).filter((v) => v > 0);
-    const desde = precios.length ? ` · desde ${formatoCOP(Math.min(...precios))}` : "";
-    const ej = g.modelos.slice(0, 3).map((m) => m.info.modelo || m.codigo).join(", ");
-    return tarjeta({
-      nombre: g.marca.nombre,
-      slug: g.marca.slug,
-      href: urlMarca(g.marca.slug),
-      logo: g.marca.logo,
-      meta: `${g.modelos.length} modelos${desde}`,
-      ejemplos: `Ej.: ${ej}…`,
-    });
-  });
+  const externas = MARCAS_EXTERNAS.map((m) => ({
+    nombre: m.nombre,
+    slug: slugify(m.nombre),
+    href: m.href,
+    logo: m.logo,
+    imagenes: imagenesDeMarca(slugify(m.nombre), m.imagenes),
+    total: 0,
+    texto: m.texto,
+  }));
 
-  MARCAS_EXTERNAS.forEach((m) =>
-    tarjetas.push(tarjeta({ nombre: m.nombre, slug: slugify(m.nombre), href: m.href, logo: m.logo, meta: m.texto, ejemplos: "Verifica la disponibilidad de tu referencia." }))
-  );
+  const totalSoftwares = datos.reduce((s, d) => s + d.total, 0);
+  const nombres = [...datos.map((d) => d.nombre), ...externas.map((d) => d.nombre)];
 
+  const tarjetas = [...datos, ...externas].map((d, i) => tarjetaMarca(d, i));
   tarjetas.push(`
-                <a class="marca-card marca-card--otra" target="_blank" rel="noopener" href="${waLink("Hola DigitalElectronics, no encuentro la marca de mi TV")}">
-                    <div class="marca-card__tv">
-                        <div class="marca-card__pantalla"><span class="marca-card__mas">+</span></div>
-                    </div>
-                    <div class="marca-card__cuerpo">
+                <article class="mcard mcard--otra">
+                    <div class="mcard__media mcard__media--logo"><span class="mcard__mas">+</span></div>
+                    <div class="mcard__body">
                         <h3>¿No ves tu marca?</h3>
-                        <p class="marca-card__meta">Actualizamos el catálogo de forma continua</p>
-                        <p class="marca-card__ejemplos">Escríbenos con la marca y la referencia de tu televisor.</p>
-                        <span class="marca-card__cta marca-card__cta--wha">Consultar por WhatsApp</span>
+                        <p class="mcard__nota">Actualizamos el catálogo de forma continua. Escríbenos con la marca y la referencia de tu televisor y lo verificamos.</p>
+                        <a class="mcard__cta mcard__cta--wha" target="_blank" rel="noopener" href="${waLink("Hola DigitalElectronics, no encuentro la marca de mi TV")}">Consultar por WhatsApp</a>
                     </div>
-                </a>`);
+                </article>`);
 
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Marcas de Smart TV con software disponible",
-    itemListElement: [
-      ...activos.map((g) => ({ name: g.marca.nombre, url: `${DOMAIN}${urlMarca(g.marca.slug)}` })),
-      ...MARCAS_EXTERNAS.map((m) => ({ name: m.nombre, url: `${DOMAIN}${m.href}` })),
-    ].map((x, i) => ({ "@type": "ListItem", position: i + 1, name: x.name, url: x.url })),
+    itemListElement: [...datos, ...externas].map((d, i) => ({ "@type": "ListItem", position: i + 1, name: d.nombre, url: `${DOMAIN}${d.href}` })),
   };
 
   const reemplazos = {
@@ -878,7 +955,7 @@ function renderPortada(grupos) {
     CARPETA,
     ROBOTS,
     URL_PORTADA,
-    TOTAL_MODELOS: String(totalModelos),
+    TOTAL_MODELOS: String(totalSoftwares),
     TOTAL_MARCAS: String(nombres.length),
     LISTA_MARCAS: nombres.join(", "),
     JSONLD_MARCAS: jsonLd(itemList),
