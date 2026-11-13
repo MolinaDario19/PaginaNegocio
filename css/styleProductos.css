@@ -291,6 +291,37 @@ details p {
   margin: 0 0 16px;
 }
 
+.estado-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:600;
+    padding: 3px 10px 3px 8px;
+    border-radius: 999px;
+    background: rgba(47,232,200,.1);
+    color: var(--accent);
+    border: 1px solid rgba(47,232,200,.35);
+  }
+  .estado-pill::before{
+    content:"";
+    width:6px; height:6px;
+    border-radius:50%;
+    background: currentColor;
+    box-shadow: 0 0 6px currentColor;
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  .estado-pill.agotado{
+    background: rgba(255,92,108,.1);
+    color: var(--danger);
+    border-color: rgba(255,92,108,.35);
+  }
+  @keyframes pulse{
+    0%,100%{ opacity:1; }
+    50%{ opacity:.35; }
+  }
+
 
 /* ---------- Requisitos USB (nota informativa) ---------- */
   .requisitos{
@@ -319,7 +350,7 @@ details p {
     line-height:1.7;
   }
   .requisitos li b{ color: var(--text); font-weight:600; }
-  
+
 /* ==========================================================================
    PÁGINA DE MODELO
    ========================================================================== */

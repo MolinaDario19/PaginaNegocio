@@ -171,7 +171,7 @@ function agruparPorMarca(data) {
 const badgeEstado = (estado) => {
   const e = (estado || "").trim().toLowerCase();
   if (e === "disponible") return `<span class="estado-badge estado-disponible">Disponible</span>`;
-  return `<span class="estado-badge estado-otro">${esc(estado ? estado[0].toUpperCase() + estado.slice(1) : "Consultar")}</span>`;
+  return `<span class="estado-pill estado-otro">${esc(estado ? estado[0].toUpperCase() + estado.slice(1) : "Consultar")}</span>`;
 };
 
 const NAV_HTML = `
@@ -887,7 +887,10 @@ function tarjetaMarca(d, idx) {
   const stats =
     d.total > 0
       ? `<div class="mcard__stats">
-                        <div><strong>${d.total}</strong><span>${d.total === 1 ? "software disponible" : "softwares disponibles"}</span></div>
+                        <div><strong>${d.total}</strong><span>${d.total === 1 ? "software disponible" : "softwares disponibles"}</span></div>${
+          d.desde ? `
+            <div><strong>100%</strong><span>Originales</span></div>` : ""
+        }
                        
 
                     </div>`
@@ -899,7 +902,7 @@ function tarjetaMarca(d, idx) {
                         <h3><a href="${href}">${esc(nombre)}</a></h3>
                         ${tam}
                         ${stats}
-                        <a class="mcard__cta" href="${href}">Softwares ${esc(nombre)}</a>
+                        <a class="mcard__cta" href="${href}">Entra</a>
                     </div>
                 </article>`;
 }
