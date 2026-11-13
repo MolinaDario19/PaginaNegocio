@@ -174,6 +174,12 @@ const badgeEstado = (estado) => {
   return `<span class="estado-pill estado-otro">${esc(estado ? estado[0].toUpperCase() + estado.slice(1) : "Consultar")}</span>`;
 };
 
+const badgeEstado1 = (estado1) => {
+  const e = (estado1 || "").trim().toLowerCase();
+  if (e === "disponible") return `<span class="estado-pill1 estado-disponible"></span>`;
+  return `<span class="estado-pill estado-otro">${esc(estado1 ? estado[0].toUpperCase() + estado1.slice(1) : "Consultar")}</span>`;
+};
+
 const NAV_HTML = `
 <nav class="nav container">
     <div class="nav__logo">
@@ -394,7 +400,7 @@ function renderMarca(grupo) {
                 <a class="modelo-card" href="${urlModelo(slug, m.mslug)}" data-q="${esc(limpiar(modelo + " " + m.codigo))}" data-t="${t || ""}" data-d="${disp ? 1 : 0}">
                     <div class="mc-top">
                         <h3><span class="mc-marca">${esc(nombre)}</span> ${esc(modelo)}</h3>
-                        ${badgeEstado(m.info.estado)}
+                        ${badgeEstado1(m.info.estado)}
                     </div>
                     <div class="mc-bottom">
                     <!-- <span class="mc-precio">${esc(m.info.precio || "Consultar")}</span> -->
