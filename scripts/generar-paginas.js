@@ -65,7 +65,7 @@ const PLANTILLA_PORTADA = path.join(__dirname, "plantillas", "productos.template
 // imagenes (opcional): rutas de imágenes para el carrusel de la portada. Si no las pones, el script
 //   usa los archivos de /images/marcas/{slug}/ (ver imagenesDeMarca más abajo).
 const MARCAS = [
-  { nombre: "Kalley", slug: "kalley", logo: "/images/Kalley.jpg", prefijos: ["K-"] },
+  { nombre: "Kalley", slug: "kalley", logo: "/images/logo-kalley.svg", prefijos: ["K-"] },
   { nombre: "Hyundai", slug: "hyundai", logo: "/images/Hyundai.png", prefijos: ["HYLED"] },
   { nombre: "Challenger", slug: "challenger", logo: "/images/logo_challenger.png" },
   { nombre: "JVC", slug: "jvc", logo: "/images/logo-jvc.jpg", prefijos: ["LT-"] },
