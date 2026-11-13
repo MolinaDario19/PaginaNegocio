@@ -170,7 +170,7 @@ function agruparPorMarca(data) {
 
 const badgeEstado = (estado) => {
   const e = (estado || "").trim().toLowerCase();
-  if (e === "disponible") return `<span class="estado-badge estado-disponible">Disponible</span>`;
+  if (e === "disponible") return `<span class="estado-pill estado-disponible">Disponible</span>`;
   return `<span class="estado-pill estado-otro">${esc(estado ? estado[0].toUpperCase() + estado.slice(1) : "Consultar")}</span>`;
 };
 
