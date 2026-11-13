@@ -300,9 +300,9 @@ details p {
     font-weight:600;
     padding: 3px 10px 3px 8px;
     border-radius: 999px;
-    background: rgba(47,232,200,.1);
-    color: var(--accent);
-    border: 1px solid rgba(47,232,200,.35);
+    background: rgba(11, 224, 11, 0.1);
+    color: #26a536;
+    border: 1px solid rgba(9, 139, 15, 0.397);
   }
   .estado-pill::before{
     content:"";

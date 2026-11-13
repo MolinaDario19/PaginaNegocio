@@ -681,9 +681,9 @@ function renderModelo(grupo, actual) {
                         <!-- <span class="resumen-precio">${esc(precioTxt)}</span> -->
                     </div>
                     <ul class="resumen-incluye">
-                        <li>Software original para tu modelo</li>
-                        <li>Acompañamiento técnico hasta que tu TV funcione</li>
-                        <li>Guía por WhatsApp, llamada o videollamada si la necesitas</li>
+                        <li>Software original ${esc(modelo)}</li>
+                        <li>Guía paso a paso para la instalación</li>
+                        <li>Soporte técnico personalizado por WhatsApp, llamada o videollamada cuando lo necesites</li>
                     </ul>
                     <div class="resumen-total"><span>Total</span><strong>${esc(precioTxt)}</strong></div>
                 </div>
