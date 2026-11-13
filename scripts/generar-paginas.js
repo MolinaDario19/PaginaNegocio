@@ -397,9 +397,10 @@ function renderMarca(grupo) {
                         ${badgeEstado(m.info.estado)}
                     </div>
                     <div class="mc-bottom">
-                        <span class="mc-precio">${esc(m.info.precio || "Consultar")}</span>
+                    <!-- <span class="mc-precio">${esc(m.info.precio || "Consultar")}</span> -->
+                        
                         ${t ? `<span class="tag-size">${t}″</span>` : ""}
-                        <span class="mc-cta">Ver software</span>
+                        <span class="mc-cta">Consultar</span>
                     </div>
                 </a>`;
     })
@@ -677,7 +678,7 @@ function renderModelo(grupo, actual) {
                             <strong>Software original</strong>
                             <span>${esc(nombre)} ${esc(modelo)}</span>
                         </div>
-                        <span class="resumen-precio">${esc(precioTxt)}</span>
+                        <!-- <span class="resumen-precio">${esc(precioTxt)}</span> -->
                     </div>
                     <ul class="resumen-incluye">
                         <li>Software original para tu modelo</li>
@@ -685,6 +686,14 @@ function renderModelo(grupo, actual) {
                         <li>Guía por WhatsApp, llamada o videollamada si la necesitas</li>
                     </ul>
                     <div class="resumen-total"><span>Total</span><strong>${esc(precioTxt)}</strong></div>
+                </div>
+
+                <div class="requisitos">
+                <div class="requisitos-title">⚠ Importante antes de comprar</div>
+                <ul>
+                    <li>Ten disponible una <b>USB de 4 u 8 GB</b>.</li>
+                    <li>Necesitas un <b>computador</b> para realizar la descarga.</li>
+                </ul>
                 </div>
 
                 <fieldset class="metodos">
@@ -878,10 +887,9 @@ function tarjetaMarca(d, idx) {
   const stats =
     d.total > 0
       ? `<div class="mcard__stats">
-                        <div><strong>${d.total}</strong><span>${d.total === 1 ? "software disponible" : "softwares disponibles"}</span></div>${
-          d.desde ? `
-                        <div><strong>${formatoPesos(d.desde)}</strong><span>precio desde (COP)</span></div>` : ""
-        }
+                        <div><strong>${d.total}</strong><span>${d.total === 1 ? "software disponible" : "softwares disponibles"}</span></div>
+                       
+
                     </div>`
       : `<p class="mcard__nota">${esc(d.texto || "Consulta la disponibilidad de tu referencia.")}</p>`;
 
@@ -891,7 +899,7 @@ function tarjetaMarca(d, idx) {
                         <h3><a href="${href}">${esc(nombre)}</a></h3>
                         ${tam}
                         ${stats}
-                        <a class="mcard__cta" href="${href}">Ver softwares ${esc(nombre)}</a>
+                        <a class="mcard__cta" href="${href}">Softwares ${esc(nombre)}</a>
                     </div>
                 </article>`;
 }
