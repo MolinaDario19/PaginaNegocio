@@ -81,7 +81,7 @@ const MARCAS_EXTERNAS = [
 // Páginas fijas que van al sitemap además de las generadas
 const PAGINAS_FIJAS = [
   { url: "/", prioridad: "1.0" },
-  { url: "/products", prioridad: "0.8" },
+  { url: "/productos", prioridad: "0.8" },
   { url: "/tcl", prioridad: "0.8" },
   { url: "/Soluciones", prioridad: "0.7" },
   { url: "/Contact", prioridad: "0.6" },
@@ -187,8 +187,8 @@ const NAV_HTML = `
     </div>
     <ul class="nav__link nav__link--menu">
         <li class="nav__items"><a href="/" class="nav__links">Inicio</a></li>
-        <li class="nav__items"><a href="/products" class="nav__links">Productos</a></li>
-        <li class="nav__items"><a href="${URL_PORTADA}" class="nav__links">Software TV</a></li>
+        <li class="nav__items"><a href="${URL_PORTADA}" class="nav__links">Productos</a></li>
+        <li class="nav__items"><a href="/SoftwareTv" class="nav__links">Software TV</a></li>
         <li class="nav__items"><a id="nav_sol" href="/Soluciones" class="nav__links">Soluciones</a></li>
         <li class="nav__items"><a href="/Contact" class="nav__links">Contacto</a></li>
         <img src="/images/close.svg" class="nav__close">
