@@ -1118,7 +1118,16 @@ function renderModelo(grupo, actual) {
                 <h1>Software original para ${esc(nombre)} ${esc(modelo)}</h1>
                 <div class="prod-badges">${badgeEstado(estadoTxt)}${pulg ? `<span class="tag-size">${pulg}″</span>` : ""}</div>
                 ${comprable ? '<div class="oferta-modelo" id="ofertaModelo" hidden></div>' : ""}
-                <p class="prod-intro">Si tu televisor <strong>${esc(nombre)} ${esc(modelo)}</strong>${pulg ? ` de ${pulg} pulgadas` : ""} se queda pegado en el logo, entra en modo recovery, se reinicia solo o no enciende, este es el software original que le corresponde. Te acompañamos en la instalación hasta que funcione correctamente.</p>
+                <p class="prod-intro">¿Su televisor <strong>${esc(nombre)} ${esc(modelo)}</strong>${pulg ? ` de ${pulg} pulgadas` : ""} se queda en el logo, entra en modo Recovery o se reinicia constantemente? Aquí encontrará el software original para solucionar la falla y, lo mejor, recibirá acompañamiento paso a paso durante todo el proceso de instalación.
+                  
+                  <br/><br/>
+                  <a href="https://www.google.com/search?q=3103841388&sca_esv=3c5bece75fa21f2c&sxsrf=APpeQnsktfdmlmSaWyJOWYpdtOUDLpdR3w%3A1789500397703&source=hp&ei=7Zupar26KJCykvQPgOfCiA8&iflsig=ABILxe8AAAAAaqmp_anbbOhdrGVhDplYcIEv2TA6Sg_B&oq=&gs_lp=Egdnd3Mtd2l6IgAqBwgAGOoCGCcyBxAjGOoCGCcyDRAuGMcBGNEDGOoCGCcyBxAjGOoCGCcyChAAGAMYjwEY6gIyChAuGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gJIzQxQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACCqgCCpgDCvEFvj6JUVPecb6SBwExoAcAsgcAuAcAwgcDMy0xyAcIgAgB&sclient=gws-wiz&zx=1795726597292#lrd=0x8e30a7186001762d:0xac62c5b4124b596e,1,,,,"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color:#2878c8; font-weight:600; text-decoration:none;">
+                    ⭐ Ver reseñas de nuestros clientes →
+                  </a>
+                </p>
             </div>
 
             <aside class="prod-buy">${tarjetaCompra}
