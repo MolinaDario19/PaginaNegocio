@@ -1118,7 +1118,7 @@ function renderModelo(grupo, actual) {
                 <h1>Software original para ${esc(nombre)} ${esc(modelo)}</h1>
                 <div class="prod-badges">${badgeEstado(estadoTxt)}${pulg ? `<span class="tag-size">${pulg}″</span>` : ""}</div>
                 ${comprable ? '<div class="oferta-modelo" id="ofertaModelo" hidden></div>' : ""}
-                <p class="prod-intro">¿Su televisor <strong>${esc(nombre)} ${esc(modelo)}</strong>${pulg ? ` de ${pulg} pulgadas` : ""} se queda en el logo, entra en modo Recovery o se reinicia constantemente? Aquí encontrará el software original para solucionar la falla y, lo mejor, recibirá acompañamiento paso a paso durante todo el proceso de instalación.
+                <p class="prod-intro">¿Su televisor <strong>${esc(nombre)} ${esc(modelo)}</strong>${pulg ? ` de ${pulg} pulgadas` : ""} se queda en el logo, entra en modo Recovery o se reinicia constantemente? Aquí encuentra el software original para solucionar la falla y, lo mejor, cuenta con nuestro acompañamiento paso a paso durante todo el proceso de instalación.
                   
                   <br/><br/>
                   <a href="https://www.google.com/search?q=3103841388&sca_esv=3c5bece75fa21f2c&sxsrf=APpeQnsktfdmlmSaWyJOWYpdtOUDLpdR3w%3A1789500397703&source=hp&ei=7Zupar26KJCykvQPgOfCiA8&iflsig=ABILxe8AAAAAaqmp_anbbOhdrGVhDplYcIEv2TA6Sg_B&oq=&gs_lp=Egdnd3Mtd2l6IgAqBwgAGOoCGCcyBxAjGOoCGCcyDRAuGMcBGNEDGOoCGCcyBxAjGOoCGCcyChAAGAMYjwEY6gIyChAuGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gIyChAAGAMYjwEY6gJIzQxQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACCqgCCpgDCvEFvj6JUVPecb6SBwExoAcAsgcAuAcAwgcDMy0xyAcIgAgB&sclient=gws-wiz&zx=1795726597292#lrd=0x8e30a7186001762d:0xac62c5b4124b596e,1,,,,"
@@ -1139,7 +1139,7 @@ function renderModelo(grupo, actual) {
                     <div class="canales">
                         <a class="canal" href="${wa}" target="_blank" rel="noopener">
                             <strong>WhatsApp</strong>
-                            <span>Resolvemos tus dudas y te guiamos por chat.</span>
+                            <span>Resolvemos sus dudas y le guiamos por chat.</span>
                         </a>
                         <a class="canal" href="tel:+${TELEFONO}">
                             <strong>Llamada telefónica</strong>
@@ -1155,10 +1155,10 @@ ${htmlEvidencias(evs, nombre, modelo)}
                 <section class="bloque">
                     <h2>Cómo funciona</h2>
                     <ol class="pasos">
-                        <li><span class="paso-num">1</span><div><h3>Eliges y pagas</h3><p>Pagas con Mercado Pago o con Wompi.</p></div></li>
-                        <li><span class="paso-num">2</span><div><h3>Confirmas tu pedido</h3><p>Al terminar el pago confirmas el modelo y el número de serie de tu televisor y los envías por WhatsApp.</p></div></li>
-                        <li><span class="paso-num">3</span><div><h3>Te guiamos en la instalación</h3><p>Por WhatsApp, llamada o videollamada, según lo que necesites.</p></div></li>
-                        <li><span class="paso-num">4</span><div><h3>Tu televisor vuelve a funcionar</h3><p>Te acompañamos hasta que funcione correctamente.</p></div></li>
+                        <li><span class="paso-num">1</span><div><h3>Eliges y pagas</h3><p>Paga con Mercado Pago o con Wompi.</p></div></li>
+                        <li><span class="paso-num">2</span><div><h3>Confirmas su pedido</h3><p>Al finalizar el pago, envíe por WhatsApp el modelo y número de serie de su televisor. Así seleccionamos cuidadosamente el software correspondiente a su equipo.</p></div></li>
+                        <li><span class="paso-num">3</span><div><h3>Le guiamos en la instalación</h3><p>Por WhatsApp, llamada o videollamada, según lo que necesite.</p></div></li>
+                        <li><span class="paso-num">4</span><div><h3>Su televisor vuelve a funcionar</h3><p>Le acompañamos hasta que funcione correctamente.</p></div></li>
                     </ol>
                 </section>
 
