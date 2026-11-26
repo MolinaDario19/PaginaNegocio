@@ -760,3 +760,247 @@ details p {
 @media (min-width: 1180px) {
   .modelos-grid { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* ==========================================================================
+   DESCUENTOS
+   ========================================================================== */
+/* Etiqueta en cada tarjeta de modelo (página de marca) */
+.mc-oferta {
+  flex: 0 0 auto;
+  padding: 3px 10px;
+  border-radius: var(--radius-full, 9999px);
+  background: #dc2626;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.mc-oferta[hidden] { display: none; }
+
+/* Aviso en la página de marca */
+.oferta-marca {
+  margin: 0 0 18px;
+  padding: 12px 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-md, 12px);
+  color: #991b1b;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.oferta-marca[hidden] { display: none; }
+
+/* Aviso en la ficha del modelo */
+.oferta-modelo {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 8px 14px;
+  background: #dc2626;
+  border-radius: var(--radius-full, 9999px);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.oferta-modelo[hidden] { display: none; }
+
+/* Resumen del pedido con descuento */
+.resumen-descuento {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border, #e2e8f0);
+}
+.resumen-descuento[hidden] { display: none; }
+.desc-badge {
+  padding: 3px 10px;
+  border-radius: var(--radius-full, 9999px);
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.desc-ahorro { font-size: 0.85rem; font-weight: 600; color: #15803d; }
+.total-valores { display: flex; flex-direction: column; align-items: flex-end; }
+.total-antes {
+  font-size: 0.85rem;
+  color: var(--text-light, #94a3b8);
+  text-decoration: line-through;
+}
+.total-antes[hidden] { display: none; }
+.desc-vigencia {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: #b91c1c;
+  font-weight: 600;
+}
+.desc-vigencia[hidden] { display: none; }
+.barra-movil .barra-antes {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-light, #94a3b8);
+  text-decoration: line-through;
+}
+.barra-movil .barra-antes[hidden] { display: none; }
+
+/* ==========================================================================
+   GALERÍA DE EVIDENCIAS (visor deslizable + miniaturas)
+   ========================================================================== */
+.gal-visor {
+  position: relative;
+  overflow: hidden;
+  background: #0b0e14;
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: var(--radius-md, 12px);
+}
+.gal-pista {
+  display: flex;
+  aspect-ratio: 16 / 10;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.gal-pista::-webkit-scrollbar { display: none; }
+.gal-pista:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.55);
+  outline-offset: -3px;
+}
+.gal-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  margin: 0;
+  background: #0b0e14;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.gal-img,
+.gal-yt { display: block; position: relative; width: 100%; height: 100%; }
+/* Las fotos de evidencia no se recortan: se ven completas */
+.gal-slide img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.gal-yt img { object-fit: cover; }
+.gal-slide video { display: block; width: 100%; height: 100%; object-fit: contain; background: #000; }
+.gal-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 68px;
+  height: 68px;
+  margin: -34px 0 0 -34px;
+  border-radius: 50%;
+  background: rgba(6, 21, 46, 0.8);
+}
+.gal-play::after {
+  content: "";
+  position: absolute;
+  left: 27px;
+  top: 20px;
+  border-style: solid;
+  border-width: 14px 0 14px 22px;
+  border-color: transparent transparent transparent #fff;
+}
+.gal-embed { width: 100%; height: 100%; }
+.gal-embed iframe { display: block; width: 100%; height: 100%; border: 0; }
+
+.gal-nav {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary, #0a1f44);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+.gal-nav[hidden] { display: none; }
+.gal-nav:disabled { opacity: 0.35; cursor: default; }
+.gal-nav--prev { left: 10px; }
+.gal-nav--next { right: 10px; }
+
+.gal-pie {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 2px 0;
+  font-size: 0.88rem;
+  color: var(--text-muted, #64748b);
+}
+.gal-leyenda { min-height: 1.2em; }
+.gal-contador { flex: 0 0 auto; font-weight: 600; color: var(--primary, #0a1f44); }
+
+.gal-minis {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 3px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.gal-mini {
+  position: relative;
+  flex: 0 0 auto;
+  width: 88px;
+  height: 58px;
+  padding: 0;
+  overflow: hidden;
+  background: #0b0e14;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.gal-mini img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.gal-mini.is-on { border-color: var(--accent, #2563eb); opacity: 1; }
+.gal-mini:focus-visible { outline: 3px solid rgba(37, 99, 235, 0.55); outline-offset: 1px; }
+.gal-mini-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gal-mini-play::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(6, 21, 46, 0.8);
+}
+.gal-mini-play::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -6px 0 0 -3px;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+.gal-mini-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+@media (min-width: 640px) {
+  .gal-mini { width: 104px; height: 68px; }
+}

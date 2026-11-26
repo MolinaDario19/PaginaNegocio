@@ -13,7 +13,7 @@
     },
     {
       "source": "/productos",
-      "destination": "/productos.html"
+      "destination": "/products.html"
     },
     {
       "source": "/soluciones",

@@ -46,7 +46,7 @@
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items"><a href="/" class="nav__links">Inicio</a></li>
                 <li class="nav__items"><a href="/products" class="nav__links">Productos</a></li>
-                <li class="nav__items"><a href="{{URL_PORTADA}}" class="nav__links">Software TV</a></li>
+                <li class="nav__items"><a href="/SoftwareTv" class="nav__links">Software TV</a></li>
                 <li class="nav__items"><a id="nav_sol" href="/Soluciones" class="nav__links">Soluciones</a></li>
                 <li class="nav__items"><a href="/Contact" class="nav__links">Contacto</a></li>
                 <img src="/images/close.svg" class="nav__close">
@@ -56,6 +56,8 @@
     </header>
 
     <main>
+        <div class="pt-oferta" id="ofertaGlobal" hidden></div>
+
         <!-- ============ PRESENTACIÓN + BUSCADOR ============ -->
         <section class="pt-intro">
             <div class="container pt-intro__inner">
@@ -177,6 +179,12 @@
     </main>
 
     <script>
+        var DESC = {{DESC_JSON}};
+        var AHORA = new Date();
+        {{PRECIOS_JS}}
+    </script>
+
+    <script>
         /* ---------- Buscador de modelos ---------- */
         var CATALOGO = null;
         fetch('/info.json').then(function (r) { return r.json(); }).then(function (d) { CATALOGO = d; }).catch(function () {});
@@ -207,8 +215,10 @@
             cont.innerHTML = res.map(function (e) {
                 var i = e[1], marca = i.brand || '';
                 var url = marca ? '/{{CARPETA}}/' + slugify(marca) + '/' + slugify(i.modelo || e[0]) : '#marcas';
+                var r = precioFinal({ codigo: e[0], modelo: i.modelo, marca: marca, valor: i.valor }, DESC, AHORA);
+                var precio = r.regla ? cop(r.valorFinal) + ' (−' + r.porcentaje + '%)' : (i.precio || 'Consultar');
                 return '<a href="' + url + '"><span>' + esc(marca ? marca + ' ' : '') + esc(i.modelo || e[0]) +
-                       '</span><span class="pt-precio">' + esc(i.precio || 'Consultar') + '</span></a>';
+                       '</span><span class="pt-precio">' + esc(precio) + '</span></a>';
             }).join('');
             cont.classList.add('activo');
         }
@@ -249,6 +259,42 @@
             });
             marcar();
         });
+
+        /* ---------- Ofertas vigentes ---------- */
+        function cop(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' COP'; }
+        function fechaOferta(ms) {
+            try { return new Date(ms).toLocaleDateString('es-CO', { day: 'numeric', month: 'long', timeZone: 'America/Bogota' }); }
+            catch (e) { return ''; }
+        }
+        function etiquetaOferta(r) {
+            if (Number(r.porcentaje) >= 1) return '−' + Number(r.porcentaje) + '%';
+            if (Number(r.montoFijo) > 0) return '−$' + String(Math.round(Number(r.montoFijo))).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+            return 'Oferta';
+        }
+        (function () {
+            var activas = (DESC.reglas || []).filter(function (r) { return reglaVigente(r, AHORA); });
+            if (!activas.length) return;
+
+            var partes = activas.slice(0, 2).map(function (r) {
+                var a = r._alcance || {};
+                var donde = a.todas ? 'todos los softwares' : (a.marcas || []).join(', ') + (a.parcial ? ' (modelos seleccionados)' : '');
+                return r.nombre + ': ' + etiquetaOferta(r) + ' en ' + donde + ' · hasta el ' + fechaOferta(instante(r.hasta, true));
+            });
+            var banner = document.getElementById('ofertaGlobal');
+            banner.textContent = 'Oferta activa · ' + partes.join('  |  ') + (activas.length > 2 ? '  |  y más' : '');
+            banner.hidden = false;
+
+            [].slice.call(document.querySelectorAll('.mcard[data-marca]')).forEach(function (card) {
+                var marca = card.getAttribute('data-marca');
+                var cubren = activas.filter(function (r) { return r._alcance && r._alcance.marcas.indexOf(marca) !== -1; });
+                if (!cubren.length) return;
+                var enteras = cubren.filter(function (r) { return !r._alcance.parcial; })
+                    .sort(function (a, b) { return (Number(b.porcentaje) || 0) - (Number(a.porcentaje) || 0); });
+                var tag = card.querySelector('.mcard__oferta');
+                tag.textContent = enteras.length ? etiquetaOferta(enteras[0]) + ' OFF' : 'Ofertas en modelos';
+                tag.hidden = false;
+            });
+        })();
     </script>
 
     <site-footer></site-footer>
